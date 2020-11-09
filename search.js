@@ -32,7 +32,7 @@ const transitions = [
     [new Set(["b", "p", "f", "v"]), .35],
 
     [new Set(["tʰ", "t"]), .05],
-    [new Set(["t", "d"]), .35],
+    [new Set(["t", "d"]), .25],
 
     [new Set(["kʰ", "k", "ck"]), .05],
     [new Set(["qʰ", "q"]), .05],
@@ -42,6 +42,8 @@ const transitions = [
     // these are sometimes the same sound..?
     [new Set(["ch", "ts"]), .35],
     [new Set(["ch", "j", "sh", "ts", "tz"]), .7],
+    [new Set(["ch", "k"]), .55],
+    [new Set(["ch", "ck", "q"]), .76],
 
     // wh/hw/w
     [new Set(["hw", "wh"]), .1, 0.4],
@@ -54,13 +56,19 @@ const transitions = [
     // glottal
     [new Set("ʔ?'7"), .05, 0.1], // these can appear/disappear quite easily
 
+    // digraph regularization (softens the blow for a missing letter in a digraph)
+    [new Set(["ts", "t"]), .3],
+    [new Set(["gh", "g"]), .3],
+    [new Set(["kh", "s"]), .2],
+    [new Set(["o", "oo"]), .3],
+
     // aspiration
     [new Set("Χxχ"), 0], // these other letters sometimes used for x.
     [new Set(["x", "h", "kh", "gh", "ʰ"]), .2, 0.75], // these can disappear occasionally
     [new Set(["x", "h", "kh", "gh", "k"]), 0.68], // 'k' for 'x' is an archaic thing [stik-swakik]
 
     // any vowels
-    [vowels, 0.75, 0.75]
+    [vowels, 0.68, 0.75]
 
     // [everything else, 1, 1]
 ]
@@ -159,8 +167,10 @@ function distance_char_exp(a, b) {
     // look up a, b in transition matrix
     a_idx = transition_matrix_idx[a];
     b_idx = transition_matrix_idx[b];
-    if (!a_idx) a_idx = 0;
-    if (!b_idx) b_idx = 0;
+    if (a == null || a == '') a_idx = 0;
+    else if (!a_idx) return 1;
+    if (b == null || b == '') b_idx = 0;
+    else if (!b_idx) return 1;
     return transition_matrix[
         a_idx
     ][
@@ -297,8 +307,39 @@ function printd(a, b) {
     var d = dist_strings(a, b);
 }
 
+// fuse search
+const fuse_gloss = new Fuse(
+    dictionary,
+    {
+        includeScore: true,
+        ignoreLocation: true,
+        keys: ['fuse-gloss']
+    }
+)
+
+function search_gloss(a) {
+    var matches = []
+    var results = fuse_gloss.search(a);
+    for (var i = 0; i < results.length; ++i)
+    {
+        var result = results[i]
+        if (result.score < 0.3)
+        {
+            matches.push(
+                {
+                    entry: result.item,
+                    entry_idx: result.refIndex,
+                    dissimilarity: result.score
+                }
+            )
+        }
+    }
+
+    return matches;
+}
+
 function search(a) {
-    matches = []
+    var matches = []
     var mindex = 0
     for (var i = 0; i < dictionary.length; ++i)
     {
@@ -326,6 +367,27 @@ function search(a) {
     })
 
     return matches.slice(0, Math.min(15, mindex))
+}
+
+function search_both(a)
+{
+    // combine both results
+    var matches = search(a)
+    matches.push.apply(matches, search_gloss(a))
+
+    // sort by match quality
+    matches.sort(function(a, b) {
+        return a.dissimilarity - b.dissimilarity;
+    })
+
+    // remove duplicate
+    matches.filter(function(item, pos) {
+        return matches.findIndex(function(uitem) {
+            return item.entry == uitem.entry
+        }) == pos;
+    })
+
+    return matches
 }
 
 // patch up the partially-defined distance metric <3 <3 :) :3 <3

@@ -10,6 +10,7 @@ def add_dict_entry(**kwargs):
     cw = kwargs["cw"]
     entry = {
         "gloss": gloss,
+        "fuse-gloss": ",    ".join(gloss),
         "cw": cw
     }
     if "sources" in kwargs and len(kwargs["sources"]) > 0:
@@ -58,7 +59,8 @@ sourcemap = {
     "Boas 1892": "Boas",
     "Schoolcraft 1853": "Schoolcraft",
     "(lusentoj)": "lusentoj",
-    "(lustentoj)": "lusentoj"
+    "(lustentoj)": "lusentoj",
+    "qw": "qw"
 }
 with open("sources/qw_cited_map.json") as f:
     qw_cited_map = json.load(f)
@@ -90,13 +92,18 @@ for path in ["sources/qw_simp.json", "sources/qw_comp.json"]:
             if wordparse[3] is not None:
                 origin["language-full"] += "/" + wordparse[3]
                 origin["language"] = wordparse[3]
+                if origin["language"].startswith("via "):
+                    origin["language"] = origin["language"][4:]
+                if origin["language"].endswith("?"):
+                    origin["language"] = origin["language"][:-1]
+                    origin["unknown"] = True
                 if origin["language-full"].startswith("Other/"):
                     origin["language-full"] = origin["language-full"][5:]
                 if origin["language-full"].startswith("/"):
                     origin["language-full"] = origin["language-full"][1:]
 
             # sources
-            for source in [entry["source-gr"], entry["source-d1"], entry["source-d2"]] + entry["source-alt"]:
+            for source in [entry["source-gr"], entry["source-d1"], entry["source-d2"]] + entry["source-alt"] + ["qw"]:
                 source = source.strip()
                 if len(source.strip()) > 0:
                     if source in sourcemap:
@@ -146,6 +153,21 @@ for path in ["sources/qw_simp.json", "sources/qw_comp.json"]:
                 tags=tags,
                 itags=itags # not currently used
             )
+
+hobbyists = ["qw", "lusentoj", "qalis", "q́alis", "OrthodoxFox"]
+
+# fix entries
+for entry in dictionary:
+    only_hobbyist = True
+    for source in entry["sources"]:
+        if source not in hobbyists:
+            only_hobbyist = False
+            break
+    if only_hobbyist:
+        if "tags" in entry:
+            entry["tags"].append("Uncited")
+        else:
+            entry["tags"] = ["Uncited"]
 
 with open("dict.js", "w") as f:
     f.write("const dictionary = " + json.dumps(dictionary))

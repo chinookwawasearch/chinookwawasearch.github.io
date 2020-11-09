@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.3"></script>
     <script src="./latinize.js" charset="utf-8"></script>
     <script src="./dict.js" charset="utf-8"></script>
     <script src="./dict-key.js" charset="utf-8"></script>
@@ -21,15 +22,27 @@
 
 <body>
     <main role="main">
+        <div class="alert alert-warning" role="alert" style="margin-bottom:0px;">
+            This dictionary search utility is part of a private beta test. Please do not circulate publicly!
+        </div>
         <div class="jumbotron text-center">
             <h1>Chinuk Wawa Search</h1>
-            <p>Enter a Chinuk Wawa term in the search box below.</p>
+            <p>Enter <span id="guide-text">a Chinuk Wawa or English</span> term in the search box below.</p>
         </div>
 
-        <div class="container">
-            <form class="form d-flex justify-content-center md-form form-sm mt-0">
-                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" id="search"/>
-            </form>
+        <div class="container ml-2 mr-2">
+            <div class="container" style="width:100%;">
+                <form class="form d-flex justify-content-center md-form form-sm mt-0 form-inline">
+                    <input class="form-control form-control-sm ml-3 w-75 pl-0 pr-0" type="text" placeholder="Search" id="search" style="width:80%;" autofocus/>
+                    <select class="form-control w-25 pl-0 pr-0" id="search-direction" style="width:18%;">
+                        <option>English & CW</option>
+                        <option>CW</option>
+                        <option>English</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="container ml-2 mr-2">
             <h2 class="text-center">Search Results</h2>
             <table class="table table-striped" id="results">
                 <thead>

@@ -1,25 +1,47 @@
 const orthography_legend = {
-    "qw": "Q'alis Wawa's orthography",
-    "pp": "Duployan / Chinuk Pipa Romanization (e.g. Kamloops Wawa)",
-    "dr": "Dave Roberts (Deiv Pipa)",
+    "qw": "q'alis wawa's hobbyist orthography",
+    "lj": "lusentoj's hobbyist orthography",
+    "pp": "Duployan / Chinuk Pipa (e.g. Kamloops Wawa) romanization",
+    "dr": "Dave Roberts' orthography (Deiv Pipa)",
     "gr": "Grand Ronde"
+}
+
+const orthography_full = {
+    "qw": "qw",
+    "lj": "lj",
+    "pp": "cp",
+    "dr": "ddr",
+    "gr": "gr"
 }
 
 const orthography_color = {
     "qw": "gray",
-    "pp": "#d9d1e9", // purplish
+    "lj": "#77a38a",
+    "pp": "#9a7bb3", // purplish
     "dr": "#8B4513", // sienna
     "gr": "#DB9C45" // yellow-orange
 }
 
 const tag_color = {
     "Compound": "#80C7F0",
-    "Limited": "#CCB472",
+    "Limited": "#d6b547",
     "Dubious": "#AC2E2E",
+    "Uncited": "#aaba84",
     "Neologism": "#3d85c6",
     "Archaic": "#A686CD",
     "KW/Northern": "#4DAD60",
     "GR/Southern": orthography_color["gr"],
+}
+
+const tag_description = {
+    "Compound": "This is a compound word, comprising two or more \"simple\" words.",
+    "Limited": "This word had limited or regional usage.",
+    "Dubious": "The meaning, pronunciation, and usage of this word are uncertain or poorly-attested.",
+    "Uncited": "Entry lacks a non-hobbyist source.",
+    "Neologism": "This word was invented by a modern CW community.",
+    "Archaic": "This word was used mainly by early speakers of CW.",
+    "KW/Northern": "This word may be specific to Northern (British Columbia) CW, or perhaps specifically Kamloops Wawa.",
+    "GR/Southern": "This word is specific to Grand Ronde/creolized CW.",
 }
 
 const source_legend = {
@@ -191,6 +213,13 @@ const source_legend = {
         "display": "(q́alis)",
         "author": "q́alis",
         "name": "q́alis's hobbyist dictionary (draft)",
+        "date": "2020",
+        "tag": "h", // hobbyist
+    },
+    "qw": {
+        "display": "(q'alis wawa)",
+        "author": "q'alis wawa",
+        "name": "q'alis wawa's hobbyist dictionary",
         "date": "2020",
         "tag": "h", // hobbyist
     }

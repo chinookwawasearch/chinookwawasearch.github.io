@@ -6,7 +6,8 @@ function orthkey_html(orth)
     {
         legend = orthography_legend[orth]
         style = orthography_color[orth]
-        return `<sup class="orthkey" style="color:${style};">[<abbr title="${legend}">${orth}</abbr>]</sup>`
+        orthr = orthography_full[orth]
+        return `<sup class="orthkey" style="color:${style};">[<abbr title="${legend}">${orthr}</abbr>]</sup>`
     }
     return ""
 }
@@ -43,7 +44,12 @@ function append_match_row(tbody, match)
                 source = source_legend[source]
             }
             if (j > 0) srchtml += ", "
-            srchtml += `<span id=\"gid-${gid_it}\">${source["display"]}`
+            srcclass=""
+            if (source["tag"] == "h")
+            {
+                srcclass = "hobbyist"
+            }
+            srchtml += `<span id=\"gid-${gid_it}\" class=\"${srcclass}\">${source["display"]}`
             if (source["tag"] == "gr")
             {
                 srchtml += orthkey_html("gr")
@@ -101,9 +107,17 @@ function append_match_row(tbody, match)
         {
             tag = entry["tags"][j]
             tagcol = tag_color[tag];
+            tagdesc = tag_description[tag]
             if (tagcol == null) tagcol = "gray"
             if (j > 0) taghtml += " "
-            taghtml += `<span class="tag" style="background: ${tagcol};">${tag}</span>`
+            taghtml += `<span class="tag" id="gid-${gid_it}" style="background: ${tagcol};">${tag}</span>`
+            src_popovers.push({
+                id: `#gid-${gid_it}`,
+                title: tag,
+                content: tagdesc,
+                placement: "right"
+            });
+            gid_it++;
         }
     }
 
@@ -155,10 +169,12 @@ function append_match_row(tbody, match)
     // add popover elements (this has to happen after tr has been added to DOM... presumably...)
     for (var j = 0; j < src_popovers.length; ++j)
     {
+        placement = src_popovers[j].placement;
+        if (!placement) placement = "left"
         $(src_popovers[j].id).popover(
             {
                 html:true,
-                placement:"left",
+                placement:placement,
                 trigger:"hover",
                 title:src_popovers[j].title,
                 content:src_popovers[j].content
@@ -170,20 +186,40 @@ function append_match_row(tbody, match)
 function do_search()
 {
     // search parameters
-    //const search_en = $('#toggle-direction').prop("checked")
-    text = $("#search").val()
-
-    console.log("searching...")
+    var text = $("#search").val()
+    var search_direction = $("#search-direction").find("option:selected").text().trim();
+    console.log(`searching (${search_direction})...`)
 
     // simplify
     text = text.trim().slice(0, 30)
 
+    var search_fn = null
+    var guide_text = ""
+    if (search_direction == "CW")
+    {
+        search_fn = search
+        guide_text = "a Chinook Wawa"
+    }
+    else if (search_direction == "English")
+    {
+        search_fn = search_gloss
+        guide_text = "an English"
+    }
+    else
+    {
+        search_fn = search_both
+        guide_text = "a Chinook Wawa or English"
+    }
+
+    // replace guide text
+    $("#guide-text").text(guide_text);
+
     // validate
     if (text.length == 0) return;
-    if (search == null) return;
+    if (search_fn == null) return;
 
     // perform search
-    const matches = search(text)
+    const matches = search_fn(text)
 
     // display results
     var tbody = $('#results tbody')
@@ -196,18 +232,18 @@ function do_search()
 }
 
 $(function() {
-    /*$('#toggle-direction').bootstrapToggle({
-        on: "CW-to-En",
-        off: "En-to-CW"
-    });
-    $('#toggle-direction').change(function()
-    {
-        do_search()
-    })*/
     $('#search').keypress(function (e) {
         if (e.which == 13) {
             do_search();
             return false;    // prevent default
         }
     });
+
+    $("#search-direction").on("change", function(e) {
+        do_search();
+    })
+})
+
+$(document).ready(function() {
+    do_search();
 })

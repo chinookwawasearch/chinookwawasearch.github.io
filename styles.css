@@ -20,6 +20,10 @@
   white-space: nowrap;
 }
 
+.hobbyist {
+  color: gray;
+}
+
 /* Bootstrap 4 text input with search icon */
 
 .has-search .form-control {
