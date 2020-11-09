@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Chinook Wawa Dictionary Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="./latinize.js" charset="utf-8"></script>
+    <script src="./dict.js" charset="utf-8"></script>
+    <script src="./dict-key.js" charset="utf-8"></script>
+    <script src="./search.js" charset="utf-8"></script>
+    <script src="./index.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <main role="main">
+        <div class="jumbotron text-center">
+            <h1>Chinuk Wawa Search</h1>
+            <p>Enter a Chinuk Wawa term in the search box below.</p>
+        </div>
+
+        <div class="container">
+            <form class="form d-flex justify-content-center md-form form-sm mt-0">
+                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" id="search"/>
+            </form>
+            <input id="toggle-direction" checked type="checkbox">
+            <h2 class="text-center">Search Results</h2>
+            <table class="table table-striped" id="results">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Gloss</th>
+                        <th>CW</th>
+                        <th>Origin</th>
+                        <th>Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
