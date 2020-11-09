@@ -114,7 +114,7 @@ function append_match_row(tbody, match)
         orghtml += origin["language"];
         if (origin["unknown"])
         {
-            orghtml = `<i style="color:gray;">${orghtml}<sup><abbr title="Origin dubious or unknown">[?]</abbr></sup></i>`;
+            orghtml = `<i style="color:gray;">${orghtml}<sup><abbr title="Origin tentative, dubious, or unknown">[?]</abbr></sup></i>`;
         }
         orghtml = `<span id="gid-${gid_it}">${orghtml}</span>`;
 
@@ -123,6 +123,9 @@ function append_match_row(tbody, match)
         if (origin["word"] != "")
         {
             popcontent += `\n<p>"${origin["word"]}"</p>`
+        }
+        if (origin["unknown"]) {
+            popcontent += `\n<p><i>Note: this information is marked as "unknown, dubious, or tentative"</i></p>`
         }
         src_popovers.push({
             id: `#gid-${gid_it}`,
@@ -168,9 +171,12 @@ function do_search()
 {
     // search parameters
     //const search_en = $('#toggle-direction').prop("checked")
-    const text = $("#search").val()
+    text = $("#search").val()
 
     console.log("searching...")
+
+    // simplify
+    text = text.trim().slice(0, 30)
 
     // validate
     if (text.length == 0) return;

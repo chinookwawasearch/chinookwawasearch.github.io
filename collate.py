@@ -62,7 +62,7 @@ sourcemap = {
 }
 with open("sources/qw_cited_map.json") as f:
     qw_cited_map = json.load(f)
-qw_word_language_extract = re.compile("^([^\{\?]*)(\{(.*)\})?.*?(\?)?$")
+qw_word_language_extract = re.compile("^([^\{\?]*)(\??\s*\{(.*)\})?.*?(\?)?$")
 for path in ["sources/qw_simp.json", "sources/qw_comp.json"]:
     with open(path, "r") as f:
         source = json.load(f)

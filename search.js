@@ -23,6 +23,10 @@ const transitions = [
     [new Set(["s", "z", "ss"]), .05],
     [new Set(["s", "z", "ss", "sh", "ts", "tz", "c"]), .3],
 
+    // for simps who can't type the lateral fricative,
+    // and to soften the transition to some older victorian-era spelling styles e.g. hl, cl
+    [new Set("ɬl"), 0.37],
+
     // plosives
     [new Set(["p", "pʰ"]), .05],
     [new Set(["b", "p", "f", "v"]), .35],
@@ -36,6 +40,7 @@ const transitions = [
     [new Set(["k", "q", "c", "g", "ck"]), .23],
 
     // these are sometimes the same sound..?
+    [new Set(["ch", "ts"]), .35],
     [new Set(["ch", "j", "sh", "ts", "tz"]), .7],
 
     // wh/hw/w
@@ -50,7 +55,9 @@ const transitions = [
     [new Set("ʔ?'7"), .05, 0.1], // these can appear/disappear quite easily
 
     // aspiration
+    [new Set("Χxχ"), 0], // these other letters sometimes used for x.
     [new Set(["x", "h", "kh", "gh", "ʰ"]), .2, 0.75], // these can disappear occasionally
+    [new Set(["x", "h", "kh", "gh", "k"]), 0.68], // 'k' for 'x' is an archaic thing [stik-swakik]
 
     // any vowels
     [vowels, 0.75, 0.75]
