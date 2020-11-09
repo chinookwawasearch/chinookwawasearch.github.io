@@ -167,7 +167,7 @@ function append_match_row(tbody, match)
 function do_search()
 {
     // search parameters
-    const search_en = $('#toggle-direction').prop("checked")
+    //const search_en = $('#toggle-direction').prop("checked")
     const text = $("#search").val()
 
     console.log("searching...")
@@ -190,14 +190,14 @@ function do_search()
 }
 
 $(function() {
-    $('#toggle-direction').bootstrapToggle({
+    /*$('#toggle-direction').bootstrapToggle({
         on: "CW-to-En",
         off: "En-to-CW"
     });
     $('#toggle-direction').change(function()
     {
         do_search()
-    })
+    })*/
     $('#search').keypress(function (e) {
         if (e.which == 13) {
             do_search();
