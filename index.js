@@ -219,6 +219,9 @@ function do_search()
         guide_text = "a Chinook Wawa or English"
     }
 
+    // store query parameters in url.
+    write_url_params();
+
     // replace guide text
     $("#guide-text").text(guide_text);
 
@@ -239,19 +242,44 @@ function do_search()
     }
 }
 
-$(function() {
-    $('#search').keypress(function (e) {
-        if (e.which == 13) {
-            do_search();
-            return false;    // prevent default
+function encode_escape(s)
+{
+    return s.replace(/\./g,"..").replace(/&/g, ".+");
+}
+
+function decode_escape(s)
+{
+    return s.replace(/\.+/g, "&").replace(/\.\./g,".");
+}
+
+function write_url_params()
+{
+    let term = encode_escape($("#search").val());
+    let dir = encode_escape(["cwen", "cw", "en"][$('#search-direction').val()]);
+    location.hash = `#t=${term}&dir=${dir}`;
+}
+
+function read_url_params()
+{
+    console.log("reading url params")
+    let hashv = location.hash;
+    if (hashv && hashv.length > 1)
+    {
+        let m = hashv.match(/^#?t=([^&]*)&dir=([^&]+)$/)
+        if (m && m.length >= 3)
+        {
+            // set search term
+            let term = decode_escape(m[1])
+            $("#search").val(term)
+
+            // set search direction
+            let dir = decode_escape(m[2])
+            let dirv = ["cwen", "cw", "en"].indexOf(dir)
+            if (dirv >= 0)
+            {
+                $('#search-direction').val(dirv);
+                console.log($('#search-direction'))
+            }
         }
-    });
-
-    $("#search-direction").on("change", function(e) {
-        do_search();
-    })
-})
-
-$(document).ready(function() {
-    do_search();
-})
+    }
+}
