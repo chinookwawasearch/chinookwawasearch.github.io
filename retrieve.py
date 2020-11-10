@@ -24,30 +24,39 @@ except Exception as e:
 if not os.path.exists('sources'):
     os.makedirs('sources')
 
+# retrieve google sheets service
+g_service = None
+def get_service():
+    global g_service
+    if g_service is not None:
+        return g_service
+    else:
+        with open("sources/qw_credentials.json", "w") as f:
+            json.dump(secret["qw"]["credentials"], f)
+        # The file token.pickle stores the user's access and refresh tokens, and is
+        # created automatically when the authorization flow completes for the first
+        # time.
+        creds = None
+        if os.path.exists('sources/qw-token.pickle'):
+            with open('sources/qw-token.pickle', 'rb') as token:
+                creds = pickle.load(token)
+        # If there are no (valid) credentials available, let the user log in.
+        if not creds or not creds.valid:
+            if creds and creds.expired and creds.refresh_token:
+                creds.refresh(Request())
+            else:
+                flow = InstalledAppFlow.from_client_secrets_file('sources/qw_credentials.json', SCOPES)
+                creds = flow.run_local_server(port=0)
+            # Save the credentials for the next run
+            with open('sources/qw-token.pickle', 'wb') as token:
+                pickle.dump(creds, token)
+        g_service = build('sheets', 'v4', credentials=creds)
+        return g_service
+
+
 # download qalis.ods
 def qw_retrieve():
-    with open("sources/qw_credentials.json", "w") as f:
-        json.dump(secret["qw"]["credentials"], f)
-    # The file token.pickle stores the user's access and refresh tokens, and is
-    # created automatically when the authorization flow completes for the first
-    # time.
-    creds = None
-    if os.path.exists('sources/qw-token.pickle'):
-        with open('sources/qw-token.pickle', 'rb') as token:
-            creds = pickle.load(token)
-    # If there are no (valid) credentials available, let the user log in.
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file('sources/qw_credentials.json', SCOPES)
-            creds = flow.run_local_server(port=0)
-        # Save the credentials for the next run
-        with open('sources/qw-token.pickle', 'wb') as token:
-            pickle.dump(creds, token)
-
-    service = build('sheets', 'v4', credentials=creds)
-    sheet = service.spreadsheets()
+    sheet = get_service().spreadsheets()
 
     src_words="'Simple Words'"
     src_compounds="'Compounds'"
@@ -69,18 +78,17 @@ def qw_retrieve():
                 obj = {
                     "gloss": itemtext[0],
                     "cw-qw": itemtext[1],
-                    "cw-phonetic": itemtext[2],
-                    "cw-practical": itemtext[3],
-                    "cw-attested": itemtext[4],
-                    "cw-duployan": itemtext[5],
-                    "origin-language": itemtext[6],
-                    "origin-word": itemtext[7],
-                    "source-gr": itemtext[8],
-                    "source-d1": itemtext[9],
-                    "source-d2": itemtext[10],
-                    "source-alt": itemtext[11:18],
+                    "cw-practical": itemtext[2],
+                    "cw-attested": itemtext[3],
+                    "cw-duployan": itemtext[4],
+                    "origin-language": itemtext[5],
+                    "origin-word": itemtext[6],
+                    "source-gr": itemtext[7],
+                    "source-d1": itemtext[8],
+                    "source-d2": itemtext[9],
+                    "source-alt": itemtext[10:17],
                     "colour-attest": itembg[1],
-                    "colour-source": itembg[6],
+                    "colour-source": itembg[5],
                     "compound": False
                 }
                 
@@ -172,7 +180,32 @@ def qw_retrieve_cited():
     with open("sources/qw_cited_map.json", "w") as f:
         json.dump(dictmap, f)
 
+def lj_retrieve():
+    sheet = get_service().spreadsheets()
+
+    src_sheet="'chinuk'"
+
+    result = sheet.get(spreadsheetId=secret["lj"]["sheet-id"], ranges=[src_sheet], includeGridData=True).execute()
+    rowData = result["sheets"][0]["data"][0]["rowData"]
+    words = []
+    for row in rowData:
+        if "values" in row:
+            cells = row["values"]
+            text = [cell["effectiveValue"]["stringValue"] if "effectiveValue" in cell and "stringValue" in cell["effectiveValue"] else "" for cell in cells]
+            if len(text) >= 3:
+                obj = {
+                    "cw": text[0],
+                    "notes": text[1],
+                    "gloss": text[2]
+                }
+                words.append(obj)
+
+    with open("sources/lj.json", "w") as f:
+        json.dump(words, f)
 
 # uncomment this to retrieve from QW
 # qw_retrieve()
-qw_retrieve_cited()
+# qw_retrieve_cited()
+
+# uncomment this to retrieve from lusentoj
+#lj_retrieve()
