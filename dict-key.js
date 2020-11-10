@@ -149,7 +149,7 @@ const source_legend = {
         "date": "1871"
     },
     "Palmer": {
-        "display": "Palmers 1847",
+        "display": "Palmer 1847",
         "author": "Palmer, Joel",
         "name": "Palmer's Journal of travels over the Rocky Mountains, to the Mouth of the Columbia River",
         "date": "1847",

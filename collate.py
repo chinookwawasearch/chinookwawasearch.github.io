@@ -54,7 +54,7 @@ sourcemap = {
     "Powell 1985": "Powell 1985",
     "Lionnet 1853": "Lionnet",
     "Demers 1871": "Demers",
-    "Palmer 1847": "Palmers",
+    "Palmer 1847": "Palmer",
     "Ross 1849": "Ross",
     "Boas 1892": "Boas",
     "Schoolcraft 1853": "Schoolcraft",

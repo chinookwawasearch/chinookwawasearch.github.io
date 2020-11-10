@@ -36,14 +36,22 @@ function append_match_row(tbody, match)
     srchtml = ""
     if (entry["sources"])
     {
+        var first = true;
         for (var j = 0; j < entry["sources"].length; ++j)
         {
             source = entry["sources"][j]
+            if (source == undefined) continue;
             if (typeof (source) !== 'object')
             {
+                if (!source_legend[source])
+                {
+                    console.log(`failed to look up source "${source}"`)
+                    continue;
+                }
                 source = source_legend[source]
             }
-            if (j > 0) srchtml += ", "
+            if (!first) srchtml += ", ";
+            first = false;
             srcclass=""
             if (source["tag"] == "h")
             {
