@@ -191,6 +191,9 @@ function append_match_row(tbody, match)
     }
 }
 
+var search_id = 0;
+var killsearch = null;
+
 function do_search()
 {
     // search parameters
@@ -229,17 +232,39 @@ function do_search()
     if (text.length == 0) return;
     if (search_fn == null) return;
 
+    // begin search animation
+    var loader = $("#loader-6")
+    loader.css("opacity", '1')
+
+    // kill ongoing search if possible
+    if (killsearch) killsearch();
+
     // perform search
-    const matches = search_fn(text)
+    var l_search_id = ++search_id;
+    killsearch = search_fn(text, function(matches) {
+        if (l_search_id == search_id) // only show latest search results.
+        {
+            killsearch = null;
 
-    // display results
-    var tbody = $('#results tbody')
-    tbody.empty();
+            console.log("search complete");
 
-    for (var i = 0; i < matches.length; ++i)
-    {
-        append_match_row(tbody, matches[i])
-    }
+            // fade out search animation
+            loader.css("opacity", '0');
+
+            // display results
+            var tbody = $('#results tbody')
+            tbody.empty();
+
+            for (var i = 0; i < matches.length; ++i)
+            {
+                append_match_row(tbody, matches[i])
+            }
+        }
+        else
+        {
+            console.log("search defunct");
+        }
+    })
 }
 
 function encode_escape(s)

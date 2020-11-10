@@ -4,6 +4,11 @@
     font-family: Arial;
 }
 
+/* always show scrollbar, so that search results don't shift content.*/
+body {
+  overflow-y: scroll;
+}
+
 /* Styles for wrapping the search box */
 
 .main {
@@ -75,3 +80,72 @@
   .active-pink .fa, .active-pink-2 .fa {
     color: #f48fb1;
   }
+
+/*
+
+LOADER -- credit to https://bootsnipp.com/snippets/V73xN by user "bootstrapthemes", MIT license:
+
+Copyright (c) 2013 Bootsnipp.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*/
+
+.loader{
+  width: 100px;
+  height: 80px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+
+#loader-6{
+  top: 30px;
+  left: 25px;
+  transition: opacity 0.4s;
+}
+
+#loader-6 span{
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background-color: #3498db;
+}
+
+#loader-6 span:nth-child(1){
+  animation: grow 1s ease-in-out infinite;
+}
+
+#loader-6 span:nth-child(2){
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+#loader-6 span:nth-child(3){
+  animation: grow 1s ease-in-out 0.30s infinite;
+}
+
+#loader-6 span:nth-child(4){
+  animation: grow 1s ease-in-out 0.45s infinite;
+}
+
+@keyframes grow{
+  0%, 100%{
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  50%{
+    -webkit-transform: scaleY(1.8);
+    -ms-transform: scaleY(1.8);
+    -o-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}

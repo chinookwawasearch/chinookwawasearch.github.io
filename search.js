@@ -253,6 +253,10 @@ function dist_strings_h(m, a, b, i, j) {
 }
 
 function tokenize(s) {
+
+    // already tokenized, presumably.
+    if (typeof s !== "string") return s;
+
     var out = []
     for (var i = 0; i < s.length; ++i)
     {
@@ -317,8 +321,9 @@ const fuse_gloss = new Fuse(
     }
 )
 
-function search_gloss(a) {
+function search_gloss(a, cb) {
     var matches = []
+    // TODO: fuse doesn't offer asynch search. Also it's not quite right for this task anyway...
     var results = fuse_gloss.search(a);
     for (var i = 0; i < results.length; ++i)
     {
@@ -335,59 +340,105 @@ function search_gloss(a) {
         }
     }
 
-    return matches;
+    cb(matches);
 }
 
-function search(a) {
-    var matches = []
-    var mindex = 0
-    for (var i = 0; i < dictionary.length; ++i)
+function search_tick(acc)
+{
+    if (acc.abort)
     {
-        entry = dictionary[i]
+        console.log("search aborted.")
+        return;
+    }
+    for (const iend = acc.i + acc.chunksize; acc.i < dictionary.length && acc.i < iend; ++acc.i)
+    {
+        const entry = dictionary[acc.i]
         var d = 1;
+
+        // get best match of available options.
         for (var j = 0; j < entry["cw"].length; ++j)
         {
-            // get best match of available options.
             compare = entry["cw"][j]["value"]
-            var _d = dissimilarity_strings(a, compare);
+            var _d = dissimilarity_strings(acc.tokenized, compare);
             if (_d < d) d = _d;
         }
-        if (d < 0.28) mindex++;
-        matches.push(
+
+        // push best match if it passes the threshold
+        if (d < 0.305) acc.mindex++;
+        acc.matches.push(
             {
-                entry_idx: i,
-                entry: dictionary[i],
+                entry_idx: acc.i,
+                entry: dictionary[acc.i],
                 dissimilarity: d
             }
         );
     }
+    if (acc.i < dictionary.length)
+    {
+        // continue next tick
+        setTimeout(
+            function() {search_tick(acc);},
+            0
+        );
+    }
+    else
+    {
+        // complete.
+        acc.matches.sort(function(a, b) {
+            return a.dissimilarity - b.dissimilarity;
+        })
 
-    matches.sort(function(a, b) {
-        return a.dissimilarity - b.dissimilarity;
-    })
-
-    return matches.slice(0, Math.min(15, mindex))
+        acc.cb(acc.matches.slice(0, Math.min(15, acc.mindex)))
+    }
 }
 
-function search_both(a)
+function search(a, cb) {
+    tokenized = tokenize(a);
+    chunksize = Math.floor(Math.max(10, 250 / Math.max(1, tokenized.length)));
+
+    var accumulator = {
+        term: a,
+        tokenized: tokenized,
+        matches: [],
+        mindex: 0,
+        i: 0,
+        // number of entries to process per tick
+        chunksize: chunksize,
+        cb: cb,
+        abort: false
+    }
+
+    search_tick(accumulator);
+
+    return function()
+    {
+        accumulator.abort = true;
+    }
+}
+
+function search_both(a, cb)
 {
     // combine both results
-    var matches = search(a)
-    matches.push.apply(matches, search_gloss(a))
+    return search(a, function(matches)
+    {
+        search_gloss(a, function(_matches) {
+            matches.push.apply(matches, _matches);
 
-    // sort by match quality
-    matches.sort(function(a, b) {
-        return a.dissimilarity - b.dissimilarity;
+            // sort by match quality
+            matches.sort(function(a, b) {
+                return a.dissimilarity - b.dissimilarity;
+            })
+
+            // remove duplicate
+            matches.filter(function(item, pos) {
+                return matches.findIndex(function(uitem) {
+                    return item.entry == uitem.entry
+                }) == pos;
+            })
+
+            cb(matches)
+        })
     })
-
-    // remove duplicate
-    matches.filter(function(item, pos) {
-        return matches.findIndex(function(uitem) {
-            return item.entry == uitem.entry
-        }) == pos;
-    })
-
-    return matches
 }
 
 // patch up the partially-defined distance metric <3 <3 :) :3 <3
