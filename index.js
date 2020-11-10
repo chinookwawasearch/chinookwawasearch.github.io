@@ -192,7 +192,9 @@ function append_match_row(tbody, match)
 }
 
 var search_id = 0;
+var subheader_id = 0;
 var killsearch = null;
+var prev_search_direction = null
 
 function do_search()
 {
@@ -209,24 +211,40 @@ function do_search()
     if (search_direction == "CW")
     {
         search_fn = search
-        guide_text = "a Chinook Wawa"
+        guide_text = "a <b>Chinook Wawa</b>"
     }
     else if (search_direction == "English")
     {
         search_fn = search_gloss
-        guide_text = "an English"
+        guide_text = "an <b>English</b>"
     }
     else
     {
         search_fn = search_both
-        guide_text = "a Chinook Wawa or English"
+        guide_text = "a <b>Chinook Wawa</b> or <b>English</b>"
     }
 
     // store query parameters in url.
     write_url_params();
 
     // replace guide text
-    $("#guide-text").text(guide_text);
+    if (search_direction != prev_search_direction)
+    {
+        prev_search_direction = search_direction
+        $("#subheader").css("opacity", '0')
+        l_subheader_id = ++subheader_id;
+        setTimeout(
+            function() {
+                // only most recently queued command takes priority.
+                if (l_subheader_id == subheader_id)
+                {
+                    $("#subheader").css("opacity", "1")
+                    $("#guide-text").html(guide_text);
+                }
+            },
+            subheader_id == 1 ? 0 : 250
+        )
+    }
 
     // validate
     if (text.length == 0) return;
@@ -269,12 +287,12 @@ function do_search()
 
 function encode_escape(s)
 {
-    return s.replace(/\./g,"..").replace(/&/g, ".+");
+    return encodeURIComponent(s);
 }
 
 function decode_escape(s)
 {
-    return s.replace(/\.+/g, "&").replace(/\.\./g,".");
+    return decodeURIComponent(s);
 }
 
 function write_url_params()

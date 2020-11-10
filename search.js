@@ -18,10 +18,11 @@ const transitions = [
     [new Set("aeijyə"), .5, .5],
 
     // fricatives
-    [new Set(["tl", "kl", "ɬ"]), .05],
+    [new Set(["tl", "kl", "ɬ"]), .02],
+    [new Set(["tl", "kl", "ɬ"]), .08],
     [new Set(["tz", "ts"]), .05],
     [new Set(["s", "z", "ss"]), .05],
-    [new Set(["s", "z", "ss", "sh", "ts", "tz", "c"]), .3],
+    [new Set(["s", "z", "ss", "sh", "ts", "tz", "c"]), .6],
 
     // for simps who can't type the lateral fricative,
     // and to soften the transition to some older victorian-era spelling styles e.g. hl, cl
@@ -51,12 +52,14 @@ const transitions = [
 
     // r/l
     [new Set("r"), 0, 0.8], // r can appear/disappear in orthographies quite easily...
+    [new Set(["l", "ll"]), .1],
     [new Set(["r", "l", "ll"]), .2],
 
     // glottal
     [new Set("ʔ?'7"), .05, 0.1], // these can appear/disappear quite easily
 
     // digraph regularization (softens the blow for a missing letter in a digraph)
+    [new Set(["tl", "l", "kl"]), .8],
     [new Set(["ts", "t"]), .3],
     [new Set(["gh", "g"]), .3],
     [new Set(["kh", "s"]), .2],
@@ -322,25 +325,28 @@ const fuse_gloss = new Fuse(
 )
 
 function search_gloss(a, cb) {
-    var matches = []
-    // TODO: fuse doesn't offer asynch search. Also it's not quite right for this task anyway...
-    var results = fuse_gloss.search(a);
-    for (var i = 0; i < results.length; ++i)
-    {
-        var result = results[i]
-        if (result.score < 0.3)
-        {
-            matches.push(
-                {
-                    entry: result.item,
-                    entry_idx: result.refIndex,
-                    dissimilarity: result.score
-                }
-            )
-        }
-    }
 
-    cb(matches);
+    setTimeout(function() {
+        var matches = []
+        // TODO: fuse doesn't offer asynch search. Also it's not quite right for this task anyway...
+        var results = fuse_gloss.search(a);
+        for (var i = 0; i < results.length; ++i)
+        {
+            var result = results[i]
+            if (result.score < 0.3)
+            {
+                matches.push(
+                    {
+                        entry: result.item,
+                        entry_idx: result.refIndex,
+                        dissimilarity: result.score
+                    }
+                )
+            }
+        }
+
+        cb(matches);
+    }, 25);
 }
 
 function search_tick(acc)

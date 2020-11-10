@@ -9,6 +9,11 @@ body {
   overflow-y: scroll;
 }
 
+.subheader {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
 /* Styles for wrapping the search box */
 
 .main {
@@ -108,7 +113,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #loader-6{
   top: 30px;
   left: 25px;
-  transition: opacity 0.4s;
+  /* in-out easing opacity transition */
+  transition: opacity 0.3s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 #loader-6 span{
