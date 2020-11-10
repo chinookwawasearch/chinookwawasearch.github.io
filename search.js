@@ -18,8 +18,8 @@ const transitions = [
     [new Set("aeijyə"), .5, .5],
 
     // fricatives
-    [new Set(["tl", "kl", "ɬ"]), .02],
-    [new Set(["tl", "kl", "ɬ"]), .08],
+    [new Set(["tl", "ɬ"]), .02],
+    [new Set(["kl", "ɬ"]), .08],
     [new Set(["tz", "ts"]), .05],
     [new Set(["s", "z", "ss"]), .05],
     [new Set(["s", "z", "ss", "sh", "ts", "tz", "c"]), .6],
@@ -60,6 +60,8 @@ const transitions = [
 
     // digraph regularization (softens the blow for a missing letter in a digraph)
     [new Set(["tl", "l", "kl"]), .8],
+    [new Set(["tl", "t"]), .5],
+    [new Set(["kl", "k"]), .5],
     [new Set(["ts", "t"]), .3],
     [new Set(["gh", "g"]), .3],
     [new Set(["kh", "s"]), .2],

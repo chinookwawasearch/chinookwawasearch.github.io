@@ -22,6 +22,7 @@
   }
 
   latinize.characters = {
+    'ḳ': 'k',
     'Á': 'A',
     'Ă': 'A',
     'Ắ': 'A',
