@@ -68,6 +68,7 @@ const transitions = [
     [new Set(["gh", "g"]), .3],
     [new Set(["kh", "s"]), .2],
     [new Set(["o", "oo"]), .3],
+    [new Set(["t"]), 0, 0.7], // this helps with tɬ <-> kl 
 
     // aspiration
     [new Set("Χxχ"), 0], // these other letters sometimes used for x.
