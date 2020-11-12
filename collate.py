@@ -7,7 +7,7 @@ dictionary = []
 
 def add_dict_entry(**kwargs):
     gloss = [s.strip() for s in kwargs["gloss"]]
-    cw = kwargs["cw"]
+    cw = [w.strip() for w in kwargs["cw"]]
     entry = {
         "gloss": gloss,
         "fuse-gloss": ",    ".join(gloss),
@@ -153,6 +153,59 @@ for path in ["sources/qw_simp.json", "sources/qw_comp.json"]:
                 tags=tags,
                 itags=itags # not currently used
             )
+
+# LJ
+extract_entries = re.compile(
+    "^([^>›»]*)([>›»]((([^,<‹«])*,)*([^<‹«]*))[<‹«])?$"
+)
+extract_brace = re.compile(
+    "\{([^\}]*)\}"
+)
+extract_square = re.compile(
+    "\[([^\}]*)\]"
+)
+with open("sources/lj.json", "r") as f:
+    source = json.load(f)
+    for entry in source:
+
+        # extract cw
+        cwm = extract_entries.match(entry["cw"])
+        if cwm is None:
+            continue
+        cw_entries = [cwm.group(1)] + (cwm.group(3).split(",") if cwm.group(3) is not None else [])
+        if len(cw_entries) == 0:
+            continue
+        asterisk = False
+        if cw_entries[0].startswith("*"):
+            cw_entries[0 = cw_entries[0][1:]
+            asterisk = True
+        
+        # not sure what asterisk means, so we'll ignore these entries for now.
+        if asterisk:
+            continue
+            
+        # extract gloss
+        gloss = entry["gloss"].split(",")
+        
+        # notes
+        notes = entry["notes"]
+        while len(notes.strip() > 0):
+            notes = notes.strip()
+            # attempt to extract a note.
+            mbrace = extract_brace.match(notes)
+            msquare = extract_square.match(notes)
+            if mbrace:
+                pass
+            elif msquare:
+                pass
+            else:
+                # can't match.
+                break
+
+        
+
+
+
 
 hobbyists = ["qw", "lusentoj", "qalis", "q́alis", "OrthodoxFox"]
 

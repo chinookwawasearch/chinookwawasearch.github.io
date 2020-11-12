@@ -13,20 +13,22 @@ const transitions = [
     [new Set("iy"), .1, .5],
     [new Set("iyj"), .4], // (squints nervously)
     [new Set("eəi"), .3, .4],
-    [new Set("eəu"), .4, .4],
-    [new Set("eəa"), .4, .4],
+    [new Set("eəua"), .4, .4],
     [new Set("aeijyə"), .5, .5],
 
+    // this is rare, but happens.
+    [new Set(["m", "n"]), .65],
+
     // fricatives
-    [new Set(["tl", "ɬ"]), .02],
-    [new Set(["kl", "ɬ"]), .08],
+    [new Set(["tl", "ɬ"]), .03],
+    [new Set(["kl", "ɬ"]), .04],
     [new Set(["tz", "ts"]), .05],
     [new Set(["s", "z", "ss"]), .05],
     [new Set(["s", "z", "ss", "sh", "ts", "tz", "c"]), .6],
 
     // for simps who can't type the lateral fricative,
     // and to soften the transition to some older victorian-era spelling styles e.g. hl, cl
-    [new Set("ɬl"), 0.37],
+    [new Set("ɬl"), 0.44],
 
     // plosives
     [new Set(["p", "pʰ"]), .05],
@@ -60,8 +62,8 @@ const transitions = [
 
     // digraph regularization (softens the blow for a missing letter in a digraph)
     [new Set(["tl", "l", "kl"]), .8],
-    [new Set(["tl", "t"]), .5],
-    [new Set(["kl", "k"]), .5],
+    [new Set(["tl", "t"]), .6],
+    [new Set(["kl", "k"]), .6],
     [new Set(["ts", "t"]), .3],
     [new Set(["gh", "g"]), .3],
     [new Set(["kh", "s"]), .2],
@@ -70,10 +72,10 @@ const transitions = [
     // aspiration
     [new Set("Χxχ"), 0], // these other letters sometimes used for x.
     [new Set(["x", "h", "kh", "gh", "ʰ"]), .2, 0.75], // these can disappear occasionally
-    [new Set(["x", "h", "kh", "gh", "k"]), 0.68], // 'k' for 'x' is an archaic thing [stik-swakik]
+    [new Set(["x", "h", "kh", "gh", "k"]), 0.62], // 'k' for 'x' is an archaic thing [stik-swakik]
 
     // any vowels
-    [vowels, 0.68, 0.75]
+    [vowels, 0.62, 0.75]
 
     // [everything else, 1, 1]
 ]
@@ -81,6 +83,13 @@ const transitions = [
 transition_matrix = []
 transition_matrix_idx = {
     '': 0
+}
+
+function replace_transition(a, b, v) {
+    idx_a = transition_matrix_idx[a];
+    idx_b = transition_matrix_idx[b];
+    transition_matrix[idx_a][idx_b] = v;
+    transition_matrix[idx_b][idx_a] = v;
 }
 
 function regularize_transitions() {
@@ -133,6 +142,12 @@ function regularize_transitions() {
             }
         }
     }
+
+    // make some adjustments that break the distance metric, but are sensible anyway.
+    replace_transition("kl", "t", 1);
+    replace_transition("tl", "k", 1);
+    replace_transition("tl", "l", 0.9);
+    replace_transition("kl", "l", 0.9);
 }
 
 const digraphs = new Set([
@@ -451,6 +466,8 @@ function search_both(a, cb)
 
 // patch up the partially-defined distance metric <3 <3 :) :3 <3
 regularize_transitions();
+
+console.log(distance_char_exp("kl", ""))
 
 // precompute dissimilarities
 /*
