@@ -26,10 +26,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
-      # use python
-      - with:
-          python-version: '3.x'
         
       # Runs a set of commands using the runners shell
       - name: Set secret
@@ -40,11 +36,11 @@ jobs:
         
       - name: Retrieve sources
         if: ${{ success() }}
-        run: python retrieve.py
+        run: python3 retrieve.py
       
       - name: Collate sources
         if: ${{ success() }}
-        run: python collate.py
+        run: python3 collate.py
       
       - name: Publish
         if: ${{ success() }}
