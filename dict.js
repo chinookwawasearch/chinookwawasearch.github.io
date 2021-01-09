@@ -49231,6 +49231,11 @@ const dictionary = [
         "href": "https://chinookjargon.com/2019/12/16/lbdb-prose-not-lyrics-part-2/",
         "tag": "cj"
       },
+      {
+        "display": "(other)",
+        "name": "(web)",
+        "href": "http://lushootseeddictionary.appspot.com/#!EngLutCellBrowser"
+      },
       "qw"
     ],
     "origin": {
@@ -49727,6 +49732,11 @@ const dictionary = [
       }
     ],
     "sources": [
+      {
+        "display": "(other)",
+        "name": "(web)",
+        "href": "http://lushootseeddictionary.appspot.com/#!EngLutCellBrowser"
+      },
       "qw"
     ],
     "origin": {
@@ -49734,10 +49744,7 @@ const dictionary = [
       "language-full": "Salishan/Lushootseed",
       "word": "s-t\u00fab\u0259l\u0259",
       "unknown": false
-    },
-    "tags": [
-      "Uncited"
-    ]
+    }
   },
   {
     "gloss": [
