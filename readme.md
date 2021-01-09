@@ -14,3 +14,13 @@ the API keys and sources for the dictionary, and it is not provided in the repos
   python3 collate.py   # assembles dictionary
   git push origin main # publishes the site (if hosted on github)
 ```
+
+## Host Locally
+
+This directory is servable as a static site. For example, you can serve with python's SimpleHTTPServer module:
+
+```bash
+  python3 -m http.server 8000
+```
+
+You can then connect to [localhost:8000](http://localhost:8000) to test the site.

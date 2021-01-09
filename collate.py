@@ -7,7 +7,7 @@ dictionary = []
 
 def add_dict_entry(**kwargs):
     gloss = [s.strip() for s in kwargs["gloss"]]
-    cw = [w.strip() for w in kwargs["cw"]]
+    cw = kwargs["cw"]
     entry = {
         "gloss": gloss,
         "fuse-gloss": ",    ".join(gloss),
@@ -74,6 +74,8 @@ for path in ["sources/qw_simp.json", "sources/qw_comp.json"]:
             tags = []
             itags = []
             sources = []
+
+            assert isinstance(entry['gloss'], str)
 
             # origin
             origin = {
@@ -155,6 +157,7 @@ for path in ["sources/qw_simp.json", "sources/qw_comp.json"]:
             )
 
 # LJ
+"""
 extract_entries = re.compile(
     "^([^>›»]*)([>›»]((([^,<‹«])*,)*([^<‹«]*))[<‹«])?$"
 )
@@ -177,7 +180,7 @@ with open("sources/lj.json", "r") as f:
             continue
         asterisk = False
         if cw_entries[0].startswith("*"):
-            cw_entries[0 = cw_entries[0][1:]
+            cw_entries[0] = cw_entries[0][1:]
             asterisk = True
         
         # not sure what asterisk means, so we'll ignore these entries for now.
@@ -201,10 +204,7 @@ with open("sources/lj.json", "r") as f:
             else:
                 # can't match.
                 break
-
-        
-
-
+"""
 
 
 hobbyists = ["qw", "lusentoj", "qalis", "q́alis", "OrthodoxFox"]
@@ -223,4 +223,4 @@ for entry in dictionary:
             entry["tags"] = ["Uncited"]
 
 with open("dict.js", "w") as f:
-    f.write("const dictionary = " + json.dumps(dictionary))
+    f.write("const dictionary = " + json.dumps(dictionary, indent = 2))

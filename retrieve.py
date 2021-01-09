@@ -32,7 +32,9 @@ def get_service():
         return g_service
     else:
         # https://googleapis.github.io/google-api-python-client/docs/epy/index.html
+        print("building Google Sheets API service...")
         g_service = build('sheets', 'v4', developerKey=secret["qw"]["key"])
+        print("done.")
         return g_service
 
 
@@ -43,10 +45,13 @@ def qw_retrieve():
     src_words="'Simple Words'"
     src_compounds="'Compounds'"
 
+    print("retrieving sheet data (q'alis)...")
     result = sheet.get(spreadsheetId=secret["qw"]["sheet-id"], ranges=[src_words, src_compounds], includeGridData=True).execute()
+    print("complete.")
     rows = [
         result["sheets"][i]["data"][0]["rowData"] for i in range(2)
     ]
+    print("done.")
 
     simp = []
     comp = []
@@ -102,6 +107,7 @@ def qw_retrieve():
         json.dump(comp, f)
 
 def qw_retrieve_cited():
+    print("retrieving Q'alis' citation data...")
     re_cj_title = re.compile('<meta property="og:title"\s*content="(.*)"\s*/>')
     re_cj_date =  re.compile('<meta property="article:published_time"\s*content="(.*)T.*"\s*/>')
     dictmap = dict()
@@ -129,7 +135,6 @@ def qw_retrieve_cited():
                                 obj = "Woodcock"
                             elif source.startswith("https://chinookjargon.com"):
                                 # access
-                                print("accessing", source)
                                 contents = urllib.request.urlopen(source).read().decode("utf-8") 
                                 title = re_cj_title.search(contents)
                                 date = re_cj_date.search(contents)
@@ -156,9 +161,9 @@ def qw_retrieve_cited():
                                     "name": "(web)",
                                     "href": source
                                 }
-                                print(source)
                             if obj != None:
                                 dictmap[source] = obj
+    print("done.")
     with open("sources/qw_cited_map.json", "w") as f:
         json.dump(dictmap, f)
 
@@ -185,9 +190,9 @@ def lj_retrieve():
     with open("sources/lj.json", "w") as f:
         json.dump(words, f)
 
-# uncomment this to retrieve from QW
-# qw_retrieve()
-# qw_retrieve_cited()
+# comment this to retrieve from QW
+qw_retrieve()
+#qw_retrieve_cited()
 
 # uncomment this to retrieve from lusentoj
 #lj_retrieve()
