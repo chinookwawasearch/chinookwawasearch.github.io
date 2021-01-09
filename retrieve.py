@@ -31,26 +31,8 @@ def get_service():
     if g_service is not None:
         return g_service
     else:
-        with open("sources/qw_credentials.json", "w") as f:
-            json.dump(secret["qw"]["credentials"], f)
-        # The file token.pickle stores the user's access and refresh tokens, and is
-        # created automatically when the authorization flow completes for the first
-        # time.
-        creds = None
-        if os.path.exists('sources/qw-token.pickle'):
-            with open('sources/qw-token.pickle', 'rb') as token:
-                creds = pickle.load(token)
-        # If there are no (valid) credentials available, let the user log in.
-        if not creds or not creds.valid:
-            if creds and creds.expired and creds.refresh_token:
-                creds.refresh(Request())
-            else:
-                flow = InstalledAppFlow.from_client_secrets_file('sources/qw_credentials.json', SCOPES)
-                creds = flow.run_local_server(port=0)
-            # Save the credentials for the next run
-            with open('sources/qw-token.pickle', 'wb') as token:
-                pickle.dump(creds, token)
-        g_service = build('sheets', 'v4', credentials=creds)
+        # https://googleapis.github.io/google-api-python-client/docs/epy/index.html
+        g_service = build('sheets', 'v4', developerKey=secret["qw"]["key"])
         return g_service
 
 
