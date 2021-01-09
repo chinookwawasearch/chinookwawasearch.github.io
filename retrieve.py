@@ -192,7 +192,7 @@ def lj_retrieve():
 
 # comment this to retrieve from QW
 qw_retrieve()
-#qw_retrieve_cited()
+qw_retrieve_cited()
 
 # uncomment this to retrieve from lusentoj
 #lj_retrieve()
