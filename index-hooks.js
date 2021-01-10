@@ -17,8 +17,22 @@ $(function() {
     })
 })
 
+function update_date()
+{
+    $.get( "/ci.json", function( ci ) {
+        var s = "Updated"
+        if (ci.status != "success")
+        {
+            s = "Update Error "
+        }
+        $( "#date-text" ).html( `${s} <a href="${ci["action-url"]}">${ci.date}</a>` );
+    });
+}
+
 $(document).ready(function() {
     load_block = false;
+
+    update_date()
 
     if ($("#search").val() && $("#search").val().trim() != "")
     {

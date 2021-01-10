@@ -27,15 +27,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Install Python dependencies
-        run: python3 -m pip install google-api-python-client google-auth-oauthlib
+      - name: Install dependencies
+        run: |
+          python3 -m pip install google-api-python-client google-auth-oauthlib
+          sudo apt-get update
+          sudo apt-get install -y jq moreutils
         
       # Runs a set of commands using the runners shell
       - name: Set secret
         run: echo '${{ secrets.SECRETJSON }}' > secret.json
-
-      - name: Set date
-        run: date "+%Y-%M-%d %H:%M %Z" > date.txt
         
       - name: Retrieve sources
         if: ${{ success() }}
@@ -45,6 +45,19 @@ jobs:
         if: ${{ success() }}
         run: python3 collate.py
 
+      - name: Reset repo due to failure
+        if: ${{ failure() }}
+        run: |
+          git clean -f -d
+          git reset --hard
+
+      - name: Set date
+        run: |
+          echo "{}" > ci.json
+          jq ".date=\"$(date "+%Y-%M-%d %H:%M %Z")\"" ci.json | sponge ci.json
+          jq ".\"action-url\"=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/runs/$GITHUB_RUN_ID\"" ci.json | sponge ci.json
+          jq ".status=\"${{ job.status }}\"" ci.json | sponge ci.json
+
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -52,7 +65,7 @@ jobs:
           git commit -m "(Automated update)" -a
       
       - name: Publish
-        if: ${{ success() }}
+        if: ${{ !cancelled() }}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
