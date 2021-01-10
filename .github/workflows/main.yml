@@ -2,11 +2,15 @@
 
 name: CI
 
+# set timezone (for timestamps)
+env:
+  TZ: America/Vancouver
+      
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # Run the action at 17:00 every day.
   schedule:
-    - cron: "0 0,17 * * *"
+    - cron: "0 17 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -17,10 +21,6 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # set timezone (for timestamps)
-    env:
-      TZ: America/Vancouver
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
