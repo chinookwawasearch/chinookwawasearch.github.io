@@ -10,6 +10,9 @@ which can then be committed into git and pushed to github.io. However, a `secret
 the API keys and sources for the dictionary, and it is not provided in the repository.
 
 ```bash
+  # install dependencies
+  python3 -m pip install google-api-python-client google-auth-oauthlib
+  
   python3 retrieve.py  # scrapes web sources
   python3 collate.py   # assembles dictionary
   git push origin main # publishes the site (if hosted on github)
