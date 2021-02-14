@@ -46234,15 +46234,11 @@ const dictionary = [
         "orth": "qw"
       },
       {
-        "value": "se",
-        "orth": "qw"
-      },
-      {
         "value": "sayt",
         "orth": "qw"
       },
       {
-        "value": "sin",
+        "value": "sen",
         "orth": "dr"
       },
       {
