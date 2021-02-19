@@ -5405,9 +5405,10 @@ const dictionary = [
     "gloss": [
       "stars",
       "buttons",
-      "disk"
+      "disk",
+      "keyboard key"
     ],
-    "fuse-gloss": "stars,    buttons,    disk",
+    "fuse-gloss": "stars,    buttons,    disk,    keyboard key",
     "cw": [
       {
         "value": "chilchil",
@@ -5415,6 +5416,10 @@ const dictionary = [
       },
       {
         "value": "chilchil",
+        "orth": "dr"
+      },
+      {
+        "value": "tsiltsil",
         "orth": "dr"
       }
     ],
@@ -30079,10 +30084,11 @@ const dictionary = [
   },
   {
     "gloss": [
-      "(black) bear",
+      "black",
+      "black bear",
       "bear meat/pelt"
     ],
-    "fuse-gloss": "(black) bear,    bear meat/pelt",
+    "fuse-gloss": "black,    black bear,    bear meat/pelt",
     "cw": [
       {
         "value": "\u026ci\u0294il",
@@ -30103,10 +30109,15 @@ const dictionary = [
       {
         "value": "klale",
         "orth": ""
+      },
+      {
+        "value": "t'kale",
+        "orth": ""
       }
     ],
     "sources": [
       "Zenk",
+      "Hibbens",
       "qw"
     ],
     "origin": {
@@ -48463,9 +48474,10 @@ const dictionary = [
       "faded",
       "dusty",
       "ash",
-      "light-coloured"
+      "light-coloured",
+      "light blue"
     ],
-    "fuse-gloss": "faded,    dusty,    ash,    light-coloured",
+    "fuse-gloss": "faded,    dusty,    ash,    light-coloured,    light blue",
     "cw": [
       {
         "value": "spu\u0294uq",
@@ -69009,9 +69021,10 @@ const dictionary = [
       "awake",
       "elated",
       "in good humour",
-      "arrogant"
+      "arrogant",
+      "proud"
     ],
-    "fuse-gloss": "awake,    elated,    in good humour,    arrogant",
+    "fuse-gloss": "awake,    elated,    in good humour,    arrogant,    proud",
     "cw": [
       {
         "value": "sax\u0323alit\u0259mt\u0259m",
