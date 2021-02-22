@@ -6,6 +6,8 @@ import sys
 import pickle
 import urllib.request
 import re
+import wget
+
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -190,9 +192,36 @@ def lj_retrieve():
     with open("sources/lj.json", "w") as f:
         json.dump(words, f)
 
-# comment this to retrieve from QW
-qw_retrieve()
-qw_retrieve_cited()
+def snass_retrieve():
+    os.makedirs("./sources/snass/", exist_ok=True)
+    with open("./resources/data/snass_sessions.json") as f:
+        sessions = json.load(f)
+    i = 0
+    for session in sessions:
+        if session["url"] != "":
+            path="./sources/snass/snass" + str(i) + ".pdf"
+            if os.path.exists(path):
+                os.remove(path)
+            wget.download(session["url"], out=path)
+            i += 1
 
-# uncomment this to retrieve from lusentoj
-#lj_retrieve()
+
+try:
+    f = open("./retrieve.json")
+    retrievelist = json.load(f)
+except IOError:
+    retrievelist = ["qw", "qw-cited", "english", "snass"]
+finally:
+    f.close()
+
+if "english" in retrievelist:
+    if not os.path.exists("sources/words_dictionary.json"):
+        wget.download("https://github.com/dwyl/english-words/raw/master/words_dictionary.json", out="sources")
+if "qw" in retrievelist:
+    qw_retrieve()
+if "qw-cited" in retrievelist:
+    qw_retrieve_cited()
+if "lj" in retrievelist:
+    lj_retrieve()
+if "snass" in retrievelist:
+    snass_retrieve()

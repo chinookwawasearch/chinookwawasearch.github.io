@@ -1,79 +1,79 @@
-const vowels = new Set("aeuijoyə")
+const vowels = makeset("aeuijoyə")
 
 // cost to substitute any letter in a set for any other letter in the same set.
 // followed by optional cost to create a letter in the given set
 // 1 is the max.
 const transitions = [
     // spaces and dashes
-    [new Set(["-", " "]), .2, 0.4],
+    [makeset(["-", " "]), .2, 0.4],
 
     // vowels
-    [new Set(["oo"]), 0, 1], // oo is the most costly vowel to insert / least likely to be an error.
-    [new Set(["oo", "u"]), .2],
-    [new Set("iy"), .1, .5],
-    [new Set("iyj"), .4], // (squints nervously)
-    [new Set("eəi"), .3, .4],
-    [new Set("eəua"), .4, .4],
-    [new Set("aeijyə"), .5, .5],
+    [makeset(["oo"]), 0, 1], // oo is the most costly vowel to insert / least likely to be an error.
+    [makeset(["oo", "u"]), .2],
+    [makeset("iy"), .1, .5],
+    [makeset("iyj"), .4], // (squints nervously)
+    [makeset("eəi"), .3, .4],
+    [makeset("eəua"), .4, .4],
+    [makeset("aeijyə"), .5, .5],
 
     // this is rare, but happens.
-    [new Set(["m", "n"]), .65],
+    [makeset(["m", "n"]), .65],
 
     // fricatives
-    [new Set(["tl", "ɬ"]), .03],
-    [new Set(["kl", "ɬ"]), .04],
-    [new Set(["tz", "ts"]), .05],
-    [new Set(["s", "z", "ss"]), .05],
-    [new Set(["s", "z", "ss", "sh", "ts", "tz", "c"]), .6],
+    [makeset(["tl", "ɬ"]), .03],
+    [makeset(["kl", "ɬ"]), .04],
+    [makeset(["tz", "ts"]), .05],
+    [makeset(["s", "z", "ss"]), .05],
+    [makeset(["s", "z", "ss", "sh", "ts", "tz", "c"]), .6],
 
     // for simps who can't type the lateral fricative,
     // and to soften the transition to some older victorian-era spelling styles e.g. hl, cl
-    [new Set("ɬl"), 0.44],
+    [makeset("ɬl"), 0.44],
 
     // plosives
-    [new Set(["p", "pʰ"]), .05],
-    [new Set(["b", "p", "f", "v"]), .35],
+    [makeset(["p", "pʰ"]), .05],
+    [makeset(["b", "p", "f", "v"]), .35],
 
-    [new Set(["tʰ", "t"]), .05],
-    [new Set(["t", "d"]), .25],
+    [makeset(["tʰ", "t"]), .05],
+    [makeset(["t", "d"]), .25],
 
-    [new Set(["kʰ", "k", "ck"]), .05],
-    [new Set(["qʰ", "q"]), .05],
-    [new Set(["k", "q", "ck"]), .1],
-    [new Set(["k", "q", "c", "g", "ck"]), .23],
+    [makeset(["kʰ", "k", "ck"]), .05],
+    [makeset(["qʰ", "q"]), .05],
+    [makeset(["k", "q", "ck"]), .1],
+    [makeset(["k", "q", "c", "g", "ck"]), .23],
 
     // these are sometimes the same sound..?
-    [new Set(["ch", "ts"]), .35],
-    [new Set(["ch", "j", "sh", "ts", "tz"]), .7],
-    [new Set(["ch", "k"]), .55],
-    [new Set(["ch", "ck", "q"]), .76],
+    [makeset(["ch", "ts"]), .35],
+    [makeset(["ch", "j", "sh", "ts", "tz"]), .7],
+    [makeset(["ch", "k"]), .55],
+    [makeset(["ch", "ck", "q"]), .76],
 
     // wh/hw/w
-    [new Set(["hw", "wh"]), .1, 0.4],
-    [new Set(["hw", "wh", "w"]), .5, 0.3],
+    [makeset(["hw", "wh"]), .1, 0.4],
+    [makeset(["hw", "wh", "w"]), .5, 0.3],
 
     // r/l
-    [new Set("r"), 0, 0.8], // r can appear/disappear in orthographies quite easily...
-    [new Set(["l", "ll"]), .1],
-    [new Set(["r", "l", "ll"]), .2],
+    [makeset("r"), 0, 0.8], // r can appear/disappear in orthographies quite easily...
+    [makeset(["l", "ll"]), .1],
+    [makeset(["r", "l", "ll"]), .2],
 
     // glottal
-    [new Set("ʔ?'7"), .05, 0.1], // these can appear/disappear quite easily
+    [makeset("ʔ?'7"), .05, 0.1], // these can appear/disappear quite easily
 
     // digraph regularization (softens the blow for a missing letter in a digraph)
-    [new Set(["tl", "l", "kl"]), .8],
-    [new Set(["tl", "t"]), .6],
-    [new Set(["kl", "k"]), .6],
-    [new Set(["ts", "t"]), .3],
-    [new Set(["gh", "g"]), .3],
-    [new Set(["kh", "s"]), .2],
-    [new Set(["o", "oo"]), .3],
-    [new Set(["t"]), 0, 0.7], // this helps with tɬ <-> kl 
+    [makeset(["tl", "l", "kl"]), .8],
+    [makeset(["tl", "t"]), .6],
+    [makeset(["kl", "k"]), .6],
+    [makeset(["ts", "t"]), .3],
+    [makeset(["gh", "g"]), .3],
+    [makeset(["kh", "s"]), .2],
+    [makeset(["o", "oo"]), .3],
+    [makeset(["t"]), 0, 0.7], // this helps with tɬ <-> kl 
 
     // aspiration
-    [new Set("Χxχ"), 0], // these other letters sometimes used for x.
-    [new Set(["x", "h", "kh", "gh", "ʰ"]), .2, 0.75], // these can disappear occasionally
-    [new Set(["x", "h", "kh", "gh", "k"]), 0.62], // 'k' for 'x' is an archaic thing [stik-swakik]
+    [makeset("Χxχ"), 0], // these other letters sometimes used for x.
+    [makeset(["x", "h", "kh", "gh", "ʰ"]), .2, 0.75], // these can disappear occasionally
+    [makeset(["x", "h", "kh", "gh", "k"]), 0.62], // 'k' for 'x' is an archaic thing [stik-swakik]
 
     // any vowels
     [vowels, 0.62, 0.75]
@@ -89,6 +89,7 @@ transition_matrix_idx = {
 function replace_transition(a, b, v) {
     idx_a = transition_matrix_idx[a];
     idx_b = transition_matrix_idx[b];
+    print(idx_a)
     transition_matrix[idx_a][idx_b] = v;
     transition_matrix[idx_b][idx_a] = v;
 }
@@ -99,7 +100,7 @@ function regularize_transitions() {
     // (constructs the nxn transition_matrix)
 
     // accumulate all letters / digraphs
-    var _letters = new Set()
+    var _letters = makeset()
     for (var i = 0; i < transitions.length; ++i)
     {
         var s = transitions[i][0];
@@ -151,7 +152,7 @@ function regularize_transitions() {
     replace_transition("kl", "l", 0.9);
 }
 
-const digraphs = new Set([
+const digraphs = makeset([
     "ss",
     "ll",
     "ck",
@@ -172,16 +173,22 @@ const digraphs = new Set([
     "oo"
 ])
 
+function tonull(a) {
+    return (a == none) ? null : a;
+}
+
 function distance_char_exp(a, b) {
+    a = tonull(a)
+    b = tonull(b)
     // faster version of distance_char, but requires transition_matrix to be initialized.
     if (a == b) return 0;
     if (a != null)
     {
-        a = latinize(a.normalize()).toLowerCase();
+        a = latinize(normalize(a)).toLowerCase();
     }
     if (b != null)
     {
-        b = latinize(b.normalize()).toLowerCase();
+        b = latinize(normalize(b)).toLowerCase();
     }
     if (a == b) return 0.03; // what's this? just a penalty for requiring that normalization... very tiny..... pretty much only matters for exact matches. (looking at you, skokúm)
 
@@ -200,14 +207,16 @@ function distance_char_exp(a, b) {
 }
 
 function distance_char(a, b) {
+    a = tonull(a)
+    b = tonull(b)
     if (a == b) return 0;
     if (a != null)
     {
-        a = latinize(a.normalize()).toLowerCase();
+        a = latinize(normalize(a)).toLowerCase();
     }
     if (b != null)
     {
-        b = latinize(b.normalize()).toLowerCase();
+        b = latinize(normalize(b)).toLowerCase();
     }
     if (a == null || b == null) {
         if (a == null) return distance_char(b, a)
@@ -332,16 +341,6 @@ function printd(a, b) {
     var d = dist_strings(a, b);
 }
 
-// fuse search
-const fuse_gloss = new Fuse(
-    dictionary,
-    {
-        includeScore: true,
-        ignoreLocation: true,
-        keys: ['fuse-gloss']
-    }
-)
-
 function search_gloss(a, cb) {
 
     setTimeout(function() {
@@ -372,9 +371,10 @@ function search_tick(acc)
     if (acc.abort)
     {
         console.log("search aborted.")
-        return;
+        return true;
     }
-    for (const iend = acc.i + acc.chunksize; acc.i < dictionary.length && acc.i < iend; ++acc.i)
+    const iend = (acc.sync) ? dictionary.length : acc.i + acc.chunksize;
+    for (; acc.i < dictionary.length && acc.i < iend; ++(acc.i))
     {
         const entry = dictionary[acc.i]
         var d = 1;
@@ -397,13 +397,14 @@ function search_tick(acc)
             }
         );
     }
-    if (acc.i < dictionary.length)
+    if (acc.i < dictionary.length && !acc.sync)
     {
         // continue next tick
         setTimeout(
             function() {search_tick(acc);},
             0
         );
+        return false
     }
     else
     {
@@ -413,10 +414,11 @@ function search_tick(acc)
         })
 
         acc.cb(acc.matches.slice(0, Math.min(15, acc.mindex)))
+        return true
     }
 }
 
-function search(a, cb) {
+function search(a, cb, sync) {
     tokenized = tokenize(a);
     chunksize = Math.floor(Math.max(10, 250 / Math.max(1, tokenized.length)));
 
@@ -429,6 +431,7 @@ function search(a, cb) {
         // number of entries to process per tick
         chunksize: chunksize,
         cb: cb,
+        sync: sync | false,
         abort: false
     }
 
@@ -438,6 +441,16 @@ function search(a, cb) {
     {
         accumulator.abort = true;
     }
+}
+
+function search_sync(a)
+{
+    rv = [null];
+    search(a, function (results) {
+        rv[0] = results
+    }, true)
+
+    return rv[0]
 }
 
 function search_both(a, cb)
@@ -467,8 +480,6 @@ function search_both(a, cb)
 
 // patch up the partially-defined distance metric <3 <3 :) :3 <3
 regularize_transitions();
-
-console.log(distance_char_exp("kl", ""))
 
 // precompute dissimilarities
 /*

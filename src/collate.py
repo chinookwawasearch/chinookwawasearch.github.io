@@ -2,6 +2,9 @@
 
 import json
 import re
+import pdfplumber
+import pyduktape as pyduktape
+import unicodedata
 
 dictionary = []
 
@@ -62,6 +65,7 @@ sourcemap = {
     "(lustentoj)": "lusentoj",
     "qw": "qw"
 }
+
 with open("sources/qw_cited_map.json") as f:
     qw_cited_map = json.load(f)
 qw_word_language_extract = re.compile("^([^\{\?]*)(\??\s*\{(.*)\})?.*?(\?)?$")
@@ -222,5 +226,102 @@ for entry in dictionary:
         else:
             entry["tags"] = ["Uncited"]
 
-with open("dict.js", "w") as f:
+usages = []
+
+valid_pdf_chars = "”–“ʔəʷšĆŦƏɬꞭ"
+is_footnote = re.compile(
+    "^\s*[0-9]+\s*[^\s\.]"
+)
+
+wordre_nonum = re.compile("((?=[^0-9])[\w'])+")
+wordre = re.compile("[\w']+")
+renums = re.compile("((?=[^0-9])[\w;\.,\'\?\!\":\)\(\[\]\}\{])[0-9]+")
+
+js = pyduktape.DuktapeContext()
+
+class jiter:
+    def __init__(self, l):
+        self.list = l
+        self.index = -1
+        self.next()
+    
+    def next(self):
+        self.index += 1
+        if self.index >= len(self.list):
+            self.value = None
+        else:
+            self.value = self.list[self.index]
+        return self
+
+class jset:
+    def __init__(self, l=[]):
+        self.set = set(l)
+    
+    def values(self):
+        return jiter(list(self.set))
+
+    def add(self, v):
+        self.set.add(v)
+    
+    def has(self, v):
+        return v in self.set
+
+js.set_globals(dictionary=dictionary)
+js.set_globals(none=None)
+js.set_globals(makeset=jset)
+js.set_globals(normalize=lambda s: unicodedata.normalize("NFC", s))
+js.set_globals(print=print)
+for src in ["latinize.js", "dict-key.js", "search.js"]:
+    print(src)
+    js.eval_js_file("resources/js/" + src)
+
+search = js.eval_js("search_sync")
+
+with open("sources/words_dictionary.json") as f:
+    english_dict = json.load(f)
+    ignores = ["pos", "hous", "haws", "okok", "injun", "stik", "kopa", "alta", "wel", "spos"]
+    for ignore in ignores:
+        if ignore in english_dict:
+            english_dict.pop(ignore)
+
+def extract_words(s, nonum=False):
+    return list((wordre_nonum if nonum else wordre).findall(s))
+
+def is_wawa_fuzzy(words):
+    words = list(filter(lambda s:
+        s not in ["man", "chinook", "jim", "sun"], words
+    ))
+    nonenglish = list(filter(
+        lambda s: s.lower() not in english_dict,
+        words
+    ))
+    return len(nonenglish) > 0.5 * len(words)
+
+with open("resources/data/snass_sessions.json") as f:
+    sessions = json.load(f)
+    for i, session in enumerate(sessions):
+        if session["url"] == "":
+            continue
+        with pdfplumber.open("sources/snass/snass" + str(i) + ".pdf") as pdf:
+            for page in pdf.pages:
+                text = page.extract_text()
+                print ("---------------------", page.page_number, "------------------")
+                text = "".join(filter(lambda c: ord(c) < 255 or c in valid_pdf_chars, text))
+                for line in text.splitlines():
+                    if is_footnote.match(line):
+                        # process no further lines on footnote.
+                        break
+                    if line.strip().lower() == "spelling rules:":
+                        break
+                    if line.strip().lower().startswith("consonants:"):
+                        break
+                    line = re.sub(renums, "\\1", line.replace("“", "\"").replace("”","\""))
+                    words = extract_words(line)
+                    if is_wawa_fuzzy(words):
+                        for word in words:
+                            print(search(word))
+                    
+
+with open("resources/js/dict.js", "w") as f:
+    print("writing dictionary file:", len(dictionary), "entries")
     f.write("const dictionary = " + json.dumps(dictionary, indent = 2))
