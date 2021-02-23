@@ -50195,9 +50195,10 @@ const dictionary = [
   {
     "gloss": [
       "white/caucasian person",
-      "settler"
+      "settler",
+      "colonist"
     ],
-    "fuse-gloss": "white/caucasian person,    settler",
+    "fuse-gloss": "white/caucasian person,    settler,    colonist",
     "cw": [
       {
         "value": "suyapi",
@@ -50218,7 +50219,13 @@ const dictionary = [
     ],
     "tags": [
       "Limited"
-    ]
+    ],
+    "origin": {
+      "language": "Okanagan",
+      "language-full": "Salishan/Okanagan",
+      "word": "suya\u0301pix",
+      "unknown": false
+    }
   },
   {
     "gloss": [
