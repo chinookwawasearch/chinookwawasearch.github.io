@@ -1,10 +1,16 @@
 var gid_it = 0
 
 // entries must be at least this rude to be marked with "caution"
-var caution_tag = 2;
+const caution_tag_default = 2;
+var caution_tag = caution_tag_default;
 
 // entries must be at least this rude to be hidden by default
-var caution_hide = 3;
+const caution_hide_default = 3;
+const caution_hide_max = 5;
+var caution_hide = caution_hide_default;
+
+// caution_hide must be at least this in order to show rudegloss entries
+const caution_show_rudegloss = 4;
 
 // show rude entries in gloss
 var show_rudegloss = false;
@@ -57,7 +63,7 @@ function append_match_row(tbody, match)
     var gloss = entry["gloss"]
     if (show_rudegloss && entry["rudegloss"])
     {
-        gloss += entry["rudegloss"]
+        gloss.push.apply(gloss, entry["rudegloss"])
     }
     var en = gloss.join(", ")
     var orths = entry["cw"]
@@ -343,7 +349,13 @@ function write_url_params()
 {
     let term = encode_escape($("#search").val());
     let dir = encode_escape(["cwen", "cw", "en"][$('#search-direction').val()]);
-    location.hash = `#t=${term}&dir=${dir}`;
+    let showparam = ""
+    if (caution_hide != caution_hide_default)
+    {
+        showparam = `&show=${caution_hide}`
+    }
+
+    location.hash = `#t=${term}&dir=${dir}${showparam}`;
 }
 
 function read_url_params()
@@ -352,9 +364,27 @@ function read_url_params()
     let hashv = location.hash;
     if (hashv && hashv.length > 1)
     {
-        let m = hashv.match(/^#?t=([^&]*)&dir=([^&]+)$/)
+        let m = hashv.match(/^#?t=([^&]*)&dir=([^&]+)(&show=[0-9]+)?$/)
         if (m && m.length >= 3)
         {
+            // parse miscellaneous flags
+            for (var i = 3; i < m.length; ++i)
+            {
+                let s = m[i];
+                if (s === undefined) continue;
+                let eql = s.indexOf('=');
+                if (eql < 0) continue;
+                let key = s.substring(1, eql);
+                let val = s.substring(eql + 1)
+                console.log(key, '=', val);
+                if (key == "show")
+                {
+                    caution_hide = parseInt(val);
+                    show_rudegloss = caution_hide > caution_show_rudegloss;
+                    $('#show-rude').prop("checked", !show_rudegloss);
+                }
+            }
+
             // set search term
             let term = decode_escape(m[1])
             $("#search").val(term)
@@ -365,7 +395,6 @@ function read_url_params()
             if (dirv >= 0)
             {
                 $('#search-direction').val(dirv);
-                console.log($('#search-direction'))
             }
         }
     }

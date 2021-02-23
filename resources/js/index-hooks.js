@@ -15,6 +15,21 @@ $(function() {
         no_read_url_params = true;
         if (!load_block) do_search();
     })
+
+    $("#show-rude").change(function(e) {
+        no_read_url_params = true;
+        console.log("rudegloss:", show_rudegloss)
+        show_rudegloss = !($(this).prop('checked'));
+        if (show_rudegloss)
+        {
+            caution_hide = caution_hide_max
+        }
+        else
+        {
+            caution_hide = caution_hide_default
+        }
+        if (!load_block) do_search();
+    })
 })
 
 function update_date()
