@@ -30,6 +30,7 @@ const tag_color = {
     "Neologism": "#3d85c6",
     "Archaic": "#A686CD",
     "KW/Northern": "#4DAD60",
+    "Caution": "#C26350",
     "GR/Southern": orthography_color["gr"],
 }
 
@@ -42,6 +43,7 @@ const tag_description = {
     "Archaic": "This word was used mainly by early speakers of CW.",
     "KW/Northern": "This word may be specific to Northern (British Columbia) CW, or perhaps specifically Kamloops Wawa.",
     "GR/Southern": "This word is specific to Grand Ronde/creolized CW.",
+    "Caution": "Use with caution. This word may be vulgar, rude, obscene, sexual, racist, homophobic, or an innuendo or a slur, either in English or in some dialect of Chinuk Wawa."
 }
 
 const source_legend = {
@@ -221,6 +223,13 @@ const source_legend = {
         "author": "q'alis wawa",
         "name": "q'alis wawa's hobbyist dictionary",
         "date": "2020",
+        "tag": "h", // hobbyist
+    },
+    "hykwa": {
+        "display": "(Hykwa)",
+        "author": "Hykwa",
+        "name": "Hykwa's hobbyist dictionary",
+        "date": "2021",
         "tag": "h", // hobbyist
     }
 }

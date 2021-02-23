@@ -3,17 +3,89 @@
 import json
 import re
 import pdfplumber
-import pyduktape as pyduktape
 import unicodedata
+import unidecode
+import copy
+
+with open("resources/data/redact.json") as f:
+    redact = json.load(f)
+
+with open("resources/data/rude.json") as f:
+    rude = json.load(f)
 
 dictionary = []
 
+creative_spellings = {
+    "kwaaaanisum": "kwanisum",
+    "aaaankati": "ankati",
+    "yooootlkat": "yootlkat",
+    "kaaaakwa": "kakwa",
+    "mitlaaait": "mitlait",
+    "deleeeiiit": "deleit",
+    "sayaaaa": "sayaa"
+}
+
+def simplify_spelling(word):
+    word = unidecode.unidecode(word.lower())
+    if word in creative_spellings:
+        return creative_spellings[word]
+    return word
+
+dict_lookup_cw = dict()
+
+def simplify_orth(entry):
+    newcw = []
+    value_lookup = dict()
+    for ncw in entry["cw"]:
+        assert(type(ncw) != list)
+        ncw["orth"] = [orth for orth in ncw["orth"] if orth != ""]
+        if ncw["value"] in value_lookup:
+            pcw = value_lookup[ncw["value"]]
+            ncw["orth"] += ["orth"]
+        else:
+            value_lookup[ncw["value"]] = ncw
+            newcw.append(ncw)
+    entry["cw"] = newcw
+
+def merge_into(a, b):
+    for key in a:
+        value = a[key]
+        if key in b:
+            assert(type(a[key]) == type(b[key]))
+            if type(value) == list:
+                a[key] += b[key]
+    for key in b:
+        if key not in a:
+            a[key] = b[key]
+
+def merge_dict_entry(entry):
+    simple_spellings = [simplify_spelling(cw["value"]) for cw in entry["cw"]]
+    merge_entry = entry
+    for w in simple_spellings:
+        if w in dict_lookup_cw:
+            merge_entry = dict_lookup_cw[w]
+            break
+    for w in simple_spellings:
+        dict_lookup_cw[w] = merge_entry
+
+    if merge_entry == entry:
+        dictionary.append(merge_entry)
+    else:
+        merge_into(merge_entry, entry)
+    
+    simplify_orth(merge_entry)
+    for cw in merge_entry["cw"]:
+        assert(type(cw) == dict and "value" in cw and "orth" in cw)
+
 def add_dict_entry(**kwargs):
     gloss = [s.strip() for s in kwargs["gloss"]]
+    rudegloss = [s for s in gloss if s in redact]
+    gloss = [s for s in gloss if s not in redact]
     cw = kwargs["cw"]
+    assert(type(cw) == list)
     entry = {
         "gloss": gloss,
-        "fuse-gloss": ",    ".join(gloss),
+        "rudegloss": rudegloss,
         "cw": cw
     }
     if "sources" in kwargs and len(kwargs["sources"]) > 0:
@@ -24,13 +96,19 @@ def add_dict_entry(**kwargs):
         entry["itags"] = kwargs["itags"]
     if "origin" in kwargs and origin["language"] != "":
         entry["origin"] = kwargs["origin"]
-    dictionary.append(entry)
+    for cwdef in cw:
+        assert(type(cwdef) == dict)
+        if cwdef["value"] in rude:
+            entry["rude"] = max(entry.get("rude", 0), rude[cwdef["value"]])
+        if "orth" not in cwdef:
+            cwdef["orth"] = []
+    merge_dict_entry(entry)
 
 # appends an entry to an orths array
 def append_cw(orths, s, orthography):
     if s != "":
         for value in s.split(","):
-            orths.append({"value": value.strip(), "orth": orthography})
+            orths.append({"value": value.strip(), "orth": [orthography]})
 
 def convert_to_rgb(col):
     if "red" in col and "blue" in col and "green" in col:
@@ -160,6 +238,17 @@ for path in ["sources/qw_simp.json", "sources/qw_comp.json"]:
                 itags=itags # not currently used
             )
 
+# hykwa
+with open("resources/data/hykwa.json") as f:
+    source = json.load(f)
+    for entry in source:
+        add_dict_entry(
+            gloss=entry.get('gloss', []),
+            cw=entry.get('cw', []),
+            sources=entry.get("sources", []) + ["hykwa"],
+            tags=entry.get("tags", []),
+        )
+
 # LJ
 """
 extract_entries = re.compile(
@@ -211,11 +300,12 @@ with open("sources/lj.json", "r") as f:
 """
 
 
-hobbyists = ["qw", "lusentoj", "qalis", "q́alis", "OrthodoxFox"]
+hobbyists = ["qw", "lusentoj", "qalis", "q́alis", "OrthodoxFox", "hykwa"]
 
 # fix entries
 for entry in dictionary:
     only_hobbyist = True
+    entry["fuse-gloss"] = ",    ".join(entry["gloss"] + entry.get("rudegloss", []))
     for source in entry["sources"]:
         if source not in hobbyists:
             only_hobbyist = False
@@ -237,46 +327,6 @@ wordre_nonum = re.compile("((?=[^0-9])[\w'])+")
 wordre = re.compile("[\w']+")
 renums = re.compile("((?=[^0-9])[\w;\.,\'\?\!\":\)\(\[\]\}\{])[0-9]+")
 
-js = pyduktape.DuktapeContext()
-
-class jiter:
-    def __init__(self, l):
-        self.list = l
-        self.index = -1
-        self.next()
-    
-    def next(self):
-        self.index += 1
-        if self.index >= len(self.list):
-            self.value = None
-        else:
-            self.value = self.list[self.index]
-        return self
-
-class jset:
-    def __init__(self, l=[]):
-        self.set = set(l)
-    
-    def values(self):
-        return jiter(list(self.set))
-
-    def add(self, v):
-        self.set.add(v)
-    
-    def has(self, v):
-        return v in self.set
-
-js.set_globals(dictionary=dictionary)
-js.set_globals(none=None)
-js.set_globals(makeset=jset)
-js.set_globals(normalize=lambda s: unicodedata.normalize("NFC", s))
-js.set_globals(print=print)
-for src in ["latinize.js", "dict-key.js", "search.js"]:
-    print(src)
-    js.eval_js_file("resources/js/" + src)
-
-search = js.eval_js("search_sync")
-
 with open("sources/words_dictionary.json") as f:
     english_dict = json.load(f)
     ignores = ["pos", "hous", "haws", "okok", "injun", "stik", "kopa", "alta", "wel", "spos"]
@@ -297,15 +347,26 @@ def is_wawa_fuzzy(words):
     ))
     return len(nonenglish) > 0.5 * len(words)
 
+unrecognized = set()
+
+def match_defn(word):
+    wl = simplify_spelling(word)
+    if wl in dict_lookup_cw:
+        return dict_lookup_cw[wl]
+    else:
+        return None
+
 with open("resources/data/snass_sessions.json") as f:
     sessions = json.load(f)
     for i, session in enumerate(sessions):
+        print("processing snass session",i)
         if session["url"] == "":
             continue
         with pdfplumber.open("sources/snass/snass" + str(i) + ".pdf") as pdf:
             for page in pdf.pages:
                 text = page.extract_text()
-                print ("---------------------", page.page_number, "------------------")
+                if text is None:
+                    continue
                 text = "".join(filter(lambda c: ord(c) < 255 or c in valid_pdf_chars, text))
                 for line in text.splitlines():
                     if is_footnote.match(line):
@@ -315,13 +376,17 @@ with open("resources/data/snass_sessions.json") as f:
                         break
                     if line.strip().lower().startswith("consonants:"):
                         break
-                    line = re.sub(renums, "\\1", line.replace("“", "\"").replace("”","\""))
+                    line = re.sub(renums, "\\1 ", line.replace("“", "\"").replace("”","\""))
                     words = extract_words(line)
                     if is_wawa_fuzzy(words):
                         for word in words:
-                            print(search(word))
-                    
+                            defn = match_defn(word)
+                            if defn is None:
+                                unrecognized.add(word)
 
-with open("resources/js/dict.js", "w") as f:
+#if len(unrecognized) > 0:
+#    print("unrecognized words:", unrecognized)
+
+with open("resources/js/generated/dict.js", "w") as f:
     print("writing dictionary file:", len(dictionary), "entries")
     f.write("const dictionary = " + json.dumps(dictionary, indent = 2))

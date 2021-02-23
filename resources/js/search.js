@@ -89,7 +89,6 @@ transition_matrix_idx = {
 function replace_transition(a, b, v) {
     idx_a = transition_matrix_idx[a];
     idx_b = transition_matrix_idx[b];
-    print(idx_a)
     transition_matrix[idx_a][idx_b] = v;
     transition_matrix[idx_b][idx_a] = v;
 }
@@ -467,7 +466,7 @@ function search_both(a, cb)
             })
 
             // remove duplicate
-            matches.filter(function(item, pos) {
+            matches = matches.filter(function(item, pos) {
                 return matches.findIndex(function(uitem) {
                     return item.entry == uitem.entry
                 }) == pos;

@@ -1,5 +1,14 @@
 var gid_it = 0
 
+// entries must be at least this rude to be marked with "caution"
+var caution_tag = 2;
+
+// entries must be at least this rude to be hidden by default
+var caution_hide = 3;
+
+// show rude entries in gloss
+var show_rudegloss = false;
+
 function orthkey_html(orth)
 {
     if (orth != "")
@@ -12,14 +21,49 @@ function orthkey_html(orth)
     return ""
 }
 
+function manipulate_entry(entry)
+{
+    if (entry["rude"] !== undefined)
+    {
+        if (entry["rude"] >= caution_tag)
+        {
+            if (entry["tags"] !== undefined)
+            {
+                entry["tags"].push("Caution");
+            }
+            else
+            {
+                entry["tags"] = ["Caution"];
+            }
+        }
+
+        if (entry["rude"] >= caution_hide)
+        {
+            entry["hide"] = true;
+        }
+    }
+}
+
 function append_match_row(tbody, match)
 {
-    entry = match["entry"]
-    en = entry["gloss"].join(", ")
-    orths = entry["cw"]
+    // deep copy
+    var entry = jQuery.extend({}, match["entry"]);
+
+    // some entry details are not stored directly in the dictionary file and need to be calculated dynamically.
+    manipulate_entry(entry)
+    if (entry["hide"]) return
+
+    // convenience
+    var gloss = entry["gloss"]
+    if (show_rudegloss && entry["rudegloss"])
+    {
+        gloss += entry["rudegloss"]
+    }
+    var en = gloss.join(", ")
+    var orths = entry["cw"]
 
     // construct html for CW cell
-    orthhtml = ""
+    var orthhtml = ""
     for (var j = 0; j < orths.length; ++j)
     {
         cw = orths[j]
@@ -32,8 +76,8 @@ function append_match_row(tbody, match)
         orthhtml += orthkey_html(orth);
     }
 
-    src_popovers = []
-    srchtml = ""
+    var src_popovers = []
+    var srchtml = ""
     if (entry["sources"])
     {
         var first = true;
@@ -108,7 +152,7 @@ function append_match_row(tbody, match)
         srchtml = "<i style=\"color:gray;\">[Source Missing]</i>"
     }
 
-    taghtml = ""
+    var taghtml = ""
     if (entry["tags"])
     {
         for (var j = 0; j < entry["tags"].length; ++j)
@@ -129,8 +173,8 @@ function append_match_row(tbody, match)
         }
     }
 
-    orghtml = ""
-    origin = entry["origin"]
+    var orghtml = ""
+    var origin = entry["origin"]
     if (origin && origin["language"] != "")
     {
         orghtml += origin["language"];
@@ -159,10 +203,10 @@ function append_match_row(tbody, match)
     }
 
     // similarity %
-    similarity = (100 - 100 * match["dissimilarity"]).toFixed(0)
+    var similarity = (100 - 100 * match["dissimilarity"]).toFixed(0)
 
     // row html
-    tr = `<tr>
+    var tr = `<tr>
         <td>${similarity}%</td>
         <td>${taghtml}</td>
         <td>${en}</td>
@@ -177,7 +221,7 @@ function append_match_row(tbody, match)
     // add popover elements (this has to happen after tr has been added to DOM... presumably...)
     for (var j = 0; j < src_popovers.length; ++j)
     {
-        placement = src_popovers[j].placement;
+        var placement = src_popovers[j].placement;
         if (!placement) placement = "left"
         $(src_popovers[j].id).popover(
             {
