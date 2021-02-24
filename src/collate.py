@@ -421,7 +421,7 @@ with open("resources/data/snass_sessions.json") as f:
                                 alluses += 1
                                 use_id = {
                                     "href": session["url"] + "#page=" + str(page.page_number),
-                                    "title": session["title"] + "(page " + str(page.page_number) + ")"
+                                    "title": session["title"] + " (page " + str(page.page_number) + ")"
                                 }
                                 entry["uses"] = entry.get("uses", [])
                                 if use_id["href"] not in [use["href"] for use in entry["uses"]]:
