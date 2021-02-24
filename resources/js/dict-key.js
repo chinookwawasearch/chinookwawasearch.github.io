@@ -31,6 +31,7 @@ const tag_color = {
     "Archaic": "#A686CD",
     "KW/Northern": "#4DAD60",
     "Caution": "#C26350",
+    "Corpus": "#309080",
     "GR/Southern": orthography_color["gr"],
 }
 

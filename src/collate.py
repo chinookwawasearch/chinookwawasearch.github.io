@@ -448,6 +448,11 @@ with open("resources/data/snass_sessions.json") as f:
 #if len(unrecognized) > 0:
 #    print("unrecognized words:", unrecognized)
 
+# list ranking
+dictionary.sort(key=lambda entry:-entry.get("use", 0))
+for i, entry in enumerate(dictionary):
+    entry["rk"] = i + 1
+
 with open("resources/js/generated/dict.js", "w") as f:
     print("writing dictionary file:", len(dictionary), "entries")
     f.write("const corpus_usage_all = " + str(alluses) + "\n")

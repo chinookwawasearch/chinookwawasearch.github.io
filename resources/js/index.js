@@ -15,6 +15,65 @@ const caution_show_rudegloss = 4;
 // show rude entries in gloss
 var show_rudegloss = false;
 
+function ordinal(number)
+{
+    if (number != Math.floor(number)) return "th";
+    switch(number % 10)
+    {
+    case 1: return "st"
+    case 2: return "nd"
+    case 3: return "rd"
+    default:
+        return "th"
+    }
+}
+
+function superordinal(number)
+{
+    o = ordinal(number)
+    return `<sup>${o}</sup>`
+}
+
+function plural(word, count, uword)
+{
+    if (uword == undefined) uword = word + "s"
+    return (count == 1) ? word : uword
+}
+
+function sigfigs(v, p)
+{
+    let k = 1;
+    let digit = 0;
+    let s = ""
+    while (k <= v) {
+        k *= 10;
+        digit += 1;
+    }
+    while (k > v) {
+        v *= 10;
+        digit -= 1;
+    }
+    if (digit < 0)
+    {
+        s = "0.";
+        for (var i = 1; i < -digit; ++i)
+        {
+            s += "0"
+        }
+    }
+    for (var i = 0; i < p; ++i)
+    {
+        s += (Math.floor(v / k) % 10)
+        v *= 10;
+        if (i != p - 1 && digit == 0)
+        {
+            s += "."
+        }
+        digit--;
+    }
+    return s
+}
+
 function orthkey_html(orth)
 {
     if (orth != "")
@@ -69,6 +128,9 @@ function append_match_row(tbody, match)
     var en = gloss.join(", ")
     var orths = entry["cw"]
 
+    if (gloss.length == 0) return;
+    if (orths.length == 0) return;
+
     // construct html for CW cell
     var orthhtml = ""
     for (var j = 0; j < orths.length; ++j)
@@ -85,9 +147,9 @@ function append_match_row(tbody, match)
 
     var src_popovers = []
     var srchtml = ""
+    var first = true;
     if (entry["sources"])
     {
-        var first = true;
         for (var j = 0; j < entry["sources"].length; ++j)
         {
             source = entry["sources"][j]
@@ -118,6 +180,8 @@ function append_match_row(tbody, match)
                 srchtml += ` <a href="${source["href"]}"><span class="glyphicon glyphicon-link"></span></a>`
             }
             srchtml += "</span>"
+
+            // popcontent --
             popcontent = ""
             if (source["tag"] == "h")
             {
@@ -157,6 +221,30 @@ function append_match_row(tbody, match)
     else
     {
         srchtml = "<i style=\"color:gray;\">[Source Missing]</i>"
+    }
+
+    // usage
+    if (entry["use"] !== undefined && entry["use"] > 0)
+    {
+        if (entry["uses"] !== undefined && entry["uses"].length > 0)
+        {
+            if (!first) srchtml += ", ";
+            first = false;
+            let metric = sigfigs(100 * entry["use"] / corpus_usage_all, 2) + "%"
+            srchtml += `<span id=\"gid-${gid_it}\" style=\"color:${tag_color["Corpus"]};\">Corpus:&nbsp;${metric}</span>`
+            titlecw = orths[0]["value"];
+
+            popcontent = "<p><i>A corpus of Chinuk Wawa texts and transcriptions is being collected for this dictionary. Please note that it is still very small, very much a work in progress, and largely based on northern dialect Chinuk Wawa. Currently, only Dave Robertson's \"Snass sessions\" appear in the corpus. Furthermore, note that the information shown here is machine-identified not verified by a human.</i></p>"
+            popcontent += `<p><b>Usage:</b> ${entry["use"]} of ${corpus_usage_all} words in corpus.</p>`
+            popcontent += `<p><b>Rank:</b> ${entry["rk"]}${superordinal(entry["rk"])} most frequent.</p>`
+
+            src_popovers.push({
+                id: `#gid-${gid_it}`,
+                title: `Corpus data for \"<i>${titlecw}</i>\"`,
+                content: popcontent
+            })
+            gid_it++;
+        }
     }
 
     var taghtml = ""
