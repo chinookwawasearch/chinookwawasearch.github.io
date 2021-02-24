@@ -246,7 +246,7 @@ function append_match_row(tbody, match)
             srchtml += `<span id=\"gid-${gid_it}\" style=\"color:${tag_color["Corpus"]};\">Corpus:&nbsp;${metric}</span>`
             titlecw = display_cwtext(orths[0].value);
 
-            popcontent = "<p>${corpus_disclaimer}</p>"
+            popcontent = `<p>${corpus_disclaimer}</p>`
             popcontent += `<p><b>Usage:</b> ${entry["use"]} of ${corpus_usage_all} words in corpus.</p>`
             popcontent += `<p><b>Rank:</b> ${entry["rk"]}${superordinal(entry["rk"])} most frequent.</p>`
 
