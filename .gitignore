@@ -2,4 +2,5 @@ secret.json
 sources/
 node_modules/
 package-lock.json
+retrieve.json
 .~*
