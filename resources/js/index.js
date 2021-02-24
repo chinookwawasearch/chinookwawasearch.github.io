@@ -15,6 +15,10 @@ const caution_show_rudegloss = 4;
 // show rude entries in gloss
 var show_rudegloss = false;
 
+var entry_details = null;
+
+const corpus_disclaimer = "<i>A corpus of Chinuk Wawa texts and transcriptions is being collected for this dictionary. Please note that it is still very small, very much a work in progress, and largely based on northern dialect Chinuk Wawa. Currently, only Dave Robertson's \"Snass sessions\" appear in the corpus. Furthermore, note that the information shown here is machine-identified not verified by a human.</i>"
+
 function ordinal(number)
 {
     if (number != Math.floor(number)) return "th";
@@ -86,6 +90,13 @@ function orthkey_html(orth)
     return ""
 }
 
+function display_cwtext(cwtext)
+{
+    return cwtext
+        .replace(/k\u0331/g, "<u>k</u>")
+        .replace(/h\u0331/g, "<u>h</u>")
+}
+
 function manipulate_entry(entry)
 {
     if (entry["rude"] !== undefined)
@@ -112,7 +123,8 @@ function manipulate_entry(entry)
 function append_match_row(tbody, match)
 {
     // deep copy
-    var entry = _.cloneDeep(match["entry"])
+    var orgentry = match["entry"]
+    var entry = _.cloneDeep(orgentry)
 
     // some entry details are not stored directly in the dictionary file and need to be calculated dynamically.
     manipulate_entry(entry)
@@ -140,7 +152,7 @@ function append_match_row(tbody, match)
         {
             orthhtml += ", "
         }
-        orthhtml += cw["value"]
+        orthhtml += display_cwtext(cw.value)
         orth = cw["orth"]
         orthhtml += orthkey_html(orth);
     }
@@ -232,9 +244,9 @@ function append_match_row(tbody, match)
             first = false;
             let metric = sigfigs(100 * entry["use"] / corpus_usage_all, 2) + "%"
             srchtml += `<span id=\"gid-${gid_it}\" style=\"color:${tag_color["Corpus"]};\">Corpus:&nbsp;${metric}</span>`
-            titlecw = orths[0]["value"];
+            titlecw = display_cwtext(orths[0].value);
 
-            popcontent = "<p><i>A corpus of Chinuk Wawa texts and transcriptions is being collected for this dictionary. Please note that it is still very small, very much a work in progress, and largely based on northern dialect Chinuk Wawa. Currently, only Dave Robertson's \"Snass sessions\" appear in the corpus. Furthermore, note that the information shown here is machine-identified not verified by a human.</i></p>"
+            popcontent = "<p>${corpus_disclaimer}</p>"
             popcontent += `<p><b>Usage:</b> ${entry["use"]} of ${corpus_usage_all} words in corpus.</p>`
             popcontent += `<p><b>Rank:</b> ${entry["rk"]}${superordinal(entry["rk"])} most frequent.</p>`
 
@@ -300,6 +312,14 @@ function append_match_row(tbody, match)
     // similarity %
     var similarity = (100 - 100 * match["dissimilarity"]).toFixed(0)
 
+    let hash = location.hash;
+    if (!hash.startsWith("#")) hash = "#" + hash;
+
+
+    let detid = gid_it++;
+
+    var dethtml = `<a id="gid-${detid}" href="#"><span class = \"glyphicon glyphicon-menu-right\"/></a>`
+
     // row html
     var tr = `<tr>
         <td>${similarity}%</td>
@@ -308,6 +328,7 @@ function append_match_row(tbody, match)
         <td>${orthhtml}</td>
         <td>${orghtml}</td>
         <td>${srchtml}</td>
+        <td>${dethtml}</td>
     </tr>`
 
     // append row to table
@@ -328,6 +349,14 @@ function append_match_row(tbody, match)
             }
         );
     }
+
+    // add link to details page
+    $(`#gid-${detid}`).click(function (event) {
+        console.log("clicked")
+        entry_details = orgentry;
+        event.preventDefault()
+        do_update();
+    })
 }
 
 var search_id = 0;
@@ -335,8 +364,26 @@ var subheader_id = 0;
 var killsearch = null;
 var prev_search_direction = null
 
+function do_update()
+{
+    if (entry_details !== null)
+    {
+        return do_entry();
+    }
+    else
+    {
+        return do_search();
+    }
+}
+
 function do_search()
 {
+    entry_details = null;
+    alt = $("#alt-container");
+    alt.empty();
+
+    $("#results-container").show();
+
     // search parameters
     var text = $("#search").val()
     var search_direction = $("#search-direction").find("option:selected").text().trim();
@@ -424,6 +471,99 @@ function do_search()
     })
 }
 
+function do_entry()
+{
+    // convenience
+    const entry = entry_details;
+    var gloss = []
+    gloss.push.apply(gloss, entry["gloss"])
+    if (show_rudegloss && entry["rudegloss"])
+    {
+        gloss.push.apply(gloss, entry["rudegloss"])
+    }
+    var en = gloss.join(", ")
+    var orths = entry["cw"]
+
+    if (orths.length == 0) return;
+    if (gloss.length == 0) return;
+
+    // prepare page
+    $("#loader-6").css("opacity", '0');
+    $('#results tbody').empty();
+    $("#results-container").hide();
+    alt = $("#alt-container");
+    alt.empty();
+
+    // content
+    let paneltitle = `Entry details for "<b>${display_cwtext(entry_details.cw[0].value)}</b>"`
+    let panelcontent = ""
+    panelcontent += `<p><b>Gloss:</b> ${en}</p>`
+
+    let tbody = ""
+    for (const o of orths)
+    {
+        tbody += "<tr>"
+        tbody += `<td>${display_cwtext(o.value)}</td>`
+        if (orthography_legend[o.orth] !== undefined)
+        {
+            tbody += `<td>${orthography_legend[o.orth]}${orthkey_html(o.orth)}</td>`
+        }
+        else
+        {
+            tbody += "<td>(Attested)</td>"
+        }
+        tbody += "</tr>"
+    }
+
+    let table = `
+    <table class="table table-striped" id="results">
+        <thead>
+            <tr>
+                <th>Spelling</th>
+                <th>Orthography</th>
+            </tr>
+        </thead>
+        <tbody>${tbody}</tbody>
+    </table>`
+
+    panelcontent += table
+
+    panelcontent += `<h3>Corpus Data</h3><p>${corpus_disclaimer}</p>`
+
+    let metric = sigfigs(100 * entry.use / corpus_usage_all, 2) + "%"
+    panelcontent += `<p><b>Usage:</b> ${entry.use} of ${corpus_usage_all} words in corpus, or ${metric}.`
+    panelcontent += `<p><b>Rank:</b> ${entry.rk}${superordinal(entry.rk)} most frequent.</p>`
+    
+    if (entry.uses.length > 0)
+    {
+        let tbody = ""
+
+        for (const use of entry.uses)
+        {
+            tbody += "<tr>"
+            tbody += `<td><a href="${use.href}">${use.title}</a>`
+            tbody += "</tr>"
+        }
+
+        let table = `
+        <table class="table table-striped" id="results">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>${tbody}</tbody>
+        </table>`
+
+        panelcontent += table
+    }
+    
+
+    // update page and location.hash
+    alt.append(`<div class="panel panel-primary"><div class="panel-heading">${paneltitle}</div><div class="panel-body">${panelcontent}</div></div>`)
+    write_url_params();
+}
+
 function encode_escape(s)
 {
     return encodeURIComponent(s);
@@ -434,8 +574,60 @@ function decode_escape(s)
     return decodeURIComponent(s);
 }
 
+function lookup_entry_by_cw(cw)
+{
+    for (const entry of dictionary)
+    {
+        for (const ecw of entry.cw)
+        {
+            if (ecw.value == cw)
+            {
+                return entry;
+            }
+        }
+    }
+
+    return null
+}
+
+function lookup_entry_by_id(id)
+{
+    for (const entry of dictionary)
+    {
+        if (entry.id == id)
+        {
+            return entry;
+        }
+    }
+
+    return null
+}
+
+function get_entry_perma(entry)
+{
+    var entry_cw = undefined;
+    for (const cw of entry.cw)
+    {
+        if (lookup_entry_by_cw(cw.value).id == entry.id)
+        {
+            entry_cw = cw.value
+            break;
+        }
+    }
+
+    if (entry_cw !== undefined)
+    {
+        return `entry=${encode_escape(entry_cw)}`
+    }
+    else
+    {
+        return `entryid=${encode_escape(entry.id)}`
+    }
+}
+
 function write_url_params()
 {
+    
     let term = encode_escape($("#search").val());
     let dir = encode_escape(["cwen", "cw", "en"][$('#search-direction').val()]);
     let showparam = ""
@@ -444,23 +636,33 @@ function write_url_params()
         showparam = `&show=${caution_hide}`
     }
 
-    location.hash = `#t=${term}&dir=${dir}${showparam}`;
+    let hstr = `#t=${term}&dir=${dir}${showparam}`;
+    if (entry_details != null)
+    {
+        hstr += "&" + get_entry_perma(entry_details)
+    }
+
+    location.hash = hstr;
 }
 
 function read_url_params()
 {
-    console.log("reading url params")
     let hashv = location.hash;
+    console.log("reading url params:", hashv)
     if (hashv && hashv.length > 1)
     {
-        let m = hashv.match(/^#?t=([^&]*)&dir=([^&]+)(&show=[0-9]+)?$/)
+        let m = hashv.match(/^#?t=([^&]*)&dir=([^&]+)(&show=[0-9]+)?(&entry=[^&]+)?(&entryid=[0-9]+)?$/)
         if (m && m.length >= 3)
         {
+            // set search term
+            let term = decode_escape(m[1])
+            $("#search").val(term)
+
             // parse miscellaneous flags
             for (var i = 3; i < m.length; ++i)
             {
                 let s = m[i];
-                if (s === undefined) continue;
+                if (s === undefined || s == "") continue;
                 let eql = s.indexOf('=');
                 if (eql < 0) continue;
                 let key = s.substring(1, eql);
@@ -472,11 +674,15 @@ function read_url_params()
                     show_rudegloss = caution_hide > caution_show_rudegloss;
                     $('#show-rude').prop("checked", !show_rudegloss);
                 }
+                if (key == "entry")
+                {
+                    entry_details = lookup_entry_by_cw(val);
+                }
+                else if (key == "entryid")
+                {
+                    entry_details = lookup_entry_by_id(parseInt(val))
+                }
             }
-
-            // set search term
-            let term = decode_escape(m[1])
-            $("#search").val(term)
 
             // set search direction
             let dir = decode_escape(m[2])

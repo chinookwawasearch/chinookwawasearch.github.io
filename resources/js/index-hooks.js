@@ -12,13 +12,13 @@ $(function() {
         else
         {
             // set timeout to properly update text content first.
-            if (!load_block) setTimeout(do_search, 0);
+            if (!load_block) setTimeout(do_update, 0);
         }
     });
 
     $('#search').on("paste", function (e) {
         // set timeout to properly update text content first.
-        if (!load_block) setTimeout(do_search, 0);
+        if (!load_block) setTimeout(do_update, 0);
     });
 
     $("#search-direction").on("change", function(e) {
@@ -39,7 +39,7 @@ $(function() {
         {
             caution_hide = caution_hide_default
         }
-        if (!load_block) do_search();
+        if (!load_block) do_update();
     })
 })
 
@@ -67,5 +67,5 @@ $(document).ready(function() {
 
     if (!no_read_url_params) read_url_params(); // loads data from url
 
-    do_search();
+    do_update();
 })

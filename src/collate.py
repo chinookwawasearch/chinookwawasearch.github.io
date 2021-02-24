@@ -29,7 +29,8 @@ creative_spellings = {
 }
 
 def simplify_spelling(word):
-    word = unidecode.unidecode(word.lower())
+    word = word.lower().replace("k\u0331", "q").replace("h\u0331", "x")
+    word = unidecode.unidecode(word)
     if word in creative_spellings:
         return creative_spellings[word]
     return word
@@ -452,6 +453,7 @@ with open("resources/data/snass_sessions.json") as f:
 dictionary.sort(key=lambda entry:-entry.get("use", 0))
 for i, entry in enumerate(dictionary):
     entry["rk"] = i + 1
+dictionary.sort(key=lambda entry:entry["id"])
 
 with open("resources/js/generated/dict.js", "w") as f:
     print("writing dictionary file:", len(dictionary), "entries")

@@ -39,6 +39,11 @@ def get_service():
         print("done.")
         return g_service
 
+def convert_to_deiv_pipa(text):
+    assert(type(text) == type(""))
+    text = text.replace("x", "h\u0331")
+    text = text.replace("q", "k\u0331")
+    return text
 
 # download qalis.ods
 def qw_retrieve():
@@ -55,29 +60,58 @@ def qw_retrieve():
     ]
     print("done.")
 
+    DATA_ROWS_BEGIN = 5
+    HEADER_ROW = 4
+
+    def row_content(row):
+        return [item["effectiveValue"]["stringValue"] if "effectiveValue" in item and "stringValue" in item["effectiveValue"] else "" for item in row["values"]]
+
     simp = []
     comp = []
     for i in range(2):
-        for row in rows[i][5:]:
-            itemtext = [item["effectiveValue"]["stringValue"] if "effectiveValue" in item and "stringValue" in item["effectiveValue"] else "" for item in row["values"]]
+        header = [h.lower().strip() for h in row_content(rows[i][HEADER_ROW])]
+        if i == 0:
+            COL_GLOSS = header.index("english gloss")
+            COL_CLUB = header.index("club")
+            COL_PRACTICAL = header.index("practical")
+            COL_ATTESTED = header.index("attested spellings")
+            COL_DUPLOYAN = header.index("duployan")
+            COL_GEN = header.index("general")
+            COL_WORD = header.index("word {language}")
+            COL_GR = header.index("grand ronde")
+            COL_D1 = header.index("dictionary/book 1")
+            COL_D2 = header.index("dictionary/book 2")
+            COL_ALTSTART = header.index("others:")
+            COL_ALTEND = COL_ALTSTART + 7
+        else:
+            COL_GLOSS = header.index("english gloss")
+            COL_CW = header.index("chinuk wawa")
+            COL_ATTESTED = header.index("attested spellings")
+            COL_GR = header.index("grand ronde")
+            COL_DB = header.index("dictionary, book")
+            COL_ALTSTART = header.index("other")
+            COL_ALTEND = COL_ALTSTART + 7
+
+        for row in rows[i][DATA_ROWS_BEGIN:]:
+            itemtext = row_content(row)
             itembg = [item["effectiveFormat"]["backgroundColor"] if "effectiveFormat" in item and "backgroundColor" in item["effectiveFormat"] else dict() for item in row["values"]]
 
             if i == 0:
                 # simple word
                 obj = {
-                    "gloss": itemtext[0],
-                    "cw-qw": itemtext[1],
-                    "cw-practical": itemtext[2],
-                    "cw-attested": itemtext[3],
-                    "cw-duployan": itemtext[4],
-                    "origin-language": itemtext[5],
-                    "origin-word": itemtext[6],
-                    "source-gr": itemtext[7],
-                    "source-d1": itemtext[8],
-                    "source-d2": itemtext[9],
-                    "source-alt": itemtext[10:17],
-                    "colour-attest": itembg[1],
-                    "colour-source": itembg[5],
+                    "gloss": itemtext[COL_GLOSS],
+                    "cw-qw": itemtext[COL_CLUB],
+                    "cw-practical": convert_to_deiv_pipa(itemtext[COL_PRACTICAL]),
+                    "cw-attested": itemtext[COL_ATTESTED],
+                    "cw-duployan": itemtext[COL_DUPLOYAN],
+                    "origin-language": itemtext[COL_GEN],
+                    "origin-word": itemtext[COL_WORD],
+                    "source-gr": itemtext[COL_GR],
+                    "source-d1": itemtext[COL_D1],
+                    "source-d2": itemtext[COL_D2],
+                    "source-alt": itemtext[COL_ALTSTART:COL_ALTEND],
+                    "colour-attest": itembg[COL_CLUB],
+                    "colour-source": itembg[COL_GEN],
                     "compound": False
                 }
                 
@@ -85,18 +119,18 @@ def qw_retrieve():
             else:
                 # compound word
                 obj = {
-                    "gloss": itemtext[0],
-                    "cw-qw": itemtext[1],
-                    "cw-attested": itemtext[2],
+                    "gloss": itemtext[COL_GLOSS],
+                    "cw-qw": itemtext[COL_CW],
+                    "cw-attested": itemtext[COL_ATTESTED],
                     "cw-practical": "",
                     "cw-duployan": "",
                     "origin-language": "",
                     "origin-word": "",
-                    "source-gr": itemtext[3],
-                    "source-d1": itemtext[4],
+                    "source-gr": itemtext[COL_GR],
+                    "source-d1": itemtext[COL_DB],
                     "source-d2": "",
-                    "source-alt": itemtext[11:18],
-                    "colour-attest": itembg[1],
+                    "source-alt": itemtext[COL_ALTSTART:COL_ALTEND],
+                    "colour-attest": itembg[COL_CW],
                     "colour-source": dict(),
                     "compound": True
                 }

@@ -1,6 +1,7 @@
 const orthography_legend = {
     "qw": "q'alis wawa's hobbyist orthography",
     "lj": "lusentoj's hobbyist orthography",
+    "hy": "hykwa's hobbyist orthography",
     "pp": "Duployan / Chinuk Pipa (e.g. Kamloops Wawa) romanization",
     "dr": "Dave Roberts' orthography (Deiv Pipa)",
     "gr": "Grand Ronde"
@@ -9,17 +10,19 @@ const orthography_legend = {
 const orthography_full = {
     "qw": "qw",
     "lj": "lj",
-    "pp": "cp",
+    "hy": "hy",
+    "pp": "pp",
     "dr": "ddr",
     "gr": "gr"
 }
 
 const orthography_color = {
     "qw": "gray",
-    "lj": "#77a38a",
-    "pp": "#9a7bb3", // purplish
-    "dr": "#8B4513", // sienna
-    "gr": "#DB9C45" // yellow-orange
+    "lj": "#ffcc00",
+    "pp": "#23a8b3",
+    "dr": "#cc9900",
+    "gr": "#ff5a33",
+    "hy": "#996633"
 }
 
 const tag_color = {
@@ -44,7 +47,7 @@ const tag_description = {
     "Archaic": "This word was used mainly by early speakers of CW.",
     "KW/Northern": "This word may be specific to Northern (British Columbia) CW, or perhaps specifically Kamloops Wawa.",
     "GR/Southern": "This word is specific to Grand Ronde/creolized CW.",
-    "Caution": "Use with caution. This word may be vulgar, rude, obscene, sexual, racist, homophobic, or an innuendo or a slur, either in English or in some dialect of Chinuk Wawa."
+    "Caution": "This word may be vulgar, rude, obscene, sexual, racist, homophobic, or an innuendo or a slur, either in English or in some dialect of Chinuk Wawa."
 }
 
 const source_legend = {
@@ -227,9 +230,9 @@ const source_legend = {
         "tag": "h", // hobbyist
     },
     "hykwa": {
-        "display": "(Hykwa)",
-        "author": "Hykwa",
-        "name": "Hykwa's hobbyist dictionary",
+        "display": "(hykwa)",
+        "author": "hykwa",
+        "name": "hykwa's hobbyist dictionary",
         "date": "2021",
         "tag": "h", // hobbyist
     }

@@ -82,7 +82,7 @@
                 "value": "taxam"
             },
             {
-                "value": "ta\u0331hum",
+                "value": "tah\u0331um",
                 "orth": ["dr"]
             }
         ]
@@ -126,7 +126,7 @@
                 "value": "anqati"
             },
             {
-                "value": "an\u0331kati",
+                "value": "ank\u0331ati",
                 "orth": ["dr"]
             }
         ]
@@ -241,11 +241,11 @@
                 "value": "q'olan"
             },
             {
-                "value": "\u0331k'wolaan",
+                "value": "k\u0331'wolaan",
                 "orth": ["dr"]
             },
             {
-                "value": "\u0331k'olaan",
+                "value": "k\u0331'olaan",
                 "orth": ["dr"]
             }
         ]
@@ -289,7 +289,7 @@
                 "value": "q'o'"
             },
             {
-                "value": "\u0331k'o'",
+                "value": "k\u0331'o'",
                 "orth": ["dr"]
             }
         ]
@@ -385,19 +385,19 @@
                 "value": "hayaq"
             },
             {
-                "value": "aia\u0331k",
+                "value": "aiak\u0331",
                 "orth": ["dr"]
             },
             {
-                "value": "aiya\u0331k",
+                "value": "aiyak\u0331",
                 "orth": ["dr"]
             },
             {
-                "value": "haya\u0331k",
+                "value": "hayak\u0331",
                 "orth": ["dr"]
             },
             {
-                "value": "haiya\u0331k",
+                "value": "haiyak\u0331",
                 "orth": ["dr"]
             }
         ]
@@ -441,7 +441,7 @@
                 "value": "yuɬqat"
             },
             {
-                "value": "yootl\u0331kut",
+                "value": "yootlk\u0331ut",
                 "orth": ["dr"]
             }
         ]
@@ -569,7 +569,7 @@
                 "value": "ixpuy"
             },
             {
-                "value": "i\u0331hpooi",
+                "value": "ih\u0331pooi",
                 "orth": ["dr"]
             }
         ]
@@ -635,7 +635,7 @@
                 "value": "ɬaxani"
             },
             {
-                "value": "tla\u0331hani",
+                "value": "tlah\u0331ani",
                 "orth": ["dr"]
             }
         ]
@@ -859,7 +859,7 @@
                 "value": "saxali"
             },
             {
-                "value": "sa\u0331hali",
+                "value": "sah\u0331ali",
                 "orth": ["dr"]
             }
         ]
@@ -1149,7 +1149,7 @@
                 "value": "xlyuma"
             },
             {
-                "value": "\u0331holoima",
+                "value": "h\u0331oloima",
                 "orth": ["dr"]
             }
         ]
@@ -1182,7 +1182,7 @@
                 "value": "xalaqtl"
             },
             {
-                "value": "hala\u0331ktl",
+                "value": "halak\u0331tl",
                 "orth": ["dr"]
             }
         ]
@@ -1307,15 +1307,15 @@
                 "value": "qanchi"
             },
             {
-                "value": "\u0331kantsih",
+                "value": "k\u0331antsih",
                 "orth": ["dr"]
             },
             {
-                "value": "\u0331kantsi",
+                "value": "k\u0331antsi",
                 "orth": ["dr"]
             },
             {
-                "value": "\u0331kantzi",
+                "value": "k\u0331antzi",
                 "orth": ["dr"]
             }
         ]
