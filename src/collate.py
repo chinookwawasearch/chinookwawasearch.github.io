@@ -13,6 +13,9 @@ with open("resources/data/redact.json") as f:
 with open("resources/data/rude.json") as f:
     rude = json.load(f)
 
+with open("resources/data/separate.json") as f:
+    separate = json.load(f)
+
 dictionary = []
 
 creative_spellings = {
@@ -58,18 +61,27 @@ def merge_into(a, b):
         if key not in a:
             a[key] = b[key]
 
+idnext = 0
 def merge_dict_entry(entry):
+    global idnext
     simple_spellings = [simplify_spelling(cw["value"]) for cw in entry["cw"]]
+    simple_spellings = [s for s in simple_spellings if s not in separate]
     merge_entry = entry
     for w in simple_spellings:
         if w in dict_lookup_cw:
             merge_entry = dict_lookup_cw[w]
+            if "hykwa" not in entry["sources"]:
+                print("merging: ")
+                print("    ", entry["cw"])
+                print("    ", merge_entry["cw"])
             break
     for w in simple_spellings:
         dict_lookup_cw[w] = merge_entry
 
     if merge_entry == entry:
+        merge_entry["id"] = idnext
         dictionary.append(merge_entry)
+        idnext += 1
     else:
         merge_into(merge_entry, entry)
     
@@ -86,7 +98,7 @@ def add_dict_entry(**kwargs):
     entry = {
         "gloss": gloss,
         "rudegloss": rudegloss,
-        "cw": cw
+        "cw": [c for c in cw if c["value"] != ""]
     }
     if "sources" in kwargs and len(kwargs["sources"]) > 0:
         entry["sources"] = kwargs["sources"]
@@ -316,8 +328,6 @@ for entry in dictionary:
         else:
             entry["tags"] = ["Uncited"]
 
-usages = []
-
 valid_pdf_chars = "”–“ʔəʷšĆŦƏɬꞭ"
 is_footnote = re.compile(
     "^\s*[0-9]+\s*[^\s\.]"
@@ -348,6 +358,7 @@ def is_wawa_fuzzy(words):
     return len(nonenglish) > 0.5 * len(words)
 
 unrecognized = set()
+alluses = 0
 
 def match_defn(word):
     wl = simplify_spelling(word)
@@ -356,6 +367,27 @@ def match_defn(word):
     else:
         return None
 
+# construct word-chains
+class hash_dict_wrapper:
+    def __init__(self, dict):
+        self.dict = dict
+    def __hash__(self):
+        return self.dict["id"]
+chains = dict()
+for entry in dictionary:
+    for cw in entry["cw"]:
+        words = [simplify_spelling(word) for word in extract_words(cw["value"])]
+        wordc = len(words)
+        for i in range(wordc):
+            wordt = tuple(words[:i + 1])
+            chain = chains.get(wordt, {"entry": set(), "next": set()})
+            chains[wordt] = chain
+            if i == wordc - 1:
+                chain["entry"].add(hash_dict_wrapper(entry))
+            else:
+                chain["next"].add(tuple(words[:i+2]))
+
+# process and index corpus
 with open("resources/data/snass_sessions.json") as f:
     sessions = json.load(f)
     for i, session in enumerate(sessions):
@@ -379,14 +411,44 @@ with open("resources/data/snass_sessions.json") as f:
                     line = re.sub(renums, "\\1 ", line.replace("“", "\"").replace("”","\""))
                     words = extract_words(line)
                     if is_wawa_fuzzy(words):
-                        for word in words:
-                            defn = match_defn(word)
-                            if defn is None:
-                                unrecognized.add(word)
+                        # need to account for multiple-token words, like "wik ikta qata" and "tloosh-tumtum"
+                        def wordchain_usage(wordt):
+                            global alluses
+                            assert(wordt in chains)
+                            for entry in chains[wordt]["entry"]:
+                                entry = entry.dict
+                                entry["use"] = entry.get("use", 0) + 1
+                                alluses += 1
+                                use_id = {
+                                    "href": session["url"] + "#page=" + str(page.page_number),
+                                    "title": session["title"] + "(page " + str(page.page_number) + ")"
+                                }
+                                entry["uses"] = entry.get("uses", [])
+                                if use_id["href"] not in [use["href"] for use in entry["uses"]]:
+                                    entry["uses"].append(use_id)
+
+                        wordchains = set()
+                        for complex_word in words:
+                            word = (simplify_spelling(complex_word),)
+                            nextwords = set()
+                            if word in chains:
+                                nextwords.add(word)
+                            for wordt in wordchains:
+                                assert(wordt in chains)
+                                if wordt + word in chains:
+                                    nextwords.add(wordt + word)
+                                else:
+                                    wordchain_usage(wordt)
+                            if len(nextwords) == 0:
+                                unrecognized.add(complex_word)
+                            wordchains = nextwords
+                        for wordt in wordchains:
+                            wordchain_usage(wordt)
 
 #if len(unrecognized) > 0:
 #    print("unrecognized words:", unrecognized)
 
 with open("resources/js/generated/dict.js", "w") as f:
     print("writing dictionary file:", len(dictionary), "entries")
+    f.write("const corpus_usage_all = " + str(alluses) + "\n")
     f.write("const dictionary = " + json.dumps(dictionary, indent = 2))

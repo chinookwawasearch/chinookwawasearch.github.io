@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
@@ -60,16 +61,19 @@
 
         <div class="container ml-2 mr-2">
             <div class="container" style="width:100%;">
-                <form class="form d-flex justify-content-center md-form form-sm mt-0 form-inline">
-                    <input class="form-control form-control-sm ml-3 w-75 pl-0 pr-0" type="text" placeholder="Search" id="search" style="width:100%;" autofocus/>
-                    <select class="form-control w-25 pl-0 pr-0" id="search-direction" style="width:18%;">
-                        <option value="0">English & CW</option>
-                        <option value="1">CW</option>
-                        <option value="2">English</option>
-                    </select>
-                    <label></label>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="" checked="" id="show-rude">&nbsp;Hide vulgar</label>
+                <form class="form justify-content-center mt-0">
+                    <div style="padding-bottom:1px;">
+                        <input class="form-control" type="text" placeholder="Search" id="search" style="width:100%;" autofocus/>
+                    </div>
+                    <div class="d-flex form-inline mt-1" style="float:right;direction:rtl;">
+                        <select class="form-control w-25 pl-0 pr-0" id="search-direction" style="width:10em;direction:ltr;">
+                            <option value="0">English & CW</option>
+                            <option value="1">CW</option>
+                            <option value="2">English</option>
+                        </select>
+                        <div class="checkbox" style="direction:rtl;">
+                            <label><input type="checkbox" value="" checked="" id="show-rude">&nbsp;Hide vulgar</label>
+                        </div>
                     </div>
                 </form>
             </div>

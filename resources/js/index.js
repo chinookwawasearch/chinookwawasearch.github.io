@@ -6,7 +6,7 @@ var caution_tag = caution_tag_default;
 
 // entries must be at least this rude to be hidden by default
 const caution_hide_default = 3;
-const caution_hide_max = 5;
+const caution_hide_max = 6;
 var caution_hide = caution_hide_default;
 
 // caution_hide must be at least this in order to show rudegloss entries
@@ -53,14 +53,15 @@ function manipulate_entry(entry)
 function append_match_row(tbody, match)
 {
     // deep copy
-    var entry = jQuery.extend({}, match["entry"]);
+    var entry = _.cloneDeep(match["entry"])
 
     // some entry details are not stored directly in the dictionary file and need to be calculated dynamically.
     manipulate_entry(entry)
     if (entry["hide"]) return
 
     // convenience
-    var gloss = entry["gloss"]
+    var gloss = []
+    gloss.push.apply(gloss, entry["gloss"])
     if (show_rudegloss && entry["rudegloss"])
     {
         gloss.push.apply(gloss, entry["rudegloss"])

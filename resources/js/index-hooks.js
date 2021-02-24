@@ -9,11 +9,22 @@ $(function() {
             if (!load_block) do_search();
             return false;    // prevent default
         }
+        else
+        {
+            // set timeout to properly update text content first.
+            if (!load_block) setTimeout(do_search, 0);
+        }
+    });
+
+    $('#search').on("paste", function (e) {
+        // set timeout to properly update text content first.
+        if (!load_block) setTimeout(do_search, 0);
     });
 
     $("#search-direction").on("change", function(e) {
         no_read_url_params = true;
-        if (!load_block) do_search();
+        // timeout is paranoia
+        if (!load_block) setTimeout(do_search, 0);
     })
 
     $("#show-rude").change(function(e) {
