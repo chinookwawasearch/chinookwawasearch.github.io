@@ -16,6 +16,12 @@ with open("resources/data/rude.json") as f:
 with open("resources/data/separate.json") as f:
     separate = json.load(f)
 
+with open("resources/data/snass_ignore.json") as f:
+    snass_ignore = set(json.load(f))
+
+with open("resources/data/snass_3lang.json") as f:
+    snass_ntlakaapmah = set(json.load(f))
+
 dictionary = []
 
 creative_spellings = {
@@ -34,6 +40,9 @@ def simplify_spelling(word):
     if word in creative_spellings:
         return creative_spellings[word]
     return word
+
+def butcher_spelling(word):
+    return simplify_spelling(word).replace("q", "k").replace("x", "h")
 
 dict_lookup_cw = dict()
 
@@ -65,8 +74,8 @@ def merge_into(a, b):
 idnext = 0
 def merge_dict_entry(entry):
     global idnext
-    simple_spellings = [simplify_spelling(cw["value"]) for cw in entry["cw"]]
-    simple_spellings = [s for s in simple_spellings if s not in separate]
+    simple_spellings = [simplify_spelling(cw["value"]) if cw["value"] not in separate else cw["value"] for cw in entry["cw"]]
+    simple_spellings = [s for s in simple_spellings if s not in separate or s != simplify_spelling(s)]
     merge_entry = entry
     for w in simple_spellings:
         if w in dict_lookup_cw:
@@ -91,7 +100,7 @@ def merge_dict_entry(entry):
         assert(type(cw) == dict and "value" in cw and "orth" in cw)
 
 def add_dict_entry(**kwargs):
-    gloss = [s.strip() for s in kwargs["gloss"]]
+    gloss = [s.strip() for s in kwargs["gloss"] if s.strip() != ""]
     rudegloss = [s for s in gloss if s in redact]
     gloss = [s for s in gloss if s not in redact]
     cw = kwargs["cw"]
@@ -101,6 +110,11 @@ def add_dict_entry(**kwargs):
         "rudegloss": rudegloss,
         "cw": [c for c in cw if c["value"] != ""]
     }
+
+    if len(entry["gloss"]) == 0 and len(entry["cw"]) == 0:
+        # don't add totally empty entries.
+        return
+
     if "sources" in kwargs and len(kwargs["sources"]) > 0:
         entry["sources"] = kwargs["sources"]
     if "tags" in kwargs and len(kwargs["tags"]) > 0:
@@ -252,15 +266,16 @@ for path in ["sources/qw_simp.json", "sources/qw_comp.json"]:
             )
 
 # hykwa
-with open("resources/data/hykwa.json") as f:
-    source = json.load(f)
-    for entry in source:
-        add_dict_entry(
-            gloss=entry.get('gloss', []),
-            cw=entry.get('cw', []),
-            sources=entry.get("sources", []) + ["hykwa"],
-            tags=entry.get("tags", []),
-        )
+for sourcef in ["resources/data/hykwa_glue.json", "resources/data/hykwa.json"]:
+    with open(sourcef) as f:
+        source = json.load(f)
+        for entry in source:
+            add_dict_entry(
+                gloss=entry.get('gloss', []),
+                cw=entry.get('cw', []),
+                sources=entry.get("sources", []) + ["hykwa"],
+                tags=entry.get("tags", []),
+            )
 
 # LJ
 """
@@ -334,8 +349,8 @@ is_footnote = re.compile(
     "^\s*[0-9]+\s*[^\s\.]"
 )
 
-wordre_nonum = re.compile("((?=[^0-9])[\w'])+")
-wordre = re.compile("[\w']+")
+wordre_nonum = re.compile("((?=[^0-9])[\w\u0331'])+")
+wordre = re.compile("[\w\u0331']+")
 renums = re.compile("((?=[^0-9])[\w;\.,\'\?\!\":\)\(\[\]\}\{])[0-9]+")
 
 with open("sources/words_dictionary.json") as f:
@@ -344,6 +359,10 @@ with open("sources/words_dictionary.json") as f:
     for ignore in ignores:
         if ignore in english_dict:
             english_dict.pop(ignore)
+    
+    # we count ntlakaapmah as english because it is not cw.
+    for ntla in snass_ntlakaapmah:
+        english_dict[ntla] = 1
 
 def extract_words(s, nonum=False):
     return list((wordre_nonum if nonum else wordre).findall(s))
@@ -358,7 +377,7 @@ def is_wawa_fuzzy(words):
     ))
     return len(nonenglish) > 0.5 * len(words)
 
-unrecognized = set()
+unrecognized = dict()
 alluses = 0
 
 def match_defn(word):
@@ -376,8 +395,10 @@ class hash_dict_wrapper:
         return self.dict["id"]
 chains = dict()
 for entry in dictionary:
+    assert len(entry["cw"]) > 0, "missing cw for " + str(entry)
+    assert len(entry["gloss"]) > 0, "missing gloss for " + str(entry)
     for cw in entry["cw"]:
-        words = [simplify_spelling(word) for word in extract_words(cw["value"])]
+        words = [butcher_spelling(word) for word in extract_words(cw["value"])]
         wordc = len(words)
         for i in range(wordc):
             wordt = tuple(words[:i + 1])
@@ -430,7 +451,7 @@ with open("resources/data/snass_sessions.json") as f:
 
                         wordchains = set()
                         for complex_word in words:
-                            word = (simplify_spelling(complex_word),)
+                            word = (butcher_spelling(complex_word),)
                             nextwords = set()
                             if word in chains:
                                 nextwords.add(word)
@@ -441,13 +462,17 @@ with open("resources/data/snass_sessions.json") as f:
                                 else:
                                     wordchain_usage(wordt)
                             if len(nextwords) == 0:
-                                unrecognized.add(complex_word)
+                                if word[0] not in snass_ignore and not word[0].isnumeric():
+                                    unrecognized[complex_word] = unrecognized.get(complex_word, set())
+                                    unrecognized[complex_word].add(session["url"])
                             wordchains = nextwords
                         for wordt in wordchains:
                             wordchain_usage(wordt)
 
-#if len(unrecognized) > 0:
-#    print("unrecognized words:", unrecognized)
+if len(unrecognized) > 0:
+    print("unrecognized words:")
+    for u in unrecognized:
+        print(" ", u + ":", ", ".join(unrecognized[u]))
 
 # list ranking
 dictionary.sort(key=lambda entry:-entry.get("use", 0))

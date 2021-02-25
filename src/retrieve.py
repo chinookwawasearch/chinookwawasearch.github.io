@@ -41,6 +41,8 @@ def get_service():
 
 def convert_to_deiv_pipa(text):
     assert(type(text) == type(""))
+    text = text.replace("kw'", "k'w")
+    text = text.replace("qw'", "q'w")
     text = text.replace("x", "h\u0331")
     text = text.replace("q", "k\u0331")
     return text
