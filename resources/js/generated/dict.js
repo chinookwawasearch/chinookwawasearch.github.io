@@ -64633,6 +64633,12 @@ const dictionary = [
         "orth": [
           "dr"
         ]
+      },
+      {
+        "value": "sheykas",
+        "orth": [
+          "hy"
+        ]
       }
     ],
     "sources": [
@@ -64644,7 +64650,8 @@ const dictionary = [
         "href": "https://chinookjargon.com/2019/09/13/hulquminums-jargon-traces/",
         "tag": "cj"
       },
-      "qw"
+      "qw",
+      "hykwa"
     ],
     "tags": [
       "Dubious"
