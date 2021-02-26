@@ -143,6 +143,8 @@ function append_match_row(tbody, match)
     if (gloss.length == 0) return;
     if (orths.length == 0) return;
 
+    var details_links = []
+
     // construct html for CW cell
     var orthhtml = ""
     for (var j = 0; j < orths.length; ++j)
@@ -244,6 +246,7 @@ function append_match_row(tbody, match)
             first = false;
             let metric = sigfigs(100 * entry["use"] / corpus_usage_all, 2) + "%"
             srchtml += `<span id=\"gid-${gid_it}\" style=\"color:${tag_color["Corpus"]};\">Corpus:&nbsp;${metric}</span>`
+            details_links.push(`#gid-${gid_it}`)
             titlecw = display_cwtext(orths[0].value);
 
             popcontent = `<p>${corpus_disclaimer}</p>`
@@ -316,9 +319,9 @@ function append_match_row(tbody, match)
     if (!hash.startsWith("#")) hash = "#" + hash;
 
 
-    let detid = gid_it++;
-
-    var dethtml = `<a id="gid-${detid}" href="#"><span class = \"glyphicon glyphicon-menu-right\"/></a>`
+    let detid = `gid-${gid_it++}`
+    details_links.push("#" + detid)
+    var dethtml = `<a id="${detid}" href="#"><span class = \"glyphicon glyphicon-menu-right\"/></a>`
 
     // row html
     var tr = `<tr>
@@ -351,12 +354,16 @@ function append_match_row(tbody, match)
     }
 
     // add link to details page
-    $(`#gid-${detid}`).click(function (event) {
-        console.log("clicked")
-        entry_details = orgentry;
-        event.preventDefault()
-        do_update();
-    })
+    for (var details_link of details_links)
+    {
+        console.log(`linking ${details_link}`)
+        $(details_link).click(function (event) {
+            console.log("clicked")
+            entry_details = orgentry;
+            event.preventDefault()
+            do_update();
+        })
+    }
 }
 
 var search_id = 0;
@@ -580,7 +587,7 @@ function lookup_entry_by_cw(cw)
     {
         for (const ecw of entry.cw)
         {
-            if (ecw.value == cw)
+            if (normalize(ecw.value) == normalize(cw))
             {
                 return entry;
             }
@@ -666,7 +673,7 @@ function read_url_params()
                 let eql = s.indexOf('=');
                 if (eql < 0) continue;
                 let key = s.substring(1, eql);
-                let val = s.substring(eql + 1)
+                let val = decode_escape(s.substring(eql + 1))
                 console.log(key, '=', val);
                 if (key == "show")
                 {
@@ -676,7 +683,9 @@ function read_url_params()
                 }
                 if (key == "entry")
                 {
+                    console.log("looking up entry", val)
                     entry_details = lookup_entry_by_cw(val);
+                    console.log("entry found:", !!entry_details)
                 }
                 else if (key == "entryid")
                 {
