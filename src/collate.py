@@ -44,6 +44,49 @@ def simplify_spelling(word):
 def butcher_spelling(word):
     return simplify_spelling(word).replace("q", "k").replace("x", "h")
 
+re_hykwa = re.compile("^[_a-zA'-ZəƏɬꞭ7\- ]+$")
+
+def convert_qw_to_hykwa(q):
+    # (temporarily disabled)
+    return None
+    hy = q
+    hy = hy.replace("’", "'")
+    hy = hy.replace("\u0323\u0323", "\u0323")
+    hy = hy.replace("á́", "á")
+    hy = hy.replace("x̣", "xh")
+    hy = hy.replace("p̣̣", "p'").replace("P̣", "P'").replace("p̣", "p'")
+    hy = hy.replace("ṭ", "t'").replace("Ṭ", "T'")
+    hy = hy.replace("ḳ", "k'").replace("ḳ", "k'")
+    hy = hy.replace("q̣", "q'")
+    hy = hy.replace("é", "ei")
+    hy = hy.replace("ə́", "əə")
+    hy = hy.replace("á", "aa").replace("á", "aa")
+    hy = hy.replace("ó", "oo").replace("ó", "oo")
+    hy = hy.replace("ú", "uu").replace("ú", "uu")
+    hy = hy.replace("í", "ii").replace("í", "ii")
+    hy = hy.replace("ʔ", "7").replace("Ɂ", "7")
+
+    # general word spellings
+    replacements = {
+        "ili7i": "ilihi",
+        "k'opiit": "kopit",
+        "tayii": "taiyi",
+        "k'anawi": "kanawi",
+        "hayuu": "hayu",
+        "alaaxti": "alaxti",
+        "gidəəp": "gidəp",
+        "k'əltəs": "kəltəs"
+    }
+    for pre in replacements:
+        hy = hy.replace(pre, replacements[pre])
+    if "oo" in hy:
+        # oo looks bad :C
+        return None
+    if re_hykwa.match(hy):
+        return hy
+    else:
+        return None
+
 dict_lookup_cw = dict()
 
 def simplify_orth(entry):
@@ -276,6 +319,23 @@ for sourcef in ["resources/data/hykwa_glue.json", "resources/data/hykwa.json"]:
                 sources=entry.get("sources", []) + ["hykwa"],
                 tags=entry.get("tags", []),
             )
+
+# qw -> hykwa
+for entry in dictionary:
+    if "hy" in [cw["orth"] for cw in entry["cw"]]:
+        continue
+    for cw in entry["cw"]:
+        if "qw" in cw["orth"]:
+            hy = convert_qw_to_hykwa(cw["value"])
+            if hy != None and hy != cw["value"] and hy not in [cw["value"] for cw in entry["cw"]]:
+                print("adding hykwa orthography", hy)
+                entry["cw"].append(
+                    {
+                        "value": hy,
+                        "orth": "hy"
+                    }
+                )
+            break
 
 # LJ
 """

@@ -46,5 +46,16 @@
                 "value": "shikhans"
             }
         ]
+    },
+    {
+        "cw": [
+            {
+                "value": "sheyḳaṣ"
+            },
+            {
+                "value": "sheykas",
+                "orth": ["hy"]
+            }
+        ]
     }
 ]
