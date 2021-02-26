@@ -1,6 +1,15 @@
 // startup script -- hook entries.
 
+// while page is loading, some javascript events are disabled.
 var load_block = true;
+
+var hash_change_block = false;
+
+hash_block = function() {
+    hash_change_block = true;
+}
+
+// don't read url params *on page load*
 var no_read_url_params = false;
 
 $(function() {
@@ -69,3 +78,19 @@ $(document).ready(function() {
 
     do_update();
 })
+
+window.onhashchange = function() {
+    if (load_block) return;
+
+    if (hash_change_block)
+    {
+        hash_change_block = false;
+        return
+    }
+
+    console.log("on hash change:", location.hash)
+
+    read_url_params();
+
+    setTimeout(do_update, 0);
+}

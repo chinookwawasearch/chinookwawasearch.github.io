@@ -356,7 +356,6 @@ function append_match_row(tbody, match)
     // add link to details page
     for (var details_link of details_links)
     {
-        console.log(`linking ${details_link}`)
         $(details_link).click(function (event) {
             console.log("clicked")
             entry_details = orgentry;
@@ -417,9 +416,6 @@ function do_search()
         guide_text = "a <b>Chinook Wawa</b> or <b>English</b>"
     }
 
-    // store query parameters in url.
-    write_url_params();
-
     // replace guide text
     if (search_direction != prev_search_direction)
     {
@@ -458,6 +454,9 @@ function do_search()
             killsearch = null;
 
             console.log("search complete");
+
+            // store query parameters in url.
+            write_url_params();
 
             // fade out search animation
             loader.css("opacity", '0');
@@ -535,34 +534,37 @@ function do_entry()
 
     panelcontent += table
 
-    panelcontent += `<h3>Corpus Data</h3><p>${corpus_disclaimer}</p>`
-
-    let metric = sigfigs(100 * entry.use / corpus_usage_all, 2) + "%"
-    panelcontent += `<p><b>Usage:</b> ${entry.use} of ${corpus_usage_all} words in corpus, or ${metric}.`
-    panelcontent += `<p><b>Rank:</b> ${entry.rk}${superordinal(entry.rk)} most frequent.</p>`
-    
-    if (entry.uses.length > 0)
+    if (entry.uses !== undefined && entry.uses.length > 0 && entry.use !== undefined && entry.use > 0)
     {
-        let tbody = ""
+        panelcontent += `<h3>Corpus Data</h3><p>${corpus_disclaimer}</p>`
 
-        for (const use of entry.uses)
+        let metric = sigfigs(100 * entry.use / corpus_usage_all, 2) + "%"
+        panelcontent += `<p><b>Usage:</b> ${entry.use} of ${corpus_usage_all} words in corpus, or ${metric}.`
+        panelcontent += `<p><b>Rank:</b> ${entry.rk}${superordinal(entry.rk)} most frequent.</p>`
+        
+        if (entry.uses !== undefined && entry.uses.length > 0)
         {
-            tbody += "<tr>"
-            tbody += `<td><a href="${use.href}">${use.title}</a>`
-            tbody += "</tr>"
+            let tbody = ""
+
+            for (const use of entry.uses)
+            {
+                tbody += "<tr>"
+                tbody += `<td><a href="${use.href}">${use.title}</a>`
+                tbody += "</tr>"
+            }
+
+            let table = `
+            <table class="table table-striped" id="results">
+                <thead>
+                    <tr>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>${tbody}</tbody>
+            </table>`
+
+            panelcontent += table
         }
-
-        let table = `
-        <table class="table table-striped" id="results">
-            <thead>
-                <tr>
-                    <th>Example</th>
-                </tr>
-            </thead>
-            <tbody>${tbody}</tbody>
-        </table>`
-
-        panelcontent += table
     }
     
 
@@ -649,11 +651,19 @@ function write_url_params()
         hstr += "&" + get_entry_perma(entry_details)
     }
 
+    hash_block();
     location.hash = hstr;
 }
 
 function read_url_params()
 {
+    // restore defaults
+    entry_details = null;
+    show_rudegloss = false;
+    caution_hide = caution_hide_default;
+
+
+    // read params
     let hashv = location.hash;
     console.log("reading url params:", hashv)
     if (hashv && hashv.length > 1)
