@@ -318,7 +318,6 @@ function append_match_row(tbody, match)
     let hash = location.hash;
     if (!hash.startsWith("#")) hash = "#" + hash;
 
-
     let detid = `gid-${gid_it++}`
     //details_links.push("#" + detid)
     var dethtml = `<a id="${detid}" href="${hash}&${get_entry_perma(entry)}"><span class = \"glyphicon glyphicon-menu-right\"/></a>`

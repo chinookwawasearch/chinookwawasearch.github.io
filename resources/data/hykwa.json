@@ -57,5 +57,13 @@
                 "orth": ["hy"]
             }
         ]
+    },
+    {
+        "gloss": ["That's all (used at the end of a story)", "preciseley like that"],
+        "cw": [
+            {
+                "value": "kopit kakwa"
+            }
+        ]
     }
 ]
