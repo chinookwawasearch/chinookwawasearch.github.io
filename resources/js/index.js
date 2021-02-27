@@ -320,8 +320,8 @@ function append_match_row(tbody, match)
 
 
     let detid = `gid-${gid_it++}`
-    details_links.push("#" + detid)
-    var dethtml = `<a id="${detid}" href="#"><span class = \"glyphicon glyphicon-menu-right\"/></a>`
+    //details_links.push("#" + detid)
+    var dethtml = `<a id="${detid}" href="${hash}&${get_entry_perma(entry)}"><span class = \"glyphicon glyphicon-menu-right\"/></a>`
 
     // row html
     var tr = `<tr>
