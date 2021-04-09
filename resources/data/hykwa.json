@@ -65,5 +65,32 @@
                 "value": "kopit kakwa"
             }
         ]
+    },
+    {
+        "gloss": ["maybe"],
+        "cw": [
+            {
+                "value": "alahti"
+            }
+        ],
+        "tags": ["GR/Southern"]
+    },
+    {
+        "gloss": ["but"],
+        "cw": [
+            {
+                "value": "bət"
+            }
+        ],
+        "tags": ["GR/Southern"]
+    },
+    {
+        "gloss": ["to call"],
+        "cw": [
+            {
+                "value": "wawa chako"
+            }
+        ],
+        "tags": ["Compound"]
     }
 ]

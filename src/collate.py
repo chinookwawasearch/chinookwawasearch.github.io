@@ -282,9 +282,9 @@ for path in ["sources/qw_simp.json", "sources/qw_comp.json"]:
                 tags.append("Limited")
             if rgb_attest == 0xf4cccc or rgb_attest == 0xe6b8ae:
                 tags.append("Dubious")
-            if rgb_attest == 0x6fa8dc or rgb_attest == 0xc9daf7:
+            if rgb_attest == 0xc9daf7:
                 tags.append("Archaic")
-            if rgb_attest == 0x3d85c6:
+            if rgb_attest == 0x3d85c6 or rgb_attest == 0x6fa8dc:
                 tags.append("Neologism")
             if rgb_attest == 0xd9d1e9:
                 tags.append("KW/Northern")
