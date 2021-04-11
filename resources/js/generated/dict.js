@@ -799,11 +799,23 @@ const dictionary = [
         "orth": [
           "qw"
         ]
+      },
+      {
+        "value": "ul-ta",
+        "orth": []
       }
     ],
     "sources": [
       "Zenk",
       "Hibbens",
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-24",
+        "name": "Chinook Jargon, \"<i>Pre-1924: Another CW &#8220;so help me God&#8221;</i>\"",
+        "href": "https://chinookjargon.com/2021/01/24/pre-1924-another-cw-so-help-me-god/",
+        "tag": "cj"
+      },
       "qw"
     ],
     "origin": {
@@ -5033,6 +5045,14 @@ const dictionary = [
     ],
     "sources": [
       "Powell 1990",
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-27",
+        "name": "Chinook Jargon, \"<i>1951 movie: The Painted Hills (Lassie&#8217;s Adventures in the Goldrush)</i>\"",
+        "href": "https://chinookjargon.com/2021/01/27/1951-movie-the-painted-hills-lassies-adventures-in-the-goldrush/",
+        "tag": "cj"
+      },
       "qw"
     ],
     "origin": {
@@ -12027,6 +12047,14 @@ const dictionary = [
     ],
     "sources": [
       "Hibbens",
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-26",
+        "name": "Chinook Jargon, \"<i>Is k\u02b0ana\u0301k\u02b0a a loan from sailors&#8217; English?</i>\"",
+        "href": "https://chinookjargon.com/2021/01/26/is-k%ca%b0anak%ca%b0a-a-loan-from-sailors-english/",
+        "tag": "cj"
+      },
       "qw"
     ],
     "origin": {
@@ -14638,6 +14666,14 @@ const dictionary = [
         "date": "2020-06-28",
         "name": "Chinook Jargon, \"<i>1909: a &#8220;Spokeshoot liar&#8221; &amp; very fluent Jargon</i>\"",
         "href": "https://chinookjargon.com/2020/06/28/1909-a-spokeshoot-liar-very-fluent-jargon/",
+        "tag": "cj"
+      },
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-27",
+        "name": "Chinook Jargon, \"<i>1951 movie: The Painted Hills (Lassie&#8217;s Adventures in the Goldrush)</i>\"",
+        "href": "https://chinookjargon.com/2021/01/27/1951-movie-the-painted-hills-lassies-adventures-in-the-goldrush/",
         "tag": "cj"
       },
       "qw"
@@ -22642,6 +22678,14 @@ const dictionary = [
     "sources": [
       "Zenk",
       "Hibbens",
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-27",
+        "name": "Chinook Jargon, \"<i>1951 movie: The Painted Hills (Lassie&#8217;s Adventures in the Goldrush)</i>\"",
+        "href": "https://chinookjargon.com/2021/01/27/1951-movie-the-painted-hills-lassies-adventures-in-the-goldrush/",
+        "tag": "cj"
+      },
       "qw"
     ],
     "origin": {
@@ -22773,6 +22817,14 @@ const dictionary = [
         "date": "2013-04-23",
         "name": "Chinook Jargon, \"<i>&#8220;Kanaka(s)&#8221; in old newspapers</i>\"",
         "href": "https://chinookjargon.com/2013/04/23/kanakas-in-old-newspapers/",
+        "tag": "cj"
+      },
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-26",
+        "name": "Chinook Jargon, \"<i>Is k\u02b0ana\u0301k\u02b0a a loan from sailors&#8217; English?</i>\"",
+        "href": "https://chinookjargon.com/2021/01/26/is-k%ca%b0anak%ca%b0a-a-loan-from-sailors-english/",
         "tag": "cj"
       },
       "qw"
@@ -43715,6 +43767,10 @@ const dictionary = [
         "orth": []
       },
       {
+        "value": "close",
+        "orth": []
+      },
+      {
         "value": "tloos",
         "orth": [
           "dr"
@@ -43724,6 +43780,14 @@ const dictionary = [
     "sources": [
       "Zenk",
       "Hibbens",
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-27",
+        "name": "Chinook Jargon, \"<i>1951 movie: The Painted Hills (Lassie&#8217;s Adventures in the Goldrush)</i>\"",
+        "href": "https://chinookjargon.com/2021/01/27/1951-movie-the-painted-hills-lassies-adventures-in-the-goldrush/",
+        "tag": "cj"
+      },
       "qw",
       "hykwa"
     ],
@@ -47786,6 +47850,10 @@ const dictionary = [
         "orth": []
       },
       {
+        "value": "memalus",
+        "orth": []
+      },
+      {
         "value": "mimaloos",
         "orth": [
           "dr"
@@ -47961,7 +48029,9 @@ const dictionary = [
   {
     "gloss": [
       "servant",
-      "underling"
+      "commoner",
+      "underling",
+      "low-ranking person"
     ],
     "rudegloss": [],
     "cw": [
@@ -47972,16 +48042,46 @@ const dictionary = [
         ]
       },
       {
+        "value": "maschim",
+        "orth": [
+          "qw"
+        ]
+      },
+      {
+        "value": "maschimi",
+        "orth": [
+          "dr"
+        ]
+      },
+      {
         "value": "mistchimas",
+        "orth": []
+      },
+      {
+        "value": "mastchimme",
         "orth": []
       }
     ],
     "sources": [
       "Hibbens",
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-30",
+        "name": "Chinook Jargon, \"<i>1913: &#8220;The British Columbia Orphans&#8217; Friend&#8221;, and Salish and Nuu\u010daan&#8217;u\u026c folks</i>\"",
+        "href": "https://chinookjargon.com/2021/01/30/1913-the-british-columbia-orphans-friend-and-salish-and-nuucaanu%c9%ac-folks/",
+        "tag": "cj"
+      },
       "qw"
     ],
+    "origin": {
+      "language": "Nootka",
+      "language-full": "Wakashan/Nootka",
+      "word": "mus\u010dum",
+      "unknown": true
+    },
     "id": 908,
-    "fuse-gloss": "servant,    underling",
+    "fuse-gloss": "servant,    commoner,    underling,    low-ranking person",
     "rk": 1050
   },
   {
@@ -49468,6 +49568,14 @@ const dictionary = [
     "sources": [
       "Zenk",
       "Hibbens",
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-24",
+        "name": "Chinook Jargon, \"<i>Pre-1924: Another CW &#8220;so help me God&#8221;</i>\"",
+        "href": "https://chinookjargon.com/2021/01/24/pre-1924-another-cw-so-help-me-god/",
+        "tag": "cj"
+      },
       "qw"
     ],
     "origin": {
@@ -50933,6 +51041,14 @@ const dictionary = [
     "sources": [
       "Zenk",
       "Hibbens",
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-27",
+        "name": "Chinook Jargon, \"<i>1951 movie: The Painted Hills (Lassie&#8217;s Adventures in the Goldrush)</i>\"",
+        "href": "https://chinookjargon.com/2021/01/27/1951-movie-the-painted-hills-lassies-adventures-in-the-goldrush/",
+        "tag": "cj"
+      },
       "qw",
       "hykwa"
     ],
@@ -57709,6 +57825,14 @@ const dictionary = [
         "orth": []
       },
       {
+        "value": "politely",
+        "orth": []
+      },
+      {
+        "value": "polikelee",
+        "orth": []
+      },
+      {
         "value": "poolakli",
         "orth": [
           "dr"
@@ -57953,7 +58077,8 @@ const dictionary = [
   },
   {
     "gloss": [
-      "american independance day"
+      "american independance day",
+      "national day"
     ],
     "rudegloss": [],
     "cw": [
@@ -57982,7 +58107,7 @@ const dictionary = [
       "qw"
     ],
     "tags": [
-      "Dubious"
+      "Limited"
     ],
     "origin": {
       "language": "English",
@@ -57991,7 +58116,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 1106,
-    "fuse-gloss": "american independance day",
+    "fuse-gloss": "american independance day,    national day",
     "rk": 1215
   },
   {
@@ -58988,7 +59113,7 @@ const dictionary = [
       "qw"
     ],
     "tags": [
-      "Limited"
+      "KW/Northern"
     ],
     "origin": {
       "language": "Squamish",
@@ -60243,7 +60368,7 @@ const dictionary = [
   },
   {
     "gloss": [
-      "beaver?"
+      "beaver"
     ],
     "rudegloss": [],
     "cw": [
@@ -60291,7 +60416,7 @@ const dictionary = [
       "unknown": true
     },
     "id": 1144,
-    "fuse-gloss": "beaver?",
+    "fuse-gloss": "beaver",
     "rk": 1247
   },
   {
@@ -66697,6 +66822,14 @@ const dictionary = [
         "href": "https://chinookjargon.com/2019/09/13/hulquminums-jargon-traces/",
         "tag": "cj"
       },
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-27",
+        "name": "Chinook Jargon, \"<i>1951 movie: The Painted Hills (Lassie&#8217;s Adventures in the Goldrush)</i>\"",
+        "href": "https://chinookjargon.com/2021/01/27/1951-movie-the-painted-hills-lassies-adventures-in-the-goldrush/",
+        "tag": "cj"
+      },
       "qw"
     ],
     "origin": {
@@ -66853,6 +66986,14 @@ const dictionary = [
         "date": "2019-09-13",
         "name": "Chinook Jargon, \"<i>Hul&#8217;qumi&#8217;num&#8217;s Jargon traces</i>\"",
         "href": "https://chinookjargon.com/2019/09/13/hulquminums-jargon-traces/",
+        "tag": "cj"
+      },
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-26",
+        "name": "Chinook Jargon, \"<i>Is k\u02b0ana\u0301k\u02b0a a loan from sailors&#8217; English?</i>\"",
+        "href": "https://chinookjargon.com/2021/01/26/is-k%ca%b0anak%ca%b0a-a-loan-from-sailors-english/",
         "tag": "cj"
       },
       "qw"
@@ -69206,6 +69347,10 @@ const dictionary = [
       {
         "value": "snass",
         "orth": []
+      },
+      {
+        "value": "snash",
+        "orth": []
       }
     ],
     "sources": [
@@ -69225,6 +69370,14 @@ const dictionary = [
         "date": "2017-11-26",
         "name": "Chinook Jargon, \"<i>New light on rainy weather</i>\"",
         "href": "https://chinookjargon.com/2017/11/26/new-light-on-rainy-weather/",
+        "tag": "cj"
+      },
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-28",
+        "name": "Chinook Jargon, \"<i>Pre-1900: Genuine-looking old SW Oregon CW</i>\"",
+        "href": "https://chinookjargon.com/2021/01/28/pre-1900-genuine-looking-old-sw-oregon-cw/",
         "tag": "cj"
       },
       "qw"
@@ -75134,7 +75287,8 @@ const dictionary = [
     "gloss": [
       "superior",
       "important",
-      "leader"
+      "leader",
+      "master/owner (of a pet)"
     ],
     "rudegloss": [],
     "cw": [
@@ -75183,6 +75337,14 @@ const dictionary = [
         "href": "https://chinookjargon.com/2020/06/03/purposes-dialect-differences/",
         "tag": "cj"
       },
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-27",
+        "name": "Chinook Jargon, \"<i>1951 movie: The Painted Hills (Lassie&#8217;s Adventures in the Goldrush)</i>\"",
+        "href": "https://chinookjargon.com/2021/01/27/1951-movie-the-painted-hills-lassies-adventures-in-the-goldrush/",
+        "tag": "cj"
+      },
       "qw",
       "hykwa"
     ],
@@ -75193,7 +75355,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 1452,
-    "fuse-gloss": "superior,    important,    leader",
+    "fuse-gloss": "superior,    important,    leader,    master/owner (of a pet)",
     "use": 25,
     "uses": [
       {
@@ -84183,6 +84345,10 @@ const dictionary = [
         "orth": []
       },
       {
+        "value": "oiehut",
+        "orth": []
+      },
+      {
         "value": "oyhut",
         "orth": [
           "dr"
@@ -84812,6 +84978,14 @@ const dictionary = [
         "date": "2019-12-15",
         "name": "Chinook Jargon, \"<i>A Jargon verb mash-up in Central Coast Salish</i>\"",
         "href": "https://chinookjargon.com/2019/12/15/a-jargon-verb-mash-up-in-central-coast-salish/",
+        "tag": "cj"
+      },
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-30",
+        "name": "Chinook Jargon, \"<i>1913: &#8220;The British Columbia Orphans&#8217; Friend&#8221;, and Salish and Nuu\u010daan&#8217;u\u026c folks</i>\"",
+        "href": "https://chinookjargon.com/2021/01/30/1913-the-british-columbia-orphans-friend-and-salish-and-nuucaanu%c9%ac-folks/",
         "tag": "cj"
       },
       "qw"
@@ -91530,6 +91704,14 @@ const dictionary = [
         "date": "2021-02-08",
         "name": "Chinook Jargon, \"<i>More clues in Franch\u00e8re 1820</i>\"",
         "href": "https://chinookjargon.com/2021/02/08/more-clues-in-franchere-1820/",
+        "tag": "cj"
+      },
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-26",
+        "name": "Chinook Jargon, \"<i>Is k\u02b0ana\u0301k\u02b0a a loan from sailors&#8217; English?</i>\"",
+        "href": "https://chinookjargon.com/2021/01/26/is-k%ca%b0anak%ca%b0a-a-loan-from-sailors-english/",
         "tag": "cj"
       },
       "qw"
@@ -106903,6 +107085,8 @@ const dictionary = [
   },
   {
     "gloss": [
+      "send",
+      "take",
       "send"
     ],
     "rudegloss": [],
@@ -106915,14 +107099,23 @@ const dictionary = [
       }
     ],
     "sources": [
+      "qw",
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-27",
+        "name": "Chinook Jargon, \"<i>1951 movie: The Painted Hills (Lassie&#8217;s Adventures in the Goldrush)</i>\"",
+        "href": "https://chinookjargon.com/2021/01/27/1951-movie-the-painted-hills-lassies-adventures-in-the-goldrush/",
+        "tag": "cj"
+      },
       "qw"
     ],
     "tags": [
       "Compound",
-      "Uncited"
+      "Compound"
     ],
     "id": 2280,
-    "fuse-gloss": "send",
+    "fuse-gloss": "send,    take,    send",
     "rk": 2287
   },
   {
@@ -109812,7 +110005,7 @@ const dictionary = [
   {
     "gloss": [
       "tell the truth",
-      "be honest"
+      "honesty"
     ],
     "rudegloss": [],
     "cw": [
@@ -109824,14 +110017,21 @@ const dictionary = [
       }
     ],
     "sources": [
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-24",
+        "name": "Chinook Jargon, \"<i>Pre-1924: Another CW &#8220;so help me God&#8221;</i>\"",
+        "href": "https://chinookjargon.com/2021/01/24/pre-1924-another-cw-so-help-me-god/",
+        "tag": "cj"
+      },
       "qw"
     ],
     "tags": [
-      "Compound",
-      "Uncited"
+      "Compound"
     ],
     "id": 2394,
-    "fuse-gloss": "tell the truth,    be honest",
+    "fuse-gloss": "tell the truth,    honesty",
     "rk": 2401
   },
   {
@@ -129556,6 +129756,69 @@ const dictionary = [
   },
   {
     "gloss": [
+      "doctor"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "t'ama\u0301nowasman",
+        "orth": [
+          "qw"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-30",
+        "name": "Chinook Jargon, \"<i>1913: &#8220;The British Columbia Orphans&#8217; Friend&#8221;, and Salish and Nuu\u010daan&#8217;u\u026c folks</i>\"",
+        "href": "https://chinookjargon.com/2021/01/30/1913-the-british-columbia-orphans-friend-and-salish-and-nuucaanu%c9%ac-folks/",
+        "tag": "cj"
+      },
+      "qw"
+    ],
+    "tags": [
+      "Compound",
+      "Limited"
+    ],
+    "id": 3124,
+    "fuse-gloss": "doctor",
+    "rk": 3129
+  },
+  {
+    "gloss": [
+      "bring"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "mamuk chako",
+        "orth": [
+          "qw"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "display": "chinookjargon.com",
+        "author": "Dave Robertson",
+        "date": "2021-01-27",
+        "name": "Chinook Jargon, \"<i>1951 movie: The Painted Hills (Lassie&#8217;s Adventures in the Goldrush)</i>\"",
+        "href": "https://chinookjargon.com/2021/01/27/1951-movie-the-painted-hills-lassies-adventures-in-the-goldrush/",
+        "tag": "cj"
+      },
+      "qw"
+    ],
+    "tags": [
+      "Compound"
+    ],
+    "id": 3125,
+    "fuse-gloss": "bring",
+    "rk": 3130
+  },
+  {
+    "gloss": [
       "tide"
     ],
     "rudegloss": [],
@@ -129570,7 +129833,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3124,
+    "id": 3126,
     "fuse-gloss": "tide",
     "tags": [
       "Uncited"
@@ -129606,7 +129869,7 @@ const dictionary = [
       "hykwa",
       "hykwa"
     ],
-    "id": 3125,
+    "id": 3127,
     "fuse-gloss": "knee,    knee",
     "tags": [
       "Uncited"
@@ -129636,7 +129899,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3126,
+    "id": 3128,
     "fuse-gloss": "potato",
     "tags": [
       "Uncited"
@@ -129665,7 +129928,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3127,
+    "id": 3129,
     "fuse-gloss": "That's all (used at the end of a story),    preciseley like that",
     "tags": [
       "Uncited"
