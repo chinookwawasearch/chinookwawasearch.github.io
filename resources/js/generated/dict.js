@@ -74299,6 +74299,12 @@ const dictionary = [
         ]
       },
       {
+        "value": "telaas",
+        "orth": [
+          "dr"
+        ]
+      },
+      {
         "value": "talass",
         "orth": []
       }
