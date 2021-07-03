@@ -107403,7 +107403,8 @@ const dictionary = [
   {
     "gloss": [
       "bring back",
-      "send back"
+      "send back",
+      "flip/overturn"
     ],
     "rudegloss": [],
     "cw": [
@@ -107422,7 +107423,7 @@ const dictionary = [
       "Uncited"
     ],
     "id": 2288,
-    "fuse-gloss": "bring back,    send back",
+    "fuse-gloss": "bring back,    send back,    flip/overturn",
     "rk": 2299
   },
   {
@@ -130619,6 +130620,79 @@ const dictionary = [
   },
   {
     "gloss": [
+      "until"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "q'o\u0294 k\u0323opa",
+        "orth": [
+          "qw"
+        ]
+      }
+    ],
+    "sources": [
+      "qw"
+    ],
+    "tags": [
+      "Compound",
+      "Uncited"
+    ],
+    "id": 3150,
+    "fuse-gloss": "until",
+    "rk": 3155
+  },
+  {
+    "gloss": [
+      "fix",
+      "repair"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "mamuk w\u0259x\u0323t \u026cush",
+        "orth": [
+          "qw"
+        ]
+      }
+    ],
+    "sources": [
+      "qw"
+    ],
+    "tags": [
+      "Compound",
+      "Uncited"
+    ],
+    "id": 3151,
+    "fuse-gloss": "fix,    repair",
+    "rk": 3156
+  },
+  {
+    "gloss": [
+      "the world"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "ukuk ili\u0294i",
+        "orth": [
+          "qw"
+        ]
+      }
+    ],
+    "sources": [
+      "qw"
+    ],
+    "tags": [
+      "Compound",
+      "Uncited"
+    ],
+    "id": 3152,
+    "fuse-gloss": "the world",
+    "rk": 3157
+  },
+  {
+    "gloss": [
       "tide"
     ],
     "rudegloss": [],
@@ -130633,7 +130707,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3150,
+    "id": 3153,
     "fuse-gloss": "tide",
     "tags": [
       "Uncited"
@@ -130669,7 +130743,7 @@ const dictionary = [
       "hykwa",
       "hykwa"
     ],
-    "id": 3151,
+    "id": 3154,
     "fuse-gloss": "knee,    knee",
     "tags": [
       "Uncited"
@@ -130699,7 +130773,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3152,
+    "id": 3155,
     "fuse-gloss": "potato",
     "tags": [
       "Uncited"
@@ -130728,7 +130802,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3153,
+    "id": 3156,
     "fuse-gloss": "That's all (used at the end of a story),    preciseley like that",
     "tags": [
       "Uncited"
