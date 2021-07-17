@@ -80565,6 +80565,12 @@ const dictionary = [
         ]
       },
       {
+        "value": "cim",
+        "orth": [
+          "pp"
+        ]
+      },
+      {
         "value": "tzum",
         "orth": []
       },
