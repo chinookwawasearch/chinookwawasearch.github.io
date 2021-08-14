@@ -43664,6 +43664,10 @@ const dictionary = [
       {
         "value": "dloogwalla",
         "orth": []
+      },
+      {
+        "value": "klokwalla",
+        "orth": []
       }
     ],
     "sources": [
