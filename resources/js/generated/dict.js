@@ -31890,16 +31890,28 @@ const dictionary = [
         "orth": [
           "qw"
         ]
+      },
+      {
+        "value": "luk-ut-chee",
+        "orth": []
+      },
+      {
+        "value": "la-kwit-chee",
+        "orth": []
       }
     ],
     "sources": [
+      "Gibbs",
       "qw"
     ],
+    "origin": {
+      "language": "French",
+      "language-full": "French",
+      "word": "la coquille",
+      "unknown": true
+    },
     "id": 615,
     "fuse-gloss": "clam,    bivalve",
-    "tags": [
-      "Uncited"
-    ],
     "rk": 818
   },
   {
