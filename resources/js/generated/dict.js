@@ -13491,6 +13491,10 @@ const dictionary = [
     "sources": [
       "qw"
     ],
+    "tags": [
+      "KW/Northern",
+      "Uncited"
+    ],
     "origin": {
       "language": "English",
       "language-full": "English",
@@ -13499,9 +13503,6 @@ const dictionary = [
     },
     "id": 285,
     "fuse-gloss": "high-quality,    fancy,    top notch,    excellent,    prestigious",
-    "tags": [
-      "Uncited"
-    ],
     "rk": 546
   },
   {
@@ -24357,6 +24358,16 @@ const dictionary = [
         ]
       },
       {
+        "value": "k\u0323itasim",
+        "orth": [
+          "qw"
+        ]
+      },
+      {
+        "value": "kitasim",
+        "orth": []
+      },
+      {
         "value": "lakatikism",
         "orth": [
           "dr"
@@ -31750,44 +31761,39 @@ const dictionary = [
   },
   {
     "gloss": [
-      "confession",
+      "confess",
       "apology"
     ],
     "rudegloss": [],
     "cw": [
       {
-        "value": "lahansh\u0259\u0301t",
-        "orth": [
-          "qw"
-        ]
-      },
-      {
-        "value": "lax\u0323anchat",
-        "orth": [
-          "qw"
-        ]
-      },
-      {
-        "value": "laxa\u0301njet?",
-        "orth": [
-          "qw"
-        ]
-      },
-      {
         "value": "lahanshut",
-        "orth": []
+        "orth": [
+          "qw"
+        ]
+      },
+      {
+        "value": "lax\u0323a\u0301nshat",
+        "orth": [
+          "qw"
+        ]
       }
     ],
     "sources": [
-      "lusentoj",
       "qw"
     ],
     "tags": [
-      "Dubious",
+      "KW/Northern",
       "Uncited"
     ],
+    "origin": {
+      "language": "Shuswap",
+      "language-full": "Salishan/Shuswap",
+      "word": "",
+      "unknown": true
+    },
     "id": 612,
-    "fuse-gloss": "confession,    apology",
+    "fuse-gloss": "confess,    apology",
     "rk": 815
   },
   {
@@ -47460,7 +47466,7 @@ const dictionary = [
       "qw"
     ],
     "tags": [
-      "Limited"
+      "KW/Northern"
     ],
     "id": 902,
     "fuse-gloss": "apologize,    be sorry,    make amends,    confer",
@@ -64934,6 +64940,10 @@ const dictionary = [
     "sources": [
       "qw"
     ],
+    "tags": [
+      "KW/Northern",
+      "Uncited"
+    ],
     "origin": {
       "language": "English",
       "language-full": "English",
@@ -64942,9 +64952,6 @@ const dictionary = [
     },
     "id": 1230,
     "fuse-gloss": "debt,    credit",
-    "tags": [
-      "Uncited"
-    ],
     "rk": 1325
   },
   {
@@ -92034,13 +92041,17 @@ const dictionary = [
         "orth": [
           "dr"
         ]
+      },
+      {
+        "value": "putah",
+        "orth": []
       }
     ],
     "sources": [
       "qw"
     ],
     "tags": [
-      "Limited",
+      "KW/Northern",
       "Uncited"
     ],
     "origin": {
