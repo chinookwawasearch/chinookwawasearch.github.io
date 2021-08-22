@@ -1989,7 +1989,7 @@ const dictionary = [
     "rudegloss": [],
     "cw": [
       {
-        "value": "at\u0323aymin",
+        "value": "at\u0323imin",
         "orth": [
           "qw"
         ]
@@ -36363,7 +36363,8 @@ const dictionary = [
   },
   {
     "gloss": [
-      "nail"
+      "nail",
+      "fingernail/claw"
     ],
     "rudegloss": [],
     "cw": [
@@ -36399,7 +36400,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 708,
-    "fuse-gloss": "nail",
+    "fuse-gloss": "nail,    fingernail/claw",
     "rk": 898
   },
   {
