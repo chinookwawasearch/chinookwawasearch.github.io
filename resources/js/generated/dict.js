@@ -3154,7 +3154,7 @@ const dictionary = [
   {
     "gloss": [
       "two-spirit",
-      "hermaphrodite (queer in general? pejorative?)"
+      "non-binary (queer in general? pejorative?)"
     ],
     "rudegloss": [],
     "cw": [
@@ -3212,7 +3212,7 @@ const dictionary = [
     },
     "rude": 5,
     "id": 67,
-    "fuse-gloss": "two-spirit,    hermaphrodite (queer in general? pejorative?)",
+    "fuse-gloss": "two-spirit,    non-binary (queer in general? pejorative?)",
     "rk": 352
   },
   {
@@ -10494,13 +10494,19 @@ const dictionary = [
     "rudegloss": [],
     "cw": [
       {
-        "value": "uliq",
+        "value": "\u0259lik",
         "orth": [
           "qw"
         ]
       },
       {
-        "value": "oli\u0301k?",
+        "value": "oli\u0301k",
+        "orth": [
+          "qw"
+        ]
+      },
+      {
+        "value": "aliq?",
         "orth": [
           "qw"
         ]
@@ -10525,6 +10531,9 @@ const dictionary = [
         "tag": "cj"
       },
       "qw"
+    ],
+    "tags": [
+      "Archaic"
     ],
     "id": 223,
     "fuse-gloss": "girl,    maiden",
@@ -11410,7 +11419,7 @@ const dictionary = [
     "rudegloss": [],
     "cw": [
       {
-        "value": "gita\u0301r",
+        "value": "git\u0323a\u0301r",
         "orth": [
           "qw"
         ]
@@ -11467,6 +11476,10 @@ const dictionary = [
     "sources": [
       "qw"
     ],
+    "tags": [
+      "Limited",
+      "Uncited"
+    ],
     "origin": {
       "language": "Klamath",
       "language-full": "Plateau/Klamath",
@@ -11475,9 +11488,6 @@ const dictionary = [
     },
     "id": 248,
     "fuse-gloss": "crater,    dent",
-    "tags": [
-      "Uncited"
-    ],
     "rk": 512
   },
   {
@@ -13990,7 +14000,8 @@ const dictionary = [
   {
     "gloss": [
       "hell",
-      "fuck"
+      "(general curse world",
+      "akin to \"fuck\")"
     ],
     "rudegloss": [],
     "cw": [
@@ -14020,7 +14031,7 @@ const dictionary = [
     },
     "rude": 1,
     "id": 289,
-    "fuse-gloss": "hell,    fuck",
+    "fuse-gloss": "hell,    (general curse world,    akin to \"fuck\")",
     "rk": 548
   },
   {
@@ -15597,7 +15608,7 @@ const dictionary = [
   },
   {
     "gloss": [
-      "erotic/suggestive dance"
+      "erotic dance"
     ],
     "rudegloss": [],
     "cw": [
@@ -15616,7 +15627,7 @@ const dictionary = [
       "Uncited"
     ],
     "id": 320,
-    "fuse-gloss": "erotic/suggestive dance",
+    "fuse-gloss": "erotic dance",
     "rk": 573
   },
   {
@@ -16298,7 +16309,7 @@ const dictionary = [
         ]
       },
       {
-        "value": "tk'a\u0301ytaba\u0301tuk",
+        "value": "k\u0323aytaba\u0301tuk",
         "orth": [
           "qw"
         ]
@@ -19138,7 +19149,7 @@ const dictionary = [
     "gloss": [
       "penis",
       "cock",
-      "dick (vulg.)"
+      "dick (vulgar)"
     ],
     "rudegloss": [],
     "cw": [
@@ -19166,7 +19177,7 @@ const dictionary = [
     ],
     "rude": 4,
     "id": 380,
-    "fuse-gloss": "penis,    cock,    dick (vulg.)",
+    "fuse-gloss": "penis,    cock,    dick (vulgar)",
     "rk": 620
   },
   {
@@ -130727,6 +130738,33 @@ const dictionary = [
   },
   {
     "gloss": [
+      "be in a bad mood",
+      "lose hope",
+      "become depressed"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "chako b\u0259g",
+        "orth": [
+          "qw"
+        ]
+      }
+    ],
+    "sources": [
+      "qw"
+    ],
+    "tags": [
+      "Compound",
+      "Neologism",
+      "Uncited"
+    ],
+    "id": 3153,
+    "fuse-gloss": "be in a bad mood,    lose hope,    become depressed",
+    "rk": 3158
+  },
+  {
+    "gloss": [
       "tide"
     ],
     "rudegloss": [],
@@ -130741,7 +130779,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3153,
+    "id": 3154,
     "fuse-gloss": "tide",
     "tags": [
       "Uncited"
@@ -130777,7 +130815,7 @@ const dictionary = [
       "hykwa",
       "hykwa"
     ],
-    "id": 3154,
+    "id": 3155,
     "fuse-gloss": "knee,    knee",
     "tags": [
       "Uncited"
@@ -130807,7 +130845,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3155,
+    "id": 3156,
     "fuse-gloss": "potato",
     "tags": [
       "Uncited"
@@ -130836,7 +130874,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3156,
+    "id": 3157,
     "fuse-gloss": "That's all (used at the end of a story),    preciseley like that",
     "tags": [
       "Uncited"
