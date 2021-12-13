@@ -11179,7 +11179,8 @@ const dictionary = [
   },
   {
     "gloss": [
-      "gate"
+      "gate",
+      "entance/exit"
     ],
     "rudegloss": [],
     "cw": [
@@ -11207,7 +11208,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 242,
-    "fuse-gloss": "gate",
+    "fuse-gloss": "gate,    entance/exit",
     "rk": 507
   },
   {
@@ -11458,7 +11459,8 @@ const dictionary = [
   {
     "gloss": [
       "crater",
-      "dent"
+      "dent",
+      "flaw"
     ],
     "rudegloss": [],
     "cw": [
@@ -11487,7 +11489,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 248,
-    "fuse-gloss": "crater,    dent",
+    "fuse-gloss": "crater,    dent,    flaw",
     "rk": 512
   },
   {
@@ -91978,7 +91980,13 @@ const dictionary = [
         ]
       },
       {
-        "value": "\u026co\u026cq?",
+        "value": "\u026co\u026cq",
+        "orth": [
+          "qw"
+        ]
+      },
+      {
+        "value": "t\u026c'a\u026ck?",
         "orth": [
           "qw"
         ]
@@ -92314,6 +92322,42 @@ const dictionary = [
   },
   {
     "gloss": [
+      "switch"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "lamane\u0301t",
+        "orth": [
+          "qw"
+        ]
+      },
+      {
+        "value": "lamanet",
+        "orth": [
+          "dr"
+        ]
+      }
+    ],
+    "sources": [
+      "qw"
+    ],
+    "tags": [
+      "Neologism",
+      "Uncited"
+    ],
+    "origin": {
+      "language": "French",
+      "language-full": "French",
+      "word": "la manette",
+      "unknown": false
+    },
+    "id": 1766,
+    "fuse-gloss": "switch",
+    "rk": 1783
+  },
+  {
+    "gloss": [
       "store",
       "shop",
       "market"
@@ -92341,9 +92385,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1766,
+    "id": 1767,
     "fuse-gloss": "store,    shop,    market",
-    "rk": 1783
+    "rk": 1784
   },
   {
     "gloss": [
@@ -92365,9 +92409,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1767,
+    "id": 1768,
     "fuse-gloss": "Chinook Jargon",
-    "rk": 1784
+    "rk": 1785
   },
   {
     "gloss": [
@@ -92390,9 +92434,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1768,
+    "id": 1769,
     "fuse-gloss": "teach,    explain",
-    "rk": 1785
+    "rk": 1786
   },
   {
     "gloss": [
@@ -92414,9 +92458,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1769,
+    "id": 1770,
     "fuse-gloss": "learn",
-    "rk": 1786
+    "rk": 1787
   },
   {
     "gloss": [
@@ -92439,9 +92483,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1770,
+    "id": 1771,
     "fuse-gloss": "some,    a few",
-    "rk": 1787
+    "rk": 1788
   },
   {
     "gloss": [
@@ -92469,9 +92513,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1771,
+    "id": 1772,
     "fuse-gloss": "how many",
-    "rk": 1788
+    "rk": 1789
   },
   {
     "gloss": [
@@ -92508,9 +92552,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1772,
+    "id": 1773,
     "fuse-gloss": "ocean",
-    "rk": 1789
+    "rk": 1790
   },
   {
     "gloss": [
@@ -92540,9 +92584,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1773,
+    "id": 1774,
     "fuse-gloss": "rapids,    strong current",
-    "rk": 1790
+    "rk": 1791
   },
   {
     "gloss": [
@@ -92572,9 +92616,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1774,
+    "id": 1775,
     "fuse-gloss": "beach (sandy),    sand",
-    "rk": 1791
+    "rk": 1792
   },
   {
     "gloss": [
@@ -92596,9 +92640,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1775,
+    "id": 1776,
     "fuse-gloss": "forest",
-    "rk": 1792
+    "rk": 1793
   },
   {
     "gloss": [
@@ -92628,9 +92672,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 1776,
+    "id": 1777,
     "fuse-gloss": "totem pole",
-    "rk": 1793
+    "rk": 1794
   },
   {
     "gloss": [
@@ -92661,9 +92705,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1777,
+    "id": 1778,
     "fuse-gloss": "bobcat,    lynx,    wildcat",
-    "rk": 1794
+    "rk": 1795
   },
   {
     "gloss": [
@@ -92694,9 +92738,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1778,
+    "id": 1779,
     "fuse-gloss": "bighorn sheep,    wild sheep",
-    "rk": 1795
+    "rk": 1796
   },
   {
     "gloss": [
@@ -92725,9 +92769,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1779,
+    "id": 1780,
     "fuse-gloss": "bakery",
-    "rk": 1796
+    "rk": 1797
   },
   {
     "gloss": [
@@ -92756,9 +92800,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1780,
+    "id": 1781,
     "fuse-gloss": "bank (financial institution)",
-    "rk": 1797
+    "rk": 1798
   },
   {
     "gloss": [
@@ -92796,9 +92840,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1781,
+    "id": 1782,
     "fuse-gloss": "hospital,    clinic",
-    "rk": 1798
+    "rk": 1799
   },
   {
     "gloss": [
@@ -92836,9 +92880,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1782,
+    "id": 1783,
     "fuse-gloss": "hotel,    brothel",
-    "rk": 1799
+    "rk": 1800
   },
   {
     "gloss": [
@@ -92861,9 +92905,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1783,
+    "id": 1784,
     "fuse-gloss": "hotel,    inn (strictly not a brothel)",
-    "rk": 1800
+    "rk": 1801
   },
   {
     "gloss": [
@@ -92908,9 +92952,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1784,
+    "id": 1785,
     "fuse-gloss": "liquor store,    bar,    pub",
-    "rk": 1801
+    "rk": 1802
   },
   {
     "gloss": [
@@ -92947,9 +92991,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1785,
+    "id": 1786,
     "fuse-gloss": "kitchen",
-    "rk": 1802
+    "rk": 1803
   },
   {
     "gloss": [
@@ -92979,9 +93023,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1786,
+    "id": 1787,
     "fuse-gloss": "cowshed,    barn",
-    "rk": 1803
+    "rk": 1804
   },
   {
     "gloss": [
@@ -93020,9 +93064,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1787,
+    "id": 1788,
     "fuse-gloss": "church,    temple,    place of worship",
-    "rk": 1804
+    "rk": 1805
   },
   {
     "gloss": [
@@ -93060,9 +93104,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1788,
+    "id": 1789,
     "fuse-gloss": "tent",
-    "rk": 1805
+    "rk": 1806
   },
   {
     "gloss": [
@@ -93099,9 +93143,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1789,
+    "id": 1790,
     "fuse-gloss": "restaurant",
-    "rk": 1806
+    "rk": 1807
   },
   {
     "gloss": [
@@ -93130,9 +93174,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1790,
+    "id": 1791,
     "fuse-gloss": "gumboots",
-    "rk": 1807
+    "rk": 1808
   },
   {
     "gloss": [
@@ -93170,9 +93214,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1791,
+    "id": 1792,
     "fuse-gloss": "hay shed,    barn",
-    "rk": 1808
+    "rk": 1809
   },
   {
     "gloss": [
@@ -93202,9 +93246,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1792,
+    "id": 1793,
     "fuse-gloss": "petticoat,    slip",
-    "rk": 1809
+    "rk": 1810
   },
   {
     "gloss": [
@@ -93235,9 +93279,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 1793,
+    "id": 1794,
     "fuse-gloss": "denim,    jeans",
-    "rk": 1810
+    "rk": 1811
   },
   {
     "gloss": [
@@ -93279,9 +93323,9 @@ const dictionary = [
       "Compound",
       "Compound"
     ],
-    "id": 1794,
+    "id": 1795,
     "fuse-gloss": "eyeglasses,    spectacles,    spectacles,    glasses",
-    "rk": 1811
+    "rk": 1812
   },
   {
     "gloss": [
@@ -93329,9 +93373,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1795,
+    "id": 1796,
     "fuse-gloss": "God,    a god,    diety,    creator spirit",
-    "rk": 1812
+    "rk": 1813
   },
   {
     "gloss": [
@@ -93370,9 +93414,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1796,
+    "id": 1797,
     "fuse-gloss": "graveyard,    indigenous cemetary,    burial island",
-    "rk": 1813
+    "rk": 1814
   },
   {
     "gloss": [
@@ -93409,9 +93453,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1797,
+    "id": 1798,
     "fuse-gloss": "heaven",
-    "rk": 1814
+    "rk": 1815
   },
   {
     "gloss": [
@@ -93440,9 +93484,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1798,
+    "id": 1799,
     "fuse-gloss": "morning",
-    "rk": 1815
+    "rk": 1816
   },
   {
     "gloss": [
@@ -93479,9 +93523,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1799,
+    "id": 1800,
     "fuse-gloss": "noon",
-    "rk": 1816
+    "rk": 1817
   },
   {
     "gloss": [
@@ -93511,9 +93555,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1800,
+    "id": 1801,
     "fuse-gloss": "evening,    gloaming",
-    "rk": 1817
+    "rk": 1818
   },
   {
     "gloss": [
@@ -93542,9 +93586,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1801,
+    "id": 1802,
     "fuse-gloss": "breakfast",
-    "rk": 1818
+    "rk": 1819
   },
   {
     "gloss": [
@@ -93573,9 +93617,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1802,
+    "id": 1803,
     "fuse-gloss": "lunch",
-    "rk": 1819
+    "rk": 1820
   },
   {
     "gloss": [
@@ -93605,9 +93649,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1803,
+    "id": 1804,
     "fuse-gloss": "dinner,    supper",
-    "rk": 1820
+    "rk": 1821
   },
   {
     "gloss": [
@@ -93637,9 +93681,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1804,
+    "id": 1805,
     "fuse-gloss": "hold fast,    hold on tight",
-    "rk": 1821
+    "rk": 1822
   },
   {
     "gloss": [
@@ -93668,9 +93712,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1805,
+    "id": 1806,
     "fuse-gloss": "nickel",
-    "rk": 1822
+    "rk": 1823
   },
   {
     "gloss": [
@@ -93700,9 +93744,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1806,
+    "id": 1807,
     "fuse-gloss": "car,    truck",
-    "rk": 1823
+    "rk": 1824
   },
   {
     "gloss": [
@@ -93732,9 +93776,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1807,
+    "id": 1808,
     "fuse-gloss": "train,    railroad car",
-    "rk": 1824
+    "rk": 1825
   },
   {
     "gloss": [
@@ -93764,9 +93808,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1808,
+    "id": 1809,
     "fuse-gloss": "railway,    train tracks",
-    "rk": 1825
+    "rk": 1826
   },
   {
     "gloss": [
@@ -93796,9 +93840,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1809,
+    "id": 1810,
     "fuse-gloss": "insane asylum",
-    "rk": 1826
+    "rk": 1827
   },
   {
     "gloss": [
@@ -93829,9 +93873,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1810,
+    "id": 1811,
     "fuse-gloss": "go crazy,    lose one's mind",
-    "rk": 1827
+    "rk": 1828
   },
   {
     "gloss": [
@@ -93860,9 +93904,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1811,
+    "id": 1812,
     "fuse-gloss": "fisherman",
-    "rk": 1828
+    "rk": 1829
   },
   {
     "gloss": [
@@ -93893,9 +93937,9 @@ const dictionary = [
       "Compound",
       "Compound"
     ],
-    "id": 1812,
+    "id": 1813,
     "fuse-gloss": "grease fire,    oil lamp,    oil lamp",
-    "rk": 1829
+    "rk": 1830
   },
   {
     "gloss": [
@@ -93923,9 +93967,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1813,
+    "id": 1814,
     "fuse-gloss": "toilet (informal)",
-    "rk": 1830
+    "rk": 1831
   },
   {
     "gloss": [
@@ -93955,9 +93999,9 @@ const dictionary = [
       "Compound",
       "Neologism"
     ],
-    "id": 1814,
+    "id": 1815,
     "fuse-gloss": "nostalgia",
-    "rk": 1831
+    "rk": 1832
   },
   {
     "gloss": [
@@ -93988,9 +94032,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1815,
+    "id": 1816,
     "fuse-gloss": "small mammal,    creature,    critter",
-    "rk": 1832
+    "rk": 1833
   },
   {
     "gloss": [
@@ -94023,9 +94067,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1816,
+    "id": 1817,
     "fuse-gloss": "clever,    lively,    sharp,    immodest (?)",
-    "rk": 1833
+    "rk": 1834
   },
   {
     "gloss": [
@@ -94057,9 +94101,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1817,
+    "id": 1818,
     "fuse-gloss": "smart,    wise,    be in the habit of",
-    "rk": 1834
+    "rk": 1835
   },
   {
     "gloss": [
@@ -94088,9 +94132,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1818,
+    "id": 1819,
     "fuse-gloss": "to feel good",
-    "rk": 1835
+    "rk": 1836
   },
   {
     "gloss": [
@@ -94121,9 +94165,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1819,
+    "id": 1820,
     "fuse-gloss": "to mash,    grind up,    ground",
-    "rk": 1836
+    "rk": 1837
   },
   {
     "gloss": [
@@ -94159,9 +94203,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1820,
+    "id": 1821,
     "fuse-gloss": "flour,    (finely ground)",
-    "rk": 1837
+    "rk": 1838
   },
   {
     "gloss": [
@@ -94185,9 +94229,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 1821,
+    "id": 1822,
     "fuse-gloss": "map,    plan",
-    "rk": 1838
+    "rk": 1839
   },
   {
     "gloss": [
@@ -94211,9 +94255,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 1822,
+    "id": 1823,
     "fuse-gloss": "left (side,    direction)",
-    "rk": 1839
+    "rk": 1840
   },
   {
     "gloss": [
@@ -94236,9 +94280,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1823,
+    "id": 1824,
     "fuse-gloss": "right (side,    direction)",
-    "rk": 1840
+    "rk": 1841
   },
   {
     "gloss": [
@@ -94278,9 +94322,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1824,
+    "id": 1825,
     "fuse-gloss": "manager,    vice-president,    officer,    self-important person",
-    "rk": 1841
+    "rk": 1842
   },
   {
     "gloss": [
@@ -94313,9 +94357,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 1825,
+    "id": 1826,
     "fuse-gloss": "conference,    trial,    gathering to heal,    amend or punish a wrongdoing",
-    "rk": 1842
+    "rk": 1843
   },
   {
     "gloss": [
@@ -94345,9 +94389,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1826,
+    "id": 1827,
     "fuse-gloss": "confession,    confess",
-    "rk": 1843
+    "rk": 1844
   },
   {
     "gloss": [
@@ -94384,9 +94428,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1827,
+    "id": 1828,
     "fuse-gloss": "honeybee",
-    "rk": 1844
+    "rk": 1845
   },
   {
     "gloss": [
@@ -94415,9 +94459,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1828,
+    "id": 1829,
     "fuse-gloss": "ancestors",
-    "rk": 1845
+    "rk": 1846
   },
   {
     "gloss": [
@@ -94446,9 +94490,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1829,
+    "id": 1830,
     "fuse-gloss": "elders (male)",
-    "rk": 1846
+    "rk": 1847
   },
   {
     "gloss": [
@@ -94477,9 +94521,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1830,
+    "id": 1831,
     "fuse-gloss": "elders (female)",
-    "rk": 1847
+    "rk": 1848
   },
   {
     "gloss": [
@@ -94508,9 +94552,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1831,
+    "id": 1832,
     "fuse-gloss": "theatre",
-    "rk": 1848
+    "rk": 1849
   },
   {
     "gloss": [
@@ -94540,9 +94584,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1832,
+    "id": 1833,
     "fuse-gloss": "to worship,    revere",
-    "rk": 1849
+    "rk": 1850
   },
   {
     "gloss": [
@@ -94572,9 +94616,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1833,
+    "id": 1834,
     "fuse-gloss": "gossip,    rumour",
-    "rk": 1850
+    "rk": 1851
   },
   {
     "gloss": [
@@ -94598,9 +94642,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1834,
+    "id": 1835,
     "fuse-gloss": "idle chatter,    conversation,    chit chat",
-    "rk": 1851
+    "rk": 1852
   },
   {
     "gloss": [
@@ -94629,9 +94673,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1835,
+    "id": 1836,
     "fuse-gloss": "healthy",
-    "rk": 1852
+    "rk": 1853
   },
   {
     "gloss": [
@@ -94661,9 +94705,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1836,
+    "id": 1837,
     "fuse-gloss": "flu,    influenza",
-    "rk": 1853
+    "rk": 1854
   },
   {
     "gloss": [
@@ -94692,9 +94736,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1837,
+    "id": 1838,
     "fuse-gloss": "common cold",
-    "rk": 1854
+    "rk": 1855
   },
   {
     "gloss": [
@@ -94724,7 +94768,7 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1838,
+    "id": 1839,
     "fuse-gloss": "catch a disease,    fall ill",
     "use": 1,
     "uses": [
@@ -94765,9 +94809,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1839,
+    "id": 1840,
     "fuse-gloss": "under the weather,    sickly,    uncomfortable,    queasy",
-    "rk": 1855
+    "rk": 1856
   },
   {
     "gloss": [
@@ -94796,9 +94840,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1840,
+    "id": 1841,
     "fuse-gloss": "headache",
-    "rk": 1856
+    "rk": 1857
   },
   {
     "gloss": [
@@ -94827,9 +94871,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1841,
+    "id": 1842,
     "fuse-gloss": "catholic church",
-    "rk": 1857
+    "rk": 1858
   },
   {
     "gloss": [
@@ -94858,9 +94902,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1842,
+    "id": 1843,
     "fuse-gloss": "church (building)",
-    "rk": 1858
+    "rk": 1859
   },
   {
     "gloss": [
@@ -94889,9 +94933,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1843,
+    "id": 1844,
     "fuse-gloss": "chapel",
-    "rk": 1859
+    "rk": 1860
   },
   {
     "gloss": [
@@ -94921,9 +94965,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1844,
+    "id": 1845,
     "fuse-gloss": "ferocious,    violent",
-    "rk": 1860
+    "rk": 1861
   },
   {
     "gloss": [
@@ -94956,9 +95000,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1845,
+    "id": 1846,
     "fuse-gloss": "vanish,    go extinct,    disappear,    leave,    go away",
-    "rk": 1861
+    "rk": 1862
   },
   {
     "gloss": [
@@ -94990,9 +95034,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1846,
+    "id": 1847,
     "fuse-gloss": "endangered,    in peril,    nearly used up,    depleted",
-    "rk": 1862
+    "rk": 1863
   },
   {
     "gloss": [
@@ -95022,9 +95066,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1847,
+    "id": 1848,
     "fuse-gloss": "traditional language,    ancestral language",
-    "rk": 1863
+    "rk": 1864
   },
   {
     "gloss": [
@@ -95055,9 +95099,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1848,
+    "id": 1849,
     "fuse-gloss": "ancient people,    ancestors,    forebears",
-    "rk": 1864
+    "rk": 1865
   },
   {
     "gloss": [
@@ -95088,9 +95132,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1849,
+    "id": 1850,
     "fuse-gloss": "protect,    keep,    preserve",
-    "rk": 1865
+    "rk": 1866
   },
   {
     "gloss": [
@@ -95134,9 +95178,9 @@ const dictionary = [
       "Compound",
       "Compound"
     ],
-    "id": 1850,
+    "id": 1851,
     "fuse-gloss": "anyone,    anybody,    whoever,    gosh knows who,    somebody,    just anybody",
-    "rk": 1866
+    "rk": 1867
   },
   {
     "gloss": [
@@ -95165,9 +95209,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1851,
+    "id": 1852,
     "fuse-gloss": "everything",
-    "rk": 1867
+    "rk": 1868
   },
   {
     "gloss": [
@@ -95196,9 +95240,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1852,
+    "id": 1853,
     "fuse-gloss": "every day",
-    "rk": 1868
+    "rk": 1869
   },
   {
     "gloss": [
@@ -95230,9 +95274,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1853,
+    "id": 1854,
     "fuse-gloss": "to put,    put it down,    record it,    make it stay",
-    "rk": 1869
+    "rk": 1870
   },
   {
     "gloss": [
@@ -95255,9 +95299,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1854,
+    "id": 1855,
     "fuse-gloss": "everybody,    everyone",
-    "rk": 1870
+    "rk": 1871
   },
   {
     "gloss": [
@@ -95279,9 +95323,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1855,
+    "id": 1856,
     "fuse-gloss": "everywhere",
-    "rk": 1871
+    "rk": 1872
   },
   {
     "gloss": [
@@ -95325,7 +95369,7 @@ const dictionary = [
       "Compound",
       "Compound"
     ],
-    "id": 1856,
+    "id": 1857,
     "fuse-gloss": "whatever,    anything,    some kind or another,    something,    who knows what,    whatever",
     "use": 8,
     "uses": [
@@ -95364,9 +95408,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1857,
+    "id": 1858,
     "fuse-gloss": "children",
-    "rk": 1872
+    "rk": 1873
   },
   {
     "gloss": [
@@ -95399,9 +95443,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 1858,
+    "id": 1859,
     "fuse-gloss": "(of a woman) virgin,    virgin",
-    "rk": 1873
+    "rk": 1874
   },
   {
     "gloss": [
@@ -95432,9 +95476,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1859,
+    "id": 1860,
     "fuse-gloss": "cause trouble,    exasperate,    tired someone out",
-    "rk": 1874
+    "rk": 1875
   },
   {
     "gloss": [
@@ -95474,9 +95518,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1860,
+    "id": 1861,
     "fuse-gloss": "heavy work,    hard times,    violence,    mayhem",
-    "rk": 1875
+    "rk": 1876
   },
   {
     "gloss": [
@@ -95507,9 +95551,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1861,
+    "id": 1862,
     "fuse-gloss": "easy,    effortless,    light (weight)",
-    "rk": 1876
+    "rk": 1877
   },
   {
     "gloss": [
@@ -95538,9 +95582,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1862,
+    "id": 1863,
     "fuse-gloss": "afternoon",
-    "rk": 1877
+    "rk": 1878
   },
   {
     "gloss": [
@@ -95562,9 +95606,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1863,
+    "id": 1864,
     "fuse-gloss": "herb",
-    "rk": 1878
+    "rk": 1879
   },
   {
     "gloss": [
@@ -95587,9 +95631,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1864,
+    "id": 1865,
     "fuse-gloss": "metropolis,    capital",
-    "rk": 1879
+    "rk": 1880
   },
   {
     "gloss": [
@@ -95611,9 +95655,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1865,
+    "id": 1866,
     "fuse-gloss": "mustard",
-    "rk": 1880
+    "rk": 1881
   },
   {
     "gloss": [
@@ -95637,9 +95681,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1866,
+    "id": 1867,
     "fuse-gloss": "shameless,    rude,    outrageous",
-    "rk": 1881
+    "rk": 1882
   },
   {
     "gloss": [
@@ -95663,9 +95707,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1867,
+    "id": 1868,
     "fuse-gloss": "mock,    tease,    ridicule",
-    "rk": 1882
+    "rk": 1883
   },
   {
     "gloss": [
@@ -95696,9 +95740,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1868,
+    "id": 1869,
     "fuse-gloss": "scold,    reprimand,    cuss someone out",
-    "rk": 1883
+    "rk": 1884
   },
   {
     "gloss": [
@@ -95729,9 +95773,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1869,
+    "id": 1870,
     "fuse-gloss": "alone,    only one,    solely",
-    "rk": 1884
+    "rk": 1885
   },
   {
     "gloss": [
@@ -95763,9 +95807,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1870,
+    "id": 1871,
     "fuse-gloss": "pay attention to,    understand well,    heed,    focus on",
-    "rk": 1885
+    "rk": 1886
   },
   {
     "gloss": [
@@ -95787,9 +95831,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1871,
+    "id": 1872,
     "fuse-gloss": "listen closely",
-    "rk": 1886
+    "rk": 1887
   },
   {
     "gloss": [
@@ -95813,9 +95857,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1872,
+    "id": 1873,
     "fuse-gloss": "honour/respect someone's word,    command,    or wishes; literally; obey",
-    "rk": 1887
+    "rk": 1888
   },
   {
     "gloss": [
@@ -95845,9 +95889,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1873,
+    "id": 1874,
     "fuse-gloss": "threshing machine",
-    "rk": 1888
+    "rk": 1889
   },
   {
     "gloss": [
@@ -95878,9 +95922,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1874,
+    "id": 1875,
     "fuse-gloss": "storeroom,    supply closet",
-    "rk": 1889
+    "rk": 1890
   },
   {
     "gloss": [
@@ -95909,9 +95953,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1875,
+    "id": 1876,
     "fuse-gloss": "how many years (winters)",
-    "rk": 1890
+    "rk": 1891
   },
   {
     "gloss": [
@@ -95933,9 +95977,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1876,
+    "id": 1877,
     "fuse-gloss": "to wash",
-    "rk": 1891
+    "rk": 1892
   },
   {
     "gloss": [
@@ -95958,9 +96002,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 1877,
+    "id": 1878,
     "fuse-gloss": "orthography",
-    "rk": 1892
+    "rk": 1893
   },
   {
     "gloss": [
@@ -95987,9 +96031,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 1878,
+    "id": 1879,
     "fuse-gloss": "shake,    mix up,    confuse,    blend,    mess up",
-    "rk": 1893
+    "rk": 1894
   },
   {
     "gloss": [
@@ -96019,9 +96063,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1879,
+    "id": 1880,
     "fuse-gloss": "pork,    bacon",
-    "rk": 1894
+    "rk": 1895
   },
   {
     "gloss": [
@@ -96046,9 +96090,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 1880,
+    "id": 1881,
     "fuse-gloss": "gang,    friend group,    buddies",
-    "rk": 1895
+    "rk": 1896
   },
   {
     "gloss": [
@@ -96081,9 +96125,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 1881,
+    "id": 1882,
     "fuse-gloss": "newbie,    greenhorn,    amateur,    novice",
-    "rk": 1896
+    "rk": 1897
   },
   {
     "gloss": [
@@ -96112,9 +96156,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1882,
+    "id": 1883,
     "fuse-gloss": "police officer",
-    "rk": 1897
+    "rk": 1898
   },
   {
     "gloss": [
@@ -96144,9 +96188,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1883,
+    "id": 1884,
     "fuse-gloss": "love,    have desire for",
-    "rk": 1898
+    "rk": 1899
   },
   {
     "gloss": [
@@ -96175,9 +96219,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1884,
+    "id": 1885,
     "fuse-gloss": "happy new year",
-    "rk": 1899
+    "rk": 1900
   },
   {
     "gloss": [
@@ -96207,9 +96251,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1885,
+    "id": 1886,
     "fuse-gloss": "inland/interior peoples,    plains/forest peoples",
-    "rk": 1900
+    "rk": 1901
   },
   {
     "gloss": [
@@ -96232,9 +96276,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1886,
+    "id": 1887,
     "fuse-gloss": "coastal peoples,    fishing/canoe peoples",
-    "rk": 1901
+    "rk": 1902
   },
   {
     "gloss": [
@@ -96263,9 +96307,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1887,
+    "id": 1888,
     "fuse-gloss": "deep water",
-    "rk": 1902
+    "rk": 1903
   },
   {
     "gloss": [
@@ -96294,9 +96338,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1888,
+    "id": 1889,
     "fuse-gloss": "to hide/obscure it",
-    "rk": 1903
+    "rk": 1904
   },
   {
     "gloss": [
@@ -96327,9 +96371,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1889,
+    "id": 1890,
     "fuse-gloss": "why,    how could,    how dare",
-    "rk": 1904
+    "rk": 1905
   },
   {
     "gloss": [
@@ -96360,9 +96404,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1890,
+    "id": 1891,
     "fuse-gloss": "decay,    rot,    degenerate",
-    "rk": 1905
+    "rk": 1906
   },
   {
     "gloss": [
@@ -96392,9 +96436,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1891,
+    "id": 1892,
     "fuse-gloss": "oh,    how long! for such a long time!",
-    "rk": 1906
+    "rk": 1907
   },
   {
     "gloss": [
@@ -96424,9 +96468,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1892,
+    "id": 1893,
     "fuse-gloss": "bighouse,    potlatch house",
-    "rk": 1907
+    "rk": 1908
   },
   {
     "gloss": [
@@ -96458,9 +96502,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1893,
+    "id": 1894,
     "fuse-gloss": "to draw,    sketch,    write (words,    letters)",
-    "rk": 1908
+    "rk": 1909
   },
   {
     "gloss": [
@@ -96483,9 +96527,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1894,
+    "id": 1895,
     "fuse-gloss": "to write,    to author",
-    "rk": 1909
+    "rk": 1910
   },
   {
     "gloss": [
@@ -96524,9 +96568,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1895,
+    "id": 1896,
     "fuse-gloss": "to haul,    drag,    pull along",
-    "rk": 1910
+    "rk": 1911
   },
   {
     "gloss": [
@@ -96557,9 +96601,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1896,
+    "id": 1897,
     "fuse-gloss": "midwest,    neither east nor west,    center of the continent",
-    "rk": 1911
+    "rk": 1912
   },
   {
     "gloss": [
@@ -96589,9 +96633,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1897,
+    "id": 1898,
     "fuse-gloss": "to fell,    to cut down",
-    "rk": 1912
+    "rk": 1913
   },
   {
     "gloss": [
@@ -96616,9 +96660,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1898,
+    "id": 1899,
     "fuse-gloss": "to scarf,    binge,    wolf it down,    eat ravenously",
-    "rk": 1913
+    "rk": 1914
   },
   {
     "gloss": [
@@ -96648,9 +96692,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1899,
+    "id": 1900,
     "fuse-gloss": "hit or strike repeatedly,    to hammer",
-    "rk": 1914
+    "rk": 1915
   },
   {
     "gloss": [
@@ -96673,9 +96717,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1900,
+    "id": 1901,
     "fuse-gloss": "to step,    tred on",
-    "rk": 1915
+    "rk": 1916
   },
   {
     "gloss": [
@@ -96697,9 +96741,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1901,
+    "id": 1902,
     "fuse-gloss": "start",
-    "rk": 1916
+    "rk": 1917
   },
   {
     "gloss": [
@@ -96728,9 +96772,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1902,
+    "id": 1903,
     "fuse-gloss": "outgoing tide,    falling tide",
-    "rk": 1917
+    "rk": 1918
   },
   {
     "gloss": [
@@ -96752,9 +96796,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1903,
+    "id": 1904,
     "fuse-gloss": "highway",
-    "rk": 1918
+    "rk": 1919
   },
   {
     "gloss": [
@@ -96779,9 +96823,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1904,
+    "id": 1905,
     "fuse-gloss": "enter (a room or building),    welcome! come in!",
-    "rk": 1919
+    "rk": 1920
   },
   {
     "gloss": [
@@ -96804,9 +96848,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1905,
+    "id": 1906,
     "fuse-gloss": "coins,    change",
-    "rk": 1920
+    "rk": 1921
   },
   {
     "gloss": [
@@ -96828,9 +96872,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1906,
+    "id": 1907,
     "fuse-gloss": "change one's mind",
-    "rk": 1921
+    "rk": 1922
   },
   {
     "gloss": [
@@ -96852,9 +96896,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1907,
+    "id": 1908,
     "fuse-gloss": "stupid",
-    "rk": 1922
+    "rk": 1923
   },
   {
     "gloss": [
@@ -96876,9 +96920,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1908,
+    "id": 1909,
     "fuse-gloss": "late at night",
-    "rk": 1923
+    "rk": 1924
   },
   {
     "gloss": [
@@ -96902,9 +96946,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1909,
+    "id": 1910,
     "fuse-gloss": "destroyed,    smashed to pieces,    shattered",
-    "rk": 1924
+    "rk": 1925
   },
   {
     "gloss": [
@@ -96926,9 +96970,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1910,
+    "id": 1911,
     "fuse-gloss": "often",
-    "rk": 1925
+    "rk": 1926
   },
   {
     "gloss": [
@@ -96957,9 +97001,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1911,
+    "id": 1912,
     "fuse-gloss": "to offer one's hand in greeting",
-    "rk": 1926
+    "rk": 1927
   },
   {
     "gloss": [
@@ -96990,9 +97034,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1912,
+    "id": 1913,
     "fuse-gloss": "present,    gift (given without ulterior motive),    freely give",
-    "rk": 1927
+    "rk": 1928
   },
   {
     "gloss": [
@@ -97023,9 +97067,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1913,
+    "id": 1914,
     "fuse-gloss": "miter,    mitre,    bishop's hat",
-    "rk": 1928
+    "rk": 1929
   },
   {
     "gloss": [
@@ -97064,9 +97108,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1914,
+    "id": 1915,
     "fuse-gloss": "pit house,    dugout house,    winterhouse",
-    "rk": 1929
+    "rk": 1930
   },
   {
     "gloss": [
@@ -97097,9 +97141,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1915,
+    "id": 1916,
     "fuse-gloss": "washroom,    toilet,    outhouse",
-    "rk": 1930
+    "rk": 1931
   },
   {
     "gloss": [
@@ -97129,9 +97173,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1916,
+    "id": 1917,
     "fuse-gloss": "post office,    library",
-    "rk": 1931
+    "rk": 1932
   },
   {
     "gloss": [
@@ -97161,9 +97205,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1917,
+    "id": 1918,
     "fuse-gloss": "gravely ill,    deathly sick",
-    "rk": 1932
+    "rk": 1933
   },
   {
     "gloss": [
@@ -97186,9 +97230,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1918,
+    "id": 1919,
     "fuse-gloss": "serious illness,    extremely sick",
-    "rk": 1933
+    "rk": 1934
   },
   {
     "gloss": [
@@ -97218,9 +97262,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1919,
+    "id": 1920,
     "fuse-gloss": "expensive,    pricey",
-    "rk": 1934
+    "rk": 1935
   },
   {
     "gloss": [
@@ -97251,9 +97295,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1920,
+    "id": 1921,
     "fuse-gloss": "cheap,    inexpensive,    affordable",
-    "rk": 1935
+    "rk": 1936
   },
   {
     "gloss": [
@@ -97283,9 +97327,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1921,
+    "id": 1922,
     "fuse-gloss": "underwear,    underpants",
-    "rk": 1936
+    "rk": 1937
   },
   {
     "gloss": [
@@ -97314,9 +97358,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1922,
+    "id": 1923,
     "fuse-gloss": "to plough/plow",
-    "rk": 1937
+    "rk": 1938
   },
   {
     "gloss": [
@@ -97345,9 +97389,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1923,
+    "id": 1924,
     "fuse-gloss": "dentist",
-    "rk": 1938
+    "rk": 1939
   },
   {
     "gloss": [
@@ -97389,9 +97433,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1924,
+    "id": 1925,
     "fuse-gloss": "soapberry,    indian ice cream",
-    "rk": 1939
+    "rk": 1940
   },
   {
     "gloss": [
@@ -97420,9 +97464,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1925,
+    "id": 1926,
     "fuse-gloss": "work boots",
-    "rk": 1940
+    "rk": 1941
   },
   {
     "gloss": [
@@ -97444,9 +97488,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1926,
+    "id": 1927,
     "fuse-gloss": "to comb",
-    "rk": 1941
+    "rk": 1942
   },
   {
     "gloss": [
@@ -97477,9 +97521,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1927,
+    "id": 1928,
     "fuse-gloss": "to rake,    furrow,    cultivate",
-    "rk": 1942
+    "rk": 1943
   },
   {
     "gloss": [
@@ -97509,9 +97553,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1928,
+    "id": 1929,
     "fuse-gloss": "dirt road,    wagon road",
-    "rk": 1943
+    "rk": 1944
   },
   {
     "gloss": [
@@ -97540,9 +97584,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1929,
+    "id": 1930,
     "fuse-gloss": "huckberry (shotgun berry?)",
-    "rk": 1944
+    "rk": 1945
   },
   {
     "gloss": [
@@ -97571,9 +97615,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1930,
+    "id": 1931,
     "fuse-gloss": "shaman's stick",
-    "rk": 1945
+    "rk": 1946
   },
   {
     "gloss": [
@@ -97602,9 +97646,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1931,
+    "id": 1932,
     "fuse-gloss": "deer fern (lit. wiping rag)",
-    "rk": 1946
+    "rk": 1947
   },
   {
     "gloss": [
@@ -97643,9 +97687,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1932,
+    "id": 1933,
     "fuse-gloss": "waterfall",
-    "rk": 1947
+    "rk": 1948
   },
   {
     "gloss": [
@@ -97676,9 +97720,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1933,
+    "id": 1934,
     "fuse-gloss": "cascade,    cataract",
-    "rk": 1948
+    "rk": 1949
   },
   {
     "gloss": [
@@ -97701,9 +97745,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1934,
+    "id": 1935,
     "fuse-gloss": "ignore,    not listen",
-    "rk": 1949
+    "rk": 1950
   },
   {
     "gloss": [
@@ -97725,9 +97769,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1935,
+    "id": 1936,
     "fuse-gloss": "day after tomorrow",
-    "rk": 1950
+    "rk": 1951
   },
   {
     "gloss": [
@@ -97749,9 +97793,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1936,
+    "id": 1937,
     "fuse-gloss": "fog",
-    "rk": 1951
+    "rk": 1952
   },
   {
     "gloss": [
@@ -97773,9 +97817,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1937,
+    "id": 1938,
     "fuse-gloss": "cloud",
-    "rk": 1952
+    "rk": 1953
   },
   {
     "gloss": [
@@ -97809,9 +97853,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1938,
+    "id": 1939,
     "fuse-gloss": "here and there,    all over",
-    "rk": 1953
+    "rk": 1954
   },
   {
     "gloss": [
@@ -97834,9 +97878,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1939,
+    "id": 1940,
     "fuse-gloss": "maple,    ash",
-    "rk": 1954
+    "rk": 1955
   },
   {
     "gloss": [
@@ -97859,9 +97903,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1940,
+    "id": 1941,
     "fuse-gloss": "abandon,    desert",
-    "rk": 1955
+    "rk": 1956
   },
   {
     "gloss": [
@@ -97885,9 +97929,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1941,
+    "id": 1942,
     "fuse-gloss": "disparage,    slander,    insult",
-    "rk": 1956
+    "rk": 1957
   },
   {
     "gloss": [
@@ -97909,9 +97953,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1942,
+    "id": 1943,
     "fuse-gloss": "what now",
-    "rk": 1957
+    "rk": 1958
   },
   {
     "gloss": [
@@ -97943,9 +97987,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1943,
+    "id": 1944,
     "fuse-gloss": "fun,    merriment,    pleasure,    to joke/kid",
-    "rk": 1958
+    "rk": 1959
   },
   {
     "gloss": [
@@ -97968,9 +98012,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1944,
+    "id": 1945,
     "fuse-gloss": "not interested in,    don't care about",
-    "rk": 1959
+    "rk": 1960
   },
   {
     "gloss": [
@@ -97993,9 +98037,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1945,
+    "id": 1946,
     "fuse-gloss": "be a liar,    dishonest",
-    "rk": 1960
+    "rk": 1961
   },
   {
     "gloss": [
@@ -98018,9 +98062,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1946,
+    "id": 1947,
     "fuse-gloss": "passionate,    emotional",
-    "rk": 1961
+    "rk": 1962
   },
   {
     "gloss": [
@@ -98042,9 +98086,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1947,
+    "id": 1948,
     "fuse-gloss": "just right",
-    "rk": 1962
+    "rk": 1963
   },
   {
     "gloss": [
@@ -98075,9 +98119,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1948,
+    "id": 1949,
     "fuse-gloss": "run around town,    get around,    get up to no good",
-    "rk": 1963
+    "rk": 1964
   },
   {
     "gloss": [
@@ -98110,9 +98154,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 1949,
+    "id": 1950,
     "fuse-gloss": "alright,    go ahead,    that's all,    that's enough?",
-    "rk": 1964
+    "rk": 1965
   },
   {
     "gloss": [
@@ -98142,9 +98186,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1950,
+    "id": 1951,
     "fuse-gloss": "hard liquor,    vodka",
-    "rk": 1965
+    "rk": 1966
   },
   {
     "gloss": [
@@ -98175,9 +98219,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1951,
+    "id": 1952,
     "fuse-gloss": "it doesn't matter if,    it makes no difference whether,    irrelevant",
-    "rk": 1966
+    "rk": 1967
   },
   {
     "gloss": [
@@ -98215,9 +98259,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1952,
+    "id": 1953,
     "fuse-gloss": "recently,    a little while ago",
-    "rk": 1967
+    "rk": 1968
   },
   {
     "gloss": [
@@ -98247,9 +98291,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1953,
+    "id": 1954,
     "fuse-gloss": "pheasant,    gamebirds",
-    "rk": 1968
+    "rk": 1969
   },
   {
     "gloss": [
@@ -98279,9 +98323,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1954,
+    "id": 1955,
     "fuse-gloss": "waterfowl,    shorebirds",
-    "rk": 1969
+    "rk": 1970
   },
   {
     "gloss": [
@@ -98313,9 +98357,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1955,
+    "id": 1956,
     "fuse-gloss": "medium-sized,    sufficiently big,    big enough,    good-sized",
-    "rk": 1970
+    "rk": 1971
   },
   {
     "gloss": [
@@ -98346,9 +98390,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1956,
+    "id": 1957,
     "fuse-gloss": "soon,    in just a second,    in no time",
-    "rk": 1971
+    "rk": 1972
   },
   {
     "gloss": [
@@ -98377,9 +98421,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1957,
+    "id": 1958,
     "fuse-gloss": "mallard",
-    "rk": 1972
+    "rk": 1973
   },
   {
     "gloss": [
@@ -98411,9 +98455,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 1958,
+    "id": 1959,
     "fuse-gloss": "how large,    how much,    to what extent/degree",
-    "rk": 1973
+    "rk": 1974
   },
   {
     "gloss": [
@@ -98443,9 +98487,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1959,
+    "id": 1960,
     "fuse-gloss": "creek,    stream",
-    "rk": 1974
+    "rk": 1975
   },
   {
     "gloss": [
@@ -98476,9 +98520,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1960,
+    "id": 1961,
     "fuse-gloss": "writing,    text,    letter",
-    "rk": 1975
+    "rk": 1976
   },
   {
     "gloss": [
@@ -98526,9 +98570,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1961,
+    "id": 1962,
     "fuse-gloss": "almost,    nearly,    near,    close to",
-    "rk": 1976
+    "rk": 1977
   },
   {
     "gloss": [
@@ -98566,9 +98610,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1962,
+    "id": 1963,
     "fuse-gloss": "kill,    murder",
-    "rk": 1977
+    "rk": 1978
   },
   {
     "gloss": [
@@ -98600,9 +98644,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1963,
+    "id": 1964,
     "fuse-gloss": "eradicate,    wipe out,    annihilate,    exterminate",
-    "rk": 1978
+    "rk": 1979
   },
   {
     "gloss": [
@@ -98653,9 +98697,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1964,
+    "id": 1965,
     "fuse-gloss": "nothing can be done,    no way to,    cannot",
-    "rk": 1979
+    "rk": 1980
   },
   {
     "gloss": [
@@ -98677,9 +98721,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1965,
+    "id": 1966,
     "fuse-gloss": "cannot bear to",
-    "rk": 1980
+    "rk": 1981
   },
   {
     "gloss": [
@@ -98709,9 +98753,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1966,
+    "id": 1967,
     "fuse-gloss": "spring salmon,    chinook salmon",
-    "rk": 1981
+    "rk": 1982
   },
   {
     "gloss": [
@@ -98743,9 +98787,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1967,
+    "id": 1968,
     "fuse-gloss": "to honour,    obey,    respect someone's authority,    give authority to",
-    "rk": 1982
+    "rk": 1983
   },
   {
     "gloss": [
@@ -98774,9 +98818,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1968,
+    "id": 1969,
     "fuse-gloss": "to respect",
-    "rk": 1983
+    "rk": 1984
   },
   {
     "gloss": [
@@ -98807,9 +98851,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1969,
+    "id": 1970,
     "fuse-gloss": "take care,    look out for,    be careful",
-    "rk": 1984
+    "rk": 1985
   },
   {
     "gloss": [
@@ -98840,9 +98884,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1970,
+    "id": 1971,
     "fuse-gloss": "run close together,    be alike,    go hand-in-hand",
-    "rk": 1985
+    "rk": 1986
   },
   {
     "gloss": [
@@ -98883,7 +98927,7 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1971,
+    "id": 1972,
     "fuse-gloss": "drunk,    intoxicated",
     "use": 1,
     "uses": [
@@ -98923,9 +98967,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1972,
+    "id": 1973,
     "fuse-gloss": "tipsy,    a little swig (of liquor)",
-    "rk": 1986
+    "rk": 1987
   },
   {
     "gloss": [
@@ -98948,9 +98992,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1973,
+    "id": 1974,
     "fuse-gloss": "that's all,    the end",
-    "rk": 1987
+    "rk": 1988
   },
   {
     "gloss": [
@@ -98972,9 +99016,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1974,
+    "id": 1975,
     "fuse-gloss": "midday",
-    "rk": 1988
+    "rk": 1989
   },
   {
     "gloss": [
@@ -98997,9 +99041,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1975,
+    "id": 1976,
     "fuse-gloss": "so-so,    mediocre",
-    "rk": 1989
+    "rk": 1990
   },
   {
     "gloss": [
@@ -99023,9 +99067,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1976,
+    "id": 1977,
     "fuse-gloss": "walk,    hike,    go by foot",
-    "rk": 1990
+    "rk": 1991
   },
   {
     "gloss": [
@@ -99049,9 +99093,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1977,
+    "id": 1978,
     "fuse-gloss": "escape,    get out,    flee",
-    "rk": 1991
+    "rk": 1992
   },
   {
     "gloss": [
@@ -99075,9 +99119,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1978,
+    "id": 1979,
     "fuse-gloss": "hunt,    search for,    look for",
-    "rk": 1992
+    "rk": 1993
   },
   {
     "gloss": [
@@ -99099,9 +99143,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1979,
+    "id": 1980,
     "fuse-gloss": "ride a horse",
-    "rk": 1993
+    "rk": 1994
   },
   {
     "gloss": [
@@ -99124,9 +99168,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1980,
+    "id": 1981,
     "fuse-gloss": "surveyed/mapped land,    private/claimed land",
-    "rk": 1994
+    "rk": 1995
   },
   {
     "gloss": [
@@ -99148,9 +99192,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1981,
+    "id": 1982,
     "fuse-gloss": "loincloth",
-    "rk": 1995
+    "rk": 1996
   },
   {
     "gloss": [
@@ -99172,9 +99216,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1982,
+    "id": 1983,
     "fuse-gloss": "nothing",
-    "rk": 1996
+    "rk": 1997
   },
   {
     "gloss": [
@@ -99197,9 +99241,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1983,
+    "id": 1984,
     "fuse-gloss": "no worries,    no problem",
-    "rk": 1997
+    "rk": 1998
   },
   {
     "gloss": [
@@ -99227,9 +99271,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1984,
+    "id": 1985,
     "fuse-gloss": "never again,    no longer,    not anymore",
-    "rk": 1998
+    "rk": 1999
   },
   {
     "gloss": [
@@ -99258,9 +99302,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1985,
+    "id": 1986,
     "fuse-gloss": "never",
-    "rk": 1999
+    "rk": 2000
   },
   {
     "gloss": [
@@ -99287,9 +99331,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1986,
+    "id": 1987,
     "fuse-gloss": "soon,    about to",
-    "rk": 2000
+    "rk": 2001
   },
   {
     "gloss": [
@@ -99312,9 +99356,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1987,
+    "id": 1988,
     "fuse-gloss": "feeble-minded,    dense",
-    "rk": 2001
+    "rk": 2002
   },
   {
     "gloss": [
@@ -99337,9 +99381,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1988,
+    "id": 1989,
     "fuse-gloss": "almost done,    nearly complete",
-    "rk": 2002
+    "rk": 2003
   },
   {
     "gloss": [
@@ -99362,9 +99406,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1989,
+    "id": 1990,
     "fuse-gloss": "some,    not much",
-    "rk": 2003
+    "rk": 2004
   },
   {
     "gloss": [
@@ -99387,9 +99431,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1990,
+    "id": 1991,
     "fuse-gloss": "bad,    undesirable",
-    "rk": 2004
+    "rk": 2005
   },
   {
     "gloss": [
@@ -99421,9 +99465,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1991,
+    "id": 1992,
     "fuse-gloss": "pole,    long stick,    staff,    axel",
-    "rk": 2005
+    "rk": 2006
   },
   {
     "gloss": [
@@ -99445,9 +99489,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 1992,
+    "id": 1993,
     "fuse-gloss": "cord",
-    "rk": 2006
+    "rk": 2007
   },
   {
     "gloss": [
@@ -99479,9 +99523,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1993,
+    "id": 1994,
     "fuse-gloss": "clouds,    mist,    fog,    \"smoke without fire\"",
-    "rk": 2007
+    "rk": 2008
   },
   {
     "gloss": [
@@ -99510,9 +99554,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1994,
+    "id": 1995,
     "fuse-gloss": "lightning",
-    "rk": 2008
+    "rk": 2009
   },
   {
     "gloss": [
@@ -99544,9 +99588,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1995,
+    "id": 1996,
     "fuse-gloss": "rain,    drizzle,    mist",
-    "rk": 2009
+    "rk": 2010
   },
   {
     "gloss": [
@@ -99577,9 +99621,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1996,
+    "id": 1997,
     "fuse-gloss": "brave,    dedicated,    earnest",
-    "rk": 2010
+    "rk": 2011
   },
   {
     "gloss": [
@@ -99609,9 +99653,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1997,
+    "id": 1998,
     "fuse-gloss": "wet,    soaking",
-    "rk": 2011
+    "rk": 2012
   },
   {
     "gloss": [
@@ -99641,9 +99685,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 1998,
+    "id": 1999,
     "fuse-gloss": "bad weather",
-    "rk": 2012
+    "rk": 2013
   },
   {
     "gloss": [
@@ -99672,9 +99716,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 1999,
+    "id": 2000,
     "fuse-gloss": "steambot",
-    "rk": 2013
+    "rk": 2014
   },
   {
     "gloss": [
@@ -99696,9 +99740,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2000,
+    "id": 2001,
     "fuse-gloss": "wine",
-    "rk": 2014
+    "rk": 2015
   },
   {
     "gloss": [
@@ -99722,9 +99766,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2001,
+    "id": 2002,
     "fuse-gloss": "lame,    crippled,    unable to walk",
-    "rk": 2015
+    "rk": 2016
   },
   {
     "gloss": [
@@ -99748,9 +99792,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2002,
+    "id": 2003,
     "fuse-gloss": "reach a goal,    destination,    complete a task",
-    "rk": 2016
+    "rk": 2017
   },
   {
     "gloss": [
@@ -99772,9 +99816,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2003,
+    "id": 2004,
     "fuse-gloss": "racehorse",
-    "rk": 2017
+    "rk": 2018
   },
   {
     "gloss": [
@@ -99804,9 +99848,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2004,
+    "id": 2005,
     "fuse-gloss": "until the end,    all the way",
-    "rk": 2018
+    "rk": 2019
   },
   {
     "gloss": [
@@ -99835,9 +99879,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2005,
+    "id": 2006,
     "fuse-gloss": "thanksgiving",
-    "rk": 2019
+    "rk": 2020
   },
   {
     "gloss": [
@@ -99867,9 +99911,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2006,
+    "id": 2007,
     "fuse-gloss": "preacher,    missionary",
-    "rk": 2020
+    "rk": 2021
   },
   {
     "gloss": [
@@ -99900,9 +99944,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2007,
+    "id": 2008,
     "fuse-gloss": "hymn leader,    singer,    chorist",
-    "rk": 2021
+    "rk": 2022
   },
   {
     "gloss": [
@@ -99931,9 +99975,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2008,
+    "id": 2009,
     "fuse-gloss": "carpenter",
-    "rk": 2022
+    "rk": 2023
   },
   {
     "gloss": [
@@ -99963,9 +100007,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2009,
+    "id": 2010,
     "fuse-gloss": "packer,    mule driver",
-    "rk": 2023
+    "rk": 2024
   },
   {
     "gloss": [
@@ -99995,9 +100039,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2010,
+    "id": 2011,
     "fuse-gloss": "buzzard,    vulture",
-    "rk": 2024
+    "rk": 2025
   },
   {
     "gloss": [
@@ -100019,9 +100063,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2011,
+    "id": 2012,
     "fuse-gloss": "get caught",
-    "rk": 2025
+    "rk": 2026
   },
   {
     "gloss": [
@@ -100051,9 +100095,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2012,
+    "id": 2013,
     "fuse-gloss": "best,    greatest",
-    "rk": 2026
+    "rk": 2027
   },
   {
     "gloss": [
@@ -100082,9 +100126,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2013,
+    "id": 2014,
     "fuse-gloss": "tree bark",
-    "rk": 2027
+    "rk": 2028
   },
   {
     "gloss": [
@@ -100107,9 +100151,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2014,
+    "id": 2015,
     "fuse-gloss": "gold,    copper (?)",
-    "rk": 2028
+    "rk": 2029
   },
   {
     "gloss": [
@@ -100138,9 +100182,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2015,
+    "id": 2016,
     "fuse-gloss": "washing for gold",
-    "rk": 2029
+    "rk": 2030
   },
   {
     "gloss": [
@@ -100169,9 +100213,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2016,
+    "id": 2017,
     "fuse-gloss": "new year's day",
-    "rk": 2030
+    "rk": 2031
   },
   {
     "gloss": [
@@ -100201,9 +100245,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2017,
+    "id": 2018,
     "fuse-gloss": "heavy-duty,    physically demanding work",
-    "rk": 2031
+    "rk": 2032
   },
   {
     "gloss": [
@@ -100241,9 +100285,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 2018,
+    "id": 2019,
     "fuse-gloss": "hockey stick",
-    "rk": 2032
+    "rk": 2033
   },
   {
     "gloss": [
@@ -100272,9 +100316,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2019,
+    "id": 2020,
     "fuse-gloss": "once",
-    "rk": 2033
+    "rk": 2034
   },
   {
     "gloss": [
@@ -100303,9 +100347,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2020,
+    "id": 2021,
     "fuse-gloss": "twice",
-    "rk": 2034
+    "rk": 2035
   },
   {
     "gloss": [
@@ -100334,9 +100378,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2021,
+    "id": 2022,
     "fuse-gloss": "thrice",
-    "rk": 2035
+    "rk": 2036
   },
   {
     "gloss": [
@@ -100366,9 +100410,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2022,
+    "id": 2023,
     "fuse-gloss": "stilt house,    pang uk",
-    "rk": 2036
+    "rk": 2037
   },
   {
     "gloss": [
@@ -100397,9 +100441,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2023,
+    "id": 2024,
     "fuse-gloss": "eve",
-    "rk": 2037
+    "rk": 2038
   },
   {
     "gloss": [
@@ -100428,9 +100472,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2024,
+    "id": 2025,
     "fuse-gloss": "Halloween",
-    "rk": 2038
+    "rk": 2039
   },
   {
     "gloss": [
@@ -100459,9 +100503,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2025,
+    "id": 2026,
     "fuse-gloss": "Christmas eve",
-    "rk": 2039
+    "rk": 2040
   },
   {
     "gloss": [
@@ -100484,9 +100528,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2026,
+    "id": 2027,
     "fuse-gloss": "hypothesis",
-    "rk": 2040
+    "rk": 2041
   },
   {
     "gloss": [
@@ -100519,9 +100563,9 @@ const dictionary = [
       "Compound",
       "Compound"
     ],
-    "id": 2027,
+    "id": 2028,
     "fuse-gloss": "pine,    pitchwood,    fatwood",
-    "rk": 2041
+    "rk": 2042
   },
   {
     "gloss": [
@@ -100543,9 +100587,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2028,
+    "id": 2029,
     "fuse-gloss": "band-tailed eagle",
-    "rk": 2042
+    "rk": 2043
   },
   {
     "gloss": [
@@ -100568,9 +100612,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2029,
+    "id": 2030,
     "fuse-gloss": "clay,    red soil",
-    "rk": 2043
+    "rk": 2044
   },
   {
     "gloss": [
@@ -100594,9 +100638,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2030,
+    "id": 2031,
     "fuse-gloss": "dirty,    soiled,    filthy",
-    "rk": 2044
+    "rk": 2045
   },
   {
     "gloss": [
@@ -100618,9 +100662,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2031,
+    "id": 2032,
     "fuse-gloss": "steel",
-    "rk": 2045
+    "rk": 2046
   },
   {
     "gloss": [
@@ -100642,9 +100686,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2032,
+    "id": 2033,
     "fuse-gloss": "attack in a rage",
-    "rk": 2046
+    "rk": 2047
   },
   {
     "gloss": [
@@ -100667,7 +100711,7 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2033,
+    "id": 2034,
     "fuse-gloss": "therefore,    so",
     "use": 11,
     "uses": [
@@ -100723,7 +100767,7 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2034,
+    "id": 2035,
     "fuse-gloss": "now that,    as long as",
     "use": 2,
     "uses": [
@@ -100755,9 +100799,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2035,
+    "id": 2036,
     "fuse-gloss": "in that case,    so",
-    "rk": 2047
+    "rk": 2048
   },
   {
     "gloss": [
@@ -100795,9 +100839,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2036,
+    "id": 2037,
     "fuse-gloss": "why,    no matter what",
-    "rk": 2048
+    "rk": 2049
   },
   {
     "gloss": [
@@ -100819,9 +100863,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2037,
+    "id": 2038,
     "fuse-gloss": "high tide",
-    "rk": 2049
+    "rk": 2050
   },
   {
     "gloss": [
@@ -100843,9 +100887,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2038,
+    "id": 2039,
     "fuse-gloss": "beer",
-    "rk": 2050
+    "rk": 2051
   },
   {
     "gloss": [
@@ -100875,9 +100919,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2039,
+    "id": 2040,
     "fuse-gloss": "what's wrong?,    what's the matter?",
-    "rk": 2051
+    "rk": 2052
   },
   {
     "gloss": [
@@ -100909,9 +100953,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2040,
+    "id": 2041,
     "fuse-gloss": "fort,    jail,    stronghold,    imprisoned",
-    "rk": 2052
+    "rk": 2053
   },
   {
     "gloss": [
@@ -100941,9 +100985,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2041,
+    "id": 2042,
     "fuse-gloss": "something goes horribly wrong,    to go fubar/snafu",
-    "rk": 2053
+    "rk": 2054
   },
   {
     "gloss": [
@@ -100972,7 +101016,7 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2042,
+    "id": 2043,
     "fuse-gloss": "what's happening?",
     "use": 2,
     "uses": [
@@ -101010,9 +101054,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2043,
+    "id": 2044,
     "fuse-gloss": "candy",
-    "rk": 2054
+    "rk": 2055
   },
   {
     "gloss": [
@@ -101035,9 +101079,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2044,
+    "id": 2045,
     "fuse-gloss": "boxing,    fistfight",
-    "rk": 2055
+    "rk": 2056
   },
   {
     "gloss": [
@@ -101066,9 +101110,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2045,
+    "id": 2046,
     "fuse-gloss": "seal",
-    "rk": 2056
+    "rk": 2057
   },
   {
     "gloss": [
@@ -101091,9 +101135,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2046,
+    "id": 2047,
     "fuse-gloss": "seal,    harbour seal",
-    "rk": 2057
+    "rk": 2058
   },
   {
     "gloss": [
@@ -101122,9 +101166,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2047,
+    "id": 2048,
     "fuse-gloss": "seafood",
-    "rk": 2058
+    "rk": 2059
   },
   {
     "gloss": [
@@ -101146,9 +101190,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2048,
+    "id": 2049,
     "fuse-gloss": "hare",
-    "rk": 2059
+    "rk": 2060
   },
   {
     "gloss": [
@@ -101171,9 +101215,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2049,
+    "id": 2050,
     "fuse-gloss": "mud,    swamp",
-    "rk": 2060
+    "rk": 2061
   },
   {
     "gloss": [
@@ -101203,9 +101247,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2050,
+    "id": 2051,
     "fuse-gloss": "shrewd,    tricky",
-    "rk": 2061
+    "rk": 2062
   },
   {
     "gloss": [
@@ -101238,9 +101282,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2051,
+    "id": 2052,
     "fuse-gloss": "awake,    elated,    in good humour,    arrogant,    proud",
-    "rk": 2062
+    "rk": 2063
   },
   {
     "gloss": [
@@ -101271,9 +101315,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2052,
+    "id": 2053,
     "fuse-gloss": "happy,    in good spirits,    thankful",
-    "rk": 2063
+    "rk": 2064
   },
   {
     "gloss": [
@@ -101305,9 +101349,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2053,
+    "id": 2054,
     "fuse-gloss": "sorry,    sad,    jealous,    regret",
-    "rk": 2064
+    "rk": 2065
   },
   {
     "gloss": [
@@ -101338,9 +101382,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2054,
+    "id": 2055,
     "fuse-gloss": "materialistic,    selfish,    superficial/vain",
-    "rk": 2065
+    "rk": 2066
   },
   {
     "gloss": [
@@ -101371,9 +101415,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2055,
+    "id": 2056,
     "fuse-gloss": "in agreement,    resolved,    decided",
-    "rk": 2066
+    "rk": 2067
   },
   {
     "gloss": [
@@ -101405,9 +101449,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2056,
+    "id": 2057,
     "fuse-gloss": "dubious,    doubtful,    disagree,    doubt",
-    "rk": 2067
+    "rk": 2068
   },
   {
     "gloss": [
@@ -101440,9 +101484,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2057,
+    "id": 2058,
     "fuse-gloss": "confused,    unsure,    indecisive,    uncoordinated,    doubt",
-    "rk": 2068
+    "rk": 2069
   },
   {
     "gloss": [
@@ -101464,9 +101508,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2058,
+    "id": 2059,
     "fuse-gloss": "sunset",
-    "rk": 2069
+    "rk": 2070
   },
   {
     "gloss": [
@@ -101488,9 +101532,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2059,
+    "id": 2060,
     "fuse-gloss": "fir",
-    "rk": 2070
+    "rk": 2071
   },
   {
     "gloss": [
@@ -101513,9 +101557,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2060,
+    "id": 2061,
     "fuse-gloss": "whole wheat,    whole grain",
-    "rk": 2071
+    "rk": 2072
   },
   {
     "gloss": [
@@ -101544,9 +101588,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2061,
+    "id": 2062,
     "fuse-gloss": "eyeglasses",
-    "rk": 2072
+    "rk": 2073
   },
   {
     "gloss": [
@@ -101568,9 +101612,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2062,
+    "id": 2063,
     "fuse-gloss": "double-barrelled shotgun",
-    "rk": 2073
+    "rk": 2074
   },
   {
     "gloss": [
@@ -101593,9 +101637,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2063,
+    "id": 2064,
     "fuse-gloss": "rough waters,    choppy sea",
-    "rk": 2074
+    "rk": 2075
   },
   {
     "gloss": [
@@ -101617,9 +101661,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2064,
+    "id": 2065,
     "fuse-gloss": "grouse",
-    "rk": 2075
+    "rk": 2076
   },
   {
     "gloss": [
@@ -101641,9 +101685,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2065,
+    "id": 2066,
     "fuse-gloss": "very far",
-    "rk": 2076
+    "rk": 2077
   },
   {
     "gloss": [
@@ -101665,9 +101709,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2066,
+    "id": 2067,
     "fuse-gloss": "rattlesnake",
-    "rk": 2077
+    "rk": 2078
   },
   {
     "gloss": [
@@ -101689,9 +101733,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2067,
+    "id": 2068,
     "fuse-gloss": "sailor",
-    "rk": 2078
+    "rk": 2079
   },
   {
     "gloss": [
@@ -101713,9 +101757,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2068,
+    "id": 2069,
     "fuse-gloss": "fifty cents",
-    "rk": 2079
+    "rk": 2080
   },
   {
     "gloss": [
@@ -101745,9 +101789,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2069,
+    "id": 2070,
     "fuse-gloss": "rawhide,    thong",
-    "rk": 2080
+    "rk": 2081
   },
   {
     "gloss": [
@@ -101769,9 +101813,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2070,
+    "id": 2071,
     "fuse-gloss": "moccasin",
-    "rk": 2081
+    "rk": 2082
   },
   {
     "gloss": [
@@ -101794,9 +101838,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2071,
+    "id": 2072,
     "fuse-gloss": "good point,    strong argument",
-    "rk": 2082
+    "rk": 2083
   },
   {
     "gloss": [
@@ -101819,9 +101863,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2072,
+    "id": 2073,
     "fuse-gloss": "sailing ship,    wooden ship",
-    "rk": 2083
+    "rk": 2084
   },
   {
     "gloss": [
@@ -101843,9 +101887,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2073,
+    "id": 2074,
     "fuse-gloss": "river fork",
-    "rk": 2084
+    "rk": 2085
   },
   {
     "gloss": [
@@ -101867,9 +101911,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2074,
+    "id": 2075,
     "fuse-gloss": "surround",
-    "rk": 2085
+    "rk": 2086
   },
   {
     "gloss": [
@@ -101891,9 +101935,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2075,
+    "id": 2076,
     "fuse-gloss": "offend",
-    "rk": 2086
+    "rk": 2087
   },
   {
     "gloss": [
@@ -101918,9 +101962,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2076,
+    "id": 2077,
     "fuse-gloss": "uncover,    unwrap,    discover,    reveal",
-    "rk": 2087
+    "rk": 2088
   },
   {
     "gloss": [
@@ -101943,9 +101987,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2077,
+    "id": 2078,
     "fuse-gloss": "count,    enumerate",
-    "rk": 2088
+    "rk": 2089
   },
   {
     "gloss": [
@@ -101969,9 +102013,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2078,
+    "id": 2079,
     "fuse-gloss": "remove,    extract,    take it off",
-    "rk": 2089
+    "rk": 2090
   },
   {
     "gloss": [
@@ -101993,9 +102037,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2079,
+    "id": 2080,
     "fuse-gloss": "dig",
-    "rk": 2090
+    "rk": 2091
   },
   {
     "gloss": [
@@ -102017,9 +102061,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2080,
+    "id": 2081,
     "fuse-gloss": "to roll up",
-    "rk": 2091
+    "rk": 2092
   },
   {
     "gloss": [
@@ -102041,9 +102085,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2081,
+    "id": 2082,
     "fuse-gloss": "to fry",
-    "rk": 2092
+    "rk": 2093
   },
   {
     "gloss": [
@@ -102066,9 +102110,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2082,
+    "id": 2083,
     "fuse-gloss": "to make a noise,    make sound",
-    "rk": 2093
+    "rk": 2094
   },
   {
     "gloss": [
@@ -102090,9 +102134,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2083,
+    "id": 2084,
     "fuse-gloss": "to whip",
-    "rk": 2094
+    "rk": 2095
   },
   {
     "gloss": [
@@ -102115,9 +102159,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2084,
+    "id": 2085,
     "fuse-gloss": "fallen tree,    obstruction",
-    "rk": 2095
+    "rk": 2096
   },
   {
     "gloss": [
@@ -102141,9 +102185,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2085,
+    "id": 2086,
     "fuse-gloss": "understand,    comprehend,    grasp",
-    "rk": 2096
+    "rk": 2097
   },
   {
     "gloss": [
@@ -102166,9 +102210,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2086,
+    "id": 2087,
     "fuse-gloss": "to shake hands,    take someone's hand",
-    "rk": 2097
+    "rk": 2098
   },
   {
     "gloss": [
@@ -102190,9 +102234,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2087,
+    "id": 2088,
     "fuse-gloss": "willow",
-    "rk": 2098
+    "rk": 2099
   },
   {
     "gloss": [
@@ -102214,9 +102258,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2088,
+    "id": 2089,
     "fuse-gloss": "north",
-    "rk": 2099
+    "rk": 2100
   },
   {
     "gloss": [
@@ -102241,9 +102285,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2089,
+    "id": 2090,
     "fuse-gloss": "one by one,    side by side,    one at a time,    individually",
-    "rk": 2100
+    "rk": 2101
   },
   {
     "gloss": [
@@ -102265,9 +102309,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2090,
+    "id": 2091,
     "fuse-gloss": "east",
-    "rk": 2101
+    "rk": 2102
   },
   {
     "gloss": [
@@ -102289,9 +102333,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2091,
+    "id": 2092,
     "fuse-gloss": "west",
-    "rk": 2102
+    "rk": 2103
   },
   {
     "gloss": [
@@ -102313,9 +102357,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2092,
+    "id": 2093,
     "fuse-gloss": "south",
-    "rk": 2103
+    "rk": 2104
   },
   {
     "gloss": [
@@ -102338,9 +102382,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2093,
+    "id": 2094,
     "fuse-gloss": "redcedar,    big cedar tree",
-    "rk": 2104
+    "rk": 2105
   },
   {
     "gloss": [
@@ -102363,9 +102407,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2094,
+    "id": 2095,
     "fuse-gloss": "have an affair,    cheat on a lover",
-    "rk": 2105
+    "rk": 2106
   },
   {
     "gloss": [
@@ -102387,9 +102431,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2095,
+    "id": 2096,
     "fuse-gloss": "hardwood",
-    "rk": 2106
+    "rk": 2107
   },
   {
     "gloss": [
@@ -102411,9 +102455,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2096,
+    "id": 2097,
     "fuse-gloss": "nest",
-    "rk": 2107
+    "rk": 2108
   },
   {
     "gloss": [
@@ -102442,9 +102486,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2097,
+    "id": 2098,
     "fuse-gloss": "to spit",
-    "rk": 2108
+    "rk": 2109
   },
   {
     "gloss": [
@@ -102466,9 +102510,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2098,
+    "id": 2099,
     "fuse-gloss": "to sail",
-    "rk": 2109
+    "rk": 2110
   },
   {
     "gloss": [
@@ -102491,9 +102535,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2099,
+    "id": 2100,
     "fuse-gloss": "have a good time,    enjoy oneself",
-    "rk": 2110
+    "rk": 2111
   },
   {
     "gloss": [
@@ -102518,9 +102562,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2100,
+    "id": 2101,
     "fuse-gloss": "to conjure,    summon,    heal,    perform native medicine",
-    "rk": 2111
+    "rk": 2112
   },
   {
     "gloss": [
@@ -102543,9 +102587,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2101,
+    "id": 2102,
     "fuse-gloss": "undo,    absolve",
-    "rk": 2112
+    "rk": 2113
   },
   {
     "gloss": [
@@ -102568,9 +102612,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2102,
+    "id": 2103,
     "fuse-gloss": "decide,    contemplate",
-    "rk": 2113
+    "rk": 2114
   },
   {
     "gloss": [
@@ -102592,9 +102636,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2103,
+    "id": 2104,
     "fuse-gloss": "have a party",
-    "rk": 2114
+    "rk": 2115
   },
   {
     "gloss": [
@@ -102616,9 +102660,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2104,
+    "id": 2105,
     "fuse-gloss": "to split/break/chop in half",
-    "rk": 2115
+    "rk": 2116
   },
   {
     "gloss": [
@@ -102641,9 +102685,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2105,
+    "id": 2106,
     "fuse-gloss": "witchcraft,    necromancy",
-    "rk": 2116
+    "rk": 2117
   },
   {
     "gloss": [
@@ -102665,9 +102709,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2106,
+    "id": 2107,
     "fuse-gloss": "give orders",
-    "rk": 2117
+    "rk": 2118
   },
   {
     "gloss": [
@@ -102690,9 +102734,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2107,
+    "id": 2108,
     "fuse-gloss": "bleed,    menstruate (euph.)",
-    "rk": 2118
+    "rk": 2119
   },
   {
     "gloss": [
@@ -102714,9 +102758,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2108,
+    "id": 2109,
     "fuse-gloss": "mast",
-    "rk": 2119
+    "rk": 2120
   },
   {
     "gloss": [
@@ -102740,9 +102784,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2109,
+    "id": 2110,
     "fuse-gloss": "put it down,    lower it,    drop it",
-    "rk": 2120
+    "rk": 2121
   },
   {
     "gloss": [
@@ -102764,9 +102808,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2110,
+    "id": 2111,
     "fuse-gloss": "dream",
-    "rk": 2121
+    "rk": 2122
   },
   {
     "gloss": [
@@ -102788,9 +102832,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2111,
+    "id": 2112,
     "fuse-gloss": "next week",
-    "rk": 2122
+    "rk": 2123
   },
   {
     "gloss": [
@@ -102812,9 +102856,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2112,
+    "id": 2113,
     "fuse-gloss": "last week",
-    "rk": 2123
+    "rk": 2124
   },
   {
     "gloss": [
@@ -102836,9 +102880,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2113,
+    "id": 2114,
     "fuse-gloss": "weekend",
-    "rk": 2124
+    "rk": 2125
   },
   {
     "gloss": [
@@ -102868,9 +102912,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2114,
+    "id": 2115,
     "fuse-gloss": "not yet,    still not",
-    "rk": 2125
+    "rk": 2126
   },
   {
     "gloss": [
@@ -102892,9 +102936,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2115,
+    "id": 2116,
     "fuse-gloss": "waning moon",
-    "rk": 2126
+    "rk": 2127
   },
   {
     "gloss": [
@@ -102916,9 +102960,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2116,
+    "id": 2117,
     "fuse-gloss": "midnight",
-    "rk": 2127
+    "rk": 2128
   },
   {
     "gloss": [
@@ -102940,9 +102984,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2117,
+    "id": 2118,
     "fuse-gloss": "raspberry",
-    "rk": 2128
+    "rk": 2129
   },
   {
     "gloss": [
@@ -102964,9 +103008,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2118,
+    "id": 2119,
     "fuse-gloss": "flea",
-    "rk": 2129
+    "rk": 2130
   },
   {
     "gloss": [
@@ -102988,9 +103032,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2119,
+    "id": 2120,
     "fuse-gloss": "six-shooter",
-    "rk": 2130
+    "rk": 2131
   },
   {
     "gloss": [
@@ -103012,9 +103056,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2120,
+    "id": 2121,
     "fuse-gloss": "hazel (plant)",
-    "rk": 2131
+    "rk": 2132
   },
   {
     "gloss": [
@@ -103036,9 +103080,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2121,
+    "id": 2122,
     "fuse-gloss": "thousand",
-    "rk": 2132
+    "rk": 2133
   },
   {
     "gloss": [
@@ -103060,9 +103104,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2122,
+    "id": 2123,
     "fuse-gloss": "prefer that",
-    "rk": 2133
+    "rk": 2134
   },
   {
     "gloss": [
@@ -103084,9 +103128,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2123,
+    "id": 2124,
     "fuse-gloss": "think that",
-    "rk": 2134
+    "rk": 2135
   },
   {
     "gloss": [
@@ -103109,9 +103153,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2124,
+    "id": 2125,
     "fuse-gloss": "to a little ways,    make some progress",
-    "rk": 2135
+    "rk": 2136
   },
   {
     "gloss": [
@@ -103133,9 +103177,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2125,
+    "id": 2126,
     "fuse-gloss": "springtime",
-    "rk": 2136
+    "rk": 2137
   },
   {
     "gloss": [
@@ -103157,9 +103201,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2126,
+    "id": 2127,
     "fuse-gloss": "a little more",
-    "rk": 2137
+    "rk": 2138
   },
   {
     "gloss": [
@@ -103182,9 +103226,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2127,
+    "id": 2128,
     "fuse-gloss": "aggressive,    hostile",
-    "rk": 2138
+    "rk": 2139
   },
   {
     "gloss": [
@@ -103208,9 +103252,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2128,
+    "id": 2129,
     "fuse-gloss": "to prune,    cut (grass),    mow",
-    "rk": 2139
+    "rk": 2140
   },
   {
     "gloss": [
@@ -103233,9 +103277,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2129,
+    "id": 2130,
     "fuse-gloss": "flower,    ornamental plant",
-    "rk": 2140
+    "rk": 2141
   },
   {
     "gloss": [
@@ -103265,9 +103309,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2130,
+    "id": 2131,
     "fuse-gloss": "hell (afterlife,    theological)",
-    "rk": 2141
+    "rk": 2142
   },
   {
     "gloss": [
@@ -103298,9 +103342,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2131,
+    "id": 2132,
     "fuse-gloss": "go to hell,    be ruined,    get fucked up",
-    "rk": 2142
+    "rk": 2143
   },
   {
     "gloss": [
@@ -103322,9 +103366,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2132,
+    "id": 2133,
     "fuse-gloss": "impossible",
-    "rk": 2143
+    "rk": 2144
   },
   {
     "gloss": [
@@ -103356,9 +103400,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2133,
+    "id": 2134,
     "fuse-gloss": "which one,    wherever,    whence,    where from",
-    "rk": 2144
+    "rk": 2145
   },
   {
     "gloss": [
@@ -103380,9 +103424,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2134,
+    "id": 2135,
     "fuse-gloss": "fishhook",
-    "rk": 2145
+    "rk": 2146
   },
   {
     "gloss": [
@@ -103406,9 +103450,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2135,
+    "id": 2136,
     "fuse-gloss": "to touch,    poke at",
-    "rk": 2146
+    "rk": 2147
   },
   {
     "gloss": [
@@ -103430,9 +103474,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2136,
+    "id": 2137,
     "fuse-gloss": "chicken eggs",
-    "rk": 2147
+    "rk": 2148
   },
   {
     "gloss": [
@@ -103455,9 +103499,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 2137,
+    "id": 2138,
     "fuse-gloss": "at sea",
-    "rk": 2148
+    "rk": 2149
   },
   {
     "gloss": [
@@ -103481,9 +103525,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2138,
+    "id": 2139,
     "fuse-gloss": "gin,    whiskey,    spirits",
-    "rk": 2149
+    "rk": 2150
   },
   {
     "gloss": [
@@ -103507,9 +103551,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2139,
+    "id": 2140,
     "fuse-gloss": "breathless,    out of breath,    dead (euph.)",
-    "rk": 2150
+    "rk": 2151
   },
   {
     "gloss": [
@@ -103533,9 +103577,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2140,
+    "id": 2141,
     "fuse-gloss": "to pour out,    to waste water,    to urinate (euph.)",
-    "rk": 2151
+    "rk": 2152
   },
   {
     "gloss": [
@@ -103558,9 +103602,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2141,
+    "id": 2142,
     "fuse-gloss": "to throw out/waste food,    to defecate/poo (euph.)",
-    "rk": 2152
+    "rk": 2153
   },
   {
     "gloss": [
@@ -103584,9 +103628,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2142,
+    "id": 2143,
     "fuse-gloss": "menstrual pad,    tampon,    menstrual products in general",
-    "rk": 2153
+    "rk": 2154
   },
   {
     "gloss": [
@@ -103610,9 +103654,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2143,
+    "id": 2144,
     "fuse-gloss": "diarrhoea,    rosebush,    brambles/briars",
-    "rk": 2154
+    "rk": 2155
   },
   {
     "gloss": [
@@ -103642,9 +103686,9 @@ const dictionary = [
       "Compound",
       "Neologism"
     ],
-    "id": 2144,
+    "id": 2145,
     "fuse-gloss": "coronavirus",
-    "rk": 2155
+    "rk": 2156
   },
   {
     "gloss": [
@@ -103666,9 +103710,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2145,
+    "id": 2146,
     "fuse-gloss": "horny (euph.)",
-    "rk": 2156
+    "rk": 2157
   },
   {
     "gloss": [
@@ -103691,9 +103735,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2146,
+    "id": 2147,
     "fuse-gloss": "dark-skinned person,    black/african people",
-    "rk": 2157
+    "rk": 2158
   },
   {
     "gloss": [
@@ -103715,9 +103759,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2147,
+    "id": 2148,
     "fuse-gloss": "extreme unction",
-    "rk": 2158
+    "rk": 2159
   },
   {
     "gloss": [
@@ -103740,9 +103784,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2148,
+    "id": 2149,
     "fuse-gloss": "kitchen stove,    cookstove",
-    "rk": 2159
+    "rk": 2160
   },
   {
     "gloss": [
@@ -103778,9 +103822,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2149,
+    "id": 2150,
     "fuse-gloss": "malaria,    severe fever",
-    "rk": 2160
+    "rk": 2161
   },
   {
     "gloss": [
@@ -103810,9 +103854,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2150,
+    "id": 2151,
     "fuse-gloss": "until,    when __ comes",
-    "rk": 2161
+    "rk": 2162
   },
   {
     "gloss": [
@@ -103841,9 +103885,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2151,
+    "id": 2152,
     "fuse-gloss": "honey",
-    "rk": 2162
+    "rk": 2163
   },
   {
     "gloss": [
@@ -103872,9 +103916,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2152,
+    "id": 2153,
     "fuse-gloss": "catholicism",
-    "rk": 2163
+    "rk": 2164
   },
   {
     "gloss": [
@@ -103903,9 +103947,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2153,
+    "id": 2154,
     "fuse-gloss": "rich in possessions",
-    "rk": 2164
+    "rk": 2165
   },
   {
     "gloss": [
@@ -103935,9 +103979,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 2154,
+    "id": 2155,
     "fuse-gloss": "nettle cloth? durable fabric?",
-    "rk": 2165
+    "rk": 2166
   },
   {
     "gloss": [
@@ -103973,9 +104017,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2155,
+    "id": 2156,
     "fuse-gloss": "word,    small talk",
-    "rk": 2166
+    "rk": 2167
   },
   {
     "gloss": [
@@ -103997,9 +104041,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2156,
+    "id": 2157,
     "fuse-gloss": "Duployan shorthand",
-    "rk": 2167
+    "rk": 2168
   },
   {
     "gloss": [
@@ -104039,9 +104083,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2157,
+    "id": 2158,
     "fuse-gloss": "greenhorn,    newcomer,    new in town,    beginner",
-    "rk": 2168
+    "rk": 2169
   },
   {
     "gloss": [
@@ -104065,9 +104109,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2158,
+    "id": 2159,
     "fuse-gloss": "pity,    empathise with,    consider",
-    "rk": 2169
+    "rk": 2170
   },
   {
     "gloss": [
@@ -104090,9 +104134,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2159,
+    "id": 2160,
     "fuse-gloss": "width,    wide",
-    "rk": 2170
+    "rk": 2171
   },
   {
     "gloss": [
@@ -104117,9 +104161,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2160,
+    "id": 2161,
     "fuse-gloss": "blowhard,    douchebag,    buffoon,    windbag",
-    "rk": 2171
+    "rk": 2172
   },
   {
     "gloss": [
@@ -104142,9 +104186,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2161,
+    "id": 2162,
     "fuse-gloss": "blue grouse,    grouse",
-    "rk": 2172
+    "rk": 2173
   },
   {
     "gloss": [
@@ -104167,9 +104211,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2162,
+    "id": 2163,
     "fuse-gloss": "happy,    cheerful",
-    "rk": 2173
+    "rk": 2174
   },
   {
     "gloss": [
@@ -104192,9 +104236,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2163,
+    "id": 2164,
     "fuse-gloss": "agree,    come to a decision",
-    "rk": 2174
+    "rk": 2175
   },
   {
     "gloss": [
@@ -104216,9 +104260,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2164,
+    "id": 2165,
     "fuse-gloss": "oak",
-    "rk": 2175
+    "rk": 2176
   },
   {
     "gloss": [
@@ -104247,9 +104291,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2165,
+    "id": 2166,
     "fuse-gloss": "first moon; midwinter moon",
-    "rk": 2176
+    "rk": 2177
   },
   {
     "gloss": [
@@ -104278,9 +104322,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2166,
+    "id": 2167,
     "fuse-gloss": "second moon; chinook moon",
-    "rk": 2177
+    "rk": 2178
   },
   {
     "gloss": [
@@ -104309,9 +104353,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2167,
+    "id": 2168,
     "fuse-gloss": "third moon; windy moon",
-    "rk": 2178
+    "rk": 2179
   },
   {
     "gloss": [
@@ -104340,9 +104384,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2168,
+    "id": 2169,
     "fuse-gloss": "fourth moon; new grass moon",
-    "rk": 2179
+    "rk": 2180
   },
   {
     "gloss": [
@@ -104371,9 +104415,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2169,
+    "id": 2170,
     "fuse-gloss": "fifth moon; blossoming moon",
-    "rk": 2180
+    "rk": 2181
   },
   {
     "gloss": [
@@ -104402,9 +104446,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2170,
+    "id": 2171,
     "fuse-gloss": "sixth moon; berry moon",
-    "rk": 2181
+    "rk": 2182
   },
   {
     "gloss": [
@@ -104433,9 +104477,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2171,
+    "id": 2172,
     "fuse-gloss": "seventh moon; salmon moon",
-    "rk": 2182
+    "rk": 2183
   },
   {
     "gloss": [
@@ -104464,9 +104508,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2172,
+    "id": 2173,
     "fuse-gloss": "eight moon; sweltering moon",
-    "rk": 2183
+    "rk": 2184
   },
   {
     "gloss": [
@@ -104495,9 +104539,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2173,
+    "id": 2174,
     "fuse-gloss": "ninth moon; spawning moon",
-    "rk": 2184
+    "rk": 2185
   },
   {
     "gloss": [
@@ -104526,9 +104570,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2174,
+    "id": 2175,
     "fuse-gloss": "tenth moon; falling leaves moon",
-    "rk": 2185
+    "rk": 2186
   },
   {
     "gloss": [
@@ -104557,9 +104601,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2175,
+    "id": 2176,
     "fuse-gloss": "eleventh moon; cold wind moon",
-    "rk": 2186
+    "rk": 2187
   },
   {
     "gloss": [
@@ -104588,9 +104632,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2176,
+    "id": 2177,
     "fuse-gloss": "twelfth moon; winterhouse moon",
-    "rk": 2187
+    "rk": 2188
   },
   {
     "gloss": [
@@ -104619,9 +104663,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2177,
+    "id": 2178,
     "fuse-gloss": "thirteenth moon; deep snow moon",
-    "rk": 2188
+    "rk": 2189
   },
   {
     "gloss": [
@@ -104645,9 +104689,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2178,
+    "id": 2179,
     "fuse-gloss": "immoral activities,    misbehaviour,    sinning",
-    "rk": 2189
+    "rk": 2190
   },
   {
     "gloss": [
@@ -104671,9 +104715,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2179,
+    "id": 2180,
     "fuse-gloss": "decent,    okay,    acceptable",
-    "rk": 2190
+    "rk": 2191
   },
   {
     "gloss": [
@@ -104695,9 +104739,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2180,
+    "id": 2181,
     "fuse-gloss": "religious people",
-    "rk": 2191
+    "rk": 2192
   },
   {
     "gloss": [
@@ -104721,9 +104765,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2181,
+    "id": 2182,
     "fuse-gloss": "inform,    convey,    pass on",
-    "rk": 2192
+    "rk": 2193
   },
   {
     "gloss": [
@@ -104747,9 +104791,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2182,
+    "id": 2183,
     "fuse-gloss": "greedy,    selfish,    miserly",
-    "rk": 2193
+    "rk": 2194
   },
   {
     "gloss": [
@@ -104779,9 +104823,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2183,
+    "id": 2184,
     "fuse-gloss": "some day,    when/which day?",
-    "rk": 2194
+    "rk": 2195
   },
   {
     "gloss": [
@@ -104805,9 +104849,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2184,
+    "id": 2185,
     "fuse-gloss": "in other words,    that is to say,    aka",
-    "rk": 2195
+    "rk": 2196
   },
   {
     "gloss": [
@@ -104831,9 +104875,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2185,
+    "id": 2186,
     "fuse-gloss": "makes sense,    reasonable,    enthusiastic",
-    "rk": 2196
+    "rk": 2197
   },
   {
     "gloss": [
@@ -104855,9 +104899,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2186,
+    "id": 2187,
     "fuse-gloss": "chest (body)",
-    "rk": 2197
+    "rk": 2198
   },
   {
     "gloss": [
@@ -104880,9 +104924,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2187,
+    "id": 2188,
     "fuse-gloss": "blacksmith shop,    metalworker",
-    "rk": 2198
+    "rk": 2199
   },
   {
     "gloss": [
@@ -104905,9 +104949,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2188,
+    "id": 2189,
     "fuse-gloss": "very dear friend,    best friend",
-    "rk": 2199
+    "rk": 2200
   },
   {
     "gloss": [
@@ -104929,9 +104973,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2189,
+    "id": 2190,
     "fuse-gloss": "muskrat",
-    "rk": 2200
+    "rk": 2201
   },
   {
     "gloss": [
@@ -104954,9 +104998,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2190,
+    "id": 2191,
     "fuse-gloss": "truth,    accurate",
-    "rk": 2201
+    "rk": 2202
   },
   {
     "gloss": [
@@ -104979,9 +105023,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2191,
+    "id": 2192,
     "fuse-gloss": "stake a claim,    claim/take land",
-    "rk": 2202
+    "rk": 2203
   },
   {
     "gloss": [
@@ -105005,9 +105049,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2192,
+    "id": 2193,
     "fuse-gloss": "take pity,    show mercy,    feel sorry for",
-    "rk": 2203
+    "rk": 2204
   },
   {
     "gloss": [
@@ -105030,9 +105074,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2193,
+    "id": 2194,
     "fuse-gloss": "believe,    trust",
-    "rk": 2204
+    "rk": 2205
   },
   {
     "gloss": [
@@ -105057,9 +105101,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2194,
+    "id": 2195,
     "fuse-gloss": "humble,    meek,    shy,    reserved",
-    "rk": 2205
+    "rk": 2206
   },
   {
     "gloss": [
@@ -105083,9 +105127,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2195,
+    "id": 2196,
     "fuse-gloss": "enthusiastic,    devoted,    fascinated",
-    "rk": 2206
+    "rk": 2207
   },
   {
     "gloss": [
@@ -105109,9 +105153,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2196,
+    "id": 2197,
     "fuse-gloss": "envy,    jealous,    covet",
-    "rk": 2207
+    "rk": 2208
   },
   {
     "gloss": [
@@ -105134,9 +105178,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2197,
+    "id": 2198,
     "fuse-gloss": "to defeat,    win out over",
-    "rk": 2208
+    "rk": 2209
   },
   {
     "gloss": [
@@ -105159,9 +105203,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2198,
+    "id": 2199,
     "fuse-gloss": "steep,    shear",
-    "rk": 2209
+    "rk": 2210
   },
   {
     "gloss": [
@@ -105185,9 +105229,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2199,
+    "id": 2200,
     "fuse-gloss": "playful,    sporting,    festive",
-    "rk": 2210
+    "rk": 2211
   },
   {
     "gloss": [
@@ -105211,9 +105255,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2200,
+    "id": 2201,
     "fuse-gloss": "lethargic,    dim,    stupid",
-    "rk": 2211
+    "rk": 2212
   },
   {
     "gloss": [
@@ -105235,9 +105279,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2201,
+    "id": 2202,
     "fuse-gloss": "holiday",
-    "rk": 2212
+    "rk": 2213
   },
   {
     "gloss": [
@@ -105259,9 +105303,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2202,
+    "id": 2203,
     "fuse-gloss": "shout",
-    "rk": 2213
+    "rk": 2214
   },
   {
     "gloss": [
@@ -105283,9 +105327,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2203,
+    "id": 2204,
     "fuse-gloss": "city",
-    "rk": 2214
+    "rk": 2215
   },
   {
     "gloss": [
@@ -105310,9 +105354,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2204,
+    "id": 2205,
     "fuse-gloss": "empty,    used up,    poor,    destitute",
-    "rk": 2215
+    "rk": 2216
   },
   {
     "gloss": [
@@ -105334,9 +105378,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2205,
+    "id": 2206,
     "fuse-gloss": "deaf",
-    "rk": 2216
+    "rk": 2217
   },
   {
     "gloss": [
@@ -105358,9 +105402,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2206,
+    "id": 2207,
     "fuse-gloss": "blind",
-    "rk": 2217
+    "rk": 2218
   },
   {
     "gloss": [
@@ -105384,9 +105428,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2207,
+    "id": 2208,
     "fuse-gloss": "code,    cypher,    secret language",
-    "rk": 2218
+    "rk": 2219
   },
   {
     "gloss": [
@@ -105408,9 +105452,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2208,
+    "id": 2209,
     "fuse-gloss": "place",
-    "rk": 2219
+    "rk": 2220
   },
   {
     "gloss": [
@@ -105434,9 +105478,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2209,
+    "id": 2210,
     "fuse-gloss": "as if,    seems,    looks like",
-    "rk": 2220
+    "rk": 2221
   },
   {
     "gloss": [
@@ -105458,9 +105502,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2210,
+    "id": 2211,
     "fuse-gloss": "low tide",
-    "rk": 2221
+    "rk": 2222
   },
   {
     "gloss": [
@@ -105482,9 +105526,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2211,
+    "id": 2212,
     "fuse-gloss": "listen to",
-    "rk": 2222
+    "rk": 2223
   },
   {
     "gloss": [
@@ -105507,9 +105551,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2212,
+    "id": 2213,
     "fuse-gloss": "to lock,    lock up",
-    "rk": 2223
+    "rk": 2224
   },
   {
     "gloss": [
@@ -105532,9 +105576,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2213,
+    "id": 2214,
     "fuse-gloss": "to fill,    fill up",
-    "rk": 2224
+    "rk": 2225
   },
   {
     "gloss": [
@@ -105556,9 +105600,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2214,
+    "id": 2215,
     "fuse-gloss": "sell",
-    "rk": 2225
+    "rk": 2226
   },
   {
     "gloss": [
@@ -105582,9 +105626,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2215,
+    "id": 2216,
     "fuse-gloss": "STI,    STD,    syphilis",
-    "rk": 2226
+    "rk": 2227
   },
   {
     "gloss": [
@@ -105607,9 +105651,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2216,
+    "id": 2217,
     "fuse-gloss": "furthermore,    also",
-    "rk": 2227
+    "rk": 2228
   },
   {
     "gloss": [
@@ -105632,9 +105676,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2217,
+    "id": 2218,
     "fuse-gloss": "lead shot,    buckshot",
-    "rk": 2228
+    "rk": 2229
   },
   {
     "gloss": [
@@ -105656,9 +105700,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2218,
+    "id": 2219,
     "fuse-gloss": "hill",
-    "rk": 2229
+    "rk": 2230
   },
   {
     "gloss": [
@@ -105680,9 +105724,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2219,
+    "id": 2220,
     "fuse-gloss": "chum salmon",
-    "rk": 2230
+    "rk": 2231
   },
   {
     "gloss": [
@@ -105704,9 +105748,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2220,
+    "id": 2221,
     "fuse-gloss": "potlatch (ceremony)",
-    "rk": 2231
+    "rk": 2232
   },
   {
     "gloss": [
@@ -105728,9 +105772,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2221,
+    "id": 2222,
     "fuse-gloss": "romantic love",
-    "rk": 2232
+    "rk": 2233
   },
   {
     "gloss": [
@@ -105752,9 +105796,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2222,
+    "id": 2223,
     "fuse-gloss": "leftover food",
-    "rk": 2233
+    "rk": 2234
   },
   {
     "gloss": [
@@ -105776,9 +105820,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2223,
+    "id": 2224,
     "fuse-gloss": "shadow",
-    "rk": 2234
+    "rk": 2235
   },
   {
     "gloss": [
@@ -105801,9 +105845,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2224,
+    "id": 2225,
     "fuse-gloss": "to astonish,    admire",
-    "rk": 2235
+    "rk": 2236
   },
   {
     "gloss": [
@@ -105826,9 +105870,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2225,
+    "id": 2226,
     "fuse-gloss": "then again,    on the other hand",
-    "rk": 2236
+    "rk": 2237
   },
   {
     "gloss": [
@@ -105850,9 +105894,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2226,
+    "id": 2227,
     "fuse-gloss": "turkey vulture",
-    "rk": 2237
+    "rk": 2238
   },
   {
     "gloss": [
@@ -105875,9 +105919,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2227,
+    "id": 2228,
     "fuse-gloss": "bow,    front of a boat/vehicle",
-    "rk": 2238
+    "rk": 2239
   },
   {
     "gloss": [
@@ -105901,9 +105945,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2228,
+    "id": 2229,
     "fuse-gloss": "stern,    rudder,    rear of a boat/vehicle",
-    "rk": 2239
+    "rk": 2240
   },
   {
     "gloss": [
@@ -105926,9 +105970,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2229,
+    "id": 2230,
     "fuse-gloss": "incoming tide,    rising tide",
-    "rk": 2240
+    "rk": 2241
   },
   {
     "gloss": [
@@ -105950,9 +105994,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2230,
+    "id": 2231,
     "fuse-gloss": "locomotive",
-    "rk": 2241
+    "rk": 2242
   },
   {
     "gloss": [
@@ -105974,9 +106018,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2231,
+    "id": 2232,
     "fuse-gloss": "sunrise",
-    "rk": 2242
+    "rk": 2243
   },
   {
     "gloss": [
@@ -106005,9 +106049,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2232,
+    "id": 2233,
     "fuse-gloss": "rat",
-    "rk": 2243
+    "rk": 2244
   },
   {
     "gloss": [
@@ -106029,9 +106073,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2233,
+    "id": 2234,
     "fuse-gloss": "raven",
-    "rk": 2244
+    "rk": 2245
   },
   {
     "gloss": [
@@ -106053,9 +106097,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2234,
+    "id": 2235,
     "fuse-gloss": "pregnant",
-    "rk": 2245
+    "rk": 2246
   },
   {
     "gloss": [
@@ -106078,9 +106122,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2235,
+    "id": 2236,
     "fuse-gloss": "sleep soundly,    deep sleep",
-    "rk": 2246
+    "rk": 2247
   },
   {
     "gloss": [
@@ -106103,9 +106147,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2236,
+    "id": 2237,
     "fuse-gloss": "rainforest,    old-growth forest",
-    "rk": 2247
+    "rk": 2248
   },
   {
     "gloss": [
@@ -106128,9 +106172,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2237,
+    "id": 2238,
     "fuse-gloss": "countless,    thousands",
-    "rk": 2248
+    "rk": 2249
   },
   {
     "gloss": [
@@ -106152,9 +106196,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2238,
+    "id": 2239,
     "fuse-gloss": "crowd",
-    "rk": 2249
+    "rk": 2250
   },
   {
     "gloss": [
@@ -106177,9 +106221,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2239,
+    "id": 2240,
     "fuse-gloss": "stranger,    foreigner",
-    "rk": 2250
+    "rk": 2251
   },
   {
     "gloss": [
@@ -106208,9 +106252,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2240,
+    "id": 2241,
     "fuse-gloss": "skunk",
-    "rk": 2251
+    "rk": 2252
   },
   {
     "gloss": [
@@ -106232,9 +106276,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2241,
+    "id": 2242,
     "fuse-gloss": "nobody",
-    "rk": 2252
+    "rk": 2253
   },
   {
     "gloss": [
@@ -106257,9 +106301,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2242,
+    "id": 2243,
     "fuse-gloss": "skinny,    lean",
-    "rk": 2253
+    "rk": 2254
   },
   {
     "gloss": [
@@ -106282,9 +106326,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2243,
+    "id": 2244,
     "fuse-gloss": "stroll,    take a walk",
-    "rk": 2254
+    "rk": 2255
   },
   {
     "gloss": [
@@ -106307,9 +106351,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2244,
+    "id": 2245,
     "fuse-gloss": "waste,    throw away",
-    "rk": 2255
+    "rk": 2256
   },
   {
     "gloss": [
@@ -106333,9 +106377,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2245,
+    "id": 2246,
     "fuse-gloss": "sit idle,    stop for no reason,    hang around",
-    "rk": 2256
+    "rk": 2257
   },
   {
     "gloss": [
@@ -106358,9 +106402,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2246,
+    "id": 2247,
     "fuse-gloss": "curious,    look around",
-    "rk": 2257
+    "rk": 2258
   },
   {
     "gloss": [
@@ -106384,9 +106428,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2247,
+    "id": 2248,
     "fuse-gloss": "commoner,    just anybody,    any tom dick or harry",
-    "rk": 2258
+    "rk": 2259
   },
   {
     "gloss": [
@@ -106409,9 +106453,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2248,
+    "id": 2249,
     "fuse-gloss": "dead end,    cul-de-sac",
-    "rk": 2259
+    "rk": 2260
   },
   {
     "gloss": [
@@ -106433,9 +106477,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2249,
+    "id": 2250,
     "fuse-gloss": "oak tree",
-    "rk": 2260
+    "rk": 2261
   },
   {
     "gloss": [
@@ -106458,9 +106502,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2250,
+    "id": 2251,
     "fuse-gloss": "forget how,    be rusty/out of practice",
-    "rk": 2261
+    "rk": 2262
   },
   {
     "gloss": [
@@ -106483,9 +106527,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2251,
+    "id": 2252,
     "fuse-gloss": "respond,    answer",
-    "rk": 2262
+    "rk": 2263
   },
   {
     "gloss": [
@@ -106515,9 +106559,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2252,
+    "id": 2253,
     "fuse-gloss": "give birth,    have a baby",
-    "rk": 2263
+    "rk": 2264
   },
   {
     "gloss": [
@@ -106541,9 +106585,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2253,
+    "id": 2254,
     "fuse-gloss": "fetch,    go pick up,    gather",
-    "rk": 2264
+    "rk": 2265
   },
   {
     "gloss": [
@@ -106567,9 +106611,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2254,
+    "id": 2255,
     "fuse-gloss": "go behind,    come after,    succeed",
-    "rk": 2265
+    "rk": 2266
   },
   {
     "gloss": [
@@ -106593,9 +106637,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2255,
+    "id": 2256,
     "fuse-gloss": "go ahead,    come before,    preceed",
-    "rk": 2266
+    "rk": 2267
   },
   {
     "gloss": [
@@ -106619,9 +106663,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2256,
+    "id": 2257,
     "fuse-gloss": "cross over,    traverse,    ford (a river)",
-    "rk": 2267
+    "rk": 2268
   },
   {
     "gloss": [
@@ -106644,9 +106688,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2257,
+    "id": 2258,
     "fuse-gloss": "go by boat,    sail",
-    "rk": 2268
+    "rk": 2269
   },
   {
     "gloss": [
@@ -106668,9 +106712,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2258,
+    "id": 2259,
     "fuse-gloss": "silver",
-    "rk": 2269
+    "rk": 2270
   },
   {
     "gloss": [
@@ -106694,9 +106738,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2259,
+    "id": 2260,
     "fuse-gloss": "printed cloth,    patterned fabric,    banner",
-    "rk": 2270
+    "rk": 2271
   },
   {
     "gloss": [
@@ -106719,9 +106763,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2260,
+    "id": 2261,
     "fuse-gloss": "trout,    rainbow trout",
-    "rk": 2271
+    "rk": 2272
   },
   {
     "gloss": [
@@ -106744,9 +106788,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2261,
+    "id": 2262,
     "fuse-gloss": "take the wrong road,    go the wrong way",
-    "rk": 2272
+    "rk": 2273
   },
   {
     "gloss": [
@@ -106769,9 +106813,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2262,
+    "id": 2263,
     "fuse-gloss": "make a living,    earn a wage",
-    "rk": 2273
+    "rk": 2274
   },
   {
     "gloss": [
@@ -106793,9 +106837,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2263,
+    "id": 2264,
     "fuse-gloss": "butter",
-    "rk": 2274
+    "rk": 2275
   },
   {
     "gloss": [
@@ -106829,9 +106873,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2264,
+    "id": 2265,
     "fuse-gloss": "today",
-    "rk": 2275
+    "rk": 2276
   },
   {
     "gloss": [
@@ -106853,9 +106897,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2265,
+    "id": 2266,
     "fuse-gloss": "thirsty",
-    "rk": 2276
+    "rk": 2277
   },
   {
     "gloss": [
@@ -106878,9 +106922,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2266,
+    "id": 2267,
     "fuse-gloss": "sleepy,    tired",
-    "rk": 2277
+    "rk": 2278
   },
   {
     "gloss": [
@@ -106903,9 +106947,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2267,
+    "id": 2268,
     "fuse-gloss": "recording device,    answering machine",
-    "rk": 2278
+    "rk": 2279
   },
   {
     "gloss": [
@@ -106927,9 +106971,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2268,
+    "id": 2269,
     "fuse-gloss": "summer",
-    "rk": 2279
+    "rk": 2280
   },
   {
     "gloss": [
@@ -106951,9 +106995,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2269,
+    "id": 2270,
     "fuse-gloss": "snow",
-    "rk": 2280
+    "rk": 2281
   },
   {
     "gloss": [
@@ -106984,9 +107028,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2270,
+    "id": 2271,
     "fuse-gloss": "running water,    creek,    river",
-    "rk": 2281
+    "rk": 2282
   },
   {
     "gloss": [
@@ -107015,9 +107059,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2271,
+    "id": 2272,
     "fuse-gloss": "woodpecker",
-    "rk": 2282
+    "rk": 2283
   },
   {
     "gloss": [
@@ -107045,9 +107089,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2272,
+    "id": 2273,
     "fuse-gloss": "Monday",
-    "rk": 2283
+    "rk": 2284
   },
   {
     "gloss": [
@@ -107075,9 +107119,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2273,
+    "id": 2274,
     "fuse-gloss": "Tuesday",
-    "rk": 2284
+    "rk": 2285
   },
   {
     "gloss": [
@@ -107105,9 +107149,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2274,
+    "id": 2275,
     "fuse-gloss": "Wednesday",
-    "rk": 2285
+    "rk": 2286
   },
   {
     "gloss": [
@@ -107135,9 +107179,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2275,
+    "id": 2276,
     "fuse-gloss": "Thursday",
-    "rk": 2286
+    "rk": 2287
   },
   {
     "gloss": [
@@ -107165,9 +107209,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2276,
+    "id": 2277,
     "fuse-gloss": "Friday",
-    "rk": 2287
+    "rk": 2288
   },
   {
     "gloss": [
@@ -107195,9 +107239,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2277,
+    "id": 2278,
     "fuse-gloss": "Saturday",
-    "rk": 2288
+    "rk": 2289
   },
   {
     "gloss": [
@@ -107220,9 +107264,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2278,
+    "id": 2279,
     "fuse-gloss": "weekday,    workday",
-    "rk": 2289
+    "rk": 2290
   },
   {
     "gloss": [
@@ -107244,9 +107288,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2279,
+    "id": 2280,
     "fuse-gloss": "Saturday",
-    "rk": 2290
+    "rk": 2291
   },
   {
     "gloss": [
@@ -107269,9 +107313,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2280,
+    "id": 2281,
     "fuse-gloss": "eraser",
-    "rk": 2291
+    "rk": 2292
   },
   {
     "gloss": [
@@ -107295,9 +107339,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2281,
+    "id": 2282,
     "fuse-gloss": "soft drink,    pop,    soda",
-    "rk": 2292
+    "rk": 2293
   },
   {
     "gloss": [
@@ -107319,9 +107363,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2282,
+    "id": 2283,
     "fuse-gloss": "sweep",
-    "rk": 2293
+    "rk": 2294
   },
   {
     "gloss": [
@@ -107344,9 +107388,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2283,
+    "id": 2284,
     "fuse-gloss": "to open,    open up",
-    "rk": 2294
+    "rk": 2295
   },
   {
     "gloss": [
@@ -107368,9 +107412,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2284,
+    "id": 2285,
     "fuse-gloss": "stink",
-    "rk": 2295
+    "rk": 2296
   },
   {
     "gloss": [
@@ -107393,9 +107437,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2285,
+    "id": 2286,
     "fuse-gloss": "amuse,    entertain",
-    "rk": 2296
+    "rk": 2297
   },
   {
     "gloss": [
@@ -107417,9 +107461,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2286,
+    "id": 2287,
     "fuse-gloss": "to paddle",
-    "rk": 2297
+    "rk": 2298
   },
   {
     "gloss": [
@@ -107441,9 +107485,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2287,
+    "id": 2288,
     "fuse-gloss": "to gamble",
-    "rk": 2298
+    "rk": 2299
   },
   {
     "gloss": [
@@ -107467,9 +107511,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2288,
+    "id": 2289,
     "fuse-gloss": "bring back,    send back,    flip/overturn",
-    "rk": 2299
+    "rk": 2300
   },
   {
     "gloss": [
@@ -107491,9 +107535,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2289,
+    "id": 2290,
     "fuse-gloss": "send",
-    "rk": 2300
+    "rk": 2301
   },
   {
     "gloss": [
@@ -107515,9 +107559,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2290,
+    "id": 2291,
     "fuse-gloss": "soften",
-    "rk": 2301
+    "rk": 2302
   },
   {
     "gloss": [
@@ -107539,9 +107583,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2291,
+    "id": 2292,
     "fuse-gloss": "to dry something",
-    "rk": 2302
+    "rk": 2303
   },
   {
     "gloss": [
@@ -107563,9 +107607,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2292,
+    "id": 2293,
     "fuse-gloss": "frighten",
-    "rk": 2303
+    "rk": 2304
   },
   {
     "gloss": [
@@ -107587,9 +107631,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2293,
+    "id": 2294,
     "fuse-gloss": "to row",
-    "rk": 2304
+    "rk": 2305
   },
   {
     "gloss": [
@@ -107612,9 +107656,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2294,
+    "id": 2295,
     "fuse-gloss": "make friends,    make peace",
-    "rk": 2305
+    "rk": 2306
   },
   {
     "gloss": [
@@ -107637,9 +107681,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2295,
+    "id": 2296,
     "fuse-gloss": "to cook,    burn",
-    "rk": 2306
+    "rk": 2307
   },
   {
     "gloss": [
@@ -107662,9 +107706,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2296,
+    "id": 2297,
     "fuse-gloss": "to chop wood,    to fashion out of wood",
-    "rk": 2307
+    "rk": 2308
   },
   {
     "gloss": [
@@ -107695,9 +107739,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2297,
+    "id": 2298,
     "fuse-gloss": "weight,    weigh,    cause trouble(?)",
-    "rk": 2308
+    "rk": 2309
   },
   {
     "gloss": [
@@ -107727,9 +107771,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2298,
+    "id": 2299,
     "fuse-gloss": "to ring,    play music",
-    "rk": 2309
+    "rk": 2310
   },
   {
     "gloss": [
@@ -107752,9 +107796,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2299,
+    "id": 2300,
     "fuse-gloss": "better,    improved",
-    "rk": 2310
+    "rk": 2311
   },
   {
     "gloss": [
@@ -107777,9 +107821,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2300,
+    "id": 2301,
     "fuse-gloss": "to warm,    heat up",
-    "rk": 2311
+    "rk": 2312
   },
   {
     "gloss": [
@@ -107802,9 +107846,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2301,
+    "id": 2302,
     "fuse-gloss": "to sharpen,    whet",
-    "rk": 2312
+    "rk": 2313
   },
   {
     "gloss": [
@@ -107828,9 +107872,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2302,
+    "id": 2303,
     "fuse-gloss": "untie,    undo,    release",
-    "rk": 2313
+    "rk": 2314
   },
   {
     "gloss": [
@@ -107852,9 +107896,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2303,
+    "id": 2304,
     "fuse-gloss": "castrate",
-    "rk": 2314
+    "rk": 2315
   },
   {
     "gloss": [
@@ -107877,9 +107921,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2304,
+    "id": 2305,
     "fuse-gloss": "eat up,    chow down",
-    "rk": 2315
+    "rk": 2316
   },
   {
     "gloss": [
@@ -107902,9 +107946,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2305,
+    "id": 2306,
     "fuse-gloss": "camp,    campsite",
-    "rk": 2316
+    "rk": 2317
   },
   {
     "gloss": [
@@ -107926,9 +107970,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2306,
+    "id": 2307,
     "fuse-gloss": "to read",
-    "rk": 2317
+    "rk": 2318
   },
   {
     "gloss": [
@@ -107950,9 +107994,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2307,
+    "id": 2308,
     "fuse-gloss": "full moon",
-    "rk": 2318
+    "rk": 2319
   },
   {
     "gloss": [
@@ -107975,9 +108019,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2308,
+    "id": 2309,
     "fuse-gloss": "gas line,    pipeline",
-    "rk": 2319
+    "rk": 2320
   },
   {
     "gloss": [
@@ -107999,9 +108043,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2309,
+    "id": 2310,
     "fuse-gloss": "bread",
-    "rk": 2320
+    "rk": 2321
   },
   {
     "gloss": [
@@ -108023,9 +108067,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2310,
+    "id": 2311,
     "fuse-gloss": "ripe berries",
-    "rk": 2321
+    "rk": 2322
   },
   {
     "gloss": [
@@ -108061,9 +108105,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2311,
+    "id": 2312,
     "fuse-gloss": "steamship,    powered ship",
-    "rk": 2322
+    "rk": 2323
   },
   {
     "gloss": [
@@ -108086,9 +108130,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2312,
+    "id": 2313,
     "fuse-gloss": "riches,    treasure",
-    "rk": 2323
+    "rk": 2324
   },
   {
     "gloss": [
@@ -108111,9 +108155,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2313,
+    "id": 2314,
     "fuse-gloss": "to roll,    roll around",
-    "rk": 2324
+    "rk": 2325
   },
   {
     "gloss": [
@@ -108142,9 +108186,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2314,
+    "id": 2315,
     "fuse-gloss": "Good Friday",
-    "rk": 2325
+    "rk": 2326
   },
   {
     "gloss": [
@@ -108166,9 +108210,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2315,
+    "id": 2316,
     "fuse-gloss": "salmonberry",
-    "rk": 2326
+    "rk": 2327
   },
   {
     "gloss": [
@@ -108190,9 +108234,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2316,
+    "id": 2317,
     "fuse-gloss": "stallion",
-    "rk": 2327
+    "rk": 2328
   },
   {
     "gloss": [
@@ -108221,9 +108265,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2317,
+    "id": 2318,
     "fuse-gloss": "autumn,    fall",
-    "rk": 2328
+    "rk": 2329
   },
   {
     "gloss": [
@@ -108246,9 +108290,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2318,
+    "id": 2319,
     "fuse-gloss": "evening,    early night",
-    "rk": 2329
+    "rk": 2330
   },
   {
     "gloss": [
@@ -108277,9 +108321,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2319,
+    "id": 2320,
     "fuse-gloss": "little while",
-    "rk": 2330
+    "rk": 2331
   },
   {
     "gloss": [
@@ -108302,9 +108346,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2320,
+    "id": 2321,
     "fuse-gloss": "fraction,    tiny part",
-    "rk": 2331
+    "rk": 2332
   },
   {
     "gloss": [
@@ -108327,9 +108371,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2321,
+    "id": 2322,
     "fuse-gloss": "son,    young man",
-    "rk": 2332
+    "rk": 2333
   },
   {
     "gloss": [
@@ -108352,9 +108396,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2322,
+    "id": 2323,
     "fuse-gloss": "daughter,    young woman",
-    "rk": 2333
+    "rk": 2334
   },
   {
     "gloss": [
@@ -108377,9 +108421,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2323,
+    "id": 2324,
     "fuse-gloss": "movie,    film",
-    "rk": 2334
+    "rk": 2335
   },
   {
     "gloss": [
@@ -108402,9 +108446,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2324,
+    "id": 2325,
     "fuse-gloss": "pervert,    lascivious",
-    "rk": 2335
+    "rk": 2336
   },
   {
     "gloss": [
@@ -108428,9 +108472,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2325,
+    "id": 2326,
     "fuse-gloss": "beyond,    thither,    yonder",
-    "rk": 2336
+    "rk": 2337
   },
   {
     "gloss": [
@@ -108453,9 +108497,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2326,
+    "id": 2327,
     "fuse-gloss": "prison,    jail",
-    "rk": 2337
+    "rk": 2338
   },
   {
     "gloss": [
@@ -108477,9 +108521,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2327,
+    "id": 2328,
     "fuse-gloss": "untie",
-    "rk": 2338
+    "rk": 2339
   },
   {
     "gloss": [
@@ -108508,9 +108552,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2328,
+    "id": 2329,
     "fuse-gloss": "isn't it? right?",
-    "rk": 2339
+    "rk": 2340
   },
   {
     "gloss": [
@@ -108535,9 +108579,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2329,
+    "id": 2330,
     "fuse-gloss": "deadbeat,    good-for-nothing,    moocher,    bum",
-    "rk": 2340
+    "rk": 2341
   },
   {
     "gloss": [
@@ -108560,9 +108604,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2330,
+    "id": 2331,
     "fuse-gloss": "to disgust,    gross someone out",
-    "rk": 2341
+    "rk": 2342
   },
   {
     "gloss": [
@@ -108585,9 +108629,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2331,
+    "id": 2332,
     "fuse-gloss": "kneel,    submit to",
-    "rk": 2342
+    "rk": 2343
   },
   {
     "gloss": [
@@ -108611,9 +108655,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2332,
+    "id": 2333,
     "fuse-gloss": "naked,    destitute,    impoverished",
-    "rk": 2343
+    "rk": 2344
   },
   {
     "gloss": [
@@ -108635,9 +108679,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2333,
+    "id": 2334,
     "fuse-gloss": "moose",
-    "rk": 2344
+    "rk": 2345
   },
   {
     "gloss": [
@@ -108659,9 +108703,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2334,
+    "id": 2335,
     "fuse-gloss": "pine cambium",
-    "rk": 2345
+    "rk": 2346
   },
   {
     "gloss": [
@@ -108684,9 +108728,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2335,
+    "id": 2336,
     "fuse-gloss": "treasurer,    banker",
-    "rk": 2346
+    "rk": 2347
   },
   {
     "gloss": [
@@ -108709,9 +108753,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2336,
+    "id": 2337,
     "fuse-gloss": "secretary,    journalist",
-    "rk": 2347
+    "rk": 2348
   },
   {
     "gloss": [
@@ -108735,9 +108779,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2337,
+    "id": 2338,
     "fuse-gloss": "pledge,    swear,    raise one's hand",
-    "rk": 2348
+    "rk": 2349
   },
   {
     "gloss": [
@@ -108759,9 +108803,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2338,
+    "id": 2339,
     "fuse-gloss": "red-hot",
-    "rk": 2349
+    "rk": 2350
   },
   {
     "gloss": [
@@ -108784,9 +108828,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2339,
+    "id": 2340,
     "fuse-gloss": "straw,    hay",
-    "rk": 2350
+    "rk": 2351
   },
   {
     "gloss": [
@@ -108808,9 +108852,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2340,
+    "id": 2341,
     "fuse-gloss": "root-digging tool",
-    "rk": 2351
+    "rk": 2352
   },
   {
     "gloss": [
@@ -108832,9 +108876,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2341,
+    "id": 2342,
     "fuse-gloss": "oxen",
-    "rk": 2352
+    "rk": 2353
   },
   {
     "gloss": [
@@ -108857,9 +108901,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2342,
+    "id": 2343,
     "fuse-gloss": "pistol,    handgun",
-    "rk": 2353
+    "rk": 2354
   },
   {
     "gloss": [
@@ -108881,9 +108925,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2343,
+    "id": 2344,
     "fuse-gloss": "weak",
-    "rk": 2354
+    "rk": 2355
   },
   {
     "gloss": [
@@ -108905,9 +108949,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2344,
+    "id": 2345,
     "fuse-gloss": "fireworks",
-    "rk": 2355
+    "rk": 2356
   },
   {
     "gloss": [
@@ -108931,9 +108975,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2345,
+    "id": 2346,
     "fuse-gloss": "to name,    call,    designate",
-    "rk": 2356
+    "rk": 2357
   },
   {
     "gloss": [
@@ -108955,9 +108999,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2346,
+    "id": 2347,
     "fuse-gloss": "student",
-    "rk": 2357
+    "rk": 2358
   },
   {
     "gloss": [
@@ -108979,9 +109023,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2347,
+    "id": 2348,
     "fuse-gloss": "male teacher",
-    "rk": 2358
+    "rk": 2359
   },
   {
     "gloss": [
@@ -109003,9 +109047,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2348,
+    "id": 2349,
     "fuse-gloss": "female teacher",
-    "rk": 2359
+    "rk": 2360
   },
   {
     "gloss": [
@@ -109028,9 +109072,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2349,
+    "id": 2350,
     "fuse-gloss": "legal,    allowed",
-    "rk": 2360
+    "rk": 2361
   },
   {
     "gloss": [
@@ -109053,9 +109097,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2350,
+    "id": 2351,
     "fuse-gloss": "against the law/rules,    illegal",
-    "rk": 2361
+    "rk": 2362
   },
   {
     "gloss": [
@@ -109079,9 +109123,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2351,
+    "id": 2352,
     "fuse-gloss": "territory,    province,    state",
-    "rk": 2362
+    "rk": 2363
   },
   {
     "gloss": [
@@ -109107,9 +109151,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2352,
+    "id": 2353,
     "fuse-gloss": "various,    separate,    individual,    sometimes,    seldom",
-    "rk": 2363
+    "rk": 2364
   },
   {
     "gloss": [
@@ -109132,9 +109176,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2353,
+    "id": 2354,
     "fuse-gloss": "menstruation,    period",
-    "rk": 2364
+    "rk": 2365
   },
   {
     "gloss": [
@@ -109158,9 +109202,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2354,
+    "id": 2355,
     "fuse-gloss": "self-serving,    sociopathic,    to use others for one's one gain",
-    "rk": 2365
+    "rk": 2366
   },
   {
     "gloss": [
@@ -109183,9 +109227,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2355,
+    "id": 2356,
     "fuse-gloss": "salesman,    merchant",
-    "rk": 2366
+    "rk": 2367
   },
   {
     "gloss": [
@@ -109209,9 +109253,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2356,
+    "id": 2357,
     "fuse-gloss": "to charge,    prosecute,    sue",
-    "rk": 2367
+    "rk": 2368
   },
   {
     "gloss": [
@@ -109234,9 +109278,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2357,
+    "id": 2358,
     "fuse-gloss": "interpreter,    translator",
-    "rk": 2368
+    "rk": 2369
   },
   {
     "gloss": [
@@ -109260,9 +109304,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2358,
+    "id": 2359,
     "fuse-gloss": "lacking sense,    lifeless,    discouraged",
-    "rk": 2369
+    "rk": 2370
   },
   {
     "gloss": [
@@ -109286,9 +109330,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2359,
+    "id": 2360,
     "fuse-gloss": "longhouse,    smokehouse,    indian-style house",
-    "rk": 2370
+    "rk": 2371
   },
   {
     "gloss": [
@@ -109310,9 +109354,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2360,
+    "id": 2361,
     "fuse-gloss": "thimble",
-    "rk": 2371
+    "rk": 2372
   },
   {
     "gloss": [
@@ -109334,9 +109378,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2361,
+    "id": 2362,
     "fuse-gloss": "stable",
-    "rk": 2372
+    "rk": 2373
   },
   {
     "gloss": [
@@ -109359,9 +109403,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2362,
+    "id": 2363,
     "fuse-gloss": "granary,    silo",
-    "rk": 2373
+    "rk": 2374
   },
   {
     "gloss": [
@@ -109384,9 +109428,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2363,
+    "id": 2364,
     "fuse-gloss": "warehouse,    supply shed",
-    "rk": 2374
+    "rk": 2375
   },
   {
     "gloss": [
@@ -109409,9 +109453,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2364,
+    "id": 2365,
     "fuse-gloss": "militia,    volunteer village police",
-    "rk": 2375
+    "rk": 2376
   },
   {
     "gloss": [
@@ -109434,9 +109478,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2365,
+    "id": 2366,
     "fuse-gloss": "wire,    cable",
-    "rk": 2376
+    "rk": 2377
   },
   {
     "gloss": [
@@ -109459,9 +109503,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2366,
+    "id": 2367,
     "fuse-gloss": "reservation,    indigenous lands",
-    "rk": 2377
+    "rk": 2378
   },
   {
     "gloss": [
@@ -109483,9 +109527,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2367,
+    "id": 2368,
     "fuse-gloss": "mayor",
-    "rk": 2378
+    "rk": 2379
   },
   {
     "gloss": [
@@ -109508,9 +109552,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2368,
+    "id": 2369,
     "fuse-gloss": "tomb,    mausoleum",
-    "rk": 2379
+    "rk": 2380
   },
   {
     "gloss": [
@@ -109532,9 +109576,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2369,
+    "id": 2370,
     "fuse-gloss": "burial canoe",
-    "rk": 2380
+    "rk": 2381
   },
   {
     "gloss": [
@@ -109557,9 +109601,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2370,
+    "id": 2371,
     "fuse-gloss": "snow-eater,    warm spring wind",
-    "rk": 2381
+    "rk": 2382
   },
   {
     "gloss": [
@@ -109597,9 +109641,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2371,
+    "id": 2372,
     "fuse-gloss": "black magic,    sorcery",
-    "rk": 2382
+    "rk": 2383
   },
   {
     "gloss": [
@@ -109629,9 +109673,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2372,
+    "id": 2373,
     "fuse-gloss": "romance,    enchantment",
-    "rk": 2383
+    "rk": 2384
   },
   {
     "gloss": [
@@ -109653,9 +109697,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2373,
+    "id": 2374,
     "fuse-gloss": "cash only",
-    "rk": 2384
+    "rk": 2385
   },
   {
     "gloss": [
@@ -109677,9 +109721,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2374,
+    "id": 2375,
     "fuse-gloss": "coal",
-    "rk": 2385
+    "rk": 2386
   },
   {
     "gloss": [
@@ -109702,9 +109746,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2375,
+    "id": 2376,
     "fuse-gloss": "enough,    sufficient",
-    "rk": 2386
+    "rk": 2387
   },
   {
     "gloss": [
@@ -109728,9 +109772,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2376,
+    "id": 2377,
     "fuse-gloss": "trade language,    pidgin,    \"broken english\"",
-    "rk": 2387
+    "rk": 2388
   },
   {
     "gloss": [
@@ -109753,9 +109797,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2377,
+    "id": 2378,
     "fuse-gloss": "good job,    well done",
-    "rk": 2388
+    "rk": 2389
   },
   {
     "gloss": [
@@ -109778,9 +109822,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2378,
+    "id": 2379,
     "fuse-gloss": "late,    behind schedule",
-    "rk": 2389
+    "rk": 2390
   },
   {
     "gloss": [
@@ -109804,9 +109848,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2379,
+    "id": 2380,
     "fuse-gloss": "early,    proactive,    ahead of schedule",
-    "rk": 2390
+    "rk": 2391
   },
   {
     "gloss": [
@@ -109829,9 +109873,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2380,
+    "id": 2381,
     "fuse-gloss": "shade,    shadow",
-    "rk": 2391
+    "rk": 2392
   },
   {
     "gloss": [
@@ -109854,9 +109898,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2381,
+    "id": 2382,
     "fuse-gloss": "to hang,    execute",
-    "rk": 2392
+    "rk": 2393
   },
   {
     "gloss": [
@@ -109879,9 +109923,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2382,
+    "id": 2383,
     "fuse-gloss": "bicycle,    bike",
-    "rk": 2393
+    "rk": 2394
   },
   {
     "gloss": [
@@ -109903,9 +109947,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2383,
+    "id": 2384,
     "fuse-gloss": "grapes",
-    "rk": 2394
+    "rk": 2395
   },
   {
     "gloss": [
@@ -109929,9 +109973,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2384,
+    "id": 2385,
     "fuse-gloss": "mute,    speechless,    tongue-tied",
-    "rk": 2395
+    "rk": 2396
   },
   {
     "gloss": [
@@ -109954,9 +109998,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2385,
+    "id": 2386,
     "fuse-gloss": "fragrant,    pleasant-smelling",
-    "rk": 2396
+    "rk": 2397
   },
   {
     "gloss": [
@@ -109978,9 +110022,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2386,
+    "id": 2387,
     "fuse-gloss": "laxative",
-    "rk": 2397
+    "rk": 2398
   },
   {
     "gloss": [
@@ -110002,9 +110046,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2387,
+    "id": 2388,
     "fuse-gloss": "cell phone",
-    "rk": 2398
+    "rk": 2399
   },
   {
     "gloss": [
@@ -110026,9 +110070,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2388,
+    "id": 2389,
     "fuse-gloss": "octopus",
-    "rk": 2399
+    "rk": 2400
   },
   {
     "gloss": [
@@ -110050,9 +110094,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2389,
+    "id": 2390,
     "fuse-gloss": "white people (in a mean way)",
-    "rk": 2400
+    "rk": 2401
   },
   {
     "gloss": [
@@ -110074,9 +110118,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2390,
+    "id": 2391,
     "fuse-gloss": "bay",
-    "rk": 2401
+    "rk": 2402
   },
   {
     "gloss": [
@@ -110098,9 +110142,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2391,
+    "id": 2392,
     "fuse-gloss": "community center/hall",
-    "rk": 2402
+    "rk": 2403
   },
   {
     "gloss": [
@@ -110124,9 +110168,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2392,
+    "id": 2393,
     "fuse-gloss": "in constant motion,    going around,    without stopping",
-    "rk": 2403
+    "rk": 2404
   },
   {
     "gloss": [
@@ -110149,9 +110193,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2393,
+    "id": 2394,
     "fuse-gloss": "spirit water,    sacred water",
-    "rk": 2404
+    "rk": 2405
   },
   {
     "gloss": [
@@ -110175,9 +110219,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2394,
+    "id": 2395,
     "fuse-gloss": "lecture,    instruct,    educate",
-    "rk": 2405
+    "rk": 2406
   },
   {
     "gloss": [
@@ -110199,9 +110243,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2395,
+    "id": 2396,
     "fuse-gloss": "make love (sex euphemism)",
-    "rk": 2406
+    "rk": 2407
   },
   {
     "gloss": [
@@ -110225,9 +110269,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2396,
+    "id": 2397,
     "fuse-gloss": "level,    flat,    gently sloping",
-    "rk": 2407
+    "rk": 2408
   },
   {
     "gloss": [
@@ -110251,9 +110295,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2397,
+    "id": 2398,
     "fuse-gloss": "veins,    arteries,    blood vessel",
-    "rk": 2408
+    "rk": 2409
   },
   {
     "gloss": [
@@ -110275,9 +110319,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2398,
+    "id": 2399,
     "fuse-gloss": "free of charge",
-    "rk": 2409
+    "rk": 2410
   },
   {
     "gloss": [
@@ -110300,9 +110344,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2399,
+    "id": 2400,
     "fuse-gloss": "furnace,    kiln",
-    "rk": 2410
+    "rk": 2411
   },
   {
     "gloss": [
@@ -110325,9 +110369,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2400,
+    "id": 2401,
     "fuse-gloss": "remember,    know by heart",
-    "rk": 2411
+    "rk": 2412
   },
   {
     "gloss": [
@@ -110350,9 +110394,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2401,
+    "id": 2402,
     "fuse-gloss": "jolly,    have a good sense of humour",
-    "rk": 2412
+    "rk": 2413
   },
   {
     "gloss": [
@@ -110375,9 +110419,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2402,
+    "id": 2403,
     "fuse-gloss": "brand new,    original",
-    "rk": 2413
+    "rk": 2414
   },
   {
     "gloss": [
@@ -110407,9 +110451,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2403,
+    "id": 2404,
     "fuse-gloss": "tell the truth,    honesty",
-    "rk": 2414
+    "rk": 2415
   },
   {
     "gloss": [
@@ -110432,9 +110476,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2404,
+    "id": 2405,
     "fuse-gloss": "sore,    ache",
-    "rk": 2415
+    "rk": 2416
   },
   {
     "gloss": [
@@ -110458,9 +110502,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2405,
+    "id": 2406,
     "fuse-gloss": "quiver,    shot pouch,    ammunition case",
-    "rk": 2416
+    "rk": 2417
   },
   {
     "gloss": [
@@ -110484,9 +110528,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2406,
+    "id": 2407,
     "fuse-gloss": "awl,    countersink,    drill bit",
-    "rk": 2417
+    "rk": 2418
   },
   {
     "gloss": [
@@ -110509,9 +110553,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2407,
+    "id": 2408,
     "fuse-gloss": "spider",
-    "rk": 2418
+    "rk": 2419
   },
   {
     "gloss": [
@@ -110533,9 +110577,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2408,
+    "id": 2409,
     "fuse-gloss": "protestant",
-    "rk": 2419
+    "rk": 2420
   },
   {
     "gloss": [
@@ -110559,9 +110603,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2409,
+    "id": 2410,
     "fuse-gloss": "fanciful language,    imagery,    metaphor",
-    "rk": 2420
+    "rk": 2421
   },
   {
     "gloss": [
@@ -110583,9 +110627,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2410,
+    "id": 2411,
     "fuse-gloss": "hail",
-    "rk": 2421
+    "rk": 2422
   },
   {
     "gloss": [
@@ -110609,9 +110653,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2411,
+    "id": 2412,
     "fuse-gloss": "to guess,    reckon,    give your gut feeling",
-    "rk": 2422
+    "rk": 2423
   },
   {
     "gloss": [
@@ -110645,9 +110689,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2412,
+    "id": 2413,
     "fuse-gloss": "hurry,    rush,    let's get to it",
-    "rk": 2423
+    "rk": 2424
   },
   {
     "gloss": [
@@ -110669,9 +110713,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2413,
+    "id": 2414,
     "fuse-gloss": "hang it up",
-    "rk": 2424
+    "rk": 2425
   },
   {
     "gloss": [
@@ -110694,9 +110738,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2414,
+    "id": 2415,
     "fuse-gloss": "day of fasting,    a day without food",
-    "rk": 2425
+    "rk": 2426
   },
   {
     "gloss": [
@@ -110724,9 +110768,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2415,
+    "id": 2416,
     "fuse-gloss": "lettuce",
-    "rk": 2426
+    "rk": 2427
   },
   {
     "gloss": [
@@ -110752,9 +110796,9 @@ const dictionary = [
       "Compound",
       "Compound"
     ],
-    "id": 2416,
+    "id": 2417,
     "fuse-gloss": "matches,    tinder,    firewood",
-    "rk": 2427
+    "rk": 2428
   },
   {
     "gloss": [
@@ -110783,9 +110827,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2417,
+    "id": 2418,
     "fuse-gloss": "cider",
-    "rk": 2428
+    "rk": 2429
   },
   {
     "gloss": [
@@ -110815,9 +110859,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2418,
+    "id": 2419,
     "fuse-gloss": "very long ago,    ancient",
-    "rk": 2429
+    "rk": 2430
   },
   {
     "gloss": [
@@ -110847,9 +110891,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2419,
+    "id": 2420,
     "fuse-gloss": "commit a crime,    do something immoral",
-    "rk": 2430
+    "rk": 2431
   },
   {
     "gloss": [
@@ -110880,9 +110924,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2420,
+    "id": 2421,
     "fuse-gloss": "beastly,    boorish,    rude",
-    "rk": 2431
+    "rk": 2432
   },
   {
     "gloss": [
@@ -110914,9 +110958,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2421,
+    "id": 2422,
     "fuse-gloss": "devious,    deceptive,    duplicitous",
-    "rk": 2432
+    "rk": 2433
   },
   {
     "gloss": [
@@ -110947,9 +110991,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2422,
+    "id": 2423,
     "fuse-gloss": "brodiaea,    harvest lily",
-    "rk": 2433
+    "rk": 2434
   },
   {
     "gloss": [
@@ -110981,9 +111025,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2423,
+    "id": 2424,
     "fuse-gloss": "american-style,    like the whites,    in the manner of the whites",
-    "rk": 2434
+    "rk": 2435
   },
   {
     "gloss": [
@@ -111013,9 +111057,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2424,
+    "id": 2425,
     "fuse-gloss": "like a fool,    impulsively",
-    "rk": 2435
+    "rk": 2436
   },
   {
     "gloss": [
@@ -111046,9 +111090,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2425,
+    "id": 2426,
     "fuse-gloss": "useless,    pointless",
-    "rk": 2436
+    "rk": 2437
   },
   {
     "gloss": [
@@ -111078,9 +111122,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2426,
+    "id": 2427,
     "fuse-gloss": "little ones,    tiny things",
-    "rk": 2437
+    "rk": 2438
   },
   {
     "gloss": [
@@ -111111,9 +111155,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2427,
+    "id": 2428,
     "fuse-gloss": "naked,    undressed",
-    "rk": 2438
+    "rk": 2439
   },
   {
     "gloss": [
@@ -111146,9 +111190,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2428,
+    "id": 2429,
     "fuse-gloss": "matching,    one-to-one,    corresponding,    isomorphic",
-    "rk": 2439
+    "rk": 2440
   },
   {
     "gloss": [
@@ -111179,9 +111223,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2429,
+    "id": 2430,
     "fuse-gloss": "highly complex,    intricate",
-    "rk": 2440
+    "rk": 2441
   },
   {
     "gloss": [
@@ -111211,9 +111255,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2430,
+    "id": 2431,
     "fuse-gloss": "complicated",
-    "rk": 2441
+    "rk": 2442
   },
   {
     "gloss": [
@@ -111245,9 +111289,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2431,
+    "id": 2432,
     "fuse-gloss": "inseparable,    fused,    snug",
-    "rk": 2442
+    "rk": 2443
   },
   {
     "gloss": [
@@ -111278,9 +111322,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 2432,
+    "id": 2433,
     "fuse-gloss": "sliced into many pieces,    a pile of shavings",
-    "rk": 2443
+    "rk": 2444
   },
   {
     "gloss": [
@@ -111312,9 +111356,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 2433,
+    "id": 2434,
     "fuse-gloss": "scoter,    merganser,    other seaducks",
-    "rk": 2444
+    "rk": 2445
   },
   {
     "gloss": [
@@ -111344,9 +111388,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2434,
+    "id": 2435,
     "fuse-gloss": "flag,    symbol",
-    "rk": 2445
+    "rk": 2446
   },
   {
     "gloss": [
@@ -111370,9 +111414,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2435,
+    "id": 2436,
     "fuse-gloss": "wet,    warm wind from the sea,    chinook wind",
-    "rk": 2446
+    "rk": 2447
   },
   {
     "gloss": [
@@ -111402,9 +111446,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2436,
+    "id": 2437,
     "fuse-gloss": "a good rest,    a full night's sleep",
-    "rk": 2447
+    "rk": 2448
   },
   {
     "gloss": [
@@ -111439,9 +111483,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2437,
+    "id": 2438,
     "fuse-gloss": "please,    if only one would",
-    "rk": 2448
+    "rk": 2449
   },
   {
     "gloss": [
@@ -111470,9 +111514,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2438,
+    "id": 2439,
     "fuse-gloss": "team of oxen",
-    "rk": 2449
+    "rk": 2450
   },
   {
     "gloss": [
@@ -111505,9 +111549,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 2439,
+    "id": 2440,
     "fuse-gloss": "inefficient,    outdated,    bad method,    poor tool",
-    "rk": 2450
+    "rk": 2451
   },
   {
     "gloss": [
@@ -111540,9 +111584,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 2440,
+    "id": 2441,
     "fuse-gloss": "efficient,    effective,    advanced,    good tool for the job",
-    "rk": 2451
+    "rk": 2452
   },
   {
     "gloss": [
@@ -111572,9 +111616,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 2441,
+    "id": 2442,
     "fuse-gloss": "club (weapon or group)",
-    "rk": 2452
+    "rk": 2453
   },
   {
     "gloss": [
@@ -111607,9 +111651,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2442,
+    "id": 2443,
     "fuse-gloss": "important/overbearing person,    head honcho,    bigwig,    fat cat,    a great feast",
-    "rk": 2453
+    "rk": 2454
   },
   {
     "gloss": [
@@ -111645,9 +111689,9 @@ const dictionary = [
       "Limited",
       "Compound"
     ],
-    "id": 2443,
+    "id": 2444,
     "fuse-gloss": "armoury,    depot,    headquarters,    castle,    fortress",
-    "rk": 2454
+    "rk": 2455
   },
   {
     "gloss": [
@@ -111677,9 +111721,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2444,
+    "id": 2445,
     "fuse-gloss": "evergreen,    everlasting",
-    "rk": 2455
+    "rk": 2456
   },
   {
     "gloss": [
@@ -111710,9 +111754,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 2445,
+    "id": 2446,
     "fuse-gloss": "diluted liquor,    1:2 parts rum to water",
-    "rk": 2456
+    "rk": 2457
   },
   {
     "gloss": [
@@ -111742,9 +111786,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2446,
+    "id": 2447,
     "fuse-gloss": "open plains,    buffalo country",
-    "rk": 2457
+    "rk": 2458
   },
   {
     "gloss": [
@@ -111776,9 +111820,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 2447,
+    "id": 2448,
     "fuse-gloss": "scandinavians,    swedish,    nordic",
-    "rk": 2458
+    "rk": 2459
   },
   {
     "gloss": [
@@ -111807,9 +111851,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2448,
+    "id": 2449,
     "fuse-gloss": "followers/adherents or the shaker church/lifestyle",
-    "rk": 2459
+    "rk": 2460
   },
   {
     "gloss": [
@@ -111836,9 +111880,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2449,
+    "id": 2450,
     "fuse-gloss": "sweet talk,    cajole",
-    "rk": 2460
+    "rk": 2461
   },
   {
     "gloss": [
@@ -111866,9 +111910,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2450,
+    "id": 2451,
     "fuse-gloss": "flatter,    coax,    flattery",
-    "rk": 2461
+    "rk": 2462
   },
   {
     "gloss": [
@@ -111899,9 +111943,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 2451,
+    "id": 2452,
     "fuse-gloss": "cricket cake,    food made of grasshoppers",
-    "rk": 2462
+    "rk": 2463
   },
   {
     "gloss": [
@@ -111930,9 +111974,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2452,
+    "id": 2453,
     "fuse-gloss": "indigenous langauge",
-    "rk": 2463
+    "rk": 2464
   },
   {
     "gloss": [
@@ -111964,9 +112008,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2453,
+    "id": 2454,
     "fuse-gloss": "souvenir,    trinket,    memento,    token",
-    "rk": 2464
+    "rk": 2465
   },
   {
     "gloss": [
@@ -111997,9 +112041,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2454,
+    "id": 2455,
     "fuse-gloss": "big boss,    dictator,    lord",
-    "rk": 2465
+    "rk": 2466
   },
   {
     "gloss": [
@@ -112030,9 +112074,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2455,
+    "id": 2456,
     "fuse-gloss": "white-style clothes,    city garb,    suit",
-    "rk": 2466
+    "rk": 2467
   },
   {
     "gloss": [
@@ -112054,9 +112098,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2456,
+    "id": 2457,
     "fuse-gloss": "chinook canoe",
-    "rk": 2467
+    "rk": 2468
   },
   {
     "gloss": [
@@ -112079,9 +112123,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2457,
+    "id": 2458,
     "fuse-gloss": "invite",
-    "rk": 2468
+    "rk": 2469
   },
   {
     "gloss": [
@@ -112105,9 +112149,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2458,
+    "id": 2459,
     "fuse-gloss": "invite to a party,    treat to a good time",
-    "rk": 2469
+    "rk": 2470
   },
   {
     "gloss": [
@@ -112131,9 +112175,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2459,
+    "id": 2460,
     "fuse-gloss": "luck,    fortunate,    lucky",
-    "rk": 2470
+    "rk": 2471
   },
   {
     "gloss": [
@@ -112157,9 +112201,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2460,
+    "id": 2461,
     "fuse-gloss": "bad luck,    unlucky,    unfortunately",
-    "rk": 2471
+    "rk": 2472
   },
   {
     "gloss": [
@@ -112182,9 +112226,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2461,
+    "id": 2462,
     "fuse-gloss": "apt,    appropriate",
-    "rk": 2472
+    "rk": 2473
   },
   {
     "gloss": [
@@ -112206,9 +112250,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2462,
+    "id": 2463,
     "fuse-gloss": "concise",
-    "rk": 2473
+    "rk": 2474
   },
   {
     "gloss": [
@@ -112232,9 +112276,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2463,
+    "id": 2464,
     "fuse-gloss": "mining,    mineral extraction",
-    "rk": 2474
+    "rk": 2475
   },
   {
     "gloss": [
@@ -112258,9 +112302,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2464,
+    "id": 2465,
     "fuse-gloss": "mine,    mining site",
-    "rk": 2475
+    "rk": 2476
   },
   {
     "gloss": [
@@ -112290,9 +112334,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2465,
+    "id": 2466,
     "fuse-gloss": "broken branch,    misshapen stick",
-    "rk": 2476
+    "rk": 2477
   },
   {
     "gloss": [
@@ -112322,9 +112366,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2466,
+    "id": 2467,
     "fuse-gloss": "switch out for,    replace with",
-    "rk": 2477
+    "rk": 2478
   },
   {
     "gloss": [
@@ -112354,9 +112398,9 @@ const dictionary = [
       "Compound",
       "KW/Northern"
     ],
-    "id": 2467,
+    "id": 2468,
     "fuse-gloss": "to plow",
-    "rk": 2478
+    "rk": 2479
   },
   {
     "gloss": [
@@ -112389,9 +112433,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2468,
+    "id": 2469,
     "fuse-gloss": "saskatoon berry,    sugarplum,    serviceberry,    shadbush,    shadwood",
-    "rk": 2479
+    "rk": 2480
   },
   {
     "gloss": [
@@ -112423,9 +112467,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2469,
+    "id": 2470,
     "fuse-gloss": "mountaintop,    summit,    peak,    climax",
-    "rk": 2480
+    "rk": 2481
   },
   {
     "gloss": [
@@ -112464,9 +112508,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 2470,
+    "id": 2471,
     "fuse-gloss": "hardtack,    stale bread",
-    "rk": 2481
+    "rk": 2482
   },
   {
     "gloss": [
@@ -112497,9 +112541,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 2471,
+    "id": 2472,
     "fuse-gloss": "__ for the taking,    ready to be taken/used",
-    "rk": 2482
+    "rk": 2483
   },
   {
     "gloss": [
@@ -112529,9 +112573,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2472,
+    "id": 2473,
     "fuse-gloss": "moneymaker,    shrewd businessman (sarcastic?)",
-    "rk": 2483
+    "rk": 2484
   },
   {
     "gloss": [
@@ -112562,9 +112606,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2473,
+    "id": 2474,
     "fuse-gloss": "relaxing at,    settling it,    comfortably (sitting)",
-    "rk": 2484
+    "rk": 2485
   },
   {
     "gloss": [
@@ -112595,9 +112639,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2474,
+    "id": 2475,
     "fuse-gloss": "more than any,    unlike a single other,    above all",
-    "rk": 2485
+    "rk": 2486
   },
   {
     "gloss": [
@@ -112628,9 +112672,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2475,
+    "id": 2476,
     "fuse-gloss": "yessir,    indeed it is,    sure thing",
-    "rk": 2486
+    "rk": 2487
   },
   {
     "gloss": [
@@ -112659,9 +112703,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2476,
+    "id": 2477,
     "fuse-gloss": "to weigh __ pounds",
-    "rk": 2487
+    "rk": 2488
   },
   {
     "gloss": [
@@ -112691,9 +112735,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2477,
+    "id": 2478,
     "fuse-gloss": "metal ore,    precious ore",
-    "rk": 2488
+    "rk": 2489
   },
   {
     "gloss": [
@@ -112724,9 +112768,9 @@ const dictionary = [
       "Compound",
       "KW/Northern"
     ],
-    "id": 2478,
+    "id": 2479,
     "fuse-gloss": "intoxicated with,    drunk on __",
-    "rk": 2489
+    "rk": 2490
   },
   {
     "gloss": [
@@ -112756,9 +112800,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2479,
+    "id": 2480,
     "fuse-gloss": "shocked,    flabbergasted",
-    "rk": 2490
+    "rk": 2491
   },
   {
     "gloss": [
@@ -112789,9 +112833,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2480,
+    "id": 2481,
     "fuse-gloss": "amazed,    awestruck,    thirsty(?)",
-    "rk": 2491
+    "rk": 2492
   },
   {
     "gloss": [
@@ -112822,9 +112866,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2481,
+    "id": 2482,
     "fuse-gloss": "just a touch,    just a smidge,    for a sec",
-    "rk": 2492
+    "rk": 2493
   },
   {
     "gloss": [
@@ -112854,9 +112898,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2482,
+    "id": 2483,
     "fuse-gloss": "nothing can be done,    don't need to do anything about it",
-    "rk": 2493
+    "rk": 2494
   },
   {
     "gloss": [
@@ -112886,9 +112930,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2483,
+    "id": 2484,
     "fuse-gloss": "for naught,    in vain",
-    "rk": 2494
+    "rk": 2495
   },
   {
     "gloss": [
@@ -112917,9 +112961,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2484,
+    "id": 2485,
     "fuse-gloss": "forever",
-    "rk": 2495
+    "rk": 2496
   },
   {
     "gloss": [
@@ -112950,9 +112994,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2485,
+    "id": 2486,
     "fuse-gloss": "that's about it,    no more,    at most",
-    "rk": 2496
+    "rk": 2497
   },
   {
     "gloss": [
@@ -112982,9 +113026,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2486,
+    "id": 2487,
     "fuse-gloss": "more (of them),    a greater number",
-    "rk": 2497
+    "rk": 2498
   },
   {
     "gloss": [
@@ -113014,9 +113058,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2487,
+    "id": 2488,
     "fuse-gloss": "better,    best",
-    "rk": 2498
+    "rk": 2499
   },
   {
     "gloss": [
@@ -113046,9 +113090,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2488,
+    "id": 2489,
     "fuse-gloss": "farther,    too far",
-    "rk": 2499
+    "rk": 2500
   },
   {
     "gloss": [
@@ -113078,9 +113122,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2489,
+    "id": 2490,
     "fuse-gloss": "to come to one's aid,    guide/lead/help",
-    "rk": 2500
+    "rk": 2501
   },
   {
     "gloss": [
@@ -113110,9 +113154,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2490,
+    "id": 2491,
     "fuse-gloss": "charlatan,    quack",
-    "rk": 2501
+    "rk": 2502
   },
   {
     "gloss": [
@@ -113143,9 +113187,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2491,
+    "id": 2492,
     "fuse-gloss": "crooked mouth,    be cursed,    hexed?",
-    "rk": 2502
+    "rk": 2503
   },
   {
     "gloss": [
@@ -113171,9 +113215,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2492,
+    "id": 2493,
     "fuse-gloss": "Spirit Mountain",
-    "rk": 2503
+    "rk": 2504
   },
   {
     "gloss": [
@@ -113196,9 +113240,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2493,
+    "id": 2494,
     "fuse-gloss": "famous,    well-known",
-    "rk": 2504
+    "rk": 2505
   },
   {
     "gloss": [
@@ -113222,9 +113266,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2494,
+    "id": 2495,
     "fuse-gloss": "idiom,    expression,    saying",
-    "rk": 2505
+    "rk": 2506
   },
   {
     "gloss": [
@@ -113255,9 +113299,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2495,
+    "id": 2496,
     "fuse-gloss": "way over there,    way/far off,    all the way in",
-    "rk": 2506
+    "rk": 2507
   },
   {
     "gloss": [
@@ -113282,9 +113326,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2496,
+    "id": 2497,
     "fuse-gloss": "excited,    energetic,    animated",
-    "rk": 2507
+    "rk": 2508
   },
   {
     "gloss": [
@@ -113306,9 +113350,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2497,
+    "id": 2498,
     "fuse-gloss": "netting",
-    "rk": 2508
+    "rk": 2509
   },
   {
     "gloss": [
@@ -113332,9 +113376,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2498,
+    "id": 2499,
     "fuse-gloss": "to iron,    steam-press",
-    "rk": 2509
+    "rk": 2510
   },
   {
     "gloss": [
@@ -113357,9 +113401,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2499,
+    "id": 2500,
     "fuse-gloss": "Columbia River",
-    "rk": 2510
+    "rk": 2511
   },
   {
     "gloss": [
@@ -113382,9 +113426,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2500,
+    "id": 2501,
     "fuse-gloss": "umbrella",
-    "rk": 2511
+    "rk": 2512
   },
   {
     "gloss": [
@@ -113407,9 +113451,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2501,
+    "id": 2502,
     "fuse-gloss": "rain hat",
-    "rk": 2512
+    "rk": 2513
   },
   {
     "gloss": [
@@ -113432,9 +113476,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2502,
+    "id": 2503,
     "fuse-gloss": "buddy,    good friend",
-    "rk": 2513
+    "rk": 2514
   },
   {
     "gloss": [
@@ -113463,9 +113507,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2503,
+    "id": 2504,
     "fuse-gloss": "curtain",
-    "rk": 2514
+    "rk": 2515
   },
   {
     "gloss": [
@@ -113488,9 +113532,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2504,
+    "id": 2505,
     "fuse-gloss": "destination,    location",
-    "rk": 2515
+    "rk": 2516
   },
   {
     "gloss": [
@@ -113512,9 +113556,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2505,
+    "id": 2506,
     "fuse-gloss": "dressing/stuffing",
-    "rk": 2516
+    "rk": 2517
   },
   {
     "gloss": [
@@ -113536,9 +113580,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2506,
+    "id": 2507,
     "fuse-gloss": "to forgive",
-    "rk": 2517
+    "rk": 2518
   },
   {
     "gloss": [
@@ -113561,9 +113605,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2507,
+    "id": 2508,
     "fuse-gloss": "waterproof (fabric)",
-    "rk": 2518
+    "rk": 2519
   },
   {
     "gloss": [
@@ -113599,9 +113643,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2508,
+    "id": 2509,
     "fuse-gloss": "tremble,    shiver",
-    "rk": 2519
+    "rk": 2520
   },
   {
     "gloss": [
@@ -113632,9 +113676,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2509,
+    "id": 2510,
     "fuse-gloss": "rhythm,    rhythmic clicking,    engine whirr",
-    "rk": 2520
+    "rk": 2521
   },
   {
     "gloss": [
@@ -113663,9 +113707,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2510,
+    "id": 2511,
     "fuse-gloss": "slope",
-    "rk": 2521
+    "rk": 2522
   },
   {
     "gloss": [
@@ -113694,9 +113738,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2511,
+    "id": 2512,
     "fuse-gloss": "granite",
-    "rk": 2522
+    "rk": 2523
   },
   {
     "gloss": [
@@ -113727,9 +113771,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2512,
+    "id": 2513,
     "fuse-gloss": "throw off-balance,    destabilise,    deceive",
-    "rk": 2523
+    "rk": 2524
   },
   {
     "gloss": [
@@ -113754,9 +113798,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2513,
+    "id": 2514,
     "fuse-gloss": "indigenous,    first people,    discoverers",
-    "rk": 2524
+    "rk": 2525
   },
   {
     "gloss": [
@@ -113779,9 +113823,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2514,
+    "id": 2515,
     "fuse-gloss": "fuck it up,    mess up",
-    "rk": 2525
+    "rk": 2526
   },
   {
     "gloss": [
@@ -113809,9 +113853,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2515,
+    "id": 2516,
     "fuse-gloss": "to thank",
-    "rk": 2526
+    "rk": 2527
   },
   {
     "gloss": [
@@ -113834,9 +113878,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2516,
+    "id": 2517,
     "fuse-gloss": "fur trader,    trapper",
-    "rk": 2527
+    "rk": 2528
   },
   {
     "gloss": [
@@ -113862,9 +113906,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2517,
+    "id": 2518,
     "fuse-gloss": "arrangement,    plan,    situation,    event",
-    "rk": 2528
+    "rk": 2529
   },
   {
     "gloss": [
@@ -113887,9 +113931,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2518,
+    "id": 2519,
     "fuse-gloss": "TV,    television",
-    "rk": 2529
+    "rk": 2530
   },
   {
     "gloss": [
@@ -113913,9 +113957,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2519,
+    "id": 2520,
     "fuse-gloss": "twin,    replica",
-    "rk": 2530
+    "rk": 2531
   },
   {
     "gloss": [
@@ -113939,9 +113983,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2520,
+    "id": 2521,
     "fuse-gloss": "spark,    ember,    purgatory(?)",
-    "rk": 2531
+    "rk": 2532
   },
   {
     "gloss": [
@@ -113965,9 +114009,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2521,
+    "id": 2522,
     "fuse-gloss": "apartment,    flat",
-    "rk": 2532
+    "rk": 2533
   },
   {
     "gloss": [
@@ -113990,9 +114034,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2522,
+    "id": 2523,
     "fuse-gloss": "popsicle",
-    "rk": 2533
+    "rk": 2534
   },
   {
     "gloss": [
@@ -114015,9 +114059,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2523,
+    "id": 2524,
     "fuse-gloss": "tired of,    tired from",
-    "rk": 2534
+    "rk": 2535
   },
   {
     "gloss": [
@@ -114041,9 +114085,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2524,
+    "id": 2525,
     "fuse-gloss": "kimono,    yukata",
-    "rk": 2535
+    "rk": 2536
   },
   {
     "gloss": [
@@ -114067,9 +114111,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2525,
+    "id": 2526,
     "fuse-gloss": "poppy,    opium",
-    "rk": 2536
+    "rk": 2537
   },
   {
     "gloss": [
@@ -114094,9 +114138,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2526,
+    "id": 2527,
     "fuse-gloss": "renew,    refresh,    restore,    update",
-    "rk": 2537
+    "rk": 2538
   },
   {
     "gloss": [
@@ -114119,9 +114163,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2527,
+    "id": 2528,
     "fuse-gloss": "desert",
-    "rk": 2538
+    "rk": 2539
   },
   {
     "gloss": [
@@ -114144,9 +114188,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2528,
+    "id": 2529,
     "fuse-gloss": "neologism",
-    "rk": 2539
+    "rk": 2540
   },
   {
     "gloss": [
@@ -114169,9 +114213,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2529,
+    "id": 2530,
     "fuse-gloss": "(armour) plate,    metal plating/shielding",
-    "rk": 2540
+    "rk": 2541
   },
   {
     "gloss": [
@@ -114193,9 +114237,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2530,
+    "id": 2531,
     "fuse-gloss": "silver/skowitz salmon",
-    "rk": 2541
+    "rk": 2542
   },
   {
     "gloss": [
@@ -114218,9 +114262,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2531,
+    "id": 2532,
     "fuse-gloss": "petrol,    gasoline",
-    "rk": 2542
+    "rk": 2543
   },
   {
     "gloss": [
@@ -114242,9 +114286,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2532,
+    "id": 2533,
     "fuse-gloss": "ferry",
-    "rk": 2543
+    "rk": 2544
   },
   {
     "gloss": [
@@ -114268,9 +114312,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2533,
+    "id": 2534,
     "fuse-gloss": "sea cucumber,    sea slug,    nudibranch",
-    "rk": 2544
+    "rk": 2545
   },
   {
     "gloss": [
@@ -114294,9 +114338,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2534,
+    "id": 2535,
     "fuse-gloss": "beat,    pulse,    throb",
-    "rk": 2545
+    "rk": 2546
   },
   {
     "gloss": [
@@ -114320,9 +114364,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2535,
+    "id": 2536,
     "fuse-gloss": "faculty,    department",
-    "rk": 2546
+    "rk": 2547
   },
   {
     "gloss": [
@@ -114344,9 +114388,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2536,
+    "id": 2537,
     "fuse-gloss": "ink pen",
-    "rk": 2547
+    "rk": 2548
   },
   {
     "gloss": [
@@ -114369,9 +114413,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2537,
+    "id": 2538,
     "fuse-gloss": "seaweed,    seagrass",
-    "rk": 2548
+    "rk": 2549
   },
   {
     "gloss": [
@@ -114394,9 +114438,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2538,
+    "id": 2539,
     "fuse-gloss": "sleet,    wet snow",
-    "rk": 2549
+    "rk": 2550
   },
   {
     "gloss": [
@@ -114418,9 +114462,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2539,
+    "id": 2540,
     "fuse-gloss": "algae",
-    "rk": 2550
+    "rk": 2551
   },
   {
     "gloss": [
@@ -114443,9 +114487,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2540,
+    "id": 2541,
     "fuse-gloss": "sushi",
-    "rk": 2551
+    "rk": 2552
   },
   {
     "gloss": [
@@ -114469,9 +114513,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2541,
+    "id": 2542,
     "fuse-gloss": "swearword,    profanity,    to cuss",
-    "rk": 2552
+    "rk": 2553
   },
   {
     "gloss": [
@@ -114494,9 +114538,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2542,
+    "id": 2543,
     "fuse-gloss": "vegetables",
-    "rk": 2553
+    "rk": 2554
   },
   {
     "gloss": [
@@ -114518,9 +114562,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2543,
+    "id": 2544,
     "fuse-gloss": "gold panning",
-    "rk": 2554
+    "rk": 2555
   },
   {
     "gloss": [
@@ -114542,9 +114586,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2544,
+    "id": 2545,
     "fuse-gloss": "gold washing",
-    "rk": 2555
+    "rk": 2556
   },
   {
     "gloss": [
@@ -114566,9 +114610,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2545,
+    "id": 2546,
     "fuse-gloss": "sluice",
-    "rk": 2556
+    "rk": 2557
   },
   {
     "gloss": [
@@ -114591,9 +114635,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2546,
+    "id": 2547,
     "fuse-gloss": "weekend,    holiday",
-    "rk": 2557
+    "rk": 2558
   },
   {
     "gloss": [
@@ -114616,9 +114660,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2547,
+    "id": 2548,
     "fuse-gloss": "sports",
-    "rk": 2558
+    "rk": 2559
   },
   {
     "gloss": [
@@ -114641,9 +114685,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2548,
+    "id": 2549,
     "fuse-gloss": "movie",
-    "rk": 2559
+    "rk": 2560
   },
   {
     "gloss": [
@@ -114667,9 +114711,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2549,
+    "id": 2550,
     "fuse-gloss": "movie theatre,    cinema",
-    "rk": 2560
+    "rk": 2561
   },
   {
     "gloss": [
@@ -114693,9 +114737,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2550,
+    "id": 2551,
     "fuse-gloss": "epilepsy,    seizure",
-    "rk": 2561
+    "rk": 2562
   },
   {
     "gloss": [
@@ -114718,9 +114762,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2551,
+    "id": 2552,
     "fuse-gloss": "beer",
-    "rk": 2562
+    "rk": 2563
   },
   {
     "gloss": [
@@ -114744,9 +114788,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2552,
+    "id": 2553,
     "fuse-gloss": "prohibited,    not allowed,    not permitted",
-    "rk": 2563
+    "rk": 2564
   },
   {
     "gloss": [
@@ -114769,9 +114813,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2553,
+    "id": 2554,
     "fuse-gloss": "perfect,    flawless",
-    "rk": 2564
+    "rk": 2565
   },
   {
     "gloss": [
@@ -114794,9 +114838,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2554,
+    "id": 2555,
     "fuse-gloss": "scythe",
-    "rk": 2565
+    "rk": 2566
   },
   {
     "gloss": [
@@ -114818,9 +114862,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2555,
+    "id": 2556,
     "fuse-gloss": "address (of a building)",
-    "rk": 2566
+    "rk": 2567
   },
   {
     "gloss": [
@@ -114848,9 +114892,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2556,
+    "id": 2557,
     "fuse-gloss": "slippers",
-    "rk": 2567
+    "rk": 2568
   },
   {
     "gloss": [
@@ -114878,9 +114922,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2557,
+    "id": 2558,
     "fuse-gloss": "roof",
-    "rk": 2568
+    "rk": 2569
   },
   {
     "gloss": [
@@ -114903,9 +114947,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2558,
+    "id": 2559,
     "fuse-gloss": "family,    nuclear family",
-    "rk": 2569
+    "rk": 2570
   },
   {
     "gloss": [
@@ -114928,9 +114972,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2559,
+    "id": 2560,
     "fuse-gloss": "yard,    lawn",
-    "rk": 2570
+    "rk": 2571
   },
   {
     "gloss": [
@@ -114953,9 +114997,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2560,
+    "id": 2561,
     "fuse-gloss": "billion",
-    "rk": 2571
+    "rk": 2572
   },
   {
     "gloss": [
@@ -114978,9 +115022,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2561,
+    "id": 2562,
     "fuse-gloss": "lobster",
-    "rk": 2572
+    "rk": 2573
   },
   {
     "gloss": [
@@ -115004,9 +115048,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2562,
+    "id": 2563,
     "fuse-gloss": "size,    amount",
-    "rk": 2573
+    "rk": 2574
   },
   {
     "gloss": [
@@ -115034,9 +115078,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2563,
+    "id": 2564,
     "fuse-gloss": "lizard",
-    "rk": 2574
+    "rk": 2575
   },
   {
     "gloss": [
@@ -115058,9 +115102,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2564,
+    "id": 2565,
     "fuse-gloss": "salamander",
-    "rk": 2575
+    "rk": 2576
   },
   {
     "gloss": [
@@ -115083,9 +115127,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2565,
+    "id": 2566,
     "fuse-gloss": "to record",
-    "rk": 2576
+    "rk": 2577
   },
   {
     "gloss": [
@@ -115109,9 +115153,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2566,
+    "id": 2567,
     "fuse-gloss": "army,    military",
-    "rk": 2577
+    "rk": 2578
   },
   {
     "gloss": [
@@ -115140,9 +115184,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2567,
+    "id": 2568,
     "fuse-gloss": "hollow,    hollowed out",
-    "rk": 2578
+    "rk": 2579
   },
   {
     "gloss": [
@@ -115164,9 +115208,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2568,
+    "id": 2569,
     "fuse-gloss": "a smile",
-    "rk": 2579
+    "rk": 2580
   },
   {
     "gloss": [
@@ -115189,9 +115233,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2569,
+    "id": 2570,
     "fuse-gloss": "leaf",
-    "rk": 2580
+    "rk": 2581
   },
   {
     "gloss": [
@@ -115215,9 +115259,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2570,
+    "id": 2571,
     "fuse-gloss": "dangerous,    danger",
-    "rk": 2581
+    "rk": 2582
   },
   {
     "gloss": [
@@ -115246,9 +115290,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2571,
+    "id": 2572,
     "fuse-gloss": "safe,    secure",
-    "rk": 2582
+    "rk": 2583
   },
   {
     "gloss": [
@@ -115272,9 +115316,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2572,
+    "id": 2573,
     "fuse-gloss": "to mother/raise,    to take care of",
-    "rk": 2583
+    "rk": 2584
   },
   {
     "gloss": [
@@ -115298,9 +115342,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2573,
+    "id": 2574,
     "fuse-gloss": "to father/raise,    to take care of",
-    "rk": 2584
+    "rk": 2585
   },
   {
     "gloss": [
@@ -115324,9 +115368,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2574,
+    "id": 2575,
     "fuse-gloss": "to care for,    watch over",
-    "rk": 2585
+    "rk": 2586
   },
   {
     "gloss": [
@@ -115348,9 +115392,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2575,
+    "id": 2576,
     "fuse-gloss": "come to harm",
-    "rk": 2586
+    "rk": 2587
   },
   {
     "gloss": [
@@ -115374,9 +115418,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2576,
+    "id": 2577,
     "fuse-gloss": "to hurt,    harm,    injure",
-    "rk": 2587
+    "rk": 2588
   },
   {
     "gloss": [
@@ -115400,9 +115444,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2577,
+    "id": 2578,
     "fuse-gloss": "danger ahead,    treacherous,    perilous",
-    "rk": 2588
+    "rk": 2589
   },
   {
     "gloss": [
@@ -115426,9 +115470,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2578,
+    "id": 2579,
     "fuse-gloss": "alien,    extraterrestrial",
-    "rk": 2589
+    "rk": 2590
   },
   {
     "gloss": [
@@ -115450,9 +115494,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2579,
+    "id": 2580,
     "fuse-gloss": "harvesting season",
-    "rk": 2590
+    "rk": 2591
   },
   {
     "gloss": [
@@ -115474,9 +115518,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2580,
+    "id": 2581,
     "fuse-gloss": "honeybee",
-    "rk": 2591
+    "rk": 2592
   },
   {
     "gloss": [
@@ -115498,9 +115542,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2581,
+    "id": 2582,
     "fuse-gloss": "mead",
-    "rk": 2592
+    "rk": 2593
   },
   {
     "gloss": [
@@ -115528,9 +115572,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2582,
+    "id": 2583,
     "fuse-gloss": "computer",
-    "rk": 2593
+    "rk": 2594
   },
   {
     "gloss": [
@@ -115553,9 +115597,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2583,
+    "id": 2584,
     "fuse-gloss": "flea market,    pawn shop",
-    "rk": 2594
+    "rk": 2595
   },
   {
     "gloss": [
@@ -115577,9 +115621,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2584,
+    "id": 2585,
     "fuse-gloss": "move house",
-    "rk": 2595
+    "rk": 2596
   },
   {
     "gloss": [
@@ -115603,9 +115647,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2585,
+    "id": 2586,
     "fuse-gloss": "spout,    waterfall",
-    "rk": 2596
+    "rk": 2597
   },
   {
     "gloss": [
@@ -115628,9 +115672,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2586,
+    "id": 2587,
     "fuse-gloss": "variable",
-    "rk": 2597
+    "rk": 2598
   },
   {
     "gloss": [
@@ -115652,9 +115696,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2587,
+    "id": 2588,
     "fuse-gloss": "tackle (fishing weight)",
-    "rk": 2598
+    "rk": 2599
   },
   {
     "gloss": [
@@ -115677,9 +115721,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2588,
+    "id": 2589,
     "fuse-gloss": "pileated woodpecker",
-    "rk": 2599
+    "rk": 2600
   },
   {
     "gloss": [
@@ -115702,9 +115746,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2589,
+    "id": 2590,
     "fuse-gloss": "isopod",
-    "rk": 2600
+    "rk": 2601
   },
   {
     "gloss": [
@@ -115729,9 +115773,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2590,
+    "id": 2591,
     "fuse-gloss": "rift,    valley,    canyon",
-    "rk": 2601
+    "rk": 2602
   },
   {
     "gloss": [
@@ -115755,9 +115799,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2591,
+    "id": 2592,
     "fuse-gloss": "chart,    map",
-    "rk": 2602
+    "rk": 2603
   },
   {
     "gloss": [
@@ -115780,9 +115824,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2592,
+    "id": 2593,
     "fuse-gloss": "battery",
-    "rk": 2603
+    "rk": 2604
   },
   {
     "gloss": [
@@ -115806,9 +115850,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2593,
+    "id": 2594,
     "fuse-gloss": "least,    less,    smallest",
-    "rk": 2604
+    "rk": 2605
   },
   {
     "gloss": [
@@ -115836,9 +115880,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2594,
+    "id": 2595,
     "fuse-gloss": "sneeze",
-    "rk": 2605
+    "rk": 2606
   },
   {
     "gloss": [
@@ -115860,9 +115904,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2595,
+    "id": 2596,
     "fuse-gloss": "backpack",
-    "rk": 2606
+    "rk": 2607
   },
   {
     "gloss": [
@@ -115886,9 +115930,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2596,
+    "id": 2597,
     "fuse-gloss": "lie in waiting,    ambush,    stalk",
-    "rk": 2607
+    "rk": 2608
   },
   {
     "gloss": [
@@ -115911,9 +115955,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2597,
+    "id": 2598,
     "fuse-gloss": "opponent,    enemy",
-    "rk": 2608
+    "rk": 2609
   },
   {
     "gloss": [
@@ -115937,9 +115981,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2598,
+    "id": 2599,
     "fuse-gloss": "snipe,    sniper",
-    "rk": 2609
+    "rk": 2610
   },
   {
     "gloss": [
@@ -115962,9 +116006,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2599,
+    "id": 2600,
     "fuse-gloss": "ear of corn",
-    "rk": 2610
+    "rk": 2611
   },
   {
     "gloss": [
@@ -115993,9 +116037,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2600,
+    "id": 2601,
     "fuse-gloss": "falcon",
-    "rk": 2611
+    "rk": 2612
   },
   {
     "gloss": [
@@ -116018,9 +116062,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2601,
+    "id": 2602,
     "fuse-gloss": "bring,    transport",
-    "rk": 2612
+    "rk": 2613
   },
   {
     "gloss": [
@@ -116049,9 +116093,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2602,
+    "id": 2603,
     "fuse-gloss": "chopsticks",
-    "rk": 2613
+    "rk": 2614
   },
   {
     "gloss": [
@@ -116073,9 +116117,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2603,
+    "id": 2604,
     "fuse-gloss": "push back",
-    "rk": 2614
+    "rk": 2615
   },
   {
     "gloss": [
@@ -116098,9 +116142,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2604,
+    "id": 2605,
     "fuse-gloss": "pasta",
-    "rk": 2615
+    "rk": 2616
   },
   {
     "gloss": [
@@ -116122,9 +116166,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2605,
+    "id": 2606,
     "fuse-gloss": "lime",
-    "rk": 2616
+    "rk": 2617
   },
   {
     "gloss": [
@@ -116153,9 +116197,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2606,
+    "id": 2607,
     "fuse-gloss": "semen",
-    "rk": 2617
+    "rk": 2618
   },
   {
     "gloss": [
@@ -116178,9 +116222,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2607,
+    "id": 2608,
     "fuse-gloss": "veggies,    greens",
-    "rk": 2618
+    "rk": 2619
   },
   {
     "gloss": [
@@ -116203,9 +116247,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2608,
+    "id": 2609,
     "fuse-gloss": "sliced into thin sheet,    in slices",
-    "rk": 2619
+    "rk": 2620
   },
   {
     "gloss": [
@@ -116233,9 +116277,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2609,
+    "id": 2610,
     "fuse-gloss": "orange",
-    "rk": 2620
+    "rk": 2621
   },
   {
     "gloss": [
@@ -116257,9 +116301,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2610,
+    "id": 2611,
     "fuse-gloss": "solid",
-    "rk": 2621
+    "rk": 2622
   },
   {
     "gloss": [
@@ -116282,9 +116326,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2611,
+    "id": 2612,
     "fuse-gloss": "velvet,    soft",
-    "rk": 2622
+    "rk": 2623
   },
   {
     "gloss": [
@@ -116306,9 +116350,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2612,
+    "id": 2613,
     "fuse-gloss": "bayonet",
-    "rk": 2623
+    "rk": 2624
   },
   {
     "gloss": [
@@ -116330,9 +116374,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2613,
+    "id": 2614,
     "fuse-gloss": "dye",
-    "rk": 2624
+    "rk": 2625
   },
   {
     "gloss": [
@@ -116356,9 +116400,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2614,
+    "id": 2615,
     "fuse-gloss": "long for,    miss,    pine for",
-    "rk": 2625
+    "rk": 2626
   },
   {
     "gloss": [
@@ -116381,9 +116425,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2615,
+    "id": 2616,
     "fuse-gloss": "trading outpost,    station",
-    "rk": 2626
+    "rk": 2627
   },
   {
     "gloss": [
@@ -116411,9 +116455,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2616,
+    "id": 2617,
     "fuse-gloss": "even,    as far as too,    even though",
-    "rk": 2627
+    "rk": 2628
   },
   {
     "gloss": [
@@ -116435,9 +116479,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2617,
+    "id": 2618,
     "fuse-gloss": "every time",
-    "rk": 2628
+    "rk": 2629
   },
   {
     "gloss": [
@@ -116461,9 +116505,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2618,
+    "id": 2619,
     "fuse-gloss": "distance,    length,    how far",
-    "rk": 2629
+    "rk": 2630
   },
   {
     "gloss": [
@@ -116487,9 +116531,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2619,
+    "id": 2620,
     "fuse-gloss": "safe,    benevolent,    auspicious",
-    "rk": 2630
+    "rk": 2631
   },
   {
     "gloss": [
@@ -116513,9 +116557,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2620,
+    "id": 2621,
     "fuse-gloss": "gas station,    gasbar",
-    "rk": 2631
+    "rk": 2632
   },
   {
     "gloss": [
@@ -116544,9 +116588,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2621,
+    "id": 2622,
     "fuse-gloss": "airplane",
-    "rk": 2632
+    "rk": 2633
   },
   {
     "gloss": [
@@ -116569,9 +116613,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2622,
+    "id": 2623,
     "fuse-gloss": "undershirt,    bra",
-    "rk": 2633
+    "rk": 2634
   },
   {
     "gloss": [
@@ -116594,9 +116638,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2623,
+    "id": 2624,
     "fuse-gloss": "roots,    foundation",
-    "rk": 2634
+    "rk": 2635
   },
   {
     "gloss": [
@@ -116618,9 +116662,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2624,
+    "id": 2625,
     "fuse-gloss": "refund",
-    "rk": 2635
+    "rk": 2636
   },
   {
     "gloss": [
@@ -116643,9 +116687,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2625,
+    "id": 2626,
     "fuse-gloss": "sugarcane,    delightful",
-    "rk": 2636
+    "rk": 2637
   },
   {
     "gloss": [
@@ -116668,9 +116712,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2626,
+    "id": 2627,
     "fuse-gloss": "envelope",
-    "rk": 2637
+    "rk": 2638
   },
   {
     "gloss": [
@@ -116695,9 +116739,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2627,
+    "id": 2628,
     "fuse-gloss": "allegedly,    apparently,    they say,    I hear",
-    "rk": 2638
+    "rk": 2639
   },
   {
     "gloss": [
@@ -116720,9 +116764,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2628,
+    "id": 2629,
     "fuse-gloss": "visit,    check it out",
-    "rk": 2639
+    "rk": 2640
   },
   {
     "gloss": [
@@ -116745,9 +116789,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2629,
+    "id": 2630,
     "fuse-gloss": "ascend,    go up",
-    "rk": 2640
+    "rk": 2641
   },
   {
     "gloss": [
@@ -116770,9 +116814,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2630,
+    "id": 2631,
     "fuse-gloss": "descend,    go down",
-    "rk": 2641
+    "rk": 2642
   },
   {
     "gloss": [
@@ -116795,9 +116839,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2631,
+    "id": 2632,
     "fuse-gloss": "go to bed,    go to sleep",
-    "rk": 2642
+    "rk": 2643
   },
   {
     "gloss": [
@@ -116819,9 +116863,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2632,
+    "id": 2633,
     "fuse-gloss": "climb a tree",
-    "rk": 2643
+    "rk": 2644
   },
   {
     "gloss": [
@@ -116845,9 +116889,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2633,
+    "id": 2634,
     "fuse-gloss": "cave,    cavern,    open pit",
-    "rk": 2644
+    "rk": 2645
   },
   {
     "gloss": [
@@ -116871,9 +116915,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2634,
+    "id": 2635,
     "fuse-gloss": "tickled,    ticklish",
-    "rk": 2645
+    "rk": 2646
   },
   {
     "gloss": [
@@ -116895,9 +116939,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2635,
+    "id": 2636,
     "fuse-gloss": "stinging nettle",
-    "rk": 2646
+    "rk": 2647
   },
   {
     "gloss": [
@@ -116920,9 +116964,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2636,
+    "id": 2637,
     "fuse-gloss": "ink,    black dye",
-    "rk": 2647
+    "rk": 2648
   },
   {
     "gloss": [
@@ -116944,9 +116988,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2637,
+    "id": 2638,
     "fuse-gloss": "blackberries",
-    "rk": 2648
+    "rk": 2649
   },
   {
     "gloss": [
@@ -116969,9 +117013,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2638,
+    "id": 2639,
     "fuse-gloss": "wasp,    hornet",
-    "rk": 2649
+    "rk": 2650
   },
   {
     "gloss": [
@@ -116996,9 +117040,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2639,
+    "id": 2640,
     "fuse-gloss": "well-traveled trail,    worn path,    trade route,    eulachon grease road",
-    "rk": 2650
+    "rk": 2651
   },
   {
     "gloss": [
@@ -117021,9 +117065,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2640,
+    "id": 2641,
     "fuse-gloss": "candlefish,    smelt",
-    "rk": 2651
+    "rk": 2652
   },
   {
     "gloss": [
@@ -117045,9 +117089,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2641,
+    "id": 2642,
     "fuse-gloss": "cattail skirt",
-    "rk": 2652
+    "rk": 2653
   },
   {
     "gloss": [
@@ -117069,9 +117113,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2642,
+    "id": 2643,
     "fuse-gloss": "either ... or",
-    "rk": 2653
+    "rk": 2654
   },
   {
     "gloss": [
@@ -117094,9 +117138,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2643,
+    "id": 2644,
     "fuse-gloss": "formal clothing,    fancy dress",
-    "rk": 2654
+    "rk": 2655
   },
   {
     "gloss": [
@@ -117121,9 +117165,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2644,
+    "id": 2645,
     "fuse-gloss": "field,    meadow,    farmland,    productive land",
-    "rk": 2655
+    "rk": 2656
   },
   {
     "gloss": [
@@ -117155,9 +117199,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2645,
+    "id": 2646,
     "fuse-gloss": "-able/-ible,    like,    be fond of",
-    "rk": 2656
+    "rk": 2657
   },
   {
     "gloss": [
@@ -117180,9 +117224,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2646,
+    "id": 2647,
     "fuse-gloss": "don't,    please do not",
-    "rk": 2657
+    "rk": 2658
   },
   {
     "gloss": [
@@ -117205,9 +117249,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2647,
+    "id": 2648,
     "fuse-gloss": "attractive,    handsome",
-    "rk": 2658
+    "rk": 2659
   },
   {
     "gloss": [
@@ -117231,9 +117275,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2648,
+    "id": 2649,
     "fuse-gloss": "clever,    smart,    bright",
-    "rk": 2659
+    "rk": 2660
   },
   {
     "gloss": [
@@ -117257,9 +117301,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2649,
+    "id": 2650,
     "fuse-gloss": "promise,    agreement,    deal",
-    "rk": 2660
+    "rk": 2661
   },
   {
     "gloss": [
@@ -117289,9 +117333,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2650,
+    "id": 2651,
     "fuse-gloss": "vine maple,    woodpecker (?)",
-    "rk": 2661
+    "rk": 2662
   },
   {
     "gloss": [
@@ -117314,9 +117358,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2651,
+    "id": 2652,
     "fuse-gloss": "a question",
-    "rk": 2662
+    "rk": 2663
   },
   {
     "gloss": [
@@ -117340,9 +117384,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2652,
+    "id": 2653,
     "fuse-gloss": "need,    require,    must",
-    "rk": 2663
+    "rk": 2664
   },
   {
     "gloss": [
@@ -117366,9 +117410,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2653,
+    "id": 2654,
     "fuse-gloss": "direction,    way",
-    "rk": 2664
+    "rk": 2665
   },
   {
     "gloss": [
@@ -117392,9 +117436,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2654,
+    "id": 2655,
     "fuse-gloss": "stove,    woodstove",
-    "rk": 2665
+    "rk": 2666
   },
   {
     "gloss": [
@@ -117418,9 +117462,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2655,
+    "id": 2656,
     "fuse-gloss": "dry,    arid,    out of water",
-    "rk": 2666
+    "rk": 2667
   },
   {
     "gloss": [
@@ -117444,9 +117488,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2656,
+    "id": 2657,
     "fuse-gloss": "treacherous,    dangerous,    hard to navigate/pass",
-    "rk": 2667
+    "rk": 2668
   },
   {
     "gloss": [
@@ -117470,9 +117514,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2657,
+    "id": 2658,
     "fuse-gloss": "machine gun,    automatic weapon",
-    "rk": 2668
+    "rk": 2669
   },
   {
     "gloss": [
@@ -117501,9 +117545,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2658,
+    "id": 2659,
     "fuse-gloss": "vine maple",
-    "rk": 2669
+    "rk": 2670
   },
   {
     "gloss": [
@@ -117525,9 +117569,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2659,
+    "id": 2660,
     "fuse-gloss": "chores",
-    "rk": 2670
+    "rk": 2671
   },
   {
     "gloss": [
@@ -117551,9 +117595,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2660,
+    "id": 2661,
     "fuse-gloss": "shed,    boatshed,    garage",
-    "rk": 2671
+    "rk": 2672
   },
   {
     "gloss": [
@@ -117577,9 +117621,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2661,
+    "id": 2662,
     "fuse-gloss": "plagiarise,    forge (art,    signatures)",
-    "rk": 2672
+    "rk": 2673
   },
   {
     "gloss": [
@@ -117608,9 +117652,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2662,
+    "id": 2663,
     "fuse-gloss": "dragon",
-    "rk": 2673
+    "rk": 2674
   },
   {
     "gloss": [
@@ -117633,9 +117677,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2663,
+    "id": 2664,
     "fuse-gloss": "floor,    wooden flooring",
-    "rk": 2674
+    "rk": 2675
   },
   {
     "gloss": [
@@ -117659,9 +117703,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2664,
+    "id": 2665,
     "fuse-gloss": "reef,    coral",
-    "rk": 2675
+    "rk": 2676
   },
   {
     "gloss": [
@@ -117684,9 +117728,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2665,
+    "id": 2666,
     "fuse-gloss": "cellar,    basement",
-    "rk": 2676
+    "rk": 2677
   },
   {
     "gloss": [
@@ -117708,9 +117752,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2666,
+    "id": 2667,
     "fuse-gloss": "revenge",
-    "rk": 2677
+    "rk": 2678
   },
   {
     "gloss": [
@@ -117735,9 +117779,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2667,
+    "id": 2668,
     "fuse-gloss": "remainder,    leftovers,    dregs,    remains",
-    "rk": 2678
+    "rk": 2679
   },
   {
     "gloss": [
@@ -117759,9 +117803,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2668,
+    "id": 2669,
     "fuse-gloss": "porcupine",
-    "rk": 2679
+    "rk": 2680
   },
   {
     "gloss": [
@@ -117783,9 +117827,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2669,
+    "id": 2670,
     "fuse-gloss": "thistle",
-    "rk": 2680
+    "rk": 2681
   },
   {
     "gloss": [
@@ -117808,9 +117852,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2670,
+    "id": 2671,
     "fuse-gloss": "artichoke",
-    "rk": 2681
+    "rk": 2682
   },
   {
     "gloss": [
@@ -117834,9 +117878,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2671,
+    "id": 2672,
     "fuse-gloss": "climb atop,    mount,    ride",
-    "rk": 2682
+    "rk": 2683
   },
   {
     "gloss": [
@@ -117859,9 +117903,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2672,
+    "id": 2673,
     "fuse-gloss": "crystal",
-    "rk": 2683
+    "rk": 2684
   },
   {
     "gloss": [
@@ -117885,9 +117929,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2673,
+    "id": 2674,
     "fuse-gloss": "space,    cosmic,    universe",
-    "rk": 2684
+    "rk": 2685
   },
   {
     "gloss": [
@@ -117910,9 +117954,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2674,
+    "id": 2675,
     "fuse-gloss": "motion sickness,    nauseous",
-    "rk": 2685
+    "rk": 2686
   },
   {
     "gloss": [
@@ -117934,9 +117978,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2675,
+    "id": 2676,
     "fuse-gloss": "snail shell",
-    "rk": 2686
+    "rk": 2687
   },
   {
     "gloss": [
@@ -117958,9 +118002,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2676,
+    "id": 2677,
     "fuse-gloss": "kale",
-    "rk": 2687
+    "rk": 2688
   },
   {
     "gloss": [
@@ -117985,9 +118029,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2677,
+    "id": 2678,
     "fuse-gloss": "poem,    poetry,    lyrics",
-    "rk": 2688
+    "rk": 2689
   },
   {
     "gloss": [
@@ -118016,9 +118060,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2678,
+    "id": 2679,
     "fuse-gloss": "dragonfly",
-    "rk": 2689
+    "rk": 2690
   },
   {
     "gloss": [
@@ -118041,9 +118085,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2679,
+    "id": 2680,
     "fuse-gloss": "windmill,    turbine",
-    "rk": 2690
+    "rk": 2691
   },
   {
     "gloss": [
@@ -118072,9 +118116,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2680,
+    "id": 2681,
     "fuse-gloss": "helicopter",
-    "rk": 2691
+    "rk": 2692
   },
   {
     "gloss": [
@@ -118096,9 +118140,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2681,
+    "id": 2682,
     "fuse-gloss": "scrambled eggs",
-    "rk": 2692
+    "rk": 2693
   },
   {
     "gloss": [
@@ -118121,9 +118165,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2682,
+    "id": 2683,
     "fuse-gloss": "slush,    muddy snow",
-    "rk": 2693
+    "rk": 2694
   },
   {
     "gloss": [
@@ -118145,9 +118189,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2683,
+    "id": 2684,
     "fuse-gloss": "clay (pottery material)",
-    "rk": 2694
+    "rk": 2695
   },
   {
     "gloss": [
@@ -118169,9 +118213,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2684,
+    "id": 2685,
     "fuse-gloss": "wig",
-    "rk": 2695
+    "rk": 2696
   },
   {
     "gloss": [
@@ -118200,9 +118244,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2685,
+    "id": 2686,
     "fuse-gloss": "washing machine",
-    "rk": 2696
+    "rk": 2697
   },
   {
     "gloss": [
@@ -118225,9 +118269,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2686,
+    "id": 2687,
     "fuse-gloss": "dishwasher",
-    "rk": 2697
+    "rk": 2698
   },
   {
     "gloss": [
@@ -118250,9 +118294,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2687,
+    "id": 2688,
     "fuse-gloss": "stock/oil (cooking)",
-    "rk": 2698
+    "rk": 2699
   },
   {
     "gloss": [
@@ -118282,9 +118326,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2688,
+    "id": 2689,
     "fuse-gloss": "spruce,    pine",
-    "rk": 2699
+    "rk": 2700
   },
   {
     "gloss": [
@@ -118307,9 +118351,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2689,
+    "id": 2690,
     "fuse-gloss": "holly",
-    "rk": 2700
+    "rk": 2701
   },
   {
     "gloss": [
@@ -118333,9 +118377,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2690,
+    "id": 2691,
     "fuse-gloss": "grenade,    rocket",
-    "rk": 2701
+    "rk": 2702
   },
   {
     "gloss": [
@@ -118358,9 +118402,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2691,
+    "id": 2692,
     "fuse-gloss": "bomb",
-    "rk": 2702
+    "rk": 2703
   },
   {
     "gloss": [
@@ -118384,9 +118428,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2692,
+    "id": 2693,
     "fuse-gloss": "gunpowder,    explosives",
-    "rk": 2703
+    "rk": 2704
   },
   {
     "gloss": [
@@ -118414,9 +118458,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2693,
+    "id": 2694,
     "fuse-gloss": "ice cream",
-    "rk": 2704
+    "rk": 2705
   },
   {
     "gloss": [
@@ -118438,9 +118482,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2694,
+    "id": 2695,
     "fuse-gloss": "pantry",
-    "rk": 2705
+    "rk": 2706
   },
   {
     "gloss": [
@@ -118462,9 +118506,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2695,
+    "id": 2696,
     "fuse-gloss": "scab",
-    "rk": 2706
+    "rk": 2707
   },
   {
     "gloss": [
@@ -118486,9 +118530,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2696,
+    "id": 2697,
     "fuse-gloss": "bandage",
-    "rk": 2707
+    "rk": 2708
   },
   {
     "gloss": [
@@ -118512,9 +118556,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2697,
+    "id": 2698,
     "fuse-gloss": "should,    ought to,    better if",
-    "rk": 2708
+    "rk": 2709
   },
   {
     "gloss": [
@@ -118539,9 +118583,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2698,
+    "id": 2699,
     "fuse-gloss": "record,    greatest extent,    maximum",
-    "rk": 2709
+    "rk": 2710
   },
   {
     "gloss": [
@@ -118565,9 +118609,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2699,
+    "id": 2700,
     "fuse-gloss": "in tatters,    crumbled,    to shreds",
-    "rk": 2710
+    "rk": 2711
   },
   {
     "gloss": [
@@ -118591,9 +118635,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2700,
+    "id": 2701,
     "fuse-gloss": "whiteboard,    blackboard",
-    "rk": 2711
+    "rk": 2712
   },
   {
     "gloss": [
@@ -118617,9 +118661,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2701,
+    "id": 2702,
     "fuse-gloss": "typewriter,    keyboard",
-    "rk": 2712
+    "rk": 2713
   },
   {
     "gloss": [
@@ -118643,9 +118687,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2702,
+    "id": 2703,
     "fuse-gloss": "pen,    pencil,    brush",
-    "rk": 2713
+    "rk": 2714
   },
   {
     "gloss": [
@@ -118668,9 +118712,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2703,
+    "id": 2704,
     "fuse-gloss": "cheese",
-    "rk": 2714
+    "rk": 2715
   },
   {
     "gloss": [
@@ -118692,9 +118736,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2704,
+    "id": 2705,
     "fuse-gloss": "radio",
-    "rk": 2715
+    "rk": 2716
   },
   {
     "gloss": [
@@ -118718,9 +118762,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2705,
+    "id": 2706,
     "fuse-gloss": "naked,    unclothed",
-    "rk": 2716
+    "rk": 2717
   },
   {
     "gloss": [
@@ -118744,9 +118788,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2706,
+    "id": 2707,
     "fuse-gloss": "cool down,    chill out",
-    "rk": 2717
+    "rk": 2718
   },
   {
     "gloss": [
@@ -118769,9 +118813,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2707,
+    "id": 2708,
     "fuse-gloss": "bacon",
-    "rk": 2718
+    "rk": 2719
   },
   {
     "gloss": [
@@ -118794,9 +118838,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2708,
+    "id": 2709,
     "fuse-gloss": "morel",
-    "rk": 2719
+    "rk": 2720
   },
   {
     "gloss": [
@@ -118819,9 +118863,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2709,
+    "id": 2710,
     "fuse-gloss": "sausage",
-    "rk": 2720
+    "rk": 2721
   },
   {
     "gloss": [
@@ -118843,9 +118887,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2710,
+    "id": 2711,
     "fuse-gloss": "rockfish",
-    "rk": 2721
+    "rk": 2722
   },
   {
     "gloss": [
@@ -118868,9 +118912,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2711,
+    "id": 2712,
     "fuse-gloss": "baking tray,    oven sheet",
-    "rk": 2722
+    "rk": 2723
   },
   {
     "gloss": [
@@ -118893,9 +118937,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2712,
+    "id": 2713,
     "fuse-gloss": "driftwood",
-    "rk": 2723
+    "rk": 2724
   },
   {
     "gloss": [
@@ -118918,9 +118962,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2713,
+    "id": 2714,
     "fuse-gloss": "tanned,    suntan",
-    "rk": 2724
+    "rk": 2725
   },
   {
     "gloss": [
@@ -118943,9 +118987,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2714,
+    "id": 2715,
     "fuse-gloss": "sunburn,    sun-ripened",
-    "rk": 2725
+    "rk": 2726
   },
   {
     "gloss": [
@@ -118968,9 +119012,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2715,
+    "id": 2716,
     "fuse-gloss": "wallet",
-    "rk": 2726
+    "rk": 2727
   },
   {
     "gloss": [
@@ -118992,9 +119036,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2716,
+    "id": 2717,
     "fuse-gloss": "buttermilk",
-    "rk": 2727
+    "rk": 2728
   },
   {
     "gloss": [
@@ -119018,9 +119062,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2717,
+    "id": 2718,
     "fuse-gloss": "edge,    horizon",
-    "rk": 2728
+    "rk": 2729
   },
   {
     "gloss": [
@@ -119043,9 +119087,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2718,
+    "id": 2719,
     "fuse-gloss": "bunch,    bundle",
-    "rk": 2729
+    "rk": 2730
   },
   {
     "gloss": [
@@ -119067,9 +119111,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2719,
+    "id": 2720,
     "fuse-gloss": "kechup",
-    "rk": 2730
+    "rk": 2731
   },
   {
     "gloss": [
@@ -119091,9 +119135,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2720,
+    "id": 2721,
     "fuse-gloss": "brussel sprout",
-    "rk": 2731
+    "rk": 2732
   },
   {
     "gloss": [
@@ -119116,9 +119160,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2721,
+    "id": 2722,
     "fuse-gloss": "boyfriend/girlfriend",
-    "rk": 2732
+    "rk": 2733
   },
   {
     "gloss": [
@@ -119146,9 +119190,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2722,
+    "id": 2723,
     "fuse-gloss": "academic journal,    newspaper",
-    "rk": 2733
+    "rk": 2734
   },
   {
     "gloss": [
@@ -119176,9 +119220,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2723,
+    "id": 2724,
     "fuse-gloss": "grandfather",
-    "rk": 2734
+    "rk": 2735
   },
   {
     "gloss": [
@@ -119201,9 +119245,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2724,
+    "id": 2725,
     "fuse-gloss": "fasting,    diet",
-    "rk": 2735
+    "rk": 2736
   },
   {
     "gloss": [
@@ -119231,9 +119275,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2725,
+    "id": 2726,
     "fuse-gloss": "fart",
-    "rk": 2736
+    "rk": 2737
   },
   {
     "gloss": [
@@ -119256,9 +119300,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2726,
+    "id": 2727,
     "fuse-gloss": "mule",
-    "rk": 2737
+    "rk": 2738
   },
   {
     "gloss": [
@@ -119286,9 +119330,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2727,
+    "id": 2728,
     "fuse-gloss": "pregnant",
-    "rk": 2738
+    "rk": 2739
   },
   {
     "gloss": [
@@ -119311,9 +119355,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2728,
+    "id": 2729,
     "fuse-gloss": "full (of food)",
-    "rk": 2739
+    "rk": 2740
   },
   {
     "gloss": [
@@ -119336,9 +119380,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2729,
+    "id": 2730,
     "fuse-gloss": "ashes,    embers",
-    "rk": 2740
+    "rk": 2741
   },
   {
     "gloss": [
@@ -119360,9 +119404,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2730,
+    "id": 2731,
     "fuse-gloss": "fireman",
-    "rk": 2741
+    "rk": 2742
   },
   {
     "gloss": [
@@ -119384,9 +119428,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2731,
+    "id": 2732,
     "fuse-gloss": "fire station",
-    "rk": 2742
+    "rk": 2743
   },
   {
     "gloss": [
@@ -119408,9 +119452,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2732,
+    "id": 2733,
     "fuse-gloss": "smallpox",
-    "rk": 2743
+    "rk": 2744
   },
   {
     "gloss": [
@@ -119432,9 +119476,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2733,
+    "id": 2734,
     "fuse-gloss": "flint",
-    "rk": 2744
+    "rk": 2745
   },
   {
     "gloss": [
@@ -119462,9 +119506,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2734,
+    "id": 2735,
     "fuse-gloss": "electricity,    electronics",
-    "rk": 2745
+    "rk": 2746
   },
   {
     "gloss": [
@@ -119487,9 +119531,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2735,
+    "id": 2736,
     "fuse-gloss": "wheelbarrow",
-    "rk": 2746
+    "rk": 2747
   },
   {
     "gloss": [
@@ -119517,9 +119561,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2736,
+    "id": 2737,
     "fuse-gloss": "pearl",
-    "rk": 2747
+    "rk": 2748
   },
   {
     "gloss": [
@@ -119543,9 +119587,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2737,
+    "id": 2738,
     "fuse-gloss": "reason,    why",
-    "rk": 2748
+    "rk": 2749
   },
   {
     "gloss": [
@@ -119568,9 +119612,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2738,
+    "id": 2739,
     "fuse-gloss": "float,    tread water",
-    "rk": 2749
+    "rk": 2750
   },
   {
     "gloss": [
@@ -119593,9 +119637,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2739,
+    "id": 2740,
     "fuse-gloss": "airport",
-    "rk": 2750
+    "rk": 2751
   },
   {
     "gloss": [
@@ -119618,9 +119662,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2740,
+    "id": 2741,
     "fuse-gloss": "pickles",
-    "rk": 2751
+    "rk": 2752
   },
   {
     "gloss": [
@@ -119643,9 +119687,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2741,
+    "id": 2742,
     "fuse-gloss": "trigonometry,    geometry",
-    "rk": 2752
+    "rk": 2753
   },
   {
     "gloss": [
@@ -119669,9 +119713,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2742,
+    "id": 2743,
     "fuse-gloss": "to be dripping,    to leak,    leaky",
-    "rk": 2753
+    "rk": 2754
   },
   {
     "gloss": [
@@ -119694,9 +119738,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2743,
+    "id": 2744,
     "fuse-gloss": "boast,    brag",
-    "rk": 2754
+    "rk": 2755
   },
   {
     "gloss": [
@@ -119718,9 +119762,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2744,
+    "id": 2745,
     "fuse-gloss": "to milk (e.g. a cow)",
-    "rk": 2755
+    "rk": 2756
   },
   {
     "gloss": [
@@ -119742,9 +119786,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2745,
+    "id": 2746,
     "fuse-gloss": "massage",
-    "rk": 2756
+    "rk": 2757
   },
   {
     "gloss": [
@@ -119766,9 +119810,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2746,
+    "id": 2747,
     "fuse-gloss": "mould",
-    "rk": 2757
+    "rk": 2758
   },
   {
     "gloss": [
@@ -119791,9 +119835,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2747,
+    "id": 2748,
     "fuse-gloss": "city street",
-    "rk": 2758
+    "rk": 2759
   },
   {
     "gloss": [
@@ -119815,9 +119859,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2748,
+    "id": 2749,
     "fuse-gloss": "spurs",
-    "rk": 2759
+    "rk": 2760
   },
   {
     "gloss": [
@@ -119846,9 +119890,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2749,
+    "id": 2750,
     "fuse-gloss": "to churn butter",
-    "rk": 2760
+    "rk": 2761
   },
   {
     "gloss": [
@@ -119871,9 +119915,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2750,
+    "id": 2751,
     "fuse-gloss": "lingerie",
-    "rk": 2761
+    "rk": 2762
   },
   {
     "gloss": [
@@ -119895,9 +119939,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2751,
+    "id": 2752,
     "fuse-gloss": "relish",
-    "rk": 2762
+    "rk": 2763
   },
   {
     "gloss": [
@@ -119926,9 +119970,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2752,
+    "id": 2753,
     "fuse-gloss": "sawbill,    merganser",
-    "rk": 2763
+    "rk": 2764
   },
   {
     "gloss": [
@@ -119950,9 +119994,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2753,
+    "id": 2754,
     "fuse-gloss": "hash browns",
-    "rk": 2764
+    "rk": 2765
   },
   {
     "gloss": [
@@ -119976,9 +120020,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2754,
+    "id": 2755,
     "fuse-gloss": "cave,    mine",
-    "rk": 2765
+    "rk": 2766
   },
   {
     "gloss": [
@@ -120006,9 +120050,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2755,
+    "id": 2756,
     "fuse-gloss": "famer",
-    "rk": 2766
+    "rk": 2767
   },
   {
     "gloss": [
@@ -120032,9 +120076,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2756,
+    "id": 2757,
     "fuse-gloss": "taste,    flavour,    to taste",
-    "rk": 2767
+    "rk": 2768
   },
   {
     "gloss": [
@@ -120057,9 +120101,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2757,
+    "id": 2758,
     "fuse-gloss": "bull kelp",
-    "rk": 2768
+    "rk": 2769
   },
   {
     "gloss": [
@@ -120081,9 +120125,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2758,
+    "id": 2759,
     "fuse-gloss": "cod",
-    "rk": 2769
+    "rk": 2770
   },
   {
     "gloss": [
@@ -120106,9 +120150,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2759,
+    "id": 2760,
     "fuse-gloss": "root vegetables,    tubers",
-    "rk": 2770
+    "rk": 2771
   },
   {
     "gloss": [
@@ -120133,9 +120177,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2760,
+    "id": 2761,
     "fuse-gloss": "bill,    law,    declaration,    ordinance",
-    "rk": 2771
+    "rk": 2772
   },
   {
     "gloss": [
@@ -120159,9 +120203,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2761,
+    "id": 2762,
     "fuse-gloss": "clause,    sentence",
-    "rk": 2772
+    "rk": 2773
   },
   {
     "gloss": [
@@ -120191,9 +120235,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2762,
+    "id": 2763,
     "fuse-gloss": "porcelain,    ceramic",
-    "rk": 2773
+    "rk": 2774
   },
   {
     "gloss": [
@@ -120222,9 +120266,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2763,
+    "id": 2764,
     "fuse-gloss": "cupboard",
-    "rk": 2774
+    "rk": 2775
   },
   {
     "gloss": [
@@ -120246,9 +120290,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2764,
+    "id": 2765,
     "fuse-gloss": "loon",
-    "rk": 2775
+    "rk": 2776
   },
   {
     "gloss": [
@@ -120270,9 +120314,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2765,
+    "id": 2766,
     "fuse-gloss": "fern",
-    "rk": 2776
+    "rk": 2777
   },
   {
     "gloss": [
@@ -120294,9 +120338,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2766,
+    "id": 2767,
     "fuse-gloss": "licorice fern",
-    "rk": 2777
+    "rk": 2778
   },
   {
     "gloss": [
@@ -120319,9 +120363,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2767,
+    "id": 2768,
     "fuse-gloss": "electric kettle",
-    "rk": 2778
+    "rk": 2779
   },
   {
     "gloss": [
@@ -120344,9 +120388,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2768,
+    "id": 2769,
     "fuse-gloss": "gums",
-    "rk": 2779
+    "rk": 2780
   },
   {
     "gloss": [
@@ -120370,9 +120414,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2769,
+    "id": 2770,
     "fuse-gloss": "octopus,    squid,    cephalopod",
-    "rk": 2780
+    "rk": 2781
   },
   {
     "gloss": [
@@ -120395,9 +120439,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2770,
+    "id": 2771,
     "fuse-gloss": "leek",
-    "rk": 2781
+    "rk": 2782
   },
   {
     "gloss": [
@@ -120420,9 +120464,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2771,
+    "id": 2772,
     "fuse-gloss": "beverage,    drink",
-    "rk": 2782
+    "rk": 2783
   },
   {
     "gloss": [
@@ -120451,9 +120495,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2772,
+    "id": 2773,
     "fuse-gloss": "capacity,    volume",
-    "rk": 2783
+    "rk": 2784
   },
   {
     "gloss": [
@@ -120483,9 +120527,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2773,
+    "id": 2774,
     "fuse-gloss": "oval,    ellipse",
-    "rk": 2784
+    "rk": 2785
   },
   {
     "gloss": [
@@ -120507,9 +120551,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2774,
+    "id": 2775,
     "fuse-gloss": "green bean",
-    "rk": 2785
+    "rk": 2786
   },
   {
     "gloss": [
@@ -120532,9 +120576,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2775,
+    "id": 2776,
     "fuse-gloss": "rectangle",
-    "rk": 2786
+    "rk": 2787
   },
   {
     "gloss": [
@@ -120556,9 +120600,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2776,
+    "id": 2777,
     "fuse-gloss": "net trap",
-    "rk": 2787
+    "rk": 2788
   },
   {
     "gloss": [
@@ -120581,9 +120625,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2777,
+    "id": 2778,
     "fuse-gloss": "spider",
-    "rk": 2788
+    "rk": 2789
   },
   {
     "gloss": [
@@ -120612,9 +120656,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2778,
+    "id": 2779,
     "fuse-gloss": "trigger",
-    "rk": 2789
+    "rk": 2790
   },
   {
     "gloss": [
@@ -120644,9 +120688,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2779,
+    "id": 2780,
     "fuse-gloss": "wedding ring,    diamond",
-    "rk": 2790
+    "rk": 2791
   },
   {
     "gloss": [
@@ -120668,9 +120712,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2780,
+    "id": 2781,
     "fuse-gloss": "navy",
-    "rk": 2791
+    "rk": 2792
   },
   {
     "gloss": [
@@ -120694,9 +120738,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2781,
+    "id": 2782,
     "fuse-gloss": "workplace,    workshop",
-    "rk": 2792
+    "rk": 2793
   },
   {
     "gloss": [
@@ -120720,9 +120764,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2782,
+    "id": 2783,
     "fuse-gloss": "build a house,    construction",
-    "rk": 2793
+    "rk": 2794
   },
   {
     "gloss": [
@@ -120746,9 +120790,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2783,
+    "id": 2784,
     "fuse-gloss": "heal,    get over it,    pull oneself together",
-    "rk": 2794
+    "rk": 2795
   },
   {
     "gloss": [
@@ -120771,9 +120815,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2784,
+    "id": 2785,
     "fuse-gloss": "technology",
-    "rk": 2795
+    "rk": 2796
   },
   {
     "gloss": [
@@ -120797,9 +120841,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2785,
+    "id": 2786,
     "fuse-gloss": "possible,    there's a way to",
-    "rk": 2796
+    "rk": 2797
   },
   {
     "gloss": [
@@ -120823,9 +120867,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2786,
+    "id": 2787,
     "fuse-gloss": "day after tomorrow,    overmorrow",
-    "rk": 2797
+    "rk": 2798
   },
   {
     "gloss": [
@@ -120849,9 +120893,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2787,
+    "id": 2788,
     "fuse-gloss": "day before yesterday,    ereyesterday",
-    "rk": 2798
+    "rk": 2799
   },
   {
     "gloss": [
@@ -120874,9 +120918,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2788,
+    "id": 2789,
     "fuse-gloss": "spices,    seasonings",
-    "rk": 2799
+    "rk": 2800
   },
   {
     "gloss": [
@@ -120904,9 +120948,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2789,
+    "id": 2790,
     "fuse-gloss": "engineer",
-    "rk": 2800
+    "rk": 2801
   },
   {
     "gloss": [
@@ -120930,9 +120974,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2790,
+    "id": 2791,
     "fuse-gloss": "pronounce,    articulate",
-    "rk": 2801
+    "rk": 2802
   },
   {
     "gloss": [
@@ -120955,9 +120999,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2791,
+    "id": 2792,
     "fuse-gloss": "stretch out,    lengthen",
-    "rk": 2802
+    "rk": 2803
   },
   {
     "gloss": [
@@ -120980,9 +121024,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2792,
+    "id": 2793,
     "fuse-gloss": "compress,    shorten",
-    "rk": 2803
+    "rk": 2804
   },
   {
     "gloss": [
@@ -121004,9 +121048,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2793,
+    "id": 2794,
     "fuse-gloss": "yarn",
-    "rk": 2804
+    "rk": 2805
   },
   {
     "gloss": [
@@ -121029,9 +121073,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2794,
+    "id": 2795,
     "fuse-gloss": "blue eyes",
-    "rk": 2805
+    "rk": 2806
   },
   {
     "gloss": [
@@ -121054,9 +121098,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2795,
+    "id": 2796,
     "fuse-gloss": "take a photo,    take pictures",
-    "rk": 2806
+    "rk": 2807
   },
   {
     "gloss": [
@@ -121079,9 +121123,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2796,
+    "id": 2797,
     "fuse-gloss": "toss in the air,    throw and catch",
-    "rk": 2807
+    "rk": 2808
   },
   {
     "gloss": [
@@ -121104,9 +121148,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2797,
+    "id": 2798,
     "fuse-gloss": "unite,    join forces",
-    "rk": 2808
+    "rk": 2809
   },
   {
     "gloss": [
@@ -121130,9 +121174,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2798,
+    "id": 2799,
     "fuse-gloss": "digest,    digestion",
-    "rk": 2809
+    "rk": 2810
   },
   {
     "gloss": [
@@ -121162,9 +121206,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2799,
+    "id": 2800,
     "fuse-gloss": "hamburger,    patty",
-    "rk": 2810
+    "rk": 2811
   },
   {
     "gloss": [
@@ -121188,9 +121232,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2800,
+    "id": 2801,
     "fuse-gloss": "inevitable,    unavoidable,    guarenteed",
-    "rk": 2811
+    "rk": 2812
   },
   {
     "gloss": [
@@ -121214,9 +121258,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2801,
+    "id": 2802,
     "fuse-gloss": "screen,    monitor",
-    "rk": 2812
+    "rk": 2813
   },
   {
     "gloss": [
@@ -121238,9 +121282,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2802,
+    "id": 2803,
     "fuse-gloss": "necklace",
-    "rk": 2813
+    "rk": 2814
   },
   {
     "gloss": [
@@ -121263,9 +121307,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2803,
+    "id": 2804,
     "fuse-gloss": "good idea,    good thinking",
-    "rk": 2814
+    "rk": 2815
   },
   {
     "gloss": [
@@ -121288,9 +121332,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2804,
+    "id": 2805,
     "fuse-gloss": "fruit",
-    "rk": 2815
+    "rk": 2816
   },
   {
     "gloss": [
@@ -121313,9 +121357,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2805,
+    "id": 2806,
     "fuse-gloss": "devil's club",
-    "rk": 2816
+    "rk": 2817
   },
   {
     "gloss": [
@@ -121340,9 +121384,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2806,
+    "id": 2807,
     "fuse-gloss": "legend,    traditional story,    dogma",
-    "rk": 2817
+    "rk": 2818
   },
   {
     "gloss": [
@@ -121366,9 +121410,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2807,
+    "id": 2808,
     "fuse-gloss": "ham,    haunch",
-    "rk": 2818
+    "rk": 2819
   },
   {
     "gloss": [
@@ -121392,9 +121436,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2808,
+    "id": 2809,
     "fuse-gloss": "suffix,    2nd part of compound",
-    "rk": 2819
+    "rk": 2820
   },
   {
     "gloss": [
@@ -121418,9 +121462,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2809,
+    "id": 2810,
     "fuse-gloss": "prefix,    1st part of compound",
-    "rk": 2820
+    "rk": 2821
   },
   {
     "gloss": [
@@ -121442,9 +121486,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2810,
+    "id": 2811,
     "fuse-gloss": "celery",
-    "rk": 2821
+    "rk": 2822
   },
   {
     "gloss": [
@@ -121467,9 +121511,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2811,
+    "id": 2812,
     "fuse-gloss": "stroller,    pram",
-    "rk": 2822
+    "rk": 2823
   },
   {
     "gloss": [
@@ -121498,9 +121542,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2812,
+    "id": 2813,
     "fuse-gloss": "mayonnaise",
-    "rk": 2823
+    "rk": 2824
   },
   {
     "gloss": [
@@ -121522,9 +121566,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2813,
+    "id": 2814,
     "fuse-gloss": "breadcrumbs",
-    "rk": 2824
+    "rk": 2825
   },
   {
     "gloss": [
@@ -121548,9 +121592,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2814,
+    "id": 2815,
     "fuse-gloss": "charred,    burned,    burnt",
-    "rk": 2825
+    "rk": 2826
   },
   {
     "gloss": [
@@ -121573,9 +121617,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2815,
+    "id": 2816,
     "fuse-gloss": "oven,    toaster oven",
-    "rk": 2826
+    "rk": 2827
   },
   {
     "gloss": [
@@ -121600,9 +121644,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2816,
+    "id": 2817,
     "fuse-gloss": "soot,    cinders,    ash",
-    "rk": 2827
+    "rk": 2828
   },
   {
     "gloss": [
@@ -121624,9 +121668,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2817,
+    "id": 2818,
     "fuse-gloss": "furnace",
-    "rk": 2828
+    "rk": 2829
   },
   {
     "gloss": [
@@ -121649,9 +121693,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2818,
+    "id": 2819,
     "fuse-gloss": "customer",
-    "rk": 2829
+    "rk": 2830
   },
   {
     "gloss": [
@@ -121673,9 +121717,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2819,
+    "id": 2820,
     "fuse-gloss": "camera",
-    "rk": 2830
+    "rk": 2831
   },
   {
     "gloss": [
@@ -121704,9 +121748,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2820,
+    "id": 2821,
     "fuse-gloss": "election,    ballot",
-    "rk": 2831
+    "rk": 2832
   },
   {
     "gloss": [
@@ -121728,9 +121772,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2821,
+    "id": 2822,
     "fuse-gloss": "beets",
-    "rk": 2832
+    "rk": 2833
   },
   {
     "gloss": [
@@ -121753,9 +121797,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2822,
+    "id": 2823,
     "fuse-gloss": "pomegranate",
-    "rk": 2833
+    "rk": 2834
   },
   {
     "gloss": [
@@ -121781,9 +121825,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2823,
+    "id": 2824,
     "fuse-gloss": "winter",
-    "rk": 2834
+    "rk": 2835
   },
   {
     "gloss": [
@@ -121806,9 +121850,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2824,
+    "id": 2825,
     "fuse-gloss": "autumn",
-    "rk": 2835
+    "rk": 2836
   },
   {
     "gloss": [
@@ -121831,9 +121875,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2825,
+    "id": 2826,
     "fuse-gloss": "pandemic",
-    "rk": 2836
+    "rk": 2837
   },
   {
     "gloss": [
@@ -121856,9 +121900,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2826,
+    "id": 2827,
     "fuse-gloss": "whiteout,    paper pulp",
-    "rk": 2837
+    "rk": 2838
   },
   {
     "gloss": [
@@ -121887,9 +121931,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2827,
+    "id": 2828,
     "fuse-gloss": "pulp mill,    paper factory",
-    "rk": 2838
+    "rk": 2839
   },
   {
     "gloss": [
@@ -121913,9 +121957,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2828,
+    "id": 2829,
     "fuse-gloss": "sheet of paper,    page,    looseleaf",
-    "rk": 2839
+    "rk": 2840
   },
   {
     "gloss": [
@@ -121938,9 +121982,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2829,
+    "id": 2830,
     "fuse-gloss": "contract",
-    "rk": 2840
+    "rk": 2841
   },
   {
     "gloss": [
@@ -121969,9 +122013,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2830,
+    "id": 2831,
     "fuse-gloss": "white-winged scoter",
-    "rk": 2841
+    "rk": 2842
   },
   {
     "gloss": [
@@ -121994,9 +122038,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2831,
+    "id": 2832,
     "fuse-gloss": "bedroom,    hostel",
-    "rk": 2842
+    "rk": 2843
   },
   {
     "gloss": [
@@ -122020,9 +122064,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2832,
+    "id": 2833,
     "fuse-gloss": "cotton plant,    dandelion",
-    "rk": 2843
+    "rk": 2844
   },
   {
     "gloss": [
@@ -122044,9 +122088,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2833,
+    "id": 2834,
     "fuse-gloss": "bruise",
-    "rk": 2844
+    "rk": 2845
   },
   {
     "gloss": [
@@ -122068,9 +122112,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2834,
+    "id": 2835,
     "fuse-gloss": "bat (animal)",
-    "rk": 2845
+    "rk": 2846
   },
   {
     "gloss": [
@@ -122093,9 +122137,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2835,
+    "id": 2836,
     "fuse-gloss": "frost",
-    "rk": 2846
+    "rk": 2847
   },
   {
     "gloss": [
@@ -122124,9 +122168,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2836,
+    "id": 2837,
     "fuse-gloss": "rhubarb",
-    "rk": 2847
+    "rk": 2848
   },
   {
     "gloss": [
@@ -122149,9 +122193,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2837,
+    "id": 2838,
     "fuse-gloss": "library,    study hall",
-    "rk": 2848
+    "rk": 2849
   },
   {
     "gloss": [
@@ -122173,9 +122217,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2838,
+    "id": 2839,
     "fuse-gloss": "chapter",
-    "rk": 2849
+    "rk": 2850
   },
   {
     "gloss": [
@@ -122203,9 +122247,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2839,
+    "id": 2840,
     "fuse-gloss": "author",
-    "rk": 2850
+    "rk": 2851
   },
   {
     "gloss": [
@@ -122229,9 +122273,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2840,
+    "id": 2841,
     "fuse-gloss": "jewel,    gem",
-    "rk": 2851
+    "rk": 2852
   },
   {
     "gloss": [
@@ -122254,9 +122298,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2841,
+    "id": 2842,
     "fuse-gloss": "attic",
-    "rk": 2852
+    "rk": 2853
   },
   {
     "gloss": [
@@ -122279,9 +122323,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2842,
+    "id": 2843,
     "fuse-gloss": "amethyst",
-    "rk": 2853
+    "rk": 2854
   },
   {
     "gloss": [
@@ -122304,9 +122348,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2843,
+    "id": 2844,
     "fuse-gloss": "ceiling",
-    "rk": 2854
+    "rk": 2855
   },
   {
     "gloss": [
@@ -122328,9 +122372,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2844,
+    "id": 2845,
     "fuse-gloss": "ground/black pepper",
-    "rk": 2855
+    "rk": 2856
   },
   {
     "gloss": [
@@ -122352,9 +122396,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2845,
+    "id": 2846,
     "fuse-gloss": "sea urchin",
-    "rk": 2856
+    "rk": 2857
   },
   {
     "gloss": [
@@ -122377,9 +122421,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2846,
+    "id": 2847,
     "fuse-gloss": "sunbreak,    pause in the rain/clouds",
-    "rk": 2857
+    "rk": 2858
   },
   {
     "gloss": [
@@ -122408,9 +122452,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2847,
+    "id": 2848,
     "fuse-gloss": "diary,    journal",
-    "rk": 2858
+    "rk": 2859
   },
   {
     "gloss": [
@@ -122434,9 +122478,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2848,
+    "id": 2849,
     "fuse-gloss": "sunbeam,    ray of sunshine",
-    "rk": 2859
+    "rk": 2860
   },
   {
     "gloss": [
@@ -122459,9 +122503,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2849,
+    "id": 2850,
     "fuse-gloss": "CD",
-    "rk": 2860
+    "rk": 2861
   },
   {
     "gloss": [
@@ -122484,9 +122528,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2850,
+    "id": 2851,
     "fuse-gloss": "noodle,    spaghetti",
-    "rk": 2861
+    "rk": 2862
   },
   {
     "gloss": [
@@ -122509,9 +122553,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2851,
+    "id": 2852,
     "fuse-gloss": "laboratory",
-    "rk": 2862
+    "rk": 2863
   },
   {
     "gloss": [
@@ -122534,9 +122578,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2852,
+    "id": 2853,
     "fuse-gloss": "credit card",
-    "rk": 2863
+    "rk": 2864
   },
   {
     "gloss": [
@@ -122558,9 +122602,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2853,
+    "id": 2854,
     "fuse-gloss": "lead (metal)",
-    "rk": 2864
+    "rk": 2865
   },
   {
     "gloss": [
@@ -122589,9 +122633,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2854,
+    "id": 2855,
     "fuse-gloss": "soy sauce",
-    "rk": 2865
+    "rk": 2866
   },
   {
     "gloss": [
@@ -122613,9 +122657,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2855,
+    "id": 2856,
     "fuse-gloss": "icicle",
-    "rk": 2866
+    "rk": 2867
   },
   {
     "gloss": [
@@ -122638,9 +122682,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2856,
+    "id": 2857,
     "fuse-gloss": "port town,    port city",
-    "rk": 2867
+    "rk": 2868
   },
   {
     "gloss": [
@@ -122662,9 +122706,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2857,
+    "id": 2858,
     "fuse-gloss": "anchor",
-    "rk": 2868
+    "rk": 2869
   },
   {
     "gloss": [
@@ -122686,9 +122730,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2858,
+    "id": 2859,
     "fuse-gloss": "christians",
-    "rk": 2869
+    "rk": 2870
   },
   {
     "gloss": [
@@ -122711,9 +122755,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2859,
+    "id": 2860,
     "fuse-gloss": "sewer",
-    "rk": 2870
+    "rk": 2871
   },
   {
     "gloss": [
@@ -122737,9 +122781,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2860,
+    "id": 2861,
     "fuse-gloss": "garden bed,    plot",
-    "rk": 2871
+    "rk": 2872
   },
   {
     "gloss": [
@@ -122762,9 +122806,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2861,
+    "id": 2862,
     "fuse-gloss": "blister",
-    "rk": 2872
+    "rk": 2873
   },
   {
     "gloss": [
@@ -122787,9 +122831,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2862,
+    "id": 2863,
     "fuse-gloss": "reporter,    journalist",
-    "rk": 2873
+    "rk": 2874
   },
   {
     "gloss": [
@@ -122811,9 +122855,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2863,
+    "id": 2864,
     "fuse-gloss": "vest",
-    "rk": 2874
+    "rk": 2875
   },
   {
     "gloss": [
@@ -122836,9 +122880,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2864,
+    "id": 2865,
     "fuse-gloss": "tank top",
-    "rk": 2875
+    "rk": 2876
   },
   {
     "gloss": [
@@ -122860,9 +122904,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2865,
+    "id": 2866,
     "fuse-gloss": "desk",
-    "rk": 2876
+    "rk": 2877
   },
   {
     "gloss": [
@@ -122890,9 +122934,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2866,
+    "id": 2867,
     "fuse-gloss": "classroom",
-    "rk": 2877
+    "rk": 2878
   },
   {
     "gloss": [
@@ -122915,9 +122959,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2867,
+    "id": 2868,
     "fuse-gloss": "class period,    lecture",
-    "rk": 2878
+    "rk": 2879
   },
   {
     "gloss": [
@@ -122941,9 +122985,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2868,
+    "id": 2869,
     "fuse-gloss": "brick,    tile",
-    "rk": 2879
+    "rk": 2880
   },
   {
     "gloss": [
@@ -122965,9 +123009,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2869,
+    "id": 2870,
     "fuse-gloss": "rubber boots",
-    "rk": 2880
+    "rk": 2881
   },
   {
     "gloss": [
@@ -122990,9 +123034,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2870,
+    "id": 2871,
     "fuse-gloss": "sprinkler",
-    "rk": 2881
+    "rk": 2882
   },
   {
     "gloss": [
@@ -123015,9 +123059,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2871,
+    "id": 2872,
     "fuse-gloss": "rainbow",
-    "rk": 2882
+    "rk": 2883
   },
   {
     "gloss": [
@@ -123040,9 +123084,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2872,
+    "id": 2873,
     "fuse-gloss": "pearl",
-    "rk": 2883
+    "rk": 2884
   },
   {
     "gloss": [
@@ -123066,9 +123110,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2873,
+    "id": 2874,
     "fuse-gloss": "debate,    argue,    angrily dispute",
-    "rk": 2884
+    "rk": 2885
   },
   {
     "gloss": [
@@ -123090,9 +123134,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2874,
+    "id": 2875,
     "fuse-gloss": "pink",
-    "rk": 2885
+    "rk": 2886
   },
   {
     "gloss": [
@@ -123114,9 +123158,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2875,
+    "id": 2876,
     "fuse-gloss": "snowy owl",
-    "rk": 2886
+    "rk": 2887
   },
   {
     "gloss": [
@@ -123139,9 +123183,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2876,
+    "id": 2877,
     "fuse-gloss": "faint,    swoon",
-    "rk": 2887
+    "rk": 2888
   },
   {
     "gloss": [
@@ -123164,9 +123208,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2877,
+    "id": 2878,
     "fuse-gloss": "riverbed",
-    "rk": 2888
+    "rk": 2889
   },
   {
     "gloss": [
@@ -123189,9 +123233,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2878,
+    "id": 2879,
     "fuse-gloss": "tree roots",
-    "rk": 2889
+    "rk": 2890
   },
   {
     "gloss": [
@@ -123213,9 +123257,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2879,
+    "id": 2880,
     "fuse-gloss": "tree sap",
-    "rk": 2890
+    "rk": 2891
   },
   {
     "gloss": [
@@ -123238,9 +123282,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2880,
+    "id": 2881,
     "fuse-gloss": "rocky terrain,    quarry",
-    "rk": 2891
+    "rk": 2892
   },
   {
     "gloss": [
@@ -123262,9 +123306,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2881,
+    "id": 2882,
     "fuse-gloss": "tree leaves",
-    "rk": 2892
+    "rk": 2893
   },
   {
     "gloss": [
@@ -123286,9 +123330,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2882,
+    "id": 2883,
     "fuse-gloss": "bathtub",
-    "rk": 2893
+    "rk": 2894
   },
   {
     "gloss": [
@@ -123310,9 +123354,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2883,
+    "id": 2884,
     "fuse-gloss": "princem heir",
-    "rk": 2894
+    "rk": 2895
   },
   {
     "gloss": [
@@ -123335,9 +123379,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2884,
+    "id": 2885,
     "fuse-gloss": "princess,    heiress",
-    "rk": 2895
+    "rk": 2896
   },
   {
     "gloss": [
@@ -123360,9 +123404,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2885,
+    "id": 2886,
     "fuse-gloss": "zucchini",
-    "rk": 2896
+    "rk": 2897
   },
   {
     "gloss": [
@@ -123385,9 +123429,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2886,
+    "id": 2887,
     "fuse-gloss": "tired,    exhausted",
-    "rk": 2897
+    "rk": 2898
   },
   {
     "gloss": [
@@ -123410,9 +123454,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2887,
+    "id": 2888,
     "fuse-gloss": "muffin,    cupcake",
-    "rk": 2898
+    "rk": 2899
   },
   {
     "gloss": [
@@ -123435,9 +123479,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2888,
+    "id": 2889,
     "fuse-gloss": "apricot",
-    "rk": 2899
+    "rk": 2900
   },
   {
     "gloss": [
@@ -123460,9 +123504,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2889,
+    "id": 2890,
     "fuse-gloss": "raddish",
-    "rk": 2900
+    "rk": 2901
   },
   {
     "gloss": [
@@ -123490,9 +123534,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2890,
+    "id": 2891,
     "fuse-gloss": "drinking straw",
-    "rk": 2901
+    "rk": 2902
   },
   {
     "gloss": [
@@ -123516,9 +123560,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2891,
+    "id": 2892,
     "fuse-gloss": "squat,    crouch",
-    "rk": 2902
+    "rk": 2903
   },
   {
     "gloss": [
@@ -123542,9 +123586,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2892,
+    "id": 2893,
     "fuse-gloss": "crouch,    hunker down",
-    "rk": 2903
+    "rk": 2904
   },
   {
     "gloss": [
@@ -123568,9 +123612,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2893,
+    "id": 2894,
     "fuse-gloss": "hesitate,    falter",
-    "rk": 2904
+    "rk": 2905
   },
   {
     "gloss": [
@@ -123592,9 +123636,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2894,
+    "id": 2895,
     "fuse-gloss": "actor",
-    "rk": 2905
+    "rk": 2906
   },
   {
     "gloss": [
@@ -123616,9 +123660,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2895,
+    "id": 2896,
     "fuse-gloss": "actress",
-    "rk": 2906
+    "rk": 2907
   },
   {
     "gloss": [
@@ -123641,9 +123685,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2896,
+    "id": 2897,
     "fuse-gloss": "interested in,    interest",
-    "rk": 2907
+    "rk": 2908
   },
   {
     "gloss": [
@@ -123666,9 +123710,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2897,
+    "id": 2898,
     "fuse-gloss": "parsnip",
-    "rk": 2908
+    "rk": 2909
   },
   {
     "gloss": [
@@ -123691,9 +123735,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2898,
+    "id": 2899,
     "fuse-gloss": "birch",
-    "rk": 2909
+    "rk": 2910
   },
   {
     "gloss": [
@@ -123715,9 +123759,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2899,
+    "id": 2900,
     "fuse-gloss": "mountain goat",
-    "rk": 2910
+    "rk": 2911
   },
   {
     "gloss": [
@@ -123740,9 +123784,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2900,
+    "id": 2901,
     "fuse-gloss": "mountain goat",
-    "rk": 2911
+    "rk": 2912
   },
   {
     "gloss": [
@@ -123764,9 +123808,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2901,
+    "id": 2902,
     "fuse-gloss": "rheumatism",
-    "rk": 2912
+    "rk": 2913
   },
   {
     "gloss": [
@@ -123788,9 +123832,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2902,
+    "id": 2903,
     "fuse-gloss": "cauliflower",
-    "rk": 2913
+    "rk": 2914
   },
   {
     "gloss": [
@@ -123812,9 +123856,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2903,
+    "id": 2904,
     "fuse-gloss": "sickle",
-    "rk": 2914
+    "rk": 2915
   },
   {
     "gloss": [
@@ -123843,9 +123887,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2904,
+    "id": 2905,
     "fuse-gloss": "hot/spicy",
-    "rk": 2915
+    "rk": 2916
   },
   {
     "gloss": [
@@ -123876,9 +123920,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2905,
+    "id": 2906,
     "fuse-gloss": "counterpart,    other item in a pair,    the other one",
-    "rk": 2916
+    "rk": 2917
   },
   {
     "gloss": [
@@ -123902,9 +123946,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2906,
+    "id": 2907,
     "fuse-gloss": "whirlpool,    drain",
-    "rk": 2917
+    "rk": 2918
   },
   {
     "gloss": [
@@ -123927,9 +123971,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2907,
+    "id": 2908,
     "fuse-gloss": "decide,    choose to",
-    "rk": 2918
+    "rk": 2919
   },
   {
     "gloss": [
@@ -123952,9 +123996,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2908,
+    "id": 2909,
     "fuse-gloss": "guitar pick",
-    "rk": 2919
+    "rk": 2920
   },
   {
     "gloss": [
@@ -123977,9 +124021,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2909,
+    "id": 2910,
     "fuse-gloss": "violin bow",
-    "rk": 2920
+    "rk": 2921
   },
   {
     "gloss": [
@@ -124002,9 +124046,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2910,
+    "id": 2911,
     "fuse-gloss": "screwdriver",
-    "rk": 2921
+    "rk": 2922
   },
   {
     "gloss": [
@@ -124027,9 +124071,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2911,
+    "id": 2912,
     "fuse-gloss": "pestle",
-    "rk": 2922
+    "rk": 2923
   },
   {
     "gloss": [
@@ -124051,9 +124095,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2912,
+    "id": 2913,
     "fuse-gloss": "medicine man/woman",
-    "rk": 2923
+    "rk": 2924
   },
   {
     "gloss": [
@@ -124076,9 +124120,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 2913,
+    "id": 2914,
     "fuse-gloss": "playground",
-    "rk": 2924
+    "rk": 2925
   },
   {
     "gloss": [
@@ -124105,9 +124149,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2914,
+    "id": 2915,
     "fuse-gloss": "plankhouse",
-    "rk": 2925
+    "rk": 2926
   },
   {
     "gloss": [
@@ -124134,9 +124178,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 2915,
+    "id": 2916,
     "fuse-gloss": "round dance",
-    "rk": 2926
+    "rk": 2927
   },
   {
     "gloss": [
@@ -124158,9 +124202,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2916,
+    "id": 2917,
     "fuse-gloss": "helmet",
-    "rk": 2927
+    "rk": 2928
   },
   {
     "gloss": [
@@ -124184,9 +124228,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2917,
+    "id": 2918,
     "fuse-gloss": "catch your breath,    come to life,    revitalise",
-    "rk": 2928
+    "rk": 2929
   },
   {
     "gloss": [
@@ -124210,9 +124254,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2918,
+    "id": 2919,
     "fuse-gloss": "lust,    unrequited love,    pining",
-    "rk": 2929
+    "rk": 2930
   },
   {
     "gloss": [
@@ -124234,9 +124278,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2919,
+    "id": 2920,
     "fuse-gloss": "logger",
-    "rk": 2930
+    "rk": 2931
   },
   {
     "gloss": [
@@ -124258,9 +124302,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2920,
+    "id": 2921,
     "fuse-gloss": "musician",
-    "rk": 2931
+    "rk": 2932
   },
   {
     "gloss": [
@@ -124289,9 +124333,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2921,
+    "id": 2922,
     "fuse-gloss": "rock/music band",
-    "rk": 2932
+    "rk": 2933
   },
   {
     "gloss": [
@@ -124314,9 +124358,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2922,
+    "id": 2923,
     "fuse-gloss": "rice pudding",
-    "rk": 2933
+    "rk": 2934
   },
   {
     "gloss": [
@@ -124338,9 +124382,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2923,
+    "id": 2924,
     "fuse-gloss": "yam",
-    "rk": 2934
+    "rk": 2935
   },
   {
     "gloss": [
@@ -124363,9 +124407,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2924,
+    "id": 2925,
     "fuse-gloss": "sweet potato",
-    "rk": 2935
+    "rk": 2936
   },
   {
     "gloss": [
@@ -124387,9 +124431,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2925,
+    "id": 2926,
     "fuse-gloss": "architect",
-    "rk": 2936
+    "rk": 2937
   },
   {
     "gloss": [
@@ -124412,9 +124456,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2926,
+    "id": 2927,
     "fuse-gloss": "chipmunk",
-    "rk": 2937
+    "rk": 2938
   },
   {
     "gloss": [
@@ -124439,9 +124483,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2927,
+    "id": 2928,
     "fuse-gloss": "maze,    labyrinth,    confusing/misleading",
-    "rk": 2938
+    "rk": 2939
   },
   {
     "gloss": [
@@ -124470,9 +124514,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2928,
+    "id": 2929,
     "fuse-gloss": "northern lights,    aurora",
-    "rk": 2939
+    "rk": 2940
   },
   {
     "gloss": [
@@ -124495,9 +124539,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2929,
+    "id": 2930,
     "fuse-gloss": "lingcod",
-    "rk": 2940
+    "rk": 2941
   },
   {
     "gloss": [
@@ -124520,9 +124564,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2930,
+    "id": 2931,
     "fuse-gloss": "jungle",
-    "rk": 2941
+    "rk": 2942
   },
   {
     "gloss": [
@@ -124545,9 +124589,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2931,
+    "id": 2932,
     "fuse-gloss": "clothesline",
-    "rk": 2942
+    "rk": 2943
   },
   {
     "gloss": [
@@ -124574,9 +124618,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2932,
+    "id": 2933,
     "fuse-gloss": "call,    invoke,    summon,    to call",
-    "rk": 2943
+    "rk": 2944
   },
   {
     "gloss": [
@@ -124599,9 +124643,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2933,
+    "id": 2934,
     "fuse-gloss": "grammar,    syntax",
-    "rk": 2944
+    "rk": 2945
   },
   {
     "gloss": [
@@ -124624,9 +124668,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2934,
+    "id": 2935,
     "fuse-gloss": "voice,    pronunciation",
-    "rk": 2945
+    "rk": 2946
   },
   {
     "gloss": [
@@ -124649,9 +124693,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2935,
+    "id": 2936,
     "fuse-gloss": "shallow",
-    "rk": 2946
+    "rk": 2947
   },
   {
     "gloss": [
@@ -124675,9 +124719,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2936,
+    "id": 2937,
     "fuse-gloss": "tray,    pan",
-    "rk": 2947
+    "rk": 2948
   },
   {
     "gloss": [
@@ -124701,9 +124745,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2937,
+    "id": 2938,
     "fuse-gloss": "ongoing,    even now,    unfinished",
-    "rk": 2948
+    "rk": 2949
   },
   {
     "gloss": [
@@ -124729,9 +124773,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2938,
+    "id": 2939,
     "fuse-gloss": "unclear,    muddled,    blurry,    hard to see,    still inside",
-    "rk": 2949
+    "rk": 2950
   },
   {
     "gloss": [
@@ -124755,9 +124799,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2939,
+    "id": 2940,
     "fuse-gloss": "mumble,    mutter",
-    "rk": 2950
+    "rk": 2951
   },
   {
     "gloss": [
@@ -124780,9 +124824,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2940,
+    "id": 2941,
     "fuse-gloss": "slurred speech",
-    "rk": 2951
+    "rk": 2952
   },
   {
     "gloss": [
@@ -124805,9 +124849,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2941,
+    "id": 2942,
     "fuse-gloss": "consonant",
-    "rk": 2952
+    "rk": 2953
   },
   {
     "gloss": [
@@ -124830,9 +124874,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2942,
+    "id": 2943,
     "fuse-gloss": "unimportant,    irrelevant",
-    "rk": 2953
+    "rk": 2954
   },
   {
     "gloss": [
@@ -124855,9 +124899,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2943,
+    "id": 2944,
     "fuse-gloss": "enough,    sufficient",
-    "rk": 2954
+    "rk": 2955
   },
   {
     "gloss": [
@@ -124881,9 +124925,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2944,
+    "id": 2945,
     "fuse-gloss": "air conditioning,    AC",
-    "rk": 2955
+    "rk": 2956
   },
   {
     "gloss": [
@@ -124905,9 +124949,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2945,
+    "id": 2946,
     "fuse-gloss": "shutter",
-    "rk": 2956
+    "rk": 2957
   },
   {
     "gloss": [
@@ -124931,9 +124975,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2946,
+    "id": 2947,
     "fuse-gloss": "family pole,    totem pole",
-    "rk": 2957
+    "rk": 2958
   },
   {
     "gloss": [
@@ -124956,9 +125000,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2947,
+    "id": 2948,
     "fuse-gloss": "bush",
-    "rk": 2958
+    "rk": 2959
   },
   {
     "gloss": [
@@ -124981,9 +125025,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2948,
+    "id": 2949,
     "fuse-gloss": "motivation",
-    "rk": 2959
+    "rk": 2960
   },
   {
     "gloss": [
@@ -125006,9 +125050,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2949,
+    "id": 2950,
     "fuse-gloss": "keyboard",
-    "rk": 2960
+    "rk": 2961
   },
   {
     "gloss": [
@@ -125032,9 +125076,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 2950,
+    "id": 2951,
     "fuse-gloss": "day off,    rest day",
-    "rk": 2961
+    "rk": 2962
   },
   {
     "gloss": [
@@ -125056,9 +125100,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2951,
+    "id": 2952,
     "fuse-gloss": "be worth",
-    "rk": 2962
+    "rk": 2963
   },
   {
     "gloss": [
@@ -125081,9 +125125,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2952,
+    "id": 2953,
     "fuse-gloss": "grandmother,    female-line ancestor",
-    "rk": 2963
+    "rk": 2964
   },
   {
     "gloss": [
@@ -125106,9 +125150,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2953,
+    "id": 2954,
     "fuse-gloss": "grandfather,    male-line ancestor",
-    "rk": 2964
+    "rk": 2965
   },
   {
     "gloss": [
@@ -125131,9 +125175,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2954,
+    "id": 2955,
     "fuse-gloss": "great grandmother",
-    "rk": 2965
+    "rk": 2966
   },
   {
     "gloss": [
@@ -125156,9 +125200,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2955,
+    "id": 2956,
     "fuse-gloss": "great grandfather",
-    "rk": 2966
+    "rk": 2967
   },
   {
     "gloss": [
@@ -125180,9 +125224,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2956,
+    "id": 2957,
     "fuse-gloss": "brother-in-law (sibling's wife)",
-    "rk": 2967
+    "rk": 2968
   },
   {
     "gloss": [
@@ -125204,9 +125248,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2957,
+    "id": 2958,
     "fuse-gloss": "sister-in-law (sibling's husband)",
-    "rk": 2968
+    "rk": 2969
   },
   {
     "gloss": [
@@ -125229,7 +125273,7 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2958,
+    "id": 2959,
     "fuse-gloss": "to melt",
     "use": 1,
     "uses": [
@@ -125274,9 +125318,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2959,
+    "id": 2960,
     "fuse-gloss": "thaw,    unfreeze",
-    "rk": 2969
+    "rk": 2970
   },
   {
     "gloss": [
@@ -125299,9 +125343,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2960,
+    "id": 2961,
     "fuse-gloss": "igloo,    ice shelter",
-    "rk": 2970
+    "rk": 2971
   },
   {
     "gloss": [
@@ -125325,9 +125369,9 @@ const dictionary = [
       "KW/Northern",
       "Uncited"
     ],
-    "id": 2961,
+    "id": 2962,
     "fuse-gloss": "ice fort,    igloo",
-    "rk": 2971
+    "rk": 2972
   },
   {
     "gloss": [
@@ -125350,9 +125394,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 2962,
+    "id": 2963,
     "fuse-gloss": "yellow cedar",
-    "rk": 2972
+    "rk": 2973
   },
   {
     "gloss": [
@@ -125374,9 +125418,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2963,
+    "id": 2964,
     "fuse-gloss": "bring to me",
-    "rk": 2973
+    "rk": 2974
   },
   {
     "gloss": [
@@ -125399,9 +125443,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2964,
+    "id": 2965,
     "fuse-gloss": "merge,    fuse",
-    "rk": 2974
+    "rk": 2975
   },
   {
     "gloss": [
@@ -125423,9 +125467,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2965,
+    "id": 2966,
     "fuse-gloss": "grow",
-    "rk": 2975
+    "rk": 2976
   },
   {
     "gloss": [
@@ -125447,9 +125491,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2966,
+    "id": 2967,
     "fuse-gloss": "shrink",
-    "rk": 2976
+    "rk": 2977
   },
   {
     "gloss": [
@@ -125471,9 +125515,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2967,
+    "id": 2968,
     "fuse-gloss": "be born",
-    "rk": 2977
+    "rk": 2978
   },
   {
     "gloss": [
@@ -125498,9 +125542,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2968,
+    "id": 2969,
     "fuse-gloss": "youth,    teenager",
-    "rk": 2978
+    "rk": 2979
   },
   {
     "gloss": [
@@ -125522,9 +125566,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2969,
+    "id": 2970,
     "fuse-gloss": "fresh water",
-    "rk": 2979
+    "rk": 2980
   },
   {
     "gloss": [
@@ -125548,9 +125592,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 2970,
+    "id": 2971,
     "fuse-gloss": "dawn,    daybreak",
-    "rk": 2980
+    "rk": 2981
   },
   {
     "gloss": [
@@ -125588,9 +125632,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 2971,
+    "id": 2972,
     "fuse-gloss": "bluejay",
-    "rk": 2981
+    "rk": 2982
   },
   {
     "gloss": [
@@ -125613,9 +125657,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2972,
+    "id": 2973,
     "fuse-gloss": "bank,    business center",
-    "rk": 2982
+    "rk": 2983
   },
   {
     "gloss": [
@@ -125637,9 +125681,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2973,
+    "id": 2974,
     "fuse-gloss": "payment",
-    "rk": 2983
+    "rk": 2984
   },
   {
     "gloss": [
@@ -125661,9 +125705,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2974,
+    "id": 2975,
     "fuse-gloss": "bolt cutters",
-    "rk": 2984
+    "rk": 2985
   },
   {
     "gloss": [
@@ -125686,9 +125730,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 2975,
+    "id": 2976,
     "fuse-gloss": "wire cutters/strippers",
-    "rk": 2985
+    "rk": 2986
   },
   {
     "gloss": [
@@ -125710,9 +125754,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2976,
+    "id": 2977,
     "fuse-gloss": "chicken coop",
-    "rk": 2986
+    "rk": 2987
   },
   {
     "gloss": [
@@ -125735,9 +125779,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2977,
+    "id": 2978,
     "fuse-gloss": "to skin (an animal)",
-    "rk": 2987
+    "rk": 2988
   },
   {
     "gloss": [
@@ -125761,9 +125805,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2978,
+    "id": 2979,
     "fuse-gloss": "marshland,    flooded land,    waterlogged",
-    "rk": 2988
+    "rk": 2989
   },
   {
     "gloss": [
@@ -125785,9 +125829,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2979,
+    "id": 2980,
     "fuse-gloss": "pneumonia",
-    "rk": 2989
+    "rk": 2990
   },
   {
     "gloss": [
@@ -125811,9 +125855,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2980,
+    "id": 2981,
     "fuse-gloss": "fully cooked,    ready,    totally ripe",
-    "rk": 2990
+    "rk": 2991
   },
   {
     "gloss": [
@@ -125843,9 +125887,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2981,
+    "id": 2982,
     "fuse-gloss": "just some _,    any old _ [implies you don't know or care which]",
-    "rk": 2991
+    "rk": 2992
   },
   {
     "gloss": [
@@ -125876,9 +125920,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2982,
+    "id": 2983,
     "fuse-gloss": "worry about,    worried,    anxious",
-    "rk": 2992
+    "rk": 2993
   },
   {
     "gloss": [
@@ -125903,9 +125947,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2983,
+    "id": 2984,
     "fuse-gloss": "rebel,    revolt,    overthrow",
-    "rk": 2993
+    "rk": 2994
   },
   {
     "gloss": [
@@ -125930,9 +125974,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2984,
+    "id": 2985,
     "fuse-gloss": "start a fight,    assault,    attack",
-    "rk": 2994
+    "rk": 2995
   },
   {
     "gloss": [
@@ -125957,9 +126001,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 2985,
+    "id": 2986,
     "fuse-gloss": "dispute,    quarrel,    argue",
-    "rk": 2995
+    "rk": 2996
   },
   {
     "gloss": [
@@ -125982,9 +126026,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2986,
+    "id": 2987,
     "fuse-gloss": "instantly,    instantaneously",
-    "rk": 2996
+    "rk": 2997
   },
   {
     "gloss": [
@@ -126013,9 +126057,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 2987,
+    "id": 2988,
     "fuse-gloss": "nowhere",
-    "rk": 2997
+    "rk": 2998
   },
   {
     "gloss": [
@@ -126038,9 +126082,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2988,
+    "id": 2989,
     "fuse-gloss": "at no point,    never",
-    "rk": 2998
+    "rk": 2999
   },
   {
     "gloss": [
@@ -126065,9 +126109,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2989,
+    "id": 2990,
     "fuse-gloss": "perpetual,    ongoing,    without end,    infinite",
-    "rk": 2999
+    "rk": 3000
   },
   {
     "gloss": [
@@ -126092,9 +126136,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2990,
+    "id": 2991,
     "fuse-gloss": "hope,    hopeful,    brave,    bold",
-    "rk": 3000
+    "rk": 3001
   },
   {
     "gloss": [
@@ -126118,9 +126162,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2991,
+    "id": 2992,
     "fuse-gloss": "spayed,    neutered,    castrated",
-    "rk": 3001
+    "rk": 3002
   },
   {
     "gloss": [
@@ -126142,9 +126186,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2992,
+    "id": 2993,
     "fuse-gloss": "vineyard",
-    "rk": 3002
+    "rk": 3003
   },
   {
     "gloss": [
@@ -126168,9 +126212,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2993,
+    "id": 2994,
     "fuse-gloss": "broke,    poor,    low on cash",
-    "rk": 3003
+    "rk": 3004
   },
   {
     "gloss": [
@@ -126199,9 +126243,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2994,
+    "id": 2995,
     "fuse-gloss": "impoverished,    poverty",
-    "rk": 3004
+    "rk": 3005
   },
   {
     "gloss": [
@@ -126226,9 +126270,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2995,
+    "id": 2996,
     "fuse-gloss": "slanted,    bent,    oblique,    distorted/untrue",
-    "rk": 3005
+    "rk": 3006
   },
   {
     "gloss": [
@@ -126259,9 +126303,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2996,
+    "id": 2997,
     "fuse-gloss": "irritable,    quick to anger,    testy",
-    "rk": 3006
+    "rk": 3007
   },
   {
     "gloss": [
@@ -126284,9 +126328,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2997,
+    "id": 2998,
     "fuse-gloss": "wax (substance)",
-    "rk": 3007
+    "rk": 3008
   },
   {
     "gloss": [
@@ -126309,9 +126353,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 2998,
+    "id": 2999,
     "fuse-gloss": "beeswax",
-    "rk": 3008
+    "rk": 3009
   },
   {
     "gloss": [
@@ -126333,9 +126377,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 2999,
+    "id": 3000,
     "fuse-gloss": "oxen",
-    "rk": 3009
+    "rk": 3010
   },
   {
     "gloss": [
@@ -126357,9 +126401,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3000,
+    "id": 3001,
     "fuse-gloss": "thunderbird",
-    "rk": 3010
+    "rk": 3011
   },
   {
     "gloss": [
@@ -126382,9 +126426,9 @@ const dictionary = [
       "KW/Northern",
       "Uncited"
     ],
-    "id": 3001,
+    "id": 3002,
     "fuse-gloss": "grizzly bear",
-    "rk": 3011
+    "rk": 3012
   },
   {
     "gloss": [
@@ -126409,9 +126453,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3002,
+    "id": 3003,
     "fuse-gloss": "ne'er-do-well,    good-for-nothing,    buffoon,    klutz",
-    "rk": 3012
+    "rk": 3013
   },
   {
     "gloss": [
@@ -126434,9 +126478,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3003,
+    "id": 3004,
     "fuse-gloss": "mask (face)",
-    "rk": 3013
+    "rk": 3014
   },
   {
     "gloss": [
@@ -126459,9 +126503,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3004,
+    "id": 3005,
     "fuse-gloss": "mask (mouth)",
-    "rk": 3014
+    "rk": 3015
   },
   {
     "gloss": [
@@ -126483,9 +126527,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3005,
+    "id": 3006,
     "fuse-gloss": "cannon",
-    "rk": 3015
+    "rk": 3016
   },
   {
     "gloss": [
@@ -126507,9 +126551,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3006,
+    "id": 3007,
     "fuse-gloss": "buffalo",
-    "rk": 3016
+    "rk": 3017
   },
   {
     "gloss": [
@@ -126531,9 +126575,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3007,
+    "id": 3008,
     "fuse-gloss": "president",
-    "rk": 3017
+    "rk": 3018
   },
   {
     "gloss": [
@@ -126556,9 +126600,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3008,
+    "id": 3009,
     "fuse-gloss": "important/culturally significant day",
-    "rk": 3018
+    "rk": 3019
   },
   {
     "gloss": [
@@ -126581,9 +126625,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3009,
+    "id": 3010,
     "fuse-gloss": "merry,    merriment",
-    "rk": 3019
+    "rk": 3020
   },
   {
     "gloss": [
@@ -126606,9 +126650,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3010,
+    "id": 3011,
     "fuse-gloss": "frequently,    many times",
-    "rk": 3020
+    "rk": 3021
   },
   {
     "gloss": [
@@ -126631,9 +126675,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3011,
+    "id": 3012,
     "fuse-gloss": "clown,    jester",
-    "rk": 3021
+    "rk": 3022
   },
   {
     "gloss": [
@@ -126655,9 +126699,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3012,
+    "id": 3013,
     "fuse-gloss": "vacation",
-    "rk": 3022
+    "rk": 3023
   },
   {
     "gloss": [
@@ -126679,9 +126723,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3013,
+    "id": 3014,
     "fuse-gloss": "place a bet",
-    "rk": 3023
+    "rk": 3024
   },
   {
     "gloss": [
@@ -126703,9 +126747,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3014,
+    "id": 3015,
     "fuse-gloss": "foreign",
-    "rk": 3024
+    "rk": 3025
   },
   {
     "gloss": [
@@ -126729,9 +126773,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3015,
+    "id": 3016,
     "fuse-gloss": "delirious,    hallucinating",
-    "rk": 3025
+    "rk": 3026
   },
   {
     "gloss": [
@@ -126753,9 +126797,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3016,
+    "id": 3017,
     "fuse-gloss": "to greet",
-    "rk": 3026
+    "rk": 3027
   },
   {
     "gloss": [
@@ -126784,9 +126828,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3017,
+    "id": 3018,
     "fuse-gloss": "skull",
-    "rk": 3027
+    "rk": 3028
   },
   {
     "gloss": [
@@ -126809,9 +126853,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3018,
+    "id": 3019,
     "fuse-gloss": "jawbone",
-    "rk": 3028
+    "rk": 3029
   },
   {
     "gloss": [
@@ -126834,9 +126878,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3019,
+    "id": 3020,
     "fuse-gloss": "bullet hole,    gunshot wound",
-    "rk": 3029
+    "rk": 3030
   },
   {
     "gloss": [
@@ -126860,9 +126904,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 3020,
+    "id": 3021,
     "fuse-gloss": "do what (about it),    deal with it how?",
-    "rk": 3030
+    "rk": 3031
   },
   {
     "gloss": [
@@ -126885,9 +126929,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3021,
+    "id": 3022,
     "fuse-gloss": "diaper",
-    "rk": 3031
+    "rk": 3032
   },
   {
     "gloss": [
@@ -126914,9 +126958,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 3022,
+    "id": 3023,
     "fuse-gloss": "lord have mercy! oh my god! incredible!",
-    "rk": 3032
+    "rk": 3033
   },
   {
     "gloss": [
@@ -126939,9 +126983,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3023,
+    "id": 3024,
     "fuse-gloss": "shut up,    stop talking",
-    "rk": 3033
+    "rk": 3034
   },
   {
     "gloss": [
@@ -126971,9 +127015,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3024,
+    "id": 3025,
     "fuse-gloss": "package,    packet",
-    "rk": 3034
+    "rk": 3035
   },
   {
     "gloss": [
@@ -126997,9 +127041,9 @@ const dictionary = [
       "KW/Northern",
       "Uncited"
     ],
-    "id": 3025,
+    "id": 3026,
     "fuse-gloss": "softboiled (of eggs),    rare (of meat)",
-    "rk": 3035
+    "rk": 3036
   },
   {
     "gloss": [
@@ -127024,9 +127068,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 3026,
+    "id": 3027,
     "fuse-gloss": "suspicious,    sketchy,    doubtful",
-    "rk": 3036
+    "rk": 3037
   },
   {
     "gloss": [
@@ -127051,9 +127095,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 3027,
+    "id": 3028,
     "fuse-gloss": "secretive,    reserved,    private",
-    "rk": 3037
+    "rk": 3038
   },
   {
     "gloss": [
@@ -127076,9 +127120,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3028,
+    "id": 3029,
     "fuse-gloss": "college,    university",
-    "rk": 3038
+    "rk": 3039
   },
   {
     "gloss": [
@@ -127101,9 +127145,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 3029,
+    "id": 3030,
     "fuse-gloss": "peanut",
-    "rk": 3039
+    "rk": 3040
   },
   {
     "gloss": [
@@ -127127,9 +127171,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3030,
+    "id": 3031,
     "fuse-gloss": "cute,    adorable",
-    "rk": 3040
+    "rk": 3041
   },
   {
     "gloss": [
@@ -127152,9 +127196,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 3031,
+    "id": 3032,
     "fuse-gloss": "sleeping bag",
-    "rk": 3041
+    "rk": 3042
   },
   {
     "gloss": [
@@ -127178,9 +127222,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 3032,
+    "id": 3033,
     "fuse-gloss": "cocoon,    chrysalis",
-    "rk": 3042
+    "rk": 3043
   },
   {
     "gloss": [
@@ -127209,9 +127253,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3033,
+    "id": 3034,
     "fuse-gloss": "butterfly",
-    "rk": 3043
+    "rk": 3044
   },
   {
     "gloss": [
@@ -127240,9 +127284,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3034,
+    "id": 3035,
     "fuse-gloss": "caterpillar",
-    "rk": 3044
+    "rk": 3045
   },
   {
     "gloss": [
@@ -127265,9 +127309,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 3035,
+    "id": 3036,
     "fuse-gloss": "moth",
-    "rk": 3045
+    "rk": 3046
   },
   {
     "gloss": [
@@ -127291,9 +127335,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 3036,
+    "id": 3037,
     "fuse-gloss": "fungus,    mushroom",
-    "rk": 3046
+    "rk": 3047
   },
   {
     "gloss": [
@@ -127316,9 +127360,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3037,
+    "id": 3038,
     "fuse-gloss": "the majority,    most of",
-    "rk": 3047
+    "rk": 3048
   },
   {
     "gloss": [
@@ -127341,9 +127385,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3038,
+    "id": 3039,
     "fuse-gloss": "to discover,    explore",
-    "rk": 3048
+    "rk": 3049
   },
   {
     "gloss": [
@@ -127366,9 +127410,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3039,
+    "id": 3040,
     "fuse-gloss": "least,    smallest",
-    "rk": 3049
+    "rk": 3050
   },
   {
     "gloss": [
@@ -127391,9 +127435,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3040,
+    "id": 3041,
     "fuse-gloss": "favourite,    to prefer",
-    "rk": 3050
+    "rk": 3051
   },
   {
     "gloss": [
@@ -127416,9 +127460,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3041,
+    "id": 3042,
     "fuse-gloss": "to smell,    sniff",
-    "rk": 3051
+    "rk": 3052
   },
   {
     "gloss": [
@@ -127443,9 +127487,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3042,
+    "id": 3043,
     "fuse-gloss": "sneak,    stealthily,    slip away",
-    "rk": 3052
+    "rk": 3053
   },
   {
     "gloss": [
@@ -127469,9 +127513,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3043,
+    "id": 3044,
     "fuse-gloss": "guess which hand,    choose one of two hidden options",
-    "rk": 3053
+    "rk": 3054
   },
   {
     "gloss": [
@@ -127494,9 +127538,9 @@ const dictionary = [
       "KW/Northern",
       "Uncited"
     ],
-    "id": 3044,
+    "id": 3045,
     "fuse-gloss": "solar eclipse",
-    "rk": 3054
+    "rk": 3055
   },
   {
     "gloss": [
@@ -127519,9 +127563,9 @@ const dictionary = [
       "KW/Northern",
       "Uncited"
     ],
-    "id": 3045,
+    "id": 3046,
     "fuse-gloss": "lunar eclipse",
-    "rk": 3055
+    "rk": 3056
   },
   {
     "gloss": [
@@ -127544,9 +127588,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3046,
+    "id": 3047,
     "fuse-gloss": "baking powder,    baking soda",
-    "rk": 3056
+    "rk": 3057
   },
   {
     "gloss": [
@@ -127570,9 +127614,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3047,
+    "id": 3048,
     "fuse-gloss": "peek,    take a glance,    take a picture",
-    "rk": 3057
+    "rk": 3058
   },
   {
     "gloss": [
@@ -127595,9 +127639,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 3048,
+    "id": 3049,
     "fuse-gloss": "camera",
-    "rk": 3058
+    "rk": 3059
   },
   {
     "gloss": [
@@ -127623,9 +127667,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3049,
+    "id": 3050,
     "fuse-gloss": "start going out,    dating,    enter a relationship,    be a couple",
-    "rk": 3059
+    "rk": 3060
   },
   {
     "gloss": [
@@ -127654,9 +127698,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 3050,
+    "id": 3051,
     "fuse-gloss": "butterfly",
-    "rk": 3060
+    "rk": 3061
   },
   {
     "gloss": [
@@ -127681,9 +127725,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 3051,
+    "id": 3052,
     "fuse-gloss": "let there be,    to come into existence,    occur",
-    "rk": 3061
+    "rk": 3062
   },
   {
     "gloss": [
@@ -127705,9 +127749,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3052,
+    "id": 3053,
     "fuse-gloss": "to pass/spend (time)",
-    "rk": 3062
+    "rk": 3063
   },
   {
     "gloss": [
@@ -127732,9 +127776,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3053,
+    "id": 3054,
     "fuse-gloss": "get back to,    complete a return trip,    make a circuit",
-    "rk": 3063
+    "rk": 3064
   },
   {
     "gloss": [
@@ -127756,9 +127800,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3054,
+    "id": 3055,
     "fuse-gloss": "take/find a wife",
-    "rk": 3064
+    "rk": 3065
   },
   {
     "gloss": [
@@ -127780,9 +127824,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3055,
+    "id": 3056,
     "fuse-gloss": "take/find a husband",
-    "rk": 3065
+    "rk": 3066
   },
   {
     "gloss": [
@@ -127804,9 +127848,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3056,
+    "id": 3057,
     "fuse-gloss": "broccoli",
-    "rk": 3066
+    "rk": 3067
   },
   {
     "gloss": [
@@ -127836,9 +127880,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 3057,
+    "id": 3058,
     "fuse-gloss": "umbrella,    parasol",
-    "rk": 3067
+    "rk": 3068
   },
   {
     "gloss": [
@@ -127862,9 +127906,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 3058,
+    "id": 3059,
     "fuse-gloss": "to serve,    server",
-    "rk": 3068
+    "rk": 3069
   },
   {
     "gloss": [
@@ -127889,9 +127933,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 3059,
+    "id": 3060,
     "fuse-gloss": "role,    character,    label/stereotype",
-    "rk": 3069
+    "rk": 3070
   },
   {
     "gloss": [
@@ -127915,9 +127959,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3060,
+    "id": 3061,
     "fuse-gloss": "unconscious,    comatose",
-    "rk": 3070
+    "rk": 3071
   },
   {
     "gloss": [
@@ -127941,7 +127985,7 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3061,
+    "id": 3062,
     "fuse-gloss": "as if,    as though",
     "use": 2,
     "uses": [
@@ -127978,9 +128022,9 @@ const dictionary = [
       "KW/Northern",
       "Uncited"
     ],
-    "id": 3062,
+    "id": 3063,
     "fuse-gloss": "halo (around the sun),    corona",
-    "rk": 3071
+    "rk": 3072
   },
   {
     "gloss": [
@@ -128003,9 +128047,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 3063,
+    "id": 3064,
     "fuse-gloss": "bat (animal)",
-    "rk": 3072
+    "rk": 3073
   },
   {
     "gloss": [
@@ -128028,9 +128072,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3064,
+    "id": 3065,
     "fuse-gloss": "sweat",
-    "rk": 3073
+    "rk": 3074
   },
   {
     "gloss": [
@@ -128055,9 +128099,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3065,
+    "id": 3066,
     "fuse-gloss": "bored,    aloof,    uninterested,    blase\u0301",
-    "rk": 3074
+    "rk": 3075
   },
   {
     "gloss": [
@@ -128081,9 +128125,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3066,
+    "id": 3067,
     "fuse-gloss": "boring,    dry/dull,    sombre",
-    "rk": 3075
+    "rk": 3076
   },
   {
     "gloss": [
@@ -128114,9 +128158,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 3067,
+    "id": 3068,
     "fuse-gloss": "oak/beech/chestnut wood",
-    "rk": 3076
+    "rk": 3077
   },
   {
     "gloss": [
@@ -128146,9 +128190,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3068,
+    "id": 3069,
     "fuse-gloss": "island/islet,    patch of land",
-    "rk": 3077
+    "rk": 3078
   },
   {
     "gloss": [
@@ -128179,9 +128223,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3069,
+    "id": 3070,
     "fuse-gloss": "to share with,    divide between,    distribute",
-    "rk": 3078
+    "rk": 3079
   },
   {
     "gloss": [
@@ -128211,9 +128255,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3070,
+    "id": 3071,
     "fuse-gloss": "among them,    (one) of them",
-    "rk": 3079
+    "rk": 3080
   },
   {
     "gloss": [
@@ -128243,9 +128287,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 3071,
+    "id": 3072,
     "fuse-gloss": "telescope",
-    "rk": 3080
+    "rk": 3081
   },
   {
     "gloss": [
@@ -128274,9 +128318,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3072,
+    "id": 3073,
     "fuse-gloss": "cedar fringe skirt",
-    "rk": 3081
+    "rk": 3082
   },
   {
     "gloss": [
@@ -128299,9 +128343,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3073,
+    "id": 3074,
     "fuse-gloss": "what date; which month,    which day",
-    "rk": 3082
+    "rk": 3083
   },
   {
     "gloss": [
@@ -128324,9 +128368,9 @@ const dictionary = [
       "Dubious",
       "Uncited"
     ],
-    "id": 3074,
+    "id": 3075,
     "fuse-gloss": "on purpose",
-    "rk": 3083
+    "rk": 3084
   },
   {
     "gloss": [
@@ -128351,9 +128395,9 @@ const dictionary = [
       "Limited",
       "Uncited"
     ],
-    "id": 3075,
+    "id": 3076,
     "fuse-gloss": "succeed,    success,    complete",
-    "rk": 3084
+    "rk": 3085
   },
   {
     "gloss": [
@@ -128376,9 +128420,9 @@ const dictionary = [
       "GR/Southern",
       "Uncited"
     ],
-    "id": 3076,
+    "id": 3077,
     "fuse-gloss": "birthday",
-    "rk": 3085
+    "rk": 3086
   },
   {
     "gloss": [
@@ -128402,9 +128446,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3077,
+    "id": 3078,
     "fuse-gloss": "footprint,    pawprint,    tracks",
-    "rk": 3086
+    "rk": 3087
   },
   {
     "gloss": [
@@ -128427,9 +128471,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3078,
+    "id": 3079,
     "fuse-gloss": "okay/fine,    that's alright",
-    "rk": 3087
+    "rk": 3088
   },
   {
     "gloss": [
@@ -128459,9 +128503,9 @@ const dictionary = [
       "Compound",
       "KW/Northern"
     ],
-    "id": 3079,
+    "id": 3080,
     "fuse-gloss": "the Gospel",
-    "rk": 3088
+    "rk": 3089
   },
   {
     "gloss": [
@@ -128491,9 +128535,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3080,
+    "id": 3081,
     "fuse-gloss": "inferno,    Hell",
-    "rk": 3089
+    "rk": 3090
   },
   {
     "gloss": [
@@ -128523,9 +128567,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 3081,
+    "id": 3082,
     "fuse-gloss": "push away",
-    "rk": 3090
+    "rk": 3091
   },
   {
     "gloss": [
@@ -128555,9 +128599,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 3082,
+    "id": 3083,
     "fuse-gloss": "give away",
-    "rk": 3091
+    "rk": 3092
   },
   {
     "gloss": [
@@ -128587,9 +128631,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 3083,
+    "id": 3084,
     "fuse-gloss": "go away",
-    "rk": 3092
+    "rk": 3093
   },
   {
     "gloss": [
@@ -128619,9 +128663,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3084,
+    "id": 3085,
     "fuse-gloss": "throw away,    put away",
-    "rk": 3093
+    "rk": 3094
   },
   {
     "gloss": [
@@ -128654,9 +128698,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3085,
+    "id": 3086,
     "fuse-gloss": "to respect,    consider important,    value,    enlarge,    exaggerate",
-    "rk": 3094
+    "rk": 3095
   },
   {
     "gloss": [
@@ -128681,9 +128725,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3086,
+    "id": 3087,
     "fuse-gloss": "to disrespect,    make smaller,    downplay,    minimize/trvialize",
-    "rk": 3095
+    "rk": 3096
   },
   {
     "gloss": [
@@ -128713,9 +128757,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 3087,
+    "id": 3088,
     "fuse-gloss": "knead dough",
-    "rk": 3096
+    "rk": 3097
   },
   {
     "gloss": [
@@ -128749,9 +128793,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3088,
+    "id": 3089,
     "fuse-gloss": "fish creel,    fish trapping cage",
-    "rk": 3097
+    "rk": 3098
   },
   {
     "gloss": [
@@ -128780,9 +128824,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3089,
+    "id": 3090,
     "fuse-gloss": "herring rake (traditional fish comb)",
-    "rk": 3098
+    "rk": 3099
   },
   {
     "gloss": [
@@ -128811,9 +128855,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3090,
+    "id": 3091,
     "fuse-gloss": "flatten",
-    "rk": 3099
+    "rk": 3100
   },
   {
     "gloss": [
@@ -128843,9 +128887,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3091,
+    "id": 3092,
     "fuse-gloss": "branch,    tree limb",
-    "rk": 3100
+    "rk": 3101
   },
   {
     "gloss": [
@@ -128868,9 +128912,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3092,
+    "id": 3093,
     "fuse-gloss": "twig,    stick",
-    "rk": 3101
+    "rk": 3102
   },
   {
     "gloss": [
@@ -128894,9 +128938,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3093,
+    "id": 3094,
     "fuse-gloss": "who knows how,    some way or another,    somehow",
-    "rk": 3102
+    "rk": 3103
   },
   {
     "gloss": [
@@ -128920,9 +128964,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3094,
+    "id": 3095,
     "fuse-gloss": "whenever,    some time,    who knows when",
-    "rk": 3103
+    "rk": 3104
   },
   {
     "gloss": [
@@ -128946,9 +128990,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3095,
+    "id": 3096,
     "fuse-gloss": "somewhere,    anywhere,    some place or another",
-    "rk": 3104
+    "rk": 3105
   },
   {
     "gloss": [
@@ -128984,9 +129028,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3096,
+    "id": 3097,
     "fuse-gloss": "this __ of hers/his,    that item which they are holding/using",
-    "rk": 3105
+    "rk": 3106
   },
   {
     "gloss": [
@@ -129016,9 +129060,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3097,
+    "id": 3098,
     "fuse-gloss": "put it outside,    express (an idea/feeling)",
-    "rk": 3106
+    "rk": 3107
   },
   {
     "gloss": [
@@ -129048,9 +129092,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3098,
+    "id": 3099,
     "fuse-gloss": "get together,    collect",
-    "rk": 3107
+    "rk": 3108
   },
   {
     "gloss": [
@@ -129079,9 +129123,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3099,
+    "id": 3100,
     "fuse-gloss": "be standing there at",
-    "rk": 3108
+    "rk": 3109
   },
   {
     "gloss": [
@@ -129111,9 +129155,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3100,
+    "id": 3101,
     "fuse-gloss": "give back,    return it",
-    "rk": 3109
+    "rk": 3110
   },
   {
     "gloss": [
@@ -129137,9 +129181,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3101,
+    "id": 3102,
     "fuse-gloss": "without issue,    smoothly,    easily",
-    "rk": 3110
+    "rk": 3111
   },
   {
     "gloss": [
@@ -129170,9 +129214,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3102,
+    "id": 3103,
     "fuse-gloss": "be clear/concise,    say it straight,    state your decision",
-    "rk": 3111
+    "rk": 3112
   },
   {
     "gloss": [
@@ -129202,9 +129246,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3103,
+    "id": 3104,
     "fuse-gloss": "how long until,    for how long?",
-    "rk": 3112
+    "rk": 3113
   },
   {
     "gloss": [
@@ -129233,9 +129277,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3104,
+    "id": 3105,
     "fuse-gloss": "celibate",
-    "rk": 3113
+    "rk": 3114
   },
   {
     "gloss": [
@@ -129266,9 +129310,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3105,
+    "id": 3106,
     "fuse-gloss": "lawless,    outlaw,    rebellious",
-    "rk": 3114
+    "rk": 3115
   },
   {
     "gloss": [
@@ -129297,9 +129341,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3106,
+    "id": 3107,
     "fuse-gloss": "illiterate",
-    "rk": 3115
+    "rk": 3116
   },
   {
     "gloss": [
@@ -129329,9 +129373,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3107,
+    "id": 3108,
     "fuse-gloss": "sterile,    infertile",
-    "rk": 3116
+    "rk": 3117
   },
   {
     "gloss": [
@@ -129362,9 +129406,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3108,
+    "id": 3109,
     "fuse-gloss": "impulsive,    hedonistic,    induglent",
-    "rk": 3117
+    "rk": 3118
   },
   {
     "gloss": [
@@ -129395,9 +129439,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3109,
+    "id": 3110,
     "fuse-gloss": "sombre,    mirthless,    stern",
-    "rk": 3118
+    "rk": 3119
   },
   {
     "gloss": [
@@ -129426,9 +129470,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3110,
+    "id": 3111,
     "fuse-gloss": "honest",
-    "rk": 3119
+    "rk": 3120
   },
   {
     "gloss": [
@@ -129459,9 +129503,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3111,
+    "id": 3112,
     "fuse-gloss": "innoffensive,    harmless,    innocent",
-    "rk": 3120
+    "rk": 3121
   },
   {
     "gloss": [
@@ -129491,9 +129535,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3112,
+    "id": 3113,
     "fuse-gloss": "eternal,    immortal",
-    "rk": 3121
+    "rk": 3122
   },
   {
     "gloss": [
@@ -129523,9 +129567,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3113,
+    "id": 3114,
     "fuse-gloss": "calm,    dispassionate",
-    "rk": 3122
+    "rk": 3123
   },
   {
     "gloss": [
@@ -129555,9 +129599,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3114,
+    "id": 3115,
     "fuse-gloss": "pacifist,    peaceful",
-    "rk": 3123
+    "rk": 3124
   },
   {
     "gloss": [
@@ -129588,9 +129632,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3115,
+    "id": 3116,
     "fuse-gloss": "stoic,    hardy,    having high stamina",
-    "rk": 3124
+    "rk": 3125
   },
   {
     "gloss": [
@@ -129619,9 +129663,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3116,
+    "id": 3117,
     "fuse-gloss": "flexible",
-    "rk": 3125
+    "rk": 3126
   },
   {
     "gloss": [
@@ -129652,9 +129696,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3117,
+    "id": 3118,
     "fuse-gloss": "change,    mutate,    transform",
-    "rk": 3126
+    "rk": 3127
   },
   {
     "gloss": [
@@ -129684,9 +129728,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3118,
+    "id": 3119,
     "fuse-gloss": "careful,    thoughtful",
-    "rk": 3127
+    "rk": 3128
   },
   {
     "gloss": [
@@ -129709,9 +129753,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3119,
+    "id": 3120,
     "fuse-gloss": "how much does it cost,    how expensive",
-    "rk": 3128
+    "rk": 3129
   },
   {
     "gloss": [
@@ -129741,9 +129785,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3120,
+    "id": 3121,
     "fuse-gloss": "fine sheets,    linens",
-    "rk": 3129
+    "rk": 3130
   },
   {
     "gloss": [
@@ -129781,9 +129825,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 3121,
+    "id": 3122,
     "fuse-gloss": "thresh (grain)",
-    "rk": 3130
+    "rk": 3131
   },
   {
     "gloss": [
@@ -129813,9 +129857,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3122,
+    "id": 3123,
     "fuse-gloss": "cowardly,    despicable",
-    "rk": 3131
+    "rk": 3132
   },
   {
     "gloss": [
@@ -129845,9 +129889,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3123,
+    "id": 3124,
     "fuse-gloss": "pour/spill it,    to vomit (euphemism)",
-    "rk": 3132
+    "rk": 3133
   },
   {
     "gloss": [
@@ -129877,9 +129921,9 @@ const dictionary = [
       "Compound",
       "KW/Northern"
     ],
-    "id": 3124,
+    "id": 3125,
     "fuse-gloss": "vomit",
-    "rk": 3133
+    "rk": 3134
   },
   {
     "gloss": [
@@ -129909,9 +129953,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3125,
+    "id": 3126,
     "fuse-gloss": "emetic,    medicine to induce vomiting",
-    "rk": 3134
+    "rk": 3135
   },
   {
     "gloss": [
@@ -129941,9 +129985,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3126,
+    "id": 3127,
     "fuse-gloss": "effort,    put a little work in",
-    "rk": 3135
+    "rk": 3136
   },
   {
     "gloss": [
@@ -129974,9 +130018,9 @@ const dictionary = [
       "Compound",
       "GR/Southern"
     ],
-    "id": 3127,
+    "id": 3128,
     "fuse-gloss": "on my own,    myself",
-    "rk": 3136
+    "rk": 3137
   },
   {
     "gloss": [
@@ -130007,9 +130051,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 3128,
+    "id": 3129,
     "fuse-gloss": "turning,    falling",
-    "rk": 3137
+    "rk": 3138
   },
   {
     "gloss": [
@@ -130039,9 +130083,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 3129,
+    "id": 3130,
     "fuse-gloss": "snow",
-    "rk": 3138
+    "rk": 3139
   },
   {
     "gloss": [
@@ -130075,9 +130119,9 @@ const dictionary = [
       "Compound",
       "Dubious"
     ],
-    "id": 3130,
+    "id": 3131,
     "fuse-gloss": "folks",
-    "rk": 3139
+    "rk": 3140
   },
   {
     "gloss": [
@@ -130100,9 +130144,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3131,
+    "id": 3132,
     "fuse-gloss": "like,    enjoy (an action)",
-    "rk": 3140
+    "rk": 3141
   },
   {
     "gloss": [
@@ -130132,9 +130176,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3132,
+    "id": 3133,
     "fuse-gloss": "stop trying,    give up (on doing __)",
-    "rk": 3141
+    "rk": 3142
   },
   {
     "gloss": [
@@ -130164,9 +130208,9 @@ const dictionary = [
       "Compound",
       "Limited"
     ],
-    "id": 3133,
+    "id": 3134,
     "fuse-gloss": "doctor",
-    "rk": 3142
+    "rk": 3143
   },
   {
     "gloss": [
@@ -130195,9 +130239,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3134,
+    "id": 3135,
     "fuse-gloss": "bring",
-    "rk": 3143
+    "rk": 3144
   },
   {
     "gloss": [
@@ -130227,9 +130271,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3135,
+    "id": 3136,
     "fuse-gloss": "take,    send",
-    "rk": 3144
+    "rk": 3145
   },
   {
     "gloss": [
@@ -130255,7 +130299,7 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3136,
+    "id": 3137,
     "fuse-gloss": "show",
     "use": 7,
     "uses": [
@@ -130307,7 +130351,7 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3137,
+    "id": 3138,
     "fuse-gloss": "gather,    harvest",
     "use": 1,
     "uses": [
@@ -130342,7 +130386,7 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3138,
+    "id": 3139,
     "fuse-gloss": "why",
     "use": 4,
     "uses": [
@@ -130389,7 +130433,7 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3139,
+    "id": 3140,
     "fuse-gloss": "just now",
     "use": 4,
     "uses": [
@@ -130424,9 +130468,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3140,
+    "id": 3141,
     "fuse-gloss": "why would",
-    "rk": 3145
+    "rk": 3146
   },
   {
     "gloss": [
@@ -130449,9 +130493,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3141,
+    "id": 3142,
     "fuse-gloss": "lose confidence,    lose interest (in)",
-    "rk": 3146
+    "rk": 3147
   },
   {
     "gloss": [
@@ -130474,9 +130518,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3142,
+    "id": 3143,
     "fuse-gloss": "love,    feel strongly about",
-    "rk": 3147
+    "rk": 3148
   },
   {
     "gloss": [
@@ -130499,9 +130543,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3143,
+    "id": 3144,
     "fuse-gloss": "far and wide,    (even) in distant lands",
-    "rk": 3148
+    "rk": 3149
   },
   {
     "gloss": [
@@ -130525,9 +130569,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 3144,
+    "id": 3145,
     "fuse-gloss": "photoshop,    phone filter",
-    "rk": 3149
+    "rk": 3150
   },
   {
     "gloss": [
@@ -130551,9 +130595,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3145,
+    "id": 3146,
     "fuse-gloss": "tower,    skyscraper,    tall building",
-    "rk": 3150
+    "rk": 3151
   },
   {
     "gloss": [
@@ -130575,9 +130619,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3146,
+    "id": 3147,
     "fuse-gloss": "counterfeit money",
-    "rk": 3151
+    "rk": 3152
   },
   {
     "gloss": [
@@ -130600,9 +130644,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3147,
+    "id": 3148,
     "fuse-gloss": "conductor,    ticket-collector",
-    "rk": 3152
+    "rk": 3153
   },
   {
     "gloss": [
@@ -130630,9 +130674,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3148,
+    "id": 3149,
     "fuse-gloss": "hurricane,    cyclone,    typhoon",
-    "rk": 3153
+    "rk": 3154
   },
   {
     "gloss": [
@@ -130659,9 +130703,9 @@ const dictionary = [
     "tags": [
       "Compound"
     ],
-    "id": 3149,
+    "id": 3150,
     "fuse-gloss": "storm,    gale",
-    "rk": 3154
+    "rk": 3155
   },
   {
     "gloss": [
@@ -130683,9 +130727,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3150,
+    "id": 3151,
     "fuse-gloss": "until",
-    "rk": 3155
+    "rk": 3156
   },
   {
     "gloss": [
@@ -130708,9 +130752,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3151,
+    "id": 3152,
     "fuse-gloss": "fix,    repair",
-    "rk": 3156
+    "rk": 3157
   },
   {
     "gloss": [
@@ -130732,9 +130776,9 @@ const dictionary = [
       "Compound",
       "Uncited"
     ],
-    "id": 3152,
+    "id": 3153,
     "fuse-gloss": "the world",
-    "rk": 3157
+    "rk": 3158
   },
   {
     "gloss": [
@@ -130759,9 +130803,9 @@ const dictionary = [
       "Neologism",
       "Uncited"
     ],
-    "id": 3153,
+    "id": 3154,
     "fuse-gloss": "be in a bad mood,    lose hope,    become depressed",
-    "rk": 3158
+    "rk": 3159
   },
   {
     "gloss": [
@@ -130779,7 +130823,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3154,
+    "id": 3155,
     "fuse-gloss": "tide",
     "tags": [
       "Uncited"
@@ -130815,7 +130859,7 @@ const dictionary = [
       "hykwa",
       "hykwa"
     ],
-    "id": 3155,
+    "id": 3156,
     "fuse-gloss": "knee,    knee",
     "tags": [
       "Uncited"
@@ -130845,7 +130889,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3156,
+    "id": 3157,
     "fuse-gloss": "potato",
     "tags": [
       "Uncited"
@@ -130874,7 +130918,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3157,
+    "id": 3158,
     "fuse-gloss": "That's all (used at the end of a story),    preciseley like that",
     "tags": [
       "Uncited"
