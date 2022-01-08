@@ -16947,7 +16947,7 @@ const dictionary = [
       "before",
       "most",
       "ahead",
-      "in front of"
+      "the front"
     ],
     "rudegloss": [],
     "cw": [
@@ -17003,7 +17003,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 345,
-    "fuse-gloss": "first,    before,    most,    ahead,    in front of",
+    "fuse-gloss": "first,    before,    most,    ahead,    the front",
     "use": 16,
     "uses": [
       {
@@ -26310,7 +26310,7 @@ const dictionary = [
       "after",
       "less than",
       "since",
-      "in the back"
+      "the back"
     ],
     "rudegloss": [],
     "cw": [
@@ -26359,7 +26359,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 504,
-    "fuse-gloss": "behind,    after,    less than,    since,    in the back",
+    "fuse-gloss": "behind,    after,    less than,    since,    the back",
     "use": 10,
     "uses": [
       {
@@ -28390,6 +28390,12 @@ const dictionary = [
         ]
       },
       {
+        "value": "k\u0323aba\u0301",
+        "orth": [
+          "qw"
+        ]
+      },
+      {
         "value": "kopaa",
         "orth": [
           "dr"
@@ -28404,6 +28410,9 @@ const dictionary = [
       "Zenk",
       "Hibbens",
       "qw"
+    ],
+    "tags": [
+      "GR/Southern"
     ],
     "origin": {
       "language": "Kathlamet",
@@ -46353,7 +46362,7 @@ const dictionary = [
     "gloss": [
       "countryside",
       "rural",
-      "hinterland",
+      "wilderness",
       "boonies"
     ],
     "rudegloss": [],
@@ -46381,7 +46390,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 882,
-    "fuse-gloss": "countryside,    rural,    hinterland,    boonies",
+    "fuse-gloss": "countryside,    rural,    wilderness,    boonies",
     "tags": [
       "Uncited"
     ],
@@ -60713,7 +60722,8 @@ const dictionary = [
   {
     "gloss": [
       "how",
-      "problem"
+      "problem",
+      "about (preposition)"
     ],
     "rudegloss": [],
     "cw": [
@@ -60772,7 +60782,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 1147,
-    "fuse-gloss": "how,    problem",
+    "fuse-gloss": "how,    problem,    about (preposition)",
     "use": 92,
     "uses": [
       {
@@ -84357,7 +84367,8 @@ const dictionary = [
       "trail",
       "road",
       "path",
-      "street"
+      "street",
+      "way (of life)"
     ],
     "rudegloss": [],
     "cw": [
@@ -84450,7 +84461,7 @@ const dictionary = [
       "unknown": false
     },
     "id": 1613,
-    "fuse-gloss": "trail,    road,    path,    street",
+    "fuse-gloss": "trail,    road,    path,    street,    way (of life)",
     "use": 10,
     "uses": [
       {
@@ -130809,6 +130820,81 @@ const dictionary = [
   },
   {
     "gloss": [
+      "in front of"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "ilip k\u0323opa",
+        "orth": [
+          "qw"
+        ]
+      }
+    ],
+    "sources": [
+      "qw"
+    ],
+    "tags": [
+      "Compound",
+      "Uncited"
+    ],
+    "id": 3155,
+    "fuse-gloss": "in front of",
+    "rk": 3160
+  },
+  {
+    "gloss": [
+      "in the back of",
+      "behind"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "k\u0323imt'a k\u0323opa",
+        "orth": [
+          "qw"
+        ]
+      }
+    ],
+    "sources": [
+      "qw"
+    ],
+    "tags": [
+      "Compound",
+      "Uncited"
+    ],
+    "id": 3156,
+    "fuse-gloss": "in the back of,    behind",
+    "rk": 3161
+  },
+  {
+    "gloss": [
+      "change your ways",
+      "repent",
+      "turn your life around"
+    ],
+    "rudegloss": [],
+    "cw": [
+      {
+        "value": "k\u0323'ilapay t\u0259mt\u0259m",
+        "orth": [
+          "qw"
+        ]
+      }
+    ],
+    "sources": [
+      "qw"
+    ],
+    "tags": [
+      "Compound",
+      "Uncited"
+    ],
+    "id": 3157,
+    "fuse-gloss": "change your ways,    repent,    turn your life around",
+    "rk": 3162
+  },
+  {
+    "gloss": [
       "tide"
     ],
     "rudegloss": [],
@@ -130823,7 +130909,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3155,
+    "id": 3158,
     "fuse-gloss": "tide",
     "tags": [
       "Uncited"
@@ -130859,7 +130945,7 @@ const dictionary = [
       "hykwa",
       "hykwa"
     ],
-    "id": 3156,
+    "id": 3159,
     "fuse-gloss": "knee,    knee",
     "tags": [
       "Uncited"
@@ -130889,7 +130975,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3157,
+    "id": 3160,
     "fuse-gloss": "potato",
     "tags": [
       "Uncited"
@@ -130918,7 +131004,7 @@ const dictionary = [
     "sources": [
       "hykwa"
     ],
-    "id": 3158,
+    "id": 3161,
     "fuse-gloss": "That's all (used at the end of a story),    preciseley like that",
     "tags": [
       "Uncited"
